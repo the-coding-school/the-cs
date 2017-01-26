@@ -6,14 +6,13 @@ import viterbiLogo from "./images/partners/viterbi.png";
 import uscStemLogo from "./images/partners/stem.png";
 import uscJointLogo from "./images/partners/uscjoint.png";
 import hawthorneLogo from "./images/partners/hawthorne.png";
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   render() {
 
     const sources = [image1, image2];
-    const tabs = ["Home", "About Us", "Our Mission",
-                  "Teaching Team", "Classes","Get Involved",
+    const tabs = ["Home", "About Us", "Classes","Get Involved",
                   "Sign Up"];
     const courses = [
       {
@@ -89,12 +88,15 @@ class App extends Component {
 class Navbar extends Component {
   render() {
     var items = this.props.items;
-    var navItems = items.map((i) => <li key={i} className="nav_item">{i.toUpperCase()}</li>)
-
+    var navItems = items.map((i) => <div key={i} className="nav_item">{i.toUpperCase()}</div>)
+    // <h1 className="navbar_logo">{this.props.name}</h1>
+    // <div className="flex flex_center">{navItems}</div>
     return (
-      <nav className="navbar flex">
-          <h1 className="navbar_logo">{this.props.name}</h1>
-          <ul className="flex">{navItems}</ul>
+      <nav className="flex" id="navbar">
+        <div className="navbar_logo">
+          <h1>THE CODING SCHOOL</h1>
+        </div>
+        <div className="navbar_tabs flex">{navItems}</div>
       </nav>
     );
   }
@@ -103,10 +105,12 @@ class Navbar extends Component {
 class Video extends Component {
   render() {
     return (
-      <video autoPlay muted loop>
-        <source src={demovideo} type="video/mp4"/>
-        Your browser does not support the video tag.
-      </video>
+      <div id="video">
+        <video autoPlay muted loop>
+          <source src={demovideo} type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+      </div>
     );
   }
 }
@@ -128,7 +132,7 @@ class ImageCarousel extends Component {
 
   render() {
     return (
-      <div className="image_carousel">
+      <div id="image_carousel">
         <img alt="Slideshow" src={this.state.image}></img>
       </div>
     );
@@ -138,7 +142,7 @@ class ImageCarousel extends Component {
 class IntroBlurb extends Component {
   render() {
     return (
-      <div className="intro_blurb container">
+      <div className="container" id="intro_blurb">
         <div className="description">
           <p><span className="first_letter">W</span>e are an after-school educational program that teaches computer science to elementary and middle school students.</p>
           <p>We currently offer the Pre-Coding and Coding I classes for K-8 students, suitable for various levels of experience with technology and computer science.</p>
