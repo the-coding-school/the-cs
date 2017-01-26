@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import image1 from "./images/carousel/1.png";
-import image2 from "./images/carousel/2.png";
-import demovideo from "./videos/demovideo.mp4";
-import viterbiLogo from "./images/partners/viterbi.png";
-import uscStemLogo from "./images/partners/stem.png";
-import uscJointLogo from "./images/partners/uscjoint.png";
-import hawthorneLogo from "./images/partners/hawthorne.png";
-import './App.scss';
 
-class App extends Component {
+import image1 from "../images/carousel/1.png";
+import image2 from "../images/carousel/2.png";
+import demovideo from "../videos/demovideo.mp4";
+import viterbiLogo from "../images/partners/viterbi.png";
+import uscStemLogo from "../images/partners/stem.png";
+import uscJointLogo from "../images/partners/uscjoint.png";
+import hawthorneLogo from "../images/partners/hawthorne.png";
+import '../App.scss';
+
+class Home extends Component {
   render() {
 
-    const sources = [image1, image2];
-    const tabs = ["Home", "About Us", "Classes","Get Involved",
-                  "Sign Up"];
     const courses = [
       {
         name: "Pre-Coding",
@@ -74,30 +72,13 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Navbar name={"The Coding School"} items={tabs} />
+
         <Video />
         <IntroBlurb />
         <OurCourses courses={courses}/>
         <OurPartners partners={partners}/>
-        <Footer />
-      </div>
-    );
-  }
-}
 
-class Navbar extends Component {
-  render() {
-    var items = this.props.items;
-    var navItems = items.map((i) => <div key={i} className="nav_item">{i.toUpperCase()}</div>)
-    // <h1 className="navbar_logo">{this.props.name}</h1>
-    // <div className="flex flex_center">{navItems}</div>
-    return (
-      <nav className="flex" id="navbar">
-        <div className="navbar_logo">
-          <h1>THE CODING SCHOOL</h1>
-        </div>
-        <div className="navbar_tabs flex">{navItems}</div>
-      </nav>
+      </div>
     );
   }
 }
@@ -113,30 +94,6 @@ class Video extends Component {
       </div>
     );
   }
-}
-
-class ImageCarousel extends Component {
-
-  constructor(props) {
-    super(props);
-
-    const images = this.props.sources;
-    this.state = {image: images[0]};
-    var i = 1;
-
-    window.setInterval(function() {
-      this.setState({image: images[i]});
-      (i === images.length - 1) ? (i = 0) : (i++);
-    }.bind(this), this.props.delay);
-  }
-
-  render() {
-    return (
-      <div id="image_carousel">
-        <img alt="Slideshow" src={this.state.image}></img>
-      </div>
-    );
-  };
 }
 
 class IntroBlurb extends Component {
@@ -210,7 +167,7 @@ class Partner extends Component {
       <div className="cell_wrapper">
         <div className="cell partner flex">
           <div className="partner_logo">
-            <img width="160" height="160" src={this.props.imageURL}/>
+            <img alt="partner" width="160" height="160" src={this.props.imageURL}/>
           </div>
           <div className="partner_description">
             <h2>{this.props.name}</h2>
@@ -232,15 +189,6 @@ class ActionButton extends Component {
   }
 }
 
-class Footer extends Component {
-  render() {
-    return (
-      <div className='footer container'>
-        <hr/>
-        <footer>Copyright © 2014 - All Rights Reserved - The Coding School</footer>
-      </div>
-    );
-  }
-}
 
-export default App;
+
+export default Home;
