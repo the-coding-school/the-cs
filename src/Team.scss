@@ -1,0 +1,58 @@
+// ** Variables ** //
+$blue: #00c7d2;
+$yellow: #ffcc00;
+$black: #333333;
+$white: #ffffff;
+
+$text_tn: 12px;
+$text_sm: 16px;
+$text_md: 24px;
+$text_lg: 32px;
+$text_hg: 48px;
+
+.flex {
+  display: flex;
+}
+
+.flex_wrap {
+  flex-wrap: 1;
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.team {
+  margin-top: 150px;
+  width: 100%;
+
+  & > * {
+    width: 25%;
+  }
+}
+
+.team_member {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  .member_image {
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+  }
+
+  .member_title {
+    .member_name {
+      font-size: $text_sm;
+      color: $blue;
+    }
+    .member_position {
+      font-size: $text_tn;
+      font-style: italic;
+      color: lighten($black, 30%);
+    }
+  }
+}
