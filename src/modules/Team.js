@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import '../Team.scss';
-import pic_bibek from '../images/team/bibek.jpg'
-import pic_bibek_fun from '../images/team/bibek_fun.jpg'
-import pic_kiera from '../images/team/kiera.jpg'
-import pic_kiera_fun from '../images/team/kiera_fun.jpg'
-import pic_uma from '../images/team/uma.jpg'
-import pic_uma_fun from '../images/team/uma_fun.jpg'
+import { FontAwesomeLink } from './Skeleton'
+import '../scss/Team.scss';
+import pic_bibek from '../images/team/bibek.jpg';
+import pic_bibek_fun from '../images/team/bibek_fun.jpg';
+import pic_kiera from '../images/team/kiera.jpg';
+import pic_kiera_fun from '../images/team/kiera_fun.jpg';
+import pic_uma from '../images/team/uma.jpg';
+import pic_uma_fun from '../images/team/uma_fun.jpg';
+import placehold300 from '../images/placehold300.png';
+import '../scss/font-awesome.scss';
 
 class Team extends Component {
   render() {
@@ -17,25 +20,71 @@ class Team extends Component {
         position: "Founder",
         image: pic_kiera,
         funImage: pic_kiera_fun,
-        blurb: "I love computer programming and teaching. Guess I've found \
-        a pretty great intersection of my interests!"
       },
       {
         name: "Bibek Ghimire",
         position: "Webmaster, Teacher",
         image: pic_bibek,
         funImage: pic_bibek_fun,
-        blurb: "I love computer programming and teaching. Guess I've found \
-        a pretty great intersection of my interests!"
+        links: {
+          personal: 'http://www.bibekg.com/',
+          facebook: 'http://www.facebook.com/bibekghim'
+        }
       },
       {
         name: "Uma Lakshminarayan",
         position: "PR Rep, Teacher",
         image: pic_uma,
         funImage: pic_uma_fun,
-        blurb: "I love computer programming and teaching. Guess I've found \
-        a pretty great intersection of my interests!"
       },
+      {
+        name: "1",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "2",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "3",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "4",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "5",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "6",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "7",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      },
+      {
+        name: "8",
+        position: "PR Rep, Teacher",
+        image: placehold300,
+        funImage: placehold300,
+      }
     ]
 
     const teamDOM = team.map((member) => (
@@ -75,7 +124,7 @@ class TeamMember extends Component {
     const member = this.props.member;
     const name = member.name;
     const position = member.position;
-    const blurb = member.blurb;
+    const links = member.links;
 
     return (
       <div>
@@ -90,10 +139,28 @@ class TeamMember extends Component {
               <h1 className="member_name">{name}</h1>
               <h2 className="member_position">{position}</h2>
             </div>
+            {links && <MemberLinks links={links}/>}
         </div>
       </div>
     )
   }
 }
+
+class MemberLinks extends Component {
+  render() {
+    const links = this.props.links;
+    return (
+      <span className="member_links">
+        {links.personal &&
+           <FontAwesomeLink link={links.personal} classNames="fa fa-home"/>
+         }
+        {links.facebook &&
+          <FontAwesomeLink link={links.facebook} classNames="fa fa-facebook"/>
+        }
+      </span>
+    );
+  }
+}
+
 
 export default Team;

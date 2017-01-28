@@ -1,0 +1,23 @@
+// ** Variables ** //
+$blue: #00c7d2;
+$yellow: #ffcc00;
+$black: #333333;
+$white: #ffffff;
+
+$text_tn: 12px;
+$text_sm: 16px;
+$text_md: 24px;
+$text_lg: 32px;
+$text_hg: 48px;
+
+#intro_blurb {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.partner_description {
+  flex-grow: 1;
+  h2 {
+    font-style: bold;
+  }
+}

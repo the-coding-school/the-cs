@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-
-import image1 from "../images/carousel/1.png";
-import image2 from "../images/carousel/2.png";
 import demovideo from "../videos/demovideo.mp4";
 import viterbiLogo from "../images/partners/viterbi.png";
 import uscStemLogo from "../images/partners/stem.png";
 import uscJointLogo from "../images/partners/uscjoint.png";
 import hawthorneLogo from "../images/partners/hawthorne.png";
-import '../App.scss';
+import '../scss/App.scss';
+import '../scss/Home.scss';
 
 class Home extends Component {
   render() {
@@ -69,14 +67,18 @@ class Home extends Component {
       }
 
     ]
+    const introParagraphs = [
+      "We are an after-school educational program that teaches computer science to elementary and middle school students.",
+      "We currently offer the Pre-Coding and Coding I classes for K-8 students, suitable for various levels of experience with technology and computer science."
+    ];
 
     return (
       <div className="App">
 
         <Video />
-        <IntroBlurb />
-        <OurCourses courses={courses}/>
-        <OurPartners partners={partners}/>
+        <IntroBlurb paragraphs={introParagraphs} />
+        <OurCourses courses={courses} />
+        <OurPartners partners={partners} />
 
       </div>
     );
@@ -100,9 +102,8 @@ class IntroBlurb extends Component {
   render() {
     return (
       <div className="container" id="intro_blurb">
-        <div className="description">
-          <p><span className="first_letter">W</span>e are an after-school educational program that teaches computer science to elementary and middle school students.</p>
-          <p>We currently offer the Pre-Coding and Coding I classes for K-8 students, suitable for various levels of experience with technology and computer science.</p>
+        <div className="large_p">
+          {this.props.paragraphs.map((p) => <p key={p}>{p}</p>)}
         </div>
         <ActionButton text="Sign up now!"/>
       </div>

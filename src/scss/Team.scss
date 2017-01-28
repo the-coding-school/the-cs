@@ -25,6 +25,7 @@ $text_hg: 48px;
 
 .team {
   margin-top: 150px;
+  margin-bottom: 70px;
   width: 100%;
 
   & > * {
@@ -53,6 +54,14 @@ $text_hg: 48px;
       font-size: $text_tn;
       font-style: italic;
       color: lighten($black, 30%);
+    }
+  }
+
+  .member_links {
+    a {
+      color: $black;
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }

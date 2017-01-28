@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import '../App.scss';
+import '../scss/App.scss';
 
 class Classes extends Component {
   render() {
 
     return (
       <div className="App">
-        <h1>Classes</h1>
-
+        <div className="container">
+          <div className="Our Mission">
+            <h1 class="section_title"></h1>
+          </div>
+        </div>
       </div>
     );
   }

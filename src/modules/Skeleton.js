@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
-import '../App.scss';
+import '../scss/App.scss';
+import '../scss/Skeleton.scss';
 
-class Skeleton extends React.Component {
+export class Skeleton extends React.Component {
    render() {
-
-     // name: represents path for routing
-     // text: what shows up in the navbar
+     // name: represents react routing path
+     // text: navbar text
      const pages = [
-       { path: "", text: "Home" },
        { path: "about", text: "About Us" },
        { path: "team", text: "Our Team" },
-       { path: "classes", text: "Our Classes" }
+       { path: "classes", text: "Classes" }
      ];
       return (
          <div>
@@ -29,11 +28,7 @@ class Navbar extends Component {
     var navItems = items.map((i) => {
       return (
         <Link key={i.path} to={"/" + i.path}>
-
-
             {i.text.toUpperCase()}
-
-
         </Link>
       );
     });
@@ -41,7 +36,9 @@ class Navbar extends Component {
     return (
       <nav className="flex" id="navbar">
         <div className="navbar_logo">
-          <h1><Link to="/">THE CODING SCHOOL</Link></h1>
+          <div className="logo_box">
+            <h1><Link to="/">THE CODING SCHOOL</Link></h1>
+          </div>
         </div>
         <div className="navbar_tabs flex">{navItems}</div>
       </nav>
@@ -52,12 +49,32 @@ class Navbar extends Component {
 class Footer extends Component {
   render() {
     return (
-      <div className='footer container'>
-        <hr/>
-        <footer>Copyright © 2014 - All Rights Reserved - The Coding School</footer>
-      </div>
+        <footer>
+          <div className="social_links">
+            <FontAwesomeLink link="https://www.linkedin.com/company/the-coding-school"
+              classNames="fa fa-linkedin-square"/>
+          </div>
+          <div className="container">
+            <p>Copyright © 2017 - All Rights Reserved - The Coding School</p>
+            <span>
+              <p>Email: <a href="mailto:thecodingschool@live.com">
+                thecodingschool@live.com
+              </a> | Phone: (323)-790-9992</p>
+            </span>
+          </div>
+        </footer>
     );
   }
 }
 
-export default Skeleton
+export class FontAwesomeLink extends Component {
+  render() {
+    const link = this.props.link;
+    const classNames = this.props.classNames;
+    if (this.props.link) {
+      return (
+        <a href={link}><i className={classNames}></i></a>
+      );
+    }
+  }
+}
