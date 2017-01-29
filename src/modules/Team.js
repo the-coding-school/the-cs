@@ -12,8 +12,6 @@ import '../scss/font-awesome.scss';
 
 class Team extends Component {
   render() {
-
-
     const team = [
       {
         name: "Kiera Peltz",
@@ -125,15 +123,19 @@ class TeamMember extends Component {
     const name = member.name;
     const position = member.position;
     const links = member.links;
+    const image = member.image;
+    const funImage = member.funImage;
+    /*               <img src={this.state.image}
+                      alt={name}
+                      onMouseOver={this.setFunPicture}
+                      onMouseLeave={this.setRegPicture}/>*/
 
     return (
-      <div>
+      <div className="team_member_wrapper">
         <div className="team_member">
             <div className="member_image">
-              <img src={this.state.image}
-                  alt={name}
-                  onMouseOver={this.setFunPicture}
-                  onMouseLeave={this.setRegPicture}/>
+              <img className="fun" src={funImage}/>
+              <img className="reg" src={image}/>
             </div>
             <div className="member_title">
               <h1 className="member_name">{name}</h1>
@@ -142,6 +144,7 @@ class TeamMember extends Component {
             {links && <MemberLinks links={links}/>}
         </div>
       </div>
+
     )
   }
 }

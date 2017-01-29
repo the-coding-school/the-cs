@@ -74,11 +74,13 @@ img.full {
   padding: 20px;
   text-align: center;
   margin: 0 auto;
+  transition: all 0.2s;
 
   &:hover {
-    background-color: $blue;
+    // background-color: $blue;
     color: white;
     cursor: pointer;
+    // padding: 40px;
   }
 }
 
@@ -111,6 +113,10 @@ footer {
   }
   a {
     color: $white;
+    transition: all 0.2s;
+    &:hover {
+      color: $black;
+    }
   }
   .copyright {
 

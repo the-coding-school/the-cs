@@ -41,6 +41,11 @@ $text_hg: 48px;
       background-color: $blue;
       border-radius: 3px;
       padding: 5px;
+      transition: all 0.2s;
+
+      &:hover {
+        padding: 10px;
+      }
     }
   }
 
@@ -60,6 +65,8 @@ $text_hg: 48px;
       border-bottom: 5px solid $white;
       color: $black;
       text-decoration: none;
+      padding: 5px;
+      transition: all 0.2s;
 
       &:hover {
         border-bottom: 5px solid $yellow;
