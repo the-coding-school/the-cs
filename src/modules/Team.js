@@ -9,6 +9,7 @@ import pic_uma from '../images/team/uma.jpg';
 import pic_uma_fun from '../images/team/uma_fun.jpg';
 import placehold300 from '../images/placehold300.png';
 import '../scss/font-awesome.scss';
+import ''
 
 class Team extends Component {
   render() {
@@ -103,20 +104,20 @@ class Team extends Component {
 
 class TeamMember extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = { image: this.props.member.image }
-    this.setFunPicture = this.setFunPicture.bind(this);
-    this.setRegPicture = this.setRegPicture.bind(this);
-  }
-
-  setFunPicture() {
-    this.setState({ image: this.props.member.funImage });
-  }
-
-  setRegPicture() {
-    this.setState({ image: this.props.member.image });
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = { image: this.props.member.image }
+  //   this.setFunPicture = this.setFunPicture.bind(this);
+  //   this.setRegPicture = this.setRegPicture.bind(this);
+  // }
+  //
+  // setFunPicture() {
+  //   this.setState({ image: this.props.member.funImage });
+  // }
+  //
+  // setRegPicture() {
+  //   this.setState({ image: this.props.member.image });
+  // }
 
   render() {
     const member = this.props.member;
