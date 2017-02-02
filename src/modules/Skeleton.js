@@ -10,7 +10,7 @@ export class Skeleton extends React.Component {
      const pages = [
        { path: "about", text: "About Us" },
        { path: "team", text: "Our Team" },
-       { path: "classes", text: "Classes" }
+       { path: "sign-up", text: "Sign Up" }
      ];
       return (
          <div>

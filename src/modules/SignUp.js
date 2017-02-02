@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../scss/App.scss';
 
-class Classes extends Component {
+class SignUp extends Component {
   render() {
 
     return (
@@ -16,4 +16,4 @@ class Classes extends Component {
   }
 }
 
-export default Classes;
+export default SignUp;

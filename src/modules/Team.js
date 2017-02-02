@@ -9,7 +9,6 @@ import pic_uma from '../images/team/uma.jpg';
 import pic_uma_fun from '../images/team/uma_fun.jpg';
 import placehold300 from '../images/placehold300.png';
 import '../scss/font-awesome.scss';
-import ''
 
 class Team extends Component {
   render() {
