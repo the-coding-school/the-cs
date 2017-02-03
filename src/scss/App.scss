@@ -106,7 +106,19 @@ footer {
   color: $white;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
+
+  .footer_top {
+    justify-content: space-around;
+  }
+
+  .footer_bottom {
+    text-align: center;
+  }
+
+  .icon_name {
+    text-decoration: underline;
+  }
+
   .social_links {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -115,10 +127,21 @@ footer {
     color: $white;
     transition: all 0.2s;
     &:hover {
-      color: $black;
+      color: $yellow;
     }
-  }
-  .copyright {
+    text-decoration: none;
 
+  }
+  .contact_info p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba($yellow, 1.0);
   }
 }
