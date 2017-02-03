@@ -12,6 +12,24 @@ import '../scss/font-awesome.scss';
 
 class Team extends Component {
   render() {
+
+    const teamHeads = [
+      {
+        name: "Kiera Peltz",
+        position: "Founder",
+        image: pic_kiera,
+        funImage: pic_kiera_fun,
+        description: "Lorem ipsum dolor sit amet, a morbi accumsan pellentesque erat a elit. Suscipit risus pellentesque vivamus at. Vel arcu consectetuer et imperdiet, in nulla, convallis metus sit amet, id lectus ut. Penatibus sem aliquet lacinia egestas donec ipsum, tempus risus non dictumst donec velit, sit commodo, aenean diam scelerisque pretium. Ante justo ultricies est, pellentesque mauris, dolor non vel ridiculus quisque nec, mauris dolor id nibh ut nulla. Lacus cursus adipiscing et dictum, elit in vestibulum sem ut purus, massa ultricies id ullam neque dui nulla, convallis elit ut lectus purus id dolor, tellus tellus. Velit integer mus et, vehicula in dictum, ut maecenas, adipiscing quis laoreet."
+      },
+      {
+        name: "Someone Else Peltz",
+        position: "Founder",
+        image: pic_kiera,
+        funImage: pic_kiera_fun,
+        description: "Lorem ipsum dolor sit amet, a morbi accumsan pellentesque erat a elit. Suscipit risus pellentesque vivamus at. Vel arcu consectetuer et imperdiet, in nulla, convallis metus sit amet, id lectus ut. Penatibus sem aliquet lacinia egestas donec ipsum, tempus risus non dictumst donec velit, sit commodo, aenean diam scelerisque pretium. Ante justo ultricies est, pellentesque mauris, dolor non vel ridiculus quisque nec, mauris dolor id nibh ut nulla. Lacus cursus adipiscing et dictum, elit in vestibulum sem ut purus, massa ultricies id ullam neque dui nulla, convallis elit ut lectus purus id dolor, tellus tellus. Velit integer mus et, vehicula in dictum, ut maecenas, adipiscing quis laoreet."
+      }
+    ]
+
     const team = [
       {
         name: "Kiera Peltz",
@@ -89,34 +107,58 @@ class Team extends Component {
       <TeamMember key={member.name} member={member}/>
     ));
 
+    const teamHeadsDOM = teamHeads.map((member) => (
+      <HeadMember key={member.name} member={member}/>
+    ));
+
     return (
       <div className="App">
         <div className="container">
-          <div className="team flex flex_wrap">
-            {teamDOM}
-          </div>
+            <div className="team_heads row">
+              {teamHeadsDOM}
+            </div>
+
+            <div className="team flex flex_wrap row">
+              {teamDOM}
+            </div>
         </div>
       </div>
     );
   }
 }
 
-class TeamMember extends Component {
+class HeadMember extends Component {
+  render() {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { image: this.props.member.image }
-  //   this.setFunPicture = this.setFunPicture.bind(this);
-  //   this.setRegPicture = this.setRegPicture.bind(this);
-  // }
-  //
-  // setFunPicture() {
-  //   this.setState({ image: this.props.member.funImage });
-  // }
-  //
-  // setRegPicture() {
-  //   this.setState({ image: this.props.member.image });
-  // }
+    const member = this.props.member;
+    const name = member.name;
+    const position = member.position;
+    const links = member.links;
+    const image = member.image;
+    const funImage = member.funImage;
+    const description = member.description;
+
+    return (
+        <div className="head_member flex">
+          <div className="member_image">
+            <div className="image_swapper">
+              <img className="fun" src={funImage}/>
+              <img className="reg" src={image}/>
+            </div>
+          </div>
+          <div className="member_description">
+            <div className="flex_sub">
+              <h1>{name.toUpperCase()}</h1>
+              <h2>{position.toUpperCase()}</h2>
+              <p>{description}</p>
+            </div>
+          </div>
+        </div>
+    );
+  }
+}
+
+class TeamMember extends Component {
 
   render() {
     const member = this.props.member;
