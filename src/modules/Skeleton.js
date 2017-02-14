@@ -87,8 +87,8 @@ class Footer extends Component {
               {
                 pages.map((i) => {
                   return (
-                    <div>
-                      <Link key={i.path} to={"/" + i.path}>
+                    <div key={i.path}>
+                      <Link to={"/" + i.path}>
                           {i.text}
                       </Link>
                     </div>
@@ -117,7 +117,7 @@ class Footer extends Component {
               <h2>Contact</h2>
               <a href="https://www.linkedin.com/company/the-coding-school">
                 <div className="font_awesome">
-                  <i className="fa fa-linkedin-square"/> <span class="icon_name">LinkedIn</span>
+                  <i className="fa fa-linkedin-square"/> <span className="icon_name">LinkedIn</span>
                 </div>
               </a>
 
