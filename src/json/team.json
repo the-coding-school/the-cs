@@ -1,0 +1,69 @@
+{
+  "heads": [
+    {
+      "name": { "first": "Kiera", "last": "Peltz" },
+      "position": "Founder",
+      "description": "Lorem ipsum dolor sit amet, a morbi accumsan pellentesque erat a elit. Suscipit risus pellentesque vivamus at. Vel arcu consectetuer et imperdiet, in nulla, convallis metus sit amet, id lectus ut. Penatibus sem aliquet lacinia egestas donec ipsum, tempus risus non dictumst donec velit, sit commodo, aenean diam scelerisque pretium. Ante justo ultricies est, pellentesque mauris, dolor non vel ridiculus quisque nec, mauris dolor id nibh ut nulla. Lacus cursus adipiscing et dictum, elit in vestibulum sem ut purus, massa ultricies id ullam neque dui nulla, convallis elit ut lectus purus id dolor, tellus tellus. Velit integer mus et, vehicula in dictum, ut maecenas, adipiscing quis laoreet."
+    }
+  ],
+
+  "members": [
+    {
+      "name": { "first": "Bibek", "last": "Ghimire" },
+      "position": "Webmaster, Teacher",
+      "links": {
+        "personal": "http://www.bibekg.com/",
+        "facebook": "http://www.facebook.com/bibekghim"
+      }
+    },
+    {
+      "name":  { "first": "Uma", "last": "Lakshminarayan" },
+      "position": "PR Rep, Teacher"
+    },
+    {
+      "name":  { "first": "Karen", "last": "Fann" },
+      "position": "Teacher",
+      "about_me": "I am a freshman Computer Science and Engineering student at UCLA. In high school, I became really interested in computers and taught myself how to build and program an electric car. Besides coding, I love playing basketball, swimming, and watching movies."
+    },
+    {
+      "name":  { "first": "Jason", "last": "Lin" },
+      "position": "Director of Development",
+      "about_me": "I am a Senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way."
+    },
+    {
+      "name":  { "first": "Baolinh", "last": "Nguyen" },
+      "position": "Teacher",
+      "about_me": "I am a current first year computer science major at UCLA and I am excited to further my passion for computer science and hopefully foster an interest in computer science in the next generation of computer science students."
+    },
+    {
+      "name":  { "first": "Charlie", "last": "Hwang" },
+      "position": "Curriculum Development, Teacher",
+      "about_me": "I’m a sophomore studying Computer Science at USC! I’ve been with The Coding School for half a year now and I have a passion for technology that lets users and developers express themselves creatively - i.e. Web Development, VR, etc."
+    },
+    {
+      "name":  { "first": "Sapharah", "last": "Prescod" },
+      "position": "Teacher",
+      "about_me": "I am a multi-talented individual. My other passions in life are singing and pursuing a healthy lifestyle. I enjoy being active and putting my creative mind to use in technology. I love to seek out new experiences and I enjoy inspiring others to reach for their full potential."
+    },
+    {
+      "name":  { "first": "Ezequil", "last": "Morales" },
+      "position": "Teacher",
+      "about_me": "I'm a student attending CSU Sacramento, pursuing a degree in computer engineering."
+    },
+    {
+      "name":  { "first": "Mindy", "last": "Cao" },
+      "position": "China Project - Web Designer",
+      "about_me": ""
+    },
+    {
+      "name":  { "first": "Crystal", "last": "Hsieh" },
+      "position": "Head of Curriculum",
+      "about_me": "Crystal Hsieh is a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. She's had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. She is also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools."
+    },
+    {
+      "name":  { "first": "Ramya", "last": "Deshpande" },
+      "position": "Teacher",
+      "about_me": "I'm a freshman at the California Institute of Technology, majoring in Bioengineering and minoring in Computer Science. I love the thrill of successful debugging and I'm amazed by the potential artificial intelligence holds for the future. I'm also passionate about writing, Girls in STEM, and Naruto."
+    }
+  ]
+}
