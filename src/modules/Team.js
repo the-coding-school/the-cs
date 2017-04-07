@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeLink } from './Skeleton'
 import '../scss/Team.scss';
-// import pic_bibek from '../images/team/b_ghimire.jpg';
-// import pic_bibek_fun from '../images/team/b_ghimire_fun.jpg';
-// import pic_kiera from '../images/team/kiera.jpg';
-// import pic_kiera_fun from '../images/team/kiera_fun.jpg';
-// import pic_uma from '../images/team/uma.jpg';
-// import pic_uma_fun from '../images/team/uma_fun.jpg';
-// import placehold300 from '../images/placehold300.png';
 import '../scss/font-awesome.scss';
 
 import teamData from '../json/team.json';
@@ -112,7 +105,7 @@ class HoverFadeImage extends Component {
     const rootURL = "http://www.bibekg.com/tcs-images/";
     const funImage = rootURL + this.props.funImage;
     const regImage = rootURL + this.props.regImage;
-
+    console.log(process.env.PUBLIC_URL);
     return (
       <div className="member_image">
 

@@ -9,7 +9,7 @@ const pages = [
   { path: "sign-up", text: "Sign Up" }
 ];
 
-export class Skeleton extends React.Component {
+export class Skeleton extends Component {
    render() {
      // name: represents react routing path
      // text: navbar text
@@ -37,9 +37,10 @@ class Navbar extends Component {
 
     return (
       <nav className="flex" id="navbar">
-        <div className="navbar_logo">
+        <div className="navbar_logo btn btn_inflate">
           <div className="logo_box">
-            <h1><Link to="/">THE CODING SCHOOL</Link></h1>
+            <h1 id="long_nav_logo"><Link to="/">THE CODING SCHOOL</Link></h1>
+            <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
           </div>
         </div>
         <div className="navbar_tabs flex">{navItems}</div>
@@ -81,8 +82,8 @@ class Footer extends Component {
     return (
         <footer>
 
-          <div className="flex footer_top">
-            <div className="int_links">
+          <div className="footer_top">
+            <div className="int_links col-md-4">
               <h2>Links</h2>
               {
                 pages.map((i) => {
@@ -97,7 +98,7 @@ class Footer extends Component {
               }
             </div>
 
-            <div className="ext_resources">
+            <div className="ext_resources col-md-4">
               <div>
                 <h2>Resources</h2>
                 {
@@ -112,20 +113,22 @@ class Footer extends Component {
               </div>
             </div>
 
-            <div className="contact_info">
+            <div className="contact_info col-md-4">
 
               <h2>Contact</h2>
-              <a href="https://www.linkedin.com/company/the-coding-school">
+              <a href={linkedInLink}>
                 <div className="font_awesome">
                   <i className="fa fa-linkedin-square"/> <span className="icon_name">LinkedIn</span>
                 </div>
               </a>
 
-              <div>
+              <div className="main_font">
                 <i className="fa fa-envelope"/> info.thecodingschool@gmail.com
               </div>
 
-              <i className="fa fa-phone"/> (323)-790-9992
+              <div className="main_font">
+                <i className="fa fa-phone"/> (323)-790-9992
+              </div>
 
               <p><strong>The Coding School</strong>
               <br/>3940 Laurel Cyn Blvd
@@ -154,5 +157,28 @@ export class FontAwesomeLink extends Component {
         <a href={link}><i className={classNames}></i></a>
       );
     }
+  }
+}
+
+export class TextBlock extends Component {
+  render() {
+    let paragraphs = this.props.paragraphs.map(function(p) {
+      return <p key={p.substr(0, 10)}>{p}</p>
+    });
+
+    return (<div className="paragraphs"> {paragraphs} </div>);
+  }
+}
+
+export class TitledParagraphs extends Component {
+  render() {
+    const title = this.props.title;
+    const paragraphs = this.props.paragraphs;
+    return (
+      <div className="paragraph titled" key={title}>
+        <h1 className="title">{title}</h1>
+        <TextBlock paragraphs={paragraphs} />
+      </div>
+    );
   }
 }

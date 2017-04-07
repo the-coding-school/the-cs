@@ -1,0 +1,36 @@
+{
+  "courses": [
+    {
+      "name": "Pre-Coding",
+      "description": "Computer thinking skills"
+    },
+    {
+      "name": "Coding I",
+      "description": "Coding basics in Python"
+    },
+    {
+      "name": "Web Coding I",
+      "description": "HTML/CSS"
+    },
+    {
+      "name": "Web Coding II",
+      "description": "HTML/CSS continued"
+    },
+    {
+      "name": "Javascript I",
+      "description": "Adding functionality to websites"
+    },
+    {
+      "name": "Javascript II",
+      "description": "Adding even more functionality to websites"
+    },
+    {
+      "name": "Unity I",
+      "description": "Intro to 3D game development"
+    },
+    {
+      "name": "Unity II",
+      "description": "Dive deeper into 3D game development"
+    }
+  ]
+}

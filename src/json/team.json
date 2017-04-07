@@ -10,11 +10,7 @@
   "members": [
     {
       "name": { "first": "Bibek", "last": "Ghimire" },
-      "position": "Webmaster, Teacher",
-      "links": {
-        "personal": "http://www.bibekg.com/",
-        "facebook": "http://www.facebook.com/bibekghim"
-      }
+      "position": "Webmaster, Teacher"
     },
     {
       "name":  { "first": "Uma", "last": "Lakshminarayan" },
@@ -64,6 +60,11 @@
       "name":  { "first": "Ramya", "last": "Deshpande" },
       "position": "Teacher",
       "about_me": "I'm a freshman at the California Institute of Technology, majoring in Bioengineering and minoring in Computer Science. I love the thrill of successful debugging and I'm amazed by the potential artificial intelligence holds for the future. I'm also passionate about writing, Girls in STEM, and Naruto."
+    },
+    {
+      "name": { "first": "Eloisa", "last": "Esparza" },
+      "position": "Teacher",
+      "about_me": "I am currently a Senior at Sacramento State majoring in Computer Engineering. I enjoy teaching engineering and programming to K-12."
     }
   ]
 }

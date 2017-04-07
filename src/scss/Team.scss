@@ -4,11 +4,16 @@ $yellow: #ffcc00;
 $black: #333333;
 $white: #ffffff;
 
-$text_tn: 12px;
-$text_sm: 16px;
+$text_tn: 14px;
+$text_sm: 18px;
 $text_md: 24px;
 $text_lg: 32px;
 $text_hg: 48px;
+
+$bpoint_sm: 600px;
+$bpoint_md: 1000px;
+
+$member_image_size: 130px;
 
 .row {
   margin-top: 150px;
@@ -18,45 +23,63 @@ $text_hg: 48px;
 .team {
   width: 100%;
   justify-content: center;
+
   & > * {
-    width: 25%;
+    padding: 20px;
   }
 }
 
 .head_member {
   margin-bottom: 50px;
-  &:nth-child(even) {
-    .member_image {
-      order: 1;
+  display: flex;
+  @media (min-width: $bpoint_md) {
+    &:nth-child(even) {
+      .member_image {
+        order: 1;
+      }
+      .member_description {
+        order: 2;
+      }
+    }
+    &:nth-child(odd) {
+      .member_image {
+        order: 2;
+      }
+      .member_description {
+        order: 1;
+      }
     }
     .member_description {
-      order: 2;
+      width: 65%;
+    }
+    .member_image {
+      width: 400px;
+      height: 400px;
+      img {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+      }
     }
   }
 
-  &:nth-child(odd) {
-    .member_image {
-      order: 2;
-    }
-    .member_description {
-      order: 1;
-    }
-  }
+  @media (max-width: $bpoint_md - 1) {
+    flex-wrap: wrap;
 
+    align-items: center;
+    .member_image {
+      width: 260px;
+      height: 260px;
+      img {
+        width: 260px;
+        height: 260px;
+      }
+    }
+
+  }
   .member_image {
-    width: 35%;
-    // height: 400px;
-    // width: 300px;
-    max-height: 100%;
-    display: flex;
-    // height: 100%;
-    // align-items: center;
 
     img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      max-height: 400px;
       transition: all 1s;
       &.reg:hover {
         opacity: 0;
@@ -64,9 +87,9 @@ $text_hg: 48px;
     }
   }
   .member_description {
-    width: 65%;
+
     .flex_sub {
-      padding: 15px;
+      padding: 25px;
     }
 
     h1 {
@@ -78,7 +101,9 @@ $text_hg: 48px;
       font-weight: 400;
     }
     p {
+      font-size: $text_sm;
       color: lighten($black, 20%);
+
     }
   }
 
@@ -107,11 +132,11 @@ $text_hg: 48px;
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: center;
-  width: 200px;
+  width: $member_image_size;
 
   .member_image {
-    width: 200px;
-    height: 200px;
+    width: $member_image_size;
+    height: $member_image_size;
     img {
       width: 100%;
       height: 100%;

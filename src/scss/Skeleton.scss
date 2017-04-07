@@ -4,11 +4,21 @@ $yellow: #ffcc00;
 $black: #333333;
 $white: #ffffff;
 
-$text_tn: 12px;
-$text_sm: 16px;
+$text_tn: 14px;
+$text_sm: 18px;
 $text_md: 24px;
 $text_lg: 32px;
 $text_hg: 48px;
+
+$bpoint_sm: 600px;
+$bpoint_md: 1000px;
+
+$main_font: 'Montserrat', sans-serif;
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
 
 #navbar {
   width: 100%;
@@ -34,38 +44,64 @@ $text_hg: 48px;
     justify-content: center;
     height: 100%;
 
+    @media (max-width: $bpoint_sm - 1) {
+      #long_nav_logo {
+        display: none;
+      }
+      #short_nav_logo {
+        display: block;
+      }
+    }
+
+    @media (min-width: $bpoint_sm) {
+      #long_nav_logo {
+        display: block;
+      }
+      #short_nav_logo {
+        display: none;
+      }
+    }
+
     a {
       font-size: $text_md;
       color: $white;
       text-decoration: none;
       background-color: $blue;
       border-radius: 3px;
-      padding: 5px;
-      transition: all 0.2s;
+      padding: 10px;
 
+      transition: all 0.4s;
       &:hover {
-        padding: 10px;
+        padding: 15px;
       }
     }
+
+
+  }
+
+  .logo_box {
+    @include flex-vertical-center;
   }
 
   .navbar_tabs {
     flex-grow: 1;
-
+    justify-content: space-between;
     a {
       list-style: none;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-grow: 1;
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
       cursor: pointer;
       border: 1px solid $white;
       border-bottom: 5px solid $white;
       color: $black;
       text-decoration: none;
-      padding: 5px;
+
       transition: all 0.2s;
 
       &:hover {
@@ -78,5 +114,64 @@ $text_hg: 48px;
         color: $white;
       }
     }
+  }
+}
+
+footer {
+
+  a, h1, h2, p, i, div {
+    color: $white;
+    font-weight: bold;
+  }
+
+  background-color: $blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .footer_top {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    @media (max-width: $bpoint_sm) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .footer_bottom {
+    text-align: center;
+  }
+
+  .icon_name {
+    text-decoration: underline;
+  }
+
+  .social_links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  a {
+    color: $white;
+    transition: all 0.2s;
+    &:hover {
+      color: $yellow;
+    }
+    text-decoration: none;
+
+  }
+  .contact_info p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba($white, 1.0);
   }
 }
