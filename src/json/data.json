@@ -1,0 +1,212 @@
+{
+  "introParagraphs": [
+    "The Coding School is a 501c3 non-profit that teaches computer programming to elementary and middle school students. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes."
+  ],
+  "partnersParagraphs": [
+    "To ensure quality curriculum and outreach, we are proud to be partnered with these great organizations."
+  ],
+  "aboutPage": [
+    {
+      "title": "Our Mission",
+      "paragraphs": [
+          "Our mission is to ensure our children are equipped to thrive in this technologically-driven world."
+      ]
+    },
+    {
+      "title": "Who We Are",
+      "paragraphs": [
+        "Founded in 2014, The Coding School is a 501c3 non-profit dedicated to equipping children with the skills and knowledge needed to thrive in our tech-driven world.",
+        "We teach coding to elementary, middle and high school students so this universal language becomes second nature. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes. However, there is a fundamental disconnect between what students are learning in school and what is happening in the real world.",
+        "Whilst growing up through the US education system, founder Kiera Peltz witnessed this disconnect personally. Disappointed in the level of computer science education offered to K-12 students, Kiera researched how other countries were educating their children. She felt the American system was not preparing students for a future where computer language will be the universal language for education, work and play. She sought a way to fix this gap; founding The Coding School in 2014."
+      ]
+    },
+    {
+      "title": "What We Do",
+      "paragraphs": [
+        "Our team offers long-term coding education with weekly classes as part of a 3-year curriculum.",
+        "We at The Coding School believe that coding is a source of empowerment. Yes, we’re training the next generation of coders, but we’re also training the next generation of problem solvers who will become CEOs, politicians, and scientists."
+      ]
+    },
+    {
+      "title": "Why We Do It",
+      "paragraphs": [
+        "There is a fundamental disconnect between what students are learning in school and what is happening in the real world. The current education system is not preparing students with the necessary critical thinking and computational skills necessary to succeed and address the most pressing issues in the 21st century.",
+        "That’s where The Coding School comes in. We aim to bridge this gap."
+      ]
+    }
+  ],
+  "ourImpact": [
+    {
+      "title": "Our Impact",
+      "paragraphs": [
+        "Uniquely, we deliver quality and assured curriculum directly to students in their schools -- regardless of socio-economic status.  This is delivered by passionate experts who live and breath coding and inspire children with the real-world applications.  Our children need to thrive, compete and operate in our ever-increasing tech-driven economy.  We are preparing the minds of children to be thinkers and problem solvers, and perhaps one day one of our students will create the innovation that overcomes a major societal challenge!"
+      ]
+    }
+  ],
+  "partners": [
+    {
+      "name": "USC’s STEM Consortium",
+      "description": "lol",
+      "imageSrc": "uscstem.png"
+    },
+    {
+      "name": "USC Viterbi School of Engineering",
+      "description": "lol1",
+      "imageSrc": "viterbi.png"
+    },
+    {
+      "name": "USC’s Joint Education Project",
+      "description": "lol2",
+      "imageSrc": "uscjoint.png"
+    },
+    {
+      "name": "Brown University’s Computing & Information Services",
+      "description": "lol3",
+      "imageSrc": "brownuniversity.png"
+    },
+    {
+      "name": "Hawthorne",
+      "description": "lol3",
+      "imageSrc": "hawthorne.png"
+    }
+  ],
+  "team": {
+    "heads": [
+      {
+        "name": { "first": "Kiera", "last": "Peltz" },
+        "position": "Founder",
+        "description": "Lorem ipsum dolor sit amet, a morbi accumsan pellentesque erat a elit. Suscipit risus pellentesque vivamus at. Vel arcu consectetuer et imperdiet, in nulla, convallis metus sit amet, id lectus ut. Penatibus sem aliquet lacinia egestas donec ipsum, tempus risus non dictumst donec velit, sit commodo, aenean diam scelerisque pretium. Ante justo ultricies est, pellentesque mauris, dolor non vel ridiculus quisque nec, mauris dolor id nibh ut nulla. Lacus cursus adipiscing et dictum, elit in vestibulum sem ut purus, massa ultricies id ullam neque dui nulla, convallis elit ut lectus purus id dolor, tellus tellus. Velit integer mus et, vehicula in dictum, ut maecenas, adipiscing quis laoreet."
+      }
+    ],
+
+    "members": [
+      {
+        "name": { "first": "Bibek", "last": "Ghimire" },
+        "position": "Webmaster, Teacher"
+      },
+      {
+        "name":  { "first": "Uma", "last": "Lakshminarayan" },
+        "position": "PR Rep, Teacher"
+      },
+      {
+        "name":  { "first": "Karen", "last": "Fann" },
+        "position": "Teacher",
+        "about_me": "I am a freshman Computer Science and Engineering student at UCLA. In high school, I became really interested in computers and taught myself how to build and program an electric car. Besides coding, I love playing basketball, swimming, and watching movies."
+      },
+      {
+        "name":  { "first": "Jason", "last": "Lin" },
+        "position": "Director of Development",
+        "about_me": "I am a Senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way."
+      },
+      {
+        "name":  { "first": "Baolinh", "last": "Nguyen" },
+        "position": "Teacher",
+        "about_me": "I am a current first year computer science major at UCLA and I am excited to further my passion for computer science and hopefully foster an interest in computer science in the next generation of computer science students."
+      },
+      {
+        "name":  { "first": "Charlie", "last": "Hwang" },
+        "position": "Curriculum Development, Teacher",
+        "about_me": "I’m a sophomore studying Computer Science at USC! I’ve been with The Coding School for half a year now and I have a passion for technology that lets users and developers express themselves creatively - i.e. Web Development, VR, etc."
+      },
+      {
+        "name":  { "first": "Sapharah", "last": "Prescod" },
+        "position": "Teacher",
+        "about_me": "I am a multi-talented individual. My other passions in life are singing and pursuing a healthy lifestyle. I enjoy being active and putting my creative mind to use in technology. I love to seek out new experiences and I enjoy inspiring others to reach for their full potential."
+      },
+      {
+        "name":  { "first": "Ezequil", "last": "Morales" },
+        "position": "Teacher",
+        "about_me": "I'm a student attending CSU Sacramento, pursuing a degree in computer engineering."
+      },
+      {
+        "name":  { "first": "Mindy", "last": "Cao" },
+        "position": "China Project - Web Designer",
+        "about_me": ""
+      },
+      {
+        "name":  { "first": "Crystal", "last": "Hsieh" },
+        "position": "Head of Curriculum",
+        "about_me": "Crystal Hsieh is a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. She's had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. She is also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools."
+      },
+      {
+        "name":  { "first": "Ramya", "last": "Deshpande" },
+        "position": "Teacher",
+        "about_me": "I'm a freshman at the California Institute of Technology, majoring in Bioengineering and minoring in Computer Science. I love the thrill of successful debugging and I'm amazed by the potential artificial intelligence holds for the future. I'm also passionate about writing, Girls in STEM, and Naruto."
+      },
+      {
+        "name": { "first": "Eloisa", "last": "Esparza" },
+        "position": "Teacher",
+        "about_me": "I am currently a Senior at Sacramento State majoring in Computer Engineering. I enjoy teaching engineering and programming to K-12."
+      },
+      {
+        "name": { "first": "Natalie", "last": "Ethell" },
+        "position": "Teacher",
+        "about_me": ""
+      }
+    ]
+  },
+  "curriculumParagraphs": [
+    {
+      "title": "Our Curriculum",
+      "paragraphs": [
+        "Our 3-year plan is designed to get students excited about coding by exposing them to a variety of coding languages in which they can create projects that come to life with each computer keystroke. While creating websites, animated drawings and action games they’ll also be learning the key coding concepts that are universal across all coding languages. In addition, our courses are geared to improve the student’s critical and computational thinking skills and also to lay the groundwork in providing them with the competitive edge for colleges and jobs."
+      ]
+    },
+    {
+      "title": "Web Coding I & II",
+      "paragraphs": [
+        "Web Coding I introduces students to HTML & CSS. Students will learn how to build the structure of a webpage, import text, add images, create links, and then how to add style to their webpage with color, borders, creative fonts and so much more.",
+        "In Web Coding II, students will create multiple webpages and learn how to link those webpages together to create their very own website! They'll learn how to create and add tabs, buttons, search bars, sidebars, sign-up pages and more. They'll be designing their own 'business' from record labels to pet stores to major league baseball teams and then once they've created a website for their 'company', they'll learn how to host their websites online for free!"
+      ]
+    },
+    {
+      "title": "Javascript I & II: Drawing & Animation",
+      "paragraphs": [
+        "JavaScript is one of the most important & dynamic programming languages! It’s widely used in game development and is the language used to bring all websites to life!",
+        "In JS I, students will learn how to draw robots and make them move... all by writing code! To do this, they’ll learn how to navigate the text editor, JS Fiddle; how to use pixels and processing; what booleans are and how to code using variables, loops, conditionals and logical operators.",
+        "In JS II, students will take their drawings and animations to the next level while learning to code using functions, loops, arrays and objects.",
+        "The concepts focused on in JS I & II are the fundamental coding concepts necessary for all programming languages."
+      ]
+    },
+    {
+      "title": "Unity 3-D Game Development",
+      "paragraphs": [
+        "3-D Game Development is sure to get the kids excited about coding! Students will build their own 3-D Game!  They’ll also learn the fundamental tools of Unity and how to navigate its sophisticated software environment.  This alone will tremendously improve your child’s tech proficiency. Unity is the industry standard and it is the software used by all professional game developers."
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "name": "Pre-Coding",
+      "description": "Computer thinking skills"
+    },
+    {
+      "name": "Coding I",
+      "description": "Coding basics in Python"
+    },
+    {
+      "name": "Web Coding I",
+      "description": "HTML/CSS"
+    },
+    {
+      "name": "Web Coding II",
+      "description": "HTML/CSS continued"
+    },
+    {
+      "name": "Javascript I",
+      "description": "Adding functionality to websites"
+    },
+    {
+      "name": "Javascript II",
+      "description": "Adding even more functionality to websites"
+    },
+    {
+      "name": "Unity I",
+      "description": "Intro to 3D game development"
+    },
+    {
+      "name": "Unity II",
+      "description": "Dive deeper into 3D game development"
+    }
+  ]
+}

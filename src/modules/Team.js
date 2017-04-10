@@ -3,11 +3,12 @@ import { FontAwesomeLink } from './Skeleton'
 import '../scss/Team.scss';
 import '../scss/font-awesome.scss';
 
-import teamData from '../json/team.json';
+import dataJSON from '../json/data.json';
 
 class Team extends Component {
   render() {
 
+    const teamData = dataJSON.team;
     function sortMembers(a, b) {
       const nameA = a.name.first + " " + a.name.last;
       const nameB = b.name.first + " " + b.name.last;
@@ -49,7 +50,6 @@ class HeadMember extends Component {
     const nameObj = member.name;
     const name = nameObj.first + " " + nameObj.last;
     const position = member.position;
-    const links = member.links;
     const regImage = member.name.first[0] + "_" + member.name.last + ".jpg";
     const funImage = member.name.first[0] + "_" + member.name.last + "_fun.jpg";
     const description = member.description;
@@ -93,7 +93,6 @@ class TeamMember extends Component {
             {links && <MemberLinks links={links}/>}
         </div>
       </div>
-
     )
   }
 }
@@ -101,17 +100,14 @@ class TeamMember extends Component {
 class HoverFadeImage extends Component {
 
   render() {
-
-    const rootURL = "http://www.bibekg.com/tcs-images/";
-    const funImage = rootURL + this.props.funImage;
-    const regImage = rootURL + this.props.regImage;
+    const root = process.env.PUBLIC_URL + "/images/team/";
+    const funImage = root + this.props.funImage;
+    const regImage = root + this.props.regImage;
     console.log(process.env.PUBLIC_URL);
     return (
       <div className="member_image">
-
-          <img className="fun" src={funImage}/>
-          <img className="reg" src={regImage}/>
-
+        <img className="fun" src={funImage} alt="fun" />
+        <img className="reg" src={regImage} alt="regular" />
       </div>
     );
   }
@@ -132,6 +128,5 @@ class MemberLinks extends Component {
     );
   }
 }
-
 
 export default Team;

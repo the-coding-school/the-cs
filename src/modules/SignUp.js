@@ -1,14 +1,24 @@
 import React, { Component } from 'react';
 import '../scss/App.scss';
-
-import coursesData from '../json/courses.json'
+import { TitledParagraphs } from './Skeleton';
+import dataJSON from '../json/data.json';
 
 class SignUp extends Component {
   render() {
+    const courses = dataJSON.courses;
+    const curriculum = dataJSON.curriculumParagraphs;
+    const curriculumDOM = curriculum.map(function(p) {
+      return (
+          <TitledParagraphs title={p.title} paragraphs={p.paragraphs} />
+      );
+    });
 
     return (
       <div className="App">
-        <OurCourses />
+        <div className="container">
+          {curriculumDOM}
+          <OurCourses />
+        </div>
       </div>
     );
   }
@@ -17,17 +27,14 @@ class SignUp extends Component {
 class OurCourses extends Component {
   render() {
 
-    const courses = coursesData.courses;
+    const courses = dataJSON.courses;
     const coursesDOM = courses.map((c) =>
       <Course key={c.name} name={c.name} description={c.description}/>
     );
 
     return (
-      <div className="container">
-        <h1 className="title">OUR COURSES</h1>
-        <div className="our_classes flex flex_wrap">
-          {coursesDOM}
-        </div>
+      <div className="our_courses">
+
       </div>
     );
   }

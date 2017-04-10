@@ -1,29 +1,16 @@
 import React, { Component } from 'react';
 import demovideo from "../videos/demovideo.mp4";
-import viterbiLogo from "../images/partners/viterbi.png";
-import uscStemLogo from "../images/partners/stem.png";
-import uscJointLogo from "../images/partners/uscjoint.png";
-import hawthorneLogo from "../images/partners/hawthorne.png";
-import schoolIcon from "../images/school.png";
-import studentIcon from "../images/student.png";
-import groupIcon from "../images/group.png";
-import classImage1 from "../images/classroom/1.jpg";
-import classImage2 from "../images/classroom/2.jpg";
-import images from "../json/images.json";
 import { TitledParagraphs } from "./Skeleton";
+import dataJSON from "../json/data.json";
 import '../scss/App.scss';
 import '../scss/Home.scss';
 import '../css/animate.css';
 
-import content from '../json/about.json'
-
 class Home extends Component {
   render() {
-    const partners = [];
-    const introParagraphs = [
-      "The Coding School is a 501c3 non-profit that teaches computer programming to elementary and middle school students. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes.",
-      "We currently offer the Pre-Coding and Coding I classes for K-8 students, suitable for various levels of experience with technology and computer science."
-    ];
+    const partners = dataJSON.partners;
+    const introParagraphs = dataJSON.introParagraphs;
+    const partnersParagraphs = dataJSON.partnersParagraphs;
 
     return (
       <div className="App">
@@ -36,7 +23,10 @@ class Home extends Component {
           <hr />
           <ImagePanel />
           <hr/>
-          <OurPartners partners={partners} />
+          <div>
+          <TitledParagraphs title="Our Partners" paragraphs={partnersParagraphs} />
+          </div>
+          <PartnersPanel partners={partners}/>
 
         </div>
       </div>
@@ -48,42 +38,10 @@ class Video extends Component {
   render() {
     return (
       <div id="video">
-        <video autoPlay muted loop>
-          <source src={demovideo} type="video/mp4"/>
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    );
-  }
-}
-
-class IntroBlurb extends Component {
-  render() {
-    return (
-      <div className="container" id="intro_blurb">
-        <div className="large_p">
-          {this.props.paragraphs.map((p) => <p key={p}>{p}</p>)}
-        </div>
-        <ActionButton text="Sign up now!"/>
-      </div>
-    );
-  }
-}
-
-class PhotoAlbum extends Component {
-  render() {
-
-    const polaroids = images.images.map(function(image) {
-      return (
-        <a href={image.link} className="medium polaroid">
-          <img src={image.src} alt={image.name} />{image.description}
-        </a>
-      );
-    });
-
-    return (
-      <div className="photo-album">
-        {polaroids}
+          <video autoPlay muted loop>
+            <source src={demovideo} type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
       </div>
     );
   }
@@ -91,19 +49,19 @@ class PhotoAlbum extends Component {
 
 class ImagePanel extends Component {
   render() {
-
+    const root = process.env.PUBLIC_URL + "/images/classroom/";
     return (
       <div className="image_panel">
         <div className="flex shrink-2">
-          <img src="http://www.placehold.it/400x400" />
-          <img src="http://www.placehold.it/400x400" />
+          <img src={root + "400x400-1.jpg"} alt="placeholder" width="400" height="400" />
+          <img src={root + "400x400-2.jpg"} alt="placeholder" width="400" height="400" />
         </div>
         <div>
-          <img src="http://www.placehold.it/820x400" />
+          <img src={root + "800x400-1.jpg"} alt="placeholder" width="800" height="400" />
         </div>
         <div className="flex shrink-2">
-          <img src="http://www.placehold.it/400x400" />
-          <img src="http://www.placehold.it/400x400" />
+          <img src={root + "400x400-3.jpg"} alt="placeholder" width="400" height="400" />
+          <img src={root + "400x400-4.jpg"} alt="placeholder" width="400" height="400" />
         </div>
       </div>
     );
@@ -113,13 +71,23 @@ class ImagePanel extends Component {
 class OurImpact extends Component {
   render() {
 
+    const schoolIcon = process.env.PUBLIC_URL + "/images/school.png";
+    const studentIcon = process.env.PUBLIC_URL + "/images/student.png";
+    const groupIcon = process.env.PUBLIC_URL + "/images/group.png";
+    const impact = dataJSON.ourImpact;
+    const impactDOM = impact.map(function(i) {
+      return <TitledParagraphs title={i.title} paragraphs={i.paragraphs} />
+    })
     return (
-      <div className="container">
-        <div className="our_impact flex">
+      <div className="our_impact">
+        {impactDOM}
+        <hr/>
+        <div className="statistics flex">
           <Statistic imageSrc={schoolIcon} number="16" description="schools" />
           <Statistic imageSrc={studentIcon} number="1,800" description="students" />
           <Statistic imageSrc={groupIcon} number="44%" description="minority students" />
         </div>
+
       </div>
     );
   }
@@ -130,7 +98,7 @@ class Statistic extends Component {
     const p = this.props;
     return (
       <div className="statistic">
-        <img src={p.imageSrc} width="80" height="80" />
+        <img alt="statistic" src={p.imageSrc} width="80" height="80" />
         <h2>{p.number}</h2>
         <p>{p.description}</p>
       </div>
@@ -138,85 +106,16 @@ class Statistic extends Component {
   }
 }
 
-class SchoolVisualization extends Component {
+class PartnersPanel extends Component {
   render() {
-
-    var schoolArray = [];
-    var schoolImage = <img src={schoolIcon} width="50" height="50"/>
-    for (var i = 0; i < 16; i++) {
-      schoolArray.push(schoolImage);
-    }
-    return (
-      <div className="wow bounceInLeft">
-        {schoolArray}
-      </div>
-    );
-  }
-}
-
-class Testimonials extends Component {
-  render() {
-
-    return (
-      <div className="container">
-        <h1 className="title_sm">Testimonials</h1>
-        <div className="our_impact flex flex_wrap">
-
-        </div>
-      </div>
-    );
-  }
-}
-
-
-
-
-class OurCourses extends Component {
-  render() {
-
-    const courses = this.props.courses;
-    const coursesDOM = courses.map((c) =>
-      <Course key={c.name} name={c.name} description={c.description}/>
-    );
-
-    return (
-      <div className="container">
-        <h1 className="title">OUR COURSES</h1>
-        <div className="our_classes flex flex_wrap">
-          {coursesDOM}
-        </div>
-      </div>
-    );
-  }
-}
-
-class Course extends Component {
-  render() {
-    return (
-      <div className="cell_wrapper">
-        <div className="cell">
-          <h2>{this.props.name}</h2>
-          <p>{this.props.description}</p>
-        </div>
-      </div>
-    );
-  }
-}
-
-class OurPartners extends Component {
-  render() {
-
-    const p = this.props.partners;
-    const partnersDOM = p.map((p) => {
-      return <Partner key={p.name} imageURL={p.image} name={p.name} description={p.description} />
+    const partnersDOM = this.props.partners.map((p) => {
+      const imageSrc = process.env.PUBLIC_URL + "/images/partners/" + p.imageSrc;
+      return <Partner key={p.name} imageSrc={imageSrc} name={p.name} description={p.description} />
     });
 
     return (
-      <div className="container">
-        <h1 className="title">OUR PARTNERS</h1>
-        <div className="our_partners flex flex_wrap">
-          {partnersDOM}
-        </div>
+      <div className="partners flex flex_wrap">
+        {partnersDOM}
       </div>
     );
   }
@@ -224,27 +123,13 @@ class OurPartners extends Component {
 
 class Partner extends Component {
   render() {
+    const p = this.props;
     return (
-      <div className="cell_wrapper">
-        <div className="cell partner flex">
-          <div className="partner_logo">
-            <img alt="partner" width="160" height="160" src={this.props.imageURL}/>
-          </div>
-          <div className="partner_description">
-            <h2>{this.props.name}</h2>
-            <p>{this.props.description}</p>
-          </div>
+      <div className="partner_wrapper">
+        <div className="partner">
+          <img src={p.imageSrc} width="180" height="180" />
+          <div className="partner_description"><p>{p.name}</p></div>
         </div>
-      </div>
-    );
-  }
-}
-
-class ActionButton extends Component {
-  render() {
-    return (
-      <div className="flex_center btn btn_inflate">
-        <button className="action_button">{this.props.text}</button>
       </div>
     );
   }

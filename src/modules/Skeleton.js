@@ -182,3 +182,13 @@ export class TitledParagraphs extends Component {
     );
   }
 }
+
+class ActionButton extends Component {
+  render() {
+    return (
+      <div className="flex_center btn btn_inflate">
+        <button className="action_button">{this.props.text}</button>
+      </div>
+    );
+  }
+}
