@@ -15,19 +15,20 @@ class Home extends Component {
     return (
       <div className="App">
         <Video />
-        <div className="home_page container">
+        <div className="home page container">
 
           <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
           <hr />
           <OurImpact />
+          <hr />
+          <Testimonials />
           <hr />
           <ImagePanel />
           <hr/>
           <div>
           <TitledParagraphs title="Our Partners" paragraphs={partnersParagraphs} />
           </div>
-          <PartnersPanel partners={partners}/>
-
+          <PartnersPanel />
         </div>
       </div>
     );
@@ -76,7 +77,7 @@ class OurImpact extends Component {
     const groupIcon = process.env.PUBLIC_URL + "/images/group.png";
     const impact = dataJSON.ourImpact;
     const impactDOM = impact.map(function(i) {
-      return <TitledParagraphs title={i.title} paragraphs={i.paragraphs} />
+      return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
     })
     return (
       <div className="our_impact">
@@ -106,11 +107,48 @@ class Statistic extends Component {
   }
 }
 
+class Testimonials extends Component {
+  render() {
+
+    const testimonialsDOM = dataJSON.testimonials.map(function(t) {
+      const imageSrc = process.env.PUBLIC_URL + t.imageSrc;
+      return (
+        <Testimonial key={t.author} imageSrc={imageSrc} quote={t.quote} author={t.author} />
+      );
+    })
+
+    return (
+      <div className="testimonials">
+        {testimonialsDOM}
+      </div>
+    );
+  }
+}
+
+class Testimonial extends Component {
+  render() {
+
+    return (
+        <div className="testimonial_wrapper">
+          <div className="testimonial">
+            <img src={this.props.imageSrc} alt="testimonial" />
+            <div className="testimonial_quote">
+              <p>{this.props.quote}</p>
+            </div>
+            <div className="testimonial_author">
+              {this.props.author.toUpperCase()}
+            </div>
+          </div>
+        </div>
+    );
+  }
+}
+
 class PartnersPanel extends Component {
   render() {
-    const partnersDOM = this.props.partners.map((p) => {
+    const partnersDOM = dataJSON.partners.map((p) => {
       const imageSrc = process.env.PUBLIC_URL + "/images/partners/" + p.imageSrc;
-      return <Partner key={p.name} imageSrc={imageSrc} name={p.name} description={p.description} />
+      return <Partner key={p.name} imageSrc={imageSrc} name={p.name} description={p.description} link={p.link}/>
     });
 
     return (
@@ -126,10 +164,12 @@ class Partner extends Component {
     const p = this.props;
     return (
       <div className="partner_wrapper">
+        <a href={p.link}>
         <div className="partner">
-          <img src={p.imageSrc} width="180" height="180" />
+          <img src={p.imageSrc} alt="partner" width="180" height="180" />
           <div className="partner_description"><p>{p.name}</p></div>
         </div>
+        </a>
       </div>
     );
   }

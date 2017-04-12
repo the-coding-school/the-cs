@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6, p, a, .main_font {
   font-family: 'Montserrat', sans-serif;
 }
 
+p {
+  line-height: $text_sm * 1.37;
+}
+
 img.full {
   width: 100%;
 }
@@ -56,8 +60,8 @@ hr {
     margin-right: 3%;
   }
   @media (min-width: $bpoint_sm) {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -71,22 +75,7 @@ hr {
   color: $blue;
 }
 
-.title_sm {
-  font-size: $text_md;
-  color: rgba($blue, 0.7);
-}
 
-.large_p {
-  font-size: $text_lg;
-  color: $black;
-  line-height: 1.35 * $text_lg;
-}
-
-.med_p {
-  font-size: $text_md;
-  color: $black;
-  line-height: 1.35 * $text_md;
-}
 
 .action_button {
   border: none;

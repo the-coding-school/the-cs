@@ -8,7 +8,7 @@ import SignUp from "./modules/SignUp"
 import { Router, Route, hashHistory } from 'react-router'
 
 ReactDOM.render((
-  <Router history={hashHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route component={Skeleton}>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />

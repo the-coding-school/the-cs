@@ -1,6 +1,16 @@
 // ** Variables ** //
 $blue: #00c7d2;
 $yellow: #ffcc00;
+
+$uclaBlue: #1E5EA0;
+$uclaYellow: #FBB727;
+$uscRed: #980F07;
+$uscYellow: #F9B218;
+$caltechOrange: #FF6E1E;
+$csuSacGreen: #01573C;
+$csuSacGold: #CBB778;
+
+$red: #ff0000;
 $black: #333333;
 $white: #ffffff;
 
@@ -13,7 +23,7 @@ $text_hg: 48px;
 $bpoint_sm: 600px;
 $bpoint_md: 1000px;
 
-$member_image_size: 130px;
+$member_image_size: 300px;
 
 .row {
   margin-top: 150px;
@@ -32,6 +42,9 @@ $member_image_size: 130px;
 .head_member {
   margin-bottom: 50px;
   display: flex;
+  justify-content: space-between;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+  border-radius: 4px;
   @media (min-width: $bpoint_md) {
     &:nth-child(even) {
       .member_image {
@@ -130,9 +143,12 @@ $member_image_size: 130px;
 
 .team_member {
   padding-bottom: 10px;
-  padding-top: 10px;
-  text-align: center;
+  // padding-top: 10px;
+  // text-align: center;
   width: $member_image_size;
+  position: relative;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+  border-radius: 4px;
 
   .member_image {
     width: $member_image_size;
@@ -140,19 +156,50 @@ $member_image_size: 130px;
     img {
       width: 100%;
       height: 100%;
-      border-radius: 50%;
     }
   }
 
-  .member_title {
+  .college_attended {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $black;
+    color: $white;
+    font-size: $text_sm;
+    font-weight: bold;
+    &.ucla {
+      background-color: $uclaBlue;
+      color: $uclaYellow;
+    }
+    &.usc {
+      background-color: $uscRed;
+      color: $uscYellow;
+    }
+    &.caltech {
+      background-color: $caltechOrange;
+      color: $white;
+    }
+    &.csu_sacramento {
+      background-color: $csuSacGreen;
+      color: $csuSacGold;
+    }
+  }
+
+  .member_text {
+    padding: 10px;
     .member_name {
       font-size: $text_sm;
       color: $blue;
     }
+
     .member_position {
       font-size: $text_tn;
       font-style: italic;
       color: lighten($black, 30%);
+    }
+
+    .member_description {
+
     }
   }
 

@@ -49,6 +49,29 @@ class Navbar extends Component {
   }
 }
 
+export class PageHeader extends Component {
+  render() {
+    const p = this.props;
+    return (
+      <div className="page_header">
+        <div className="header_background">
+          <div className="shadow"></div>
+          <img src={p.image} alt="header"/>
+        </div>
+        <div className="header_contents">
+          <div className="header_text">
+            <div className="container">
+              <h1>{p.title}</h1>
+              <p>{p.description}</p>
+            </div>
+          </div>
+          {(p.appendDOM)}
+        </div>
+      </div>
+    );
+  }
+}
+
 class Footer extends Component {
 
   // should contain
@@ -183,11 +206,13 @@ export class TitledParagraphs extends Component {
   }
 }
 
-class ActionButton extends Component {
+export class LinkButton extends Component {
   render() {
     return (
       <div className="flex_center btn btn_inflate">
-        <button className="action_button">{this.props.text}</button>
+        <a href={this.props.link}>
+          <button className="action_button">{this.props.text}</button>
+        </a>
       </div>
     );
   }

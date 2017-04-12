@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TitledParagraphs } from './Skeleton';
+import { TitledParagraphs, PageHeader } from './Skeleton';
 import '../scss/App.scss';
 import '../scss/About.scss';
 import dataJSON from '../json/data.json';
@@ -13,9 +13,13 @@ class About extends Component {
       );
     });
 
+    const header = dataJSON.headers.about;
+    const image = process.env.PUBLIC_URL + header.image;
+
     return (
       <div className="about-app App">
-        <div className="container">
+        <PageHeader image={image} title={header.title} description={header.description} />
+        <div className="about page container">
           {contentDOM}
         </div>
       </div>
