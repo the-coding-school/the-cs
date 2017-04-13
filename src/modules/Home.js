@@ -41,7 +41,7 @@ class Video extends Component {
   render() {
     return (
       <div id="video">
-          <video autoPlay muted loop>
+          <video autoplay muted loop playsinline>
             <source src={demovideo} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
