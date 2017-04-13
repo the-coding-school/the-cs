@@ -209,7 +209,7 @@ export class TitledParagraphs extends Component {
 export class LinkButton extends Component {
   render() {
     return (
-      <div className="flex_center btn btn_inflate">
+      <div className="flex_center btn btn_inflate wow bounceIn">
         <a href={this.props.link}>
           <button className="action_button">{this.props.text}</button>
         </a>

@@ -51,7 +51,7 @@ class Course extends Component {
   render() {
     return (
       <div className="course_wrapper">
-        <div className="course">
+        <div className="course wow fadeInUp">
           <div className="course_title">
             <p>{this.props.name}</p>
           </div>

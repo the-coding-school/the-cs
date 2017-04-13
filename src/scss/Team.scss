@@ -78,7 +78,6 @@ $member_image_size: 300px;
 
   @media (max-width: $bpoint_md - 1) {
     flex-wrap: wrap;
-
     align-items: center;
     .member_image {
       width: 260px;
@@ -114,7 +113,7 @@ $member_image_size: 300px;
       font-weight: 400;
     }
     p {
-      font-size: $text_sm;
+      font-size: $text_tn;
       color: lighten($black, 20%);
 
     }
@@ -187,6 +186,7 @@ $member_image_size: 300px;
 
   .member_text {
     padding: 10px;
+    padding-bottom: 0px;
     .member_name {
       font-size: $text_sm;
       color: $blue;

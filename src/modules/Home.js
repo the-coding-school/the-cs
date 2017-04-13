@@ -23,8 +23,7 @@ class Home extends Component {
 
           <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
           <hr />
-          <OurImpact />
-          <hr />
+
           <Testimonials />
           <hr />
           <ImagePanel />
