@@ -1,3 +1,22 @@
+## Project Basics
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) but has been ejected using `npm eject`, which means there is full access to the Webpack and Babel configuration of the project.
+
+This was done in order to implement SCSS and React Router.
+
+### Usage
+
+To run locally:
+`npm run start`
+
+To build project to `build` folder:
+`npm run build`
+
+To deploy to gh-pages for this repo:
+`npm run deploy`
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
