@@ -6,10 +6,20 @@ import dataJSON from '../json/data.json';
 
 class About extends Component {
   render() {
+
+    let missionDOM = dataJSON.ourMission.map(function(section) {
+      return (
+        <TitledParagraphs title={section.title} key={section.title}
+                          paragraphs={section.paragraphs} />
+          
+      );
+    });
+
     let contentDOM = dataJSON.aboutPage.map(function(section) {
       return (
         <TitledParagraphs title={section.title} key={section.title}
                           paragraphs={section.paragraphs} />
+          
       );
     });
 
@@ -20,8 +30,49 @@ class About extends Component {
       <div className="about-app App">
         <PageHeader image={image} title={header.title} description={header.description} />
         <div className="about page container">
+          {missionDOM}
+          <hr />
+          <OurImpact />
           {contentDOM}
         </div>
+      </div>
+    );
+  }
+}
+
+class OurImpact extends Component {
+  render() {
+
+    const schoolIcon = process.env.PUBLIC_URL + "/images/school.png";
+    const studentIcon = process.env.PUBLIC_URL + "/images/student.png";
+    const groupIcon = process.env.PUBLIC_URL + "/images/group.png";
+    const impact = dataJSON.ourImpact;
+    const impactDOM = impact.map(function(i) {
+      return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
+    })
+    return (
+      <div className="our_impact">
+        {impactDOM}
+        <hr/>
+        <div className="statistics flex">
+          <Statistic imageSrc={schoolIcon} number="16" description="schools" />
+          <Statistic imageSrc={studentIcon} number="1,800" description="students" />
+          <Statistic imageSrc={groupIcon} number="44%" description="minority students" />
+        </div>
+
+      </div>
+    );
+  }
+}
+
+class Statistic extends Component {
+  render() {
+    const p = this.props;
+    return (
+      <div className="statistic wow bounceInDown">
+        <img alt="statistic" src={p.imageSrc} width="80" height="80" />
+        <h2>{p.number}</h2>
+        <p>{p.description}</p>
       </div>
     );
   }

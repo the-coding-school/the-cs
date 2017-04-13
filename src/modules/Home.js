@@ -19,8 +19,7 @@ class Home extends Component {
 
           <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
           <hr />
-          <OurImpact />
-          <hr />
+          
           <Testimonials />
           <hr />
           <ImagePanel />
@@ -69,30 +68,30 @@ class ImagePanel extends Component {
   }
 }
 
-class OurImpact extends Component {
-  render() {
+// class OurImpact extends Component {
+//   render() {
 
-    const schoolIcon = process.env.PUBLIC_URL + "/images/school.png";
-    const studentIcon = process.env.PUBLIC_URL + "/images/student.png";
-    const groupIcon = process.env.PUBLIC_URL + "/images/group.png";
-    const impact = dataJSON.ourImpact;
-    const impactDOM = impact.map(function(i) {
-      return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
-    })
-    return (
-      <div className="our_impact">
-        {impactDOM}
-        <hr/>
-        <div className="statistics flex">
-          <Statistic imageSrc={schoolIcon} number="16" description="schools" />
-          <Statistic imageSrc={studentIcon} number="1,800" description="students" />
-          <Statistic imageSrc={groupIcon} number="44%" description="minority students" />
-        </div>
+//     const schoolIcon = process.env.PUBLIC_URL + "/images/school.png";
+//     const studentIcon = process.env.PUBLIC_URL + "/images/student.png";
+//     const groupIcon = process.env.PUBLIC_URL + "/images/group.png";
+//     const impact = dataJSON.ourImpact;
+//     const impactDOM = impact.map(function(i) {
+//       return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
+//     })
+//     return (
+//       <div className="our_impact">
+//         {impactDOM}
+//         <hr/>
+//         <div className="statistics flex">
+//           <Statistic imageSrc={schoolIcon} number="16" description="schools" />
+//           <Statistic imageSrc={studentIcon} number="1,800" description="students" />
+//           <Statistic imageSrc={groupIcon} number="44%" description="minority students" />
+//         </div>
 
-      </div>
-    );
-  }
-}
+//       </div>
+//     );
+//   }
+// }
 
 class Statistic extends Component {
   render() {

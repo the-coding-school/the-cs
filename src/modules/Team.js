@@ -117,7 +117,7 @@ class TeamMember extends Component {
 
     return (
       <div className="team_member_wrapper">
-        <div className="team_member">
+        <div className="team_member wow fadeInUp">
           <HoverFadeImage funImage={funImage} regImage={regImage}/>
           <div className={"college_attended " + collegeID}>{member.college}</div>
           <div className="member_text">
