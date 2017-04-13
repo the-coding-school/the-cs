@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { TitledParagraphs, PageHeader } from './Skeleton';
 import '../scss/App.scss';
+import '../scss/Skeleton.scss';
 import '../scss/About.scss';
 import dataJSON from '../json/data.json';
 

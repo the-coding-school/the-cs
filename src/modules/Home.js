@@ -3,15 +3,19 @@ import demovideo from "../videos/demovideo.mp4";
 import { TitledParagraphs } from "./Skeleton";
 import dataJSON from "../json/data.json";
 import '../scss/App.scss';
+import '../scss/Skeleton.scss';
 import '../scss/Home.scss';
 import '../css/animate.css';
+import '../css/slick.css';
+import '../css/slick-theme.css';
+import $ from 'jquery';
+import slick from 'slick-carousel';
 
 class Home extends Component {
   render() {
     const partners = dataJSON.partners;
     const introParagraphs = dataJSON.introParagraphs;
     const partnersParagraphs = dataJSON.partnersParagraphs;
-
     return (
       <div className="App">
         <Video />
@@ -69,6 +73,23 @@ class ImagePanel extends Component {
   }
 }
 
+class SlickPanel extends Component {
+
+  componentDidMount() {
+    $(".slick_panel").slick(this.props.options);
+  }
+
+  render() {
+    return (
+      <div className="slick_panel">
+        {this.props.children}
+      </div>
+    );
+  }
+
+
+}
+
 class OurImpact extends Component {
   render() {
 
@@ -109,7 +130,11 @@ class Statistic extends Component {
 
 class Testimonials extends Component {
   render() {
-
+    const slickOpt = {
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+    }
     const testimonialsDOM = dataJSON.testimonials.map(function(t) {
       const imageSrc = process.env.PUBLIC_URL + t.imageSrc;
       return (
@@ -119,7 +144,7 @@ class Testimonials extends Component {
 
     return (
       <div className="testimonials">
-        {testimonialsDOM}
+        <SlickPanel children={testimonialsDOM} options={slickOpt}/>
       </div>
     );
   }
@@ -131,9 +156,11 @@ class Testimonial extends Component {
     return (
         <div className="testimonial_wrapper">
           <div className="testimonial">
-            <img src={this.props.imageSrc} alt="testimonial" />
+            <div className="testimonial_image">
+              <img src={this.props.imageSrc} alt="testimonial" />
+            </div>
             <div className="testimonial_quote">
-              <p>{this.props.quote}</p>
+              <p>{'"' + this.props.quote + '"'}</p>
             </div>
             <div className="testimonial_author">
               {this.props.author.toUpperCase()}

@@ -14,6 +14,11 @@ $text_hg: 48px;
 $bpoint_sm: 600px;
 $bpoint_md: 1000px;
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;

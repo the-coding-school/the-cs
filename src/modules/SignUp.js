@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../scss/App.scss';
+import '../scss/Skeleton.scss';
 import '../scss/SignUp.scss';
 import { TitledParagraphs, PageHeader, LinkButton } from './Skeleton';
 import dataJSON from '../json/data.json';

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { PageHeader, FontAwesomeLink } from './Skeleton';
+import '../scss/App.scss';
+import '../scss/Skeleton.scss';
 import '../scss/Team.scss';
 import '../scss/font-awesome.scss';
 
@@ -110,10 +112,11 @@ class TeamMember extends Component {
     const member = this.props.member;
 
     const collegeID = member.college.toLowerCase().split(' ').join('_');
-
+    const firstName = member.name.first;
+    const lastName = member.name.last;
     const links = member.links;
-    const regImage = member.name.first[0] + "_" + member.name.last + ".jpg";
-    const funImage = member.name.first[0] + "_" + member.name.last + "_fun.jpg";
+    const regImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + ".jpg";
+    const funImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + "_fun.jpg";
 
     return (
       <div className="team_member_wrapper">
@@ -140,7 +143,6 @@ class HoverFadeImage extends Component {
     const root = process.env.PUBLIC_URL + "/images/team/";
     const funImage = root + this.props.funImage;
     const regImage = root + this.props.regImage;
-    console.log(process.env.PUBLIC_URL);
     return (
       <div className="member_image">
         <img className="fun" src={funImage} alt="fun" />
