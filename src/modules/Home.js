@@ -8,6 +8,7 @@ import '../scss/Home.scss';
 import '../css/animate.css';
 import '../css/slick.css';
 import '../css/slick-theme.css';
+import 'slick-carousel';
 import $ from 'jquery';
 
 
@@ -41,7 +42,7 @@ class Video extends Component {
   render() {
     return (
       <div id="video">
-          <video autoplay muted loop playsinline>
+          <video autoPlay muted loop playsInline>
             <source src={demovideo} type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
