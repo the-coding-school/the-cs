@@ -52,11 +52,11 @@ class HeadMember extends Component {
   render() {
 
     const member = this.props.member;
-    const nameObj = member.name;
-    const name = nameObj.first;
     const position = member.position;
-    const regImage = member.name.first[0] + "_" + member.name.last + ".jpg";
-    const funImage = member.name.first[0] + "_" + member.name.last + "_fun.jpg";
+    const firstName = member.name.first;
+    const lastName = member.name.last;
+    const regImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + ".jpg";
+    const funImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + "_fun.jpg";
     const description = member.description;
 
     return (
@@ -66,43 +66,13 @@ class HeadMember extends Component {
 
           <div className="member_description">
             <div className="flex_sub">
-              <h1>{String(name).toUpperCase()}</h1>
+              <h1>{(firstName + " " + lastName).toUpperCase()}</h1>
               <h2>{position.toUpperCase()}</h2>
               <p>{description}</p>
             </div>
           </div>
         </div>
     );
-  }
-}
-
-class TeamMemberOld extends Component {
-
-  render() {
-    const member = this.props.member;
-    const nameObj = member.name;
-    const name = nameObj.first;
-    const position = member.position;
-    const description = member.description;
-    const links = member.links;
-    const regImage = member.name.first[0] + "_" + member.name.last + ".jpg";
-    const funImage = member.name.first[0] + "_" + member.name.last + "_fun.jpg";
-
-    return (
-      <div className="team_member_wrapper">
-        <div className="team_member">
-            <div className="member_items">
-              <HoverFadeImage funImage={funImage} regImage={regImage}/>
-              <div className="member_title">
-                <h1 className="member_name">{name}</h1>
-                <h2 className="member_position">{position}</h2>
-              </div>
-
-            </div>
-            {links && <MemberLinks links={links}/>}
-        </div>
-      </div>
-    )
   }
 }
 
@@ -114,7 +84,6 @@ class TeamMember extends Component {
     const collegeID = member.college.toLowerCase().split(' ').join('_');
     const firstName = member.name.first;
     const lastName = member.name.last;
-    const links = member.links;
     const regImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + ".jpg";
     const funImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + "_fun.jpg";
 
