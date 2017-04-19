@@ -133,6 +133,9 @@ $bpoint_md: 1000px;
   position: relative;
   margin: 30px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   .testimonial_image {
     display: flex;
     justify-content: center;

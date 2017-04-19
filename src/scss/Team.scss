@@ -39,6 +39,20 @@ $member_image_size: 300px;
   }
 }
 
+.member_name {
+  color: $blue;
+  font-weight: bold;
+}
+
+.member_position {
+  color: lighten($black, 20%);
+}
+
+.member_description {
+  color: lighten($black, 20%);
+  font-size: $text_tn;
+}
+
 .head_member {
   margin-bottom: 50px;
   display: flex;
@@ -50,7 +64,7 @@ $member_image_size: 300px;
       .member_image {
         order: 1;
       }
-      .member_description {
+      .member_text_wrapper {
         order: 2;
       }
     }
@@ -58,11 +72,11 @@ $member_image_size: 300px;
       .member_image {
         order: 2;
       }
-      .member_description {
+      .member_text_wrapper {
         order: 1;
       }
     }
-    .member_description {
+    .member_text_wrapper {
       width: 65%;
     }
     .member_image {
@@ -89,8 +103,8 @@ $member_image_size: 300px;
     }
 
   }
-  .member_image {
 
+  .member_image {
     img {
       transition: all 1s;
       &.reg:hover {
@@ -98,39 +112,15 @@ $member_image_size: 300px;
       }
     }
   }
-  .member_description {
 
-    .flex_sub {
-      padding: 25px;
-    }
+  .member_text {
+    padding: 25px;
 
-    h1 {
+    .member_name {
       font-size: $text_md;
-      margin-bottom: 3px;
     }
-    h2 {
+    .member_position {
       font-size: $text_sm;
-      font-weight: 400;
-    }
-    p {
-      font-size: $text_tn;
-      color: lighten($black, 20%);
-
-    }
-  }
-
-}
-
-.member_image {
-  position: relative;
-  img {
-    text-align: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 1s;
-    &.reg:hover {
-      opacity: 0;
     }
   }
 }
@@ -152,10 +142,6 @@ $member_image_size: 300px;
   .member_image {
     width: $member_image_size;
     height: $member_image_size;
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   .college_attended {
@@ -165,6 +151,7 @@ $member_image_size: 300px;
     background-color: $black;
     color: $white;
     font-size: $text_sm;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     &.ucla {
       background-color: $uclaBlue;
@@ -189,17 +176,10 @@ $member_image_size: 300px;
     padding-bottom: 0px;
     .member_name {
       font-size: $text_sm;
-      color: $blue;
     }
 
     .member_position {
       font-size: $text_tn;
-      font-style: italic;
-      color: lighten($black, 30%);
-    }
-
-    .member_description {
-
     }
   }
 

@@ -193,11 +193,35 @@ export class TextBlock extends Component {
 export class TitledParagraphs extends Component {
   render() {
     const title = this.props.title;
-    const paragraphs = this.props.paragraphs;
+    const paragraphs = <TextBlock paragraphs={this.props.paragraphs} />;
+    return (
+      <TitledContent title={title} content={paragraphs} />
+    );
+  }
+}
+
+export class TitledContent extends Component {
+  render() {
+    const title = this.props.title;
+    const content = this.props.content;
     return (
       <div className="paragraph titled" key={title}>
         <h1 className="title">{title}</h1>
-        <TextBlock paragraphs={paragraphs} />
+        {content}
+      </div>
+    );
+  }
+}
+
+export class HoverFadeImage extends Component {
+  render() {
+    const root = process.env.PUBLIC_URL + "/images/team/";
+    const funImage = root + this.props.funImage;
+    const regImage = root + this.props.regImage;
+    return (
+      <div className="hover_fade_image">
+        <img className="fun" src={funImage} alt="fun" />
+        <img className="reg" src={regImage} alt="regular" />
       </div>
     );
   }

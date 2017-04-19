@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PageHeader, FontAwesomeLink } from './Skeleton';
+import { PageHeader, FontAwesomeLink, HoverFadeImage } from './Skeleton';
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/Team.scss';
@@ -62,13 +62,17 @@ class HeadMember extends Component {
     return (
         <div className="head_member flex">
 
-          <HoverFadeImage funImage={funImage} regImage={regImage}/>
+          <div className="member_image">
+            <HoverFadeImage funImage={funImage} regImage={regImage}/>
+          </div>
 
-          <div className="member_description">
-            <div className="flex_sub">
-              <h1>{(firstName + " " + lastName).toUpperCase()}</h1>
-              <h2>{position.toUpperCase()}</h2>
-              <p>{description}</p>
+          <div className="member_text_wrapper">
+            <div className="member_text">
+              <div className="member_name">{(firstName + " " + lastName).toUpperCase()}</div>
+              <div className="member_position">{position.toUpperCase()}</div>
+              <div className="member_description">
+                <p>{description}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -89,8 +93,10 @@ class TeamMember extends Component {
 
     return (
       <div className="team_member_wrapper">
-        <div className="team_member wow fadeInUp">
-          <HoverFadeImage funImage={funImage} regImage={regImage}/>
+        <div className="team_member wow fadeIn">
+          <div className="member_image">
+            <HoverFadeImage funImage={funImage} regImage={regImage}/>
+          </div>
           <div className={"college_attended " + collegeID}>{member.college}</div>
           <div className="member_text">
             <h1 className="member_name">{member.name.first + " " + member.name.last}</h1>
@@ -98,27 +104,10 @@ class TeamMember extends Component {
             <div className="member_description">
               <p>{member.description}</p>
             </div>
-
-
           </div>
         </div>
       </div>
     )
-  }
-}
-
-class HoverFadeImage extends Component {
-
-  render() {
-    const root = process.env.PUBLIC_URL + "/images/team/";
-    const funImage = root + this.props.funImage;
-    const regImage = root + this.props.regImage;
-    return (
-      <div className="member_image">
-        <img className="fun" src={funImage} alt="fun" />
-        <img className="reg" src={regImage} alt="regular" />
-      </div>
-    );
   }
 }
 

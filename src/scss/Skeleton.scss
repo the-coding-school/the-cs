@@ -24,6 +24,7 @@ $main_font: 'Montserrat', sans-serif;
 
 .navbar_tabs a {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 #navbar {
@@ -34,7 +35,8 @@ $main_font: 'Montserrat', sans-serif;
   left: 0;
   z-index: 9999;
   background-color: $white;
-  border-bottom: 2px solid $black;
+  // border-bottom: 2px solid $black;
+  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
   ul {
     margin: 0;
     width: 80%;
@@ -241,5 +243,23 @@ footer {
     width: 90%;
     text-align: center;
     border: 1px solid rgba($white, 1.0);
+  }
+}
+
+.hover_fade_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    &.reg:hover {
+      opacity: 0;
+    }
   }
 }
