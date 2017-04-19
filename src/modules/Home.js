@@ -118,10 +118,10 @@ class Testimonial extends Component {
               <img src={this.props.imageSrc} alt="testimonial" />
             </div>
             <div className="testimonial_quote">
-              <p>{'"' + this.props.quote + '"'}</p>
+              <h3>{'"' + this.props.quote + '"'}</h3>
             </div>
             <div className="testimonial_author">
-              {this.props.author.toUpperCase()}
+              <h3>{this.props.author.toUpperCase()}</h3>
             </div>
           </div>
         </div>

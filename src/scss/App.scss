@@ -14,21 +14,28 @@ $text_hg: 48px;
 $bpoint_sm: 600px;
 $bpoint_md: 1000px;
 
+@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat');
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, .main_font {
+h1, h2, h3, h4, h5, h6 .main_font {
   font-family: 'Montserrat', sans-serif;
 }
 
+h3 {
+  font-size: $text_md;
+  line-height: $text_md * 1.37;
+}
+
 p {
+  font-family: 'Domine', serif;
   line-height: $text_sm * 1.37;
 }
 

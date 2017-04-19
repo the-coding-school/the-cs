@@ -11,9 +11,6 @@ const pages = [
 
 export class Skeleton extends Component {
    render() {
-     // name: represents react routing path
-     // text: navbar text
-
       return (
          <div>
             <Navbar name="The Coding School" items={pages}/>
