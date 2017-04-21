@@ -112,7 +112,7 @@
     }
   ],
   "team": {
-    "heads": [
+    "founder": [
       {
         "name": { "first": "Kiera", "last": "Peltz" },
         "position": "Founder",
@@ -120,17 +120,17 @@
         "description": "Kiera Peltz is a Gates-Cambridge Scholar, pursuing her masters in Political and Economic Sociology at the University of Cambridge. She is a graduate of Brown University, where she received her B.A. in Political Science and Happiness. In Summer 2014, Kiera began learning how to code at the White House as the Innovation & Technology intern in the Office of Presidential Correspondence. Having spent the majority of her free time in high school and college working in political offices, such as U.S. Congressman Brad Sherman and U.S. Senator Sheldon Whitehouse, Kiera is passionate about making computer science education a priority for politicians at the local, state, and federal level. \nKiera founded The Coding School after she realized the U.S. education system was failing to provide students with the skills needed to tackle the most pressing issues facing society. During her freshman year at Brown University, she was dissuaded from taking any computer science classes because she lacked prior coding knowledge. The following summer, while attending an international conference in Seliger, Russia, she met a group of Estonians, who spoke about the importance of early childhood coding, stating that it’s mandatory for every Estonian, starting at age seven, to learn how to code. Upon returning to the United States, Kiera began critically examining the education system and came to realize that while the world has changed drastically in the past 50 years, our country’s public K-12 curriculum has remained relatively unaltered. So she set out to fix the gap in the education system by creating The Coding School to ensure the next generation learns the language that has built – and will continue to build – the modern world. "
       }
     ],
-    "board": [
+    "team_leads": [
       {
         "name":  { "first": "Crystal", "last": "Hsieh" },
-        "position": "Head of Curriculum",
+        "position": "Co-Head of Curriculum",
         "college": "UCLA",
         "description": "Crystal Hsieh is a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. She's had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. She is also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools.",
         "links": {}
       },
       {
         "name": { "first": "Bibek", "last": "Ghimire" },
-        "position": "Teacher, Webmaster",
+        "position": "Co-Head of Web",
         "college": "UCLA",
         "description": "I'm a 2nd year Computer Science student at UCLA. I started programming in high school, where I started a programming club, and never looked back. When I'm not teaching kids with The Coding School, I love doing web development and iOS app development.",
         "links": {
@@ -138,6 +138,34 @@
           "linkedin": "https://www.linkedin.com/in/bibekgg",
           "facebook": "https://www.facebook.com/in/bibekghim"
         }
+      },
+      {
+        "name": { "first": "Natalie", "last": "Ethell" },
+        "position": "Co-Head of Web",
+        "college": "UCLA",
+        "description": "",
+        "links": {}
+      },
+      {
+        "name":  { "first": "Mindy", "last": "Cao" },
+        "position": "Web Designer (Code Connect & China Project)",
+        "college": "UCLA",
+        "description": "",
+        "links": {}
+      },
+      {
+        "name":  { "first": "Anthony", "last": "Mirand" },
+        "position": "Head of Instructors",
+        "college": "UCLA",
+        "description": "",
+        "links": {}
+      },
+      {
+        "name":  { "first": "Bill", "last": "Derouin" },
+        "position": "Advisor, Co-Head of Curriculum",
+        "college": "UCLA",
+        "description": "",
+        "links": {}
       }
     ],
     "teachers": [
@@ -190,13 +218,6 @@
         "links": {}
       },
       {
-        "name":  { "first": "Mindy", "last": "Cao" },
-        "position": "China Project - Web Designer",
-        "college": "UCLA",
-        "description": "",
-        "links": {}
-      },
-      {
         "name":  { "first": "Ramya", "last": "Deshpande" },
         "position": "Teacher",
         "college": "Caltech",
@@ -211,10 +232,17 @@
         "links": {}
       },
       {
-        "name": { "first": "Natalie", "last": "Ethell" },
+        "name": { "first": "Michael", "last": "Grieve" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": "",
+        "description": "I am a sophomore computer science student at UCLA. I am passionate about teaching and hope to make education more involved and personal. I love riding my bike and playing beach volleyball.",
+        "links": {}
+      },
+      {
+        "name": { "first": "Richard", "last": "Wen" },
+        "position": "Teacher",
+        "college": "UCLA",
+        "description": "I'm a sophomore computer science student attending UCLA. I'm originally from Redmond Washington and grew up in Microsoft's backyard. In my free time, I enjoy reading and playing Melee with friends.",
         "links": {}
       }
     ]

@@ -19,7 +19,7 @@ class Team extends Component {
       return 0;
     }
 
-    const boardDOM = teamData.board.sort(sortMembers).map((m) => {
+    const teamLeadsDOM = teamData.team_leads.sort(sortMembers).map((m) => {
       const id = m.name.first + "_" + m.name.last;
       return ( <TeamMember key={id} member={m}/> );
     });
@@ -29,7 +29,7 @@ class Team extends Component {
       return ( <TeamMember key={id} member={m}/> );
     });
 
-    const founderDOM = teamData.heads.sort(sortMembers).map((m) => {
+    const founderDOM = teamData.founder.sort(sortMembers).map((m) => {
       const id = m.name.first + "_" + m.name.last;
       return <HeadMember key={id} member={m}/>
     });
@@ -44,9 +44,9 @@ class Team extends Component {
           <div className="team_founder">
             {founderDOM}
           </div>
-          <h1>The Board</h1>
+          <h1>The Team Heads</h1>
           <div className="team_board">
-            {boardDOM}
+            {teamLeadsDOM}
           </div>
           <h1>The Teachers</h1>
           <div className="team_teachers">
