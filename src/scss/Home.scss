@@ -13,6 +13,8 @@ $text_hg: 48px;
 $bpoint_sm: 600px;
 $bpoint_md: 1000px;
 
+$max_video_width: 800px;
+
 .home_page {
   .paragraphs {
       font-size: $text_md;
@@ -31,7 +33,7 @@ $bpoint_md: 1000px;
   width: 100%;
 
   .video_wrapper {
-      max-width: 1200px;
+      max-width: $max_video_width;
       width: 100%;
   }
 
