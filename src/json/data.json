@@ -120,83 +120,102 @@
         "description": "Kiera Peltz is a Gates-Cambridge Scholar, pursuing her masters in Political and Economic Sociology at the University of Cambridge. She is a graduate of Brown University, where she received her B.A. in Political Science and Happiness. In Summer 2014, Kiera began learning how to code at the White House as the Innovation & Technology intern in the Office of Presidential Correspondence. Having spent the majority of her free time in high school and college working in political offices, such as U.S. Congressman Brad Sherman and U.S. Senator Sheldon Whitehouse, Kiera is passionate about making computer science education a priority for politicians at the local, state, and federal level. \nKiera founded The Coding School after she realized the U.S. education system was failing to provide students with the skills needed to tackle the most pressing issues facing society. During her freshman year at Brown University, she was dissuaded from taking any computer science classes because she lacked prior coding knowledge. The following summer, while attending an international conference in Seliger, Russia, she met a group of Estonians, who spoke about the importance of early childhood coding, stating that it’s mandatory for every Estonian, starting at age seven, to learn how to code. Upon returning to the United States, Kiera began critically examining the education system and came to realize that while the world has changed drastically in the past 50 years, our country’s public K-12 curriculum has remained relatively unaltered. So she set out to fix the gap in the education system by creating The Coding School to ensure the next generation learns the language that has built – and will continue to build – the modern world. "
       }
     ],
-
-    "members": [
+    "board": [
+      {
+        "name":  { "first": "Crystal", "last": "Hsieh" },
+        "position": "Head of Curriculum",
+        "college": "UCLA",
+        "description": "Crystal Hsieh is a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. She's had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. She is also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools.",
+        "links": {}
+      },
       {
         "name": { "first": "Bibek", "last": "Ghimire" },
         "position": "Teacher, Webmaster",
-        "college": "UCLA"
-      },
+        "college": "UCLA",
+        "description": "I'm a 2nd year Computer Science student at UCLA. I started programming in high school, where I started a programming club, and never looked back. When I'm not teaching kids with The Coding School, I love doing web development and iOS app development.",
+        "links": {
+          "personal": "https://www.bibekg.com",
+          "linkedin": "https://www.linkedin.com/in/bibekgg",
+          "facebook": "https://www.facebook.com/in/bibekghim"
+        }
+      }
+    ],
+    "teachers": [
       {
         "name":  { "first": "Uma", "last": "Lakshminarayan" },
         "position": "PR Rep, Teacher",
-        "college": "UCLA"
+        "college": "UCLA",
+        "links": {}
       },
       {
         "name":  { "first": "Karen", "last": "Fann" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": "I am a freshman Computer Science and Engineering student at UCLA. In high school, I became really interested in computers and taught myself how to build and program an electric car. Besides coding, I love playing basketball, swimming, and watching movies."
+        "description": "I am a freshman Computer Science and Engineering student at UCLA. In high school, I became really interested in computers and taught myself how to build and program an electric car. Besides coding, I love playing basketball, swimming, and watching movies.",
+        "links": {}
       },
       {
         "name":  { "first": "Jason", "last": "Lin" },
         "position": "Director of Development",
         "college": "USC",
-        "description": "I am a Senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way."
+        "description": "I am a Senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way.",
+        "links": {}
       },
       {
         "name":  { "first": "Baolinh", "last": "Nguyen" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": "I am a current first year computer science major at UCLA and I am excited to further my passion for computer science and hopefully foster an interest in computer science in the next generation of computer science students."
+        "description": "I am a current first year computer science major at UCLA and I am excited to further my passion for computer science and hopefully foster an interest in computer science in the next generation of computer science students.",
+        "links": {}
       },
       {
         "name":  { "first": "Charlie", "last": "Hwang" },
         "position": "Curriculum Development, Teacher",
         "college": "USC",
-        "description": "I’m a sophomore studying Computer Science at USC! I’ve been with The Coding School for half a year now and I have a passion for technology that lets users and developers express themselves creatively - i.e. Web Development, VR, etc."
+        "description": "I’m a sophomore studying Computer Science at USC! I’ve been with The Coding School for half a year now and I have a passion for technology that lets users and developers express themselves creatively - i.e. Web Development, VR, etc.",
+        "links": {}
       },
       {
         "name":  { "first": "Sapharah", "last": "Prescod" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": "I am a multi-talented individual. My other passions in life are singing and pursuing a healthy lifestyle. I enjoy being active and putting my creative mind to use in technology. I love to seek out new experiences and I enjoy inspiring others to reach for their full potential."
+        "description": "I am a multi-talented individual. My other passions in life are singing and pursuing a healthy lifestyle. I enjoy being active and putting my creative mind to use in technology. I love to seek out new experiences and I enjoy inspiring others to reach for their full potential.",
+        "links": {}
       },
       {
         "name":  { "first": "Ezequil", "last": "Morales" },
         "position": "Teacher",
         "college": "CSU Sacramento",
-        "description": "I'm a student attending CSU Sacramento, pursuing a degree in computer engineering."
+        "description": "I'm a student attending CSU Sacramento, pursuing a degree in computer engineering.",
+        "links": {}
       },
       {
         "name":  { "first": "Mindy", "last": "Cao" },
         "position": "China Project - Web Designer",
         "college": "UCLA",
-        "description": ""
-      },
-      {
-        "name":  { "first": "Crystal", "last": "Hsieh" },
-        "position": "Head of Curriculum",
-        "college": "UCLA",
-        "description": "Crystal Hsieh is a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. She's had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. She is also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools."
+        "description": "",
+        "links": {}
       },
       {
         "name":  { "first": "Ramya", "last": "Deshpande" },
         "position": "Teacher",
         "college": "Caltech",
-        "description": "I'm a freshman at the California Institute of Technology, majoring in Bioengineering and minoring in Computer Science. I love the thrill of successful debugging and I'm amazed by the potential artificial intelligence holds for the future. I'm also passionate about writing, Girls in STEM, and Naruto."
+        "description": "I'm a freshman at the California Institute of Technology, majoring in Bioengineering and minoring in Computer Science. I love the thrill of successful debugging and I'm amazed by the potential artificial intelligence holds for the future. I'm also passionate about writing, Girls in STEM, and Naruto.",
+        "links": {}
       },
       {
         "name": { "first": "Eloisa", "last": "Esparza" },
         "position": "Teacher",
         "college": "CSU Sacramento",
-        "description": "I am currently a Senior at Sacramento State majoring in Computer Engineering. I enjoy teaching engineering and programming to K-12."
+        "description": "I am currently a Senior at Sacramento State majoring in Computer Engineering. I enjoy teaching engineering and programming to K-12.",
+        "links": {}
       },
       {
         "name": { "first": "Natalie", "last": "Ethell" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": ""
+        "description": "",
+        "links": {}
       }
     ]
   },

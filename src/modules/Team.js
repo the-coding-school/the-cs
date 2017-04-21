@@ -19,12 +19,17 @@ class Team extends Component {
       return 0;
     }
 
-    const teamDOM = teamData.members.sort(sortMembers).map((m) => {
+    const boardDOM = teamData.board.sort(sortMembers).map((m) => {
       const id = m.name.first + "_" + m.name.last;
       return ( <TeamMember key={id} member={m}/> );
     });
 
-    const teamHeadsDOM = teamData.heads.sort(sortMembers).map((m) => {
+    const teachersDOM = teamData.teachers.sort(sortMembers).map((m) => {
+      const id = m.name.first + "_" + m.name.last;
+      return ( <TeamMember key={id} member={m}/> );
+    });
+
+    const founderDOM = teamData.heads.sort(sortMembers).map((m) => {
       const id = m.name.first + "_" + m.name.last;
       return <HeadMember key={id} member={m}/>
     });
@@ -34,13 +39,18 @@ class Team extends Component {
     return (
       <div className="App">
         <PageHeader image={image} title={header.title} description={header.description} />
-        <div className="about page container">
-          <div className="team_heads">
-            {teamHeadsDOM}
+        <div className="team_page container">
+          <h1>The Founder</h1>
+          <div className="team_founder">
+            {founderDOM}
           </div>
-
-          <div className="team flex flex_wrap">
-            {teamDOM}
+          <h1>The Board</h1>
+          <div className="team_board">
+            {boardDOM}
+          </div>
+          <h1>The Teachers</h1>
+          <div className="team_teachers">
+            {teachersDOM}
           </div>
         </div>
       </div>
@@ -104,7 +114,11 @@ class TeamMember extends Component {
             <div className="member_description">
               <p>{member.description}</p>
             </div>
+            <div className="member_links">
+              <MemberLinks links={member.links} />
+            </div>
           </div>
+
         </div>
       </div>
     )
@@ -121,6 +135,9 @@ class MemberLinks extends Component {
          }
         {links.facebook &&
           <FontAwesomeLink link={links.facebook} classNames="fa fa-facebook"/>
+        }
+        {links.linkedin &&
+          <FontAwesomeLink link={links.linkedin} classNames="fa fa-linkedin"/>
         }
       </span>
     );

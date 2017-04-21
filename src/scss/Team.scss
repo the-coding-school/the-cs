@@ -25,6 +25,13 @@ $bpoint_md: 1000px;
 
 $member_image_size: 300px;
 
+.team_page {
+  padding-top: 50px;
+  h1 {
+    color: $blue;
+  }
+}
+
 .row {
   margin-top: 150px;
   margin-bottom: 70px;
@@ -34,6 +41,15 @@ $member_image_size: 300px;
   width: 100%;
   justify-content: center;
 
+  & > * {
+    padding: 20px;
+  }
+}
+
+.team_board,
+.team_teachers {
+  display: flex;
+  flex-wrap: wrap;
   & > * {
     padding: 20px;
   }
@@ -185,7 +201,7 @@ $member_image_size: 300px;
 
   .member_links {
     a {
-      color: $black;
+      color: lighten($black, 20%);
       padding-left: 5px;
       padding-right: 5px;
     }
