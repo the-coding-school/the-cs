@@ -49,21 +49,21 @@ class About extends Component {
 class OurImpact extends Component {
   render() {
 
-    const schoolIcon = process.env.PUBLIC_URL + "/images/school.png";
-    const studentIcon = process.env.PUBLIC_URL + "/images/student.png";
-    const groupIcon = process.env.PUBLIC_URL + "/images/group.png";
+    const iconRoot = process.env.PUBLIC_URL + "/images/statistics/";
     const impact = dataJSON.ourImpact;
     const impactDOM = impact.map(function(i) {
       return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
     })
+    const statistics = dataJSON.statistics;
+    const statisticsDOM = statistics.map(function(s) {
+      return <Statistic key={s.description} imageSrc={iconRoot + s.imageName} number={s.number} description={s.description} />
+    });
     return (
       <div className="our_impact">
         {impactDOM}
         <hr/>
         <div className="statistics flex">
-          <Statistic imageSrc={schoolIcon} number="16" description="schools" />
-          <Statistic imageSrc={studentIcon} number="1,800" description="students" />
-          <Statistic imageSrc={groupIcon} number="44%" description="minority students" />
+          {statisticsDOM}
         </div>
 
       </div>

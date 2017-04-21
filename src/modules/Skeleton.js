@@ -151,7 +151,7 @@ class Footer extends Component {
               </div>
 
               <p><strong>The Coding School</strong>
-              <br/>3940 Laurel Cyn Blvd
+              <br/>3940 Laurel Cyn Blvd Ste 153
               <br/>Los Angeles, CA 91604</p>
             </div>
           </div>
@@ -195,7 +195,9 @@ export class TitledParagraphs extends Component {
     const title = this.props.title;
     const paragraphs = <TextBlock paragraphs={this.props.paragraphs} />;
     return (
-      <TitledContent title={title} content={paragraphs} />
+      <div className="paragraph">
+        <TitledContent title={title} content={paragraphs} />
+      </div>
     );
   }
 }
@@ -205,7 +207,7 @@ export class TitledContent extends Component {
     const title = this.props.title;
     const content = this.props.content;
     return (
-      <div className="paragraph titled" key={title}>
+      <div className="titled_content" key={title}>
         <h1 className="title">{title}</h1>
         {content}
       </div>

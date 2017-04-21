@@ -19,15 +19,13 @@ class Home extends Component {
     return (
       <div className="App">
         <Video />
-        <div className="home page container">
+        <div className="home page">
 
           <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
-          <hr />
+
 
           <Testimonials />
-          <hr />
-          <ImagePanel />
-          <hr/>
+
           <div>
           <TitledParagraphs title="Our Partners" paragraphs={partnersParagraphs} />
           </div>
@@ -92,13 +90,14 @@ class Testimonials extends Component {
   render() {
     const slickOpt = {
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 8000,
       dots: true,
+      pauseOnHover: false
     }
     const testimonialsDOM = dataJSON.testimonials.map(function(t) {
-      const imageSrc = process.env.PUBLIC_URL + t.imageSrc;
+      const imageSrc = process.env.PUBLIC_URL + "/images/testimonials/" + t.imageName;
       return (
-        <Testimonial key={t.author} imageSrc={imageSrc} quote={t.quote} author={t.author} />
+        <Testimonial key={t.author} imageSrc={imageSrc} quote={t.quote} author={t.author} context={t.context}/>
       );
     })
 
@@ -119,11 +118,14 @@ class Testimonial extends Component {
             <div className="testimonial_image">
               <img src={this.props.imageSrc} alt="testimonial" />
             </div>
-            <div className="testimonial_quote">
-              <h3>{'"' + this.props.quote + '"'}</h3>
-            </div>
-            <div className="testimonial_author">
-              <h3>{this.props.author.toUpperCase()}</h3>
+            <div className="testimonial_text">
+              <div className="testimonial_quote">
+                <h3>{'"' + this.props.quote + '"'}</h3>
+              </div>
+              <div className="testimonial_author">
+                <h3>{this.props.author.toUpperCase()}</h3>
+                <h4>{this.props.context}</h4>
+              </div>
             </div>
           </div>
         </div>
@@ -132,14 +134,22 @@ class Testimonial extends Component {
 }
 
 class PartnersPanel extends Component {
+
   render() {
-    const partnersDOM = dataJSON.partners.map((p) => {
-      const imageSrc = process.env.PUBLIC_URL + "/images/partners/" + p.imageSrc;
+
+    function sortPartners(a, b) {
+      if (a.name < b.name) return -1;
+      if (a.name > b.name) return 1;
+      return 0;
+    }
+
+    const partnersDOM = dataJSON.partners.sort(sortPartners).map((p) => {
+      const imageSrc = process.env.PUBLIC_URL + "/images/partners/" + p.imageName;
       return <Partner key={p.name} imageSrc={imageSrc} name={p.name} description={p.description} link={p.link}/>
     });
 
     return (
-      <div className="partners flex flex_wrap">
+      <div className="partners">
         {partnersDOM}
       </div>
     );

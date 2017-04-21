@@ -21,19 +21,28 @@
   ],
   "testimonials": [
     {
-      "author": "Ireland N",
-      "quote": "Last school year, at my school, Lincoln Middle School, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. …A dream of mine now, is to take on computer science as a profession...Thanks so much for your time and for creating awesome coding classes.",
-      "imageSrc": "/images/testimonials/ireland.jpg"
+      "author": "Ireland",
+      "context": "Lincoln Middle School",
+      "quote": "Last school year, at my school, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. A dream of mine now, is to take on computer science as a profession.",
+      "imageName": "ireland.jpg"
     },
     {
       "author": "Benjamin",
+      "context": "Michael J Castori School",
       "quote": "I didn’t know [what coding was] before this class. I liked how I got to create my own website.",
-      "imageSrc": "/images/testimonials/ireland.jpg"
+      "imageName": "placeholder.jpg"
     },
     {
       "author": "Angel",
+      "context": "Michael J Castori School",
       "quote": "The best thing about [The Coding School] class is that it was helpful because now I want to become an Engineer.",
-      "imageSrc": "/images/testimonials/ireland.jpg"
+      "imageName": "placeholder.jpg"
+    },
+    {
+      "author": "Parent",
+      "context": "Beverly Vista School",
+      "quote": "Do you know when you might start registering kiddos for this upcoming school year, or what classes you guys will be teaching? As someone in tech, I think what you guys are doing is really inspiring!",
+      "imageName": "placeholder.jpg"
     }
   ],
   "partnersParagraphs": [
@@ -83,32 +92,44 @@
     {
       "name": "USC STEM Consortium",
       "description": "",
-      "imageSrc": "uscstem.png",
+      "imageName": "uscstem.png",
       "link": "https://stem-ed.usc.edu/stem-consortium/"
     },
     {
       "name": "USC Viterbi School of Engineering",
       "description": "",
-      "imageSrc": "viterbi.png",
+      "imageName": "viterbi.png",
       "link": "https://viterbi.usc.edu/"
     },
     {
       "name": "USC Joint Education Project",
       "description": "",
-      "imageSrc": "uscjoint.png",
+      "imageName": "uscjoint.png",
       "link": "https://dornsife.usc.edu/joint-educational-project/"
     },
     {
       "name": "Brown University Computing & Information Services",
       "description": "",
-      "imageSrc": "brownuniversity.png",
+      "imageName": "brownuniversity.png",
       "link": "https://it.brown.edu/"
     },
     {
       "name": "Friends of Hawthorne",
       "description": "",
-      "imageSrc": "hawthorne.png",
+      "imageName": "hawthorne.png",
       "link": "https://www.friendsofhawthorne.org/"
+    },
+    {
+      "name": "UCLA",
+      "description": "",
+      "imageName": "ucla.png",
+      "link": "https://www.ucla.edu/"
+    },
+    {
+      "name": "Santa Monica-Malibu Unified School District",
+      "description": "",
+      "imageName": "smmusd.png",
+      "link": "https://www.smmusd.org/"
     }
   ],
   "team": {
@@ -120,23 +141,43 @@
         "description": "Kiera Peltz is a Gates-Cambridge Scholar, pursuing her masters in Political and Economic Sociology at the University of Cambridge. She is a graduate of Brown University, where she received her B.A. in Political Science and Happiness. In Summer 2014, Kiera began learning how to code at the White House as the Innovation & Technology intern in the Office of Presidential Correspondence. Having spent the majority of her free time in high school and college working in political offices, such as U.S. Congressman Brad Sherman and U.S. Senator Sheldon Whitehouse, Kiera is passionate about making computer science education a priority for politicians at the local, state, and federal level. \nKiera founded The Coding School after she realized the U.S. education system was failing to provide students with the skills needed to tackle the most pressing issues facing society. During her freshman year at Brown University, she was dissuaded from taking any computer science classes because she lacked prior coding knowledge. The following summer, while attending an international conference in Seliger, Russia, she met a group of Estonians, who spoke about the importance of early childhood coding, stating that it’s mandatory for every Estonian, starting at age seven, to learn how to code. Upon returning to the United States, Kiera began critically examining the education system and came to realize that while the world has changed drastically in the past 50 years, our country’s public K-12 curriculum has remained relatively unaltered. So she set out to fix the gap in the education system by creating The Coding School to ensure the next generation learns the language that has built – and will continue to build – the modern world. "
       }
     ],
+    "faculty": [
+      {
+        "name":  { "first": "Mark", "last": "Redekopp" },
+        "position": "Curriculum Supervisor",
+        "college": "USC",
+        "description": "Mark Redekopp is an Associate Professor of Engineering Practice in the Ming Hsieh Department of Electrical Engineering at USC. Mark serves on the Division of Engineering Education for the Viterbi School of Engineering as well as serving on the Women in Science and Engineering Advisory Board.",
+        "links": {
+          "personal": "https://viterbi.usc.edu/directory/faculty/Redekopp/Mark"
+        }
+      },
+      {
+        "name":  { "first": "Gisele", "last": "Ragusa" },
+        "position": "...",
+        "college": "USC",
+        "description": "Dr. Gisele Ragusa is a professor at the University of Southern California (USC) in the Viterbi School of Engineering’s Division of Engineering Education. She co-chairs and directs USC’s STEM Education Consortium.",
+        "links": {
+          "personal": "https://viterbi.usc.edu/directory/faculty/Ragusa/Gisele"
+        }
+      }
+    ],
     "team_leads": [
       {
         "name":  { "first": "Crystal", "last": "Hsieh" },
         "position": "Co-Head of Curriculum",
         "college": "UCLA",
-        "description": "Crystal Hsieh is a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. She's had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. She is also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools.",
+        "description": "I am a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. I've had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. I'm also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools.",
         "links": {}
       },
       {
         "name": { "first": "Bibek", "last": "Ghimire" },
         "position": "Co-Head of Web",
         "college": "UCLA",
-        "description": "I'm a 2nd year Computer Science student at UCLA. I started programming in high school, where I started a programming club, and never looked back. When I'm not teaching kids with The Coding School, I love doing web development and iOS app development.",
+        "description": "I'm a 2nd year Computer Science student at UCLA. I started programming in high school, where I started a programming club, and never looked back. When I'm not teaching kids with The Coding School, I love doing web development (like making this website!) and iOS app development.",
         "links": {
-          "personal": "https://www.bibekg.com",
-          "linkedin": "https://www.linkedin.com/in/bibekgg",
-          "facebook": "https://www.facebook.com/in/bibekghim"
+          "personal": "www.bibekg.com",
+          "linkedin": "www.linkedin.com/in/bibekgg",
+          "facebook": "www.facebook.com/in/bibekghim"
         }
       },
       {
@@ -157,14 +198,23 @@
         "name":  { "first": "Anthony", "last": "Mirand" },
         "position": "Head of Instructors",
         "college": "UCLA",
-        "description": "",
-        "links": {}
+        "description": "I am a third year computer science student at UCLA! I have been interested in tutoring and education since high school, and even plan on being a high school math teacher after my time in industry. I will be a software engineering intern at Google this summer!",
+        "links": {
+          "personal": "www.anthonymirand.com"
+        }
       },
       {
         "name":  { "first": "Bill", "last": "Derouin" },
         "position": "Advisor, Co-Head of Curriculum",
         "college": "UCLA",
         "description": "",
+        "links": {}
+      },
+      {
+        "name":  { "first": "Christie", "last": "Matthews" },
+        "position": "Head of Grants",
+        "college": "UCLA",
+        "description": "I'm a junior computer science student at UCLA and I ",
         "links": {}
       }
     ],
@@ -200,21 +250,21 @@
         "name":  { "first": "Charlie", "last": "Hwang" },
         "position": "Curriculum Development, Teacher",
         "college": "USC",
-        "description": "I’m a sophomore studying Computer Science at USC! I’ve been with The Coding School for half a year now and I have a passion for technology that lets users and developers express themselves creatively - i.e. Web Development, VR, etc.",
+        "description": "I’m a sophomore studying Computer Science at USC! I have a passion for technology that lets users and developers express themselves creatively - i.e. Web Development, VR, etc.",
         "links": {}
       },
       {
         "name":  { "first": "Sapharah", "last": "Prescod" },
         "position": "Teacher",
-        "college": "UCLA",
-        "description": "I am a multi-talented individual. My other passions in life are singing and pursuing a healthy lifestyle. I enjoy being active and putting my creative mind to use in technology. I love to seek out new experiences and I enjoy inspiring others to reach for their full potential.",
+        "college": "Pepperdine University",
+        "description": "I am a multi-talented individual. My other passions in life are singing and pursuing a healthy lifestyle. I enjoy being active and putting my creative mind to use in technology. I am earning degrees in both computer science and mathematics at Pepperdine University. I love to seek out new experiences and I enjoy inspiring others to reach for their full potential. ",
         "links": {}
       },
       {
         "name":  { "first": "Ezequil", "last": "Morales" },
         "position": "Teacher",
         "college": "CSU Sacramento",
-        "description": "I'm a student attending CSU Sacramento, pursuing a degree in computer engineering.",
+        "description": "I'm a student attending CSU Sacramento, pursuing a degree in computer engineering. I'm a member of Society of Hispanic Professional Engineers and excited to be starting an internship at Intel this Fall.",
         "links": {}
       },
       {
@@ -228,7 +278,7 @@
         "name": { "first": "Eloisa", "last": "Esparza" },
         "position": "Teacher",
         "college": "CSU Sacramento",
-        "description": "I am currently a Senior at Sacramento State majoring in Computer Engineering. I enjoy teaching engineering and programming to K-12.",
+        "description": "I am currently a Senior at Sacramento State majoring in Computer Engineering. I enjoy teaching engineering and programming to K-12. I also interned at Intel and served as an advisor for Envision, a National Youth Leadership Forum on Engineering and Technology. I also mentor 6th - 8th grade girls in all areas of STEM through Expand Your Horizons and am a member of SHPE, Society of Hispanic Professional Engineers.",
         "links": {}
       },
       {
@@ -242,7 +292,14 @@
         "name": { "first": "Richard", "last": "Wen" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": "I'm a sophomore computer science student attending UCLA. I'm originally from Redmond Washington and grew up in Microsoft's backyard. In my free time, I enjoy reading and playing Melee with friends.",
+        "description": "I'm a sophomore computer science student attending UCLA. I'm originally from Redmond Washington and grew up in Microsoft's backyard which inspired me to earn a systems engineering internship at Aerojet Rocketdyne where I designed and built a liquid fueled rocket and created a data collection system for test data, parts and decision planning. In my free time, I enjoy reading and playing Melee with friends.",
+        "links": {}
+      },
+      {
+        "name": { "first": "Ashley", "last": "Chang" },
+        "position": "Teacher",
+        "college": "UCLA",
+        "description": "I'm a second year statistics and applied math major at UCLA who loves the challenges of coding. This summer, I’ll be a data science intern at Ticketmaster right here in LA! In my spare time, you can find me running around LA or competing as a fake attorney in mock trial.",
         "links": {}
       }
     ]
@@ -275,6 +332,23 @@
     {
       "name": "3-D Game Development",
       "description": "3-D Game Development is our most popular and interactive course! Students will learn the fundamental tools of Unity and how to navigate its sophisticated software environment. By the end of the course, they will have a fully functional 3-D game. This alone will tremendously improve your child’s coding proficiency. Unity is the industry standard software used by all professional game developers."
+    }
+  ],
+  "statistics": [
+    {
+      "description": "schools",
+      "number": "16",
+      "imageName": "school_icon.png"
+    },
+    {
+      "description": "students",
+      "number": "2,500",
+      "imageName": "students_icon.png"
+    },
+    {
+      "description": "minority students",
+      "number": "44%",
+      "imageName": "minorities_icon.png"
     }
   ]
 }

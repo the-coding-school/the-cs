@@ -35,6 +35,11 @@ h3 {
   line-height: $text_md * 1.37;
 }
 
+h4 {
+  font-size: $text_sm;
+  line-height: $text_sm * 1.37;
+}
+
 p {
   font-family: 'Domine', serif;
   line-height: $text_sm * 1.37;
@@ -124,7 +129,9 @@ hr {
   margin-bottom: 50px;
 }
 
-.paragraph.titled {
+.titled_content {
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 10px;
   padding-bottom: 10px;
 

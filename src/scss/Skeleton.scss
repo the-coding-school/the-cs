@@ -24,7 +24,7 @@ $main_font: 'Montserrat', sans-serif;
 
 .navbar_tabs a {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 #navbar {
@@ -225,9 +225,9 @@ footer {
   }
   a {
     color: $white;
-    transition: all 0.2s;
+    transition: all 0.4s;
     &:hover {
-      color: $yellow;
+      text-decoration: underline;
     }
     text-decoration: none;
 
@@ -257,7 +257,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    transition: all 1s;
+    transition: all 0.5s;
     &.reg:hover {
       opacity: 0;
     }

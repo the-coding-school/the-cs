@@ -9,6 +9,7 @@ $uscYellow: #F9B218;
 $caltechOrange: #FF6E1E;
 $csuSacGreen: #01573C;
 $csuSacGold: #CBB778;
+$pepperdineBlue: #00205C;
 
 $red: #ff0000;
 $black: #333333;
@@ -46,10 +47,10 @@ $member_image_size: 300px;
   }
 }
 
-.team_board,
-.team_teachers {
+.team_member_set {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   & > * {
     padding: 20px;
   }
@@ -120,15 +121,6 @@ $member_image_size: 300px;
 
   }
 
-  .member_image {
-    img {
-      transition: all 1s;
-      &.reg:hover {
-        opacity: 0;
-      }
-    }
-  }
-
   .member_text {
     padding: 25px;
 
@@ -185,10 +177,15 @@ $member_image_size: 300px;
       background-color: $csuSacGreen;
       color: $csuSacGold;
     }
+    &.pepperdine_university {
+      background-color: $pepperdineBlue;
+      color: $white;
+    }
   }
 
   .member_text {
-    padding: 10px;
+    padding: 20px;
+    padding-top: 10px;
     padding-bottom: 0px;
     .member_name {
       font-size: $text_sm;

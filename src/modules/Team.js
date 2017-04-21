@@ -19,20 +19,19 @@ class Team extends Component {
       return 0;
     }
 
-    const teamLeadsDOM = teamData.team_leads.sort(sortMembers).map((m) => {
+    function mapMembers(m) {
       const id = m.name.first + "_" + m.name.last;
       return ( <TeamMember key={id} member={m}/> );
-    });
-
-    const teachersDOM = teamData.teachers.sort(sortMembers).map((m) => {
-      const id = m.name.first + "_" + m.name.last;
-      return ( <TeamMember key={id} member={m}/> );
-    });
+    }
 
     const founderDOM = teamData.founder.sort(sortMembers).map((m) => {
       const id = m.name.first + "_" + m.name.last;
       return <HeadMember key={id} member={m}/>
     });
+
+    const facultyDOM = teamData.faculty.sort(sortMembers).map(mapMembers);
+    const teamLeadsDOM = teamData.team_leads.sort(sortMembers).map(mapMembers);
+    const teachersDOM = teamData.teachers.sort(sortMembers).map(mapMembers);
 
     const header = dataJSON.headers.team;
     const image = process.env.PUBLIC_URL + header.image;
@@ -41,15 +40,19 @@ class Team extends Component {
         <PageHeader image={image} title={header.title} description={header.description} />
         <div className="team_page container">
           <h1>The Founder</h1>
-          <div className="team_founder">
+          <div className="team_founder team_member_set">
             {founderDOM}
           </div>
+          <h1>The Faculty</h1>
+          <div className="team_faculty team_member_set">
+            {facultyDOM}
+          </div>
           <h1>The Team Heads</h1>
-          <div className="team_board">
+          <div className="team_board team_member_set">
             {teamLeadsDOM}
           </div>
           <h1>The Teachers</h1>
-          <div className="team_teachers">
+          <div className="team_teachers team_member_set">
             {teachersDOM}
           </div>
         </div>
