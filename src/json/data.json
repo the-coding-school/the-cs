@@ -8,7 +8,7 @@
       "team": {
         "image": "/images/headers/team.jpg",
         "title": "Meet our amazing team that makes this all possible.",
-        "description": "Our team consists of 60 bright and dedicated computer science students – ranging from undergraduates to PhD candidates. With a passion for ensuring that the next generation receives the coding training that they wish they had had, our team is dedicated to making coding fun and relatable while still providing students with the vital real-world skills they’ll need to succeed."
+        "description": "Our team consists of bright and dedicated computer science students – ranging from undergraduates to PhD candidates. With a passion for ensuring that the next generation receives the coding training that they wish they had had, our team is dedicated to making coding fun and relatable while still providing students with the vital real-world skills they’ll need to succeed."
       },
       "signUp": {
         "image": "/images/headers/sign_up.jpg",
@@ -22,25 +22,29 @@
   "testimonials": [
     {
       "author": "Ireland",
-      "context": "Lincoln Middle School",
+      "context": "Student at Lincoln Middle School",
+      "date": "",
       "quote": "Last school year, at my school, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. A dream of mine now, is to take on computer science as a profession.",
       "imageName": "ireland.jpg"
     },
     {
       "author": "Benjamin",
-      "context": "Michael J Castori School",
+      "context": "Student at Michael J Castori School",
+      "date": "",
       "quote": "I didn’t know [what coding was] before this class. I liked how I got to create my own website.",
       "imageName": "placeholder.jpg"
     },
     {
       "author": "Angel",
-      "context": "Michael J Castori School",
+      "context": "Student at Michael J Castori School",
+      "date": "",
       "quote": "The best thing about [The Coding School] class is that it was helpful because now I want to become an Engineer.",
       "imageName": "placeholder.jpg"
     },
     {
-      "author": "Parent",
-      "context": "Beverly Vista School",
+      "author": "Kian Lavi",
+      "context": "Parent at Beverly Vista School",
+      "date": "June 2016",
       "quote": "Do you know when you might start registering kiddos for this upcoming school year, or what classes you guys will be teaching? As someone in tech, I think what you guys are doing is really inspiring!",
       "imageName": "placeholder.jpg"
     }
@@ -226,6 +230,15 @@
         "links": {}
       },
       {
+        "name":  { "first": "Alvin", "last": "Vuong" },
+        "position": "Teacher",
+        "college": "UCLA",
+        "description": "I'm a 4th year computer science major and cognitive science minor at UCLA, working on a VR production company, Escality Games; we are currently making a VR escape room game built with Unity (what I teach)! In my free time, I shoot arrows and play video games.",
+        "links": {
+          "personal": "http://imatv.me"
+        }
+      },
+      {
         "name":  { "first": "Karen", "last": "Fann" },
         "position": "Teacher",
         "college": "UCLA",
@@ -292,7 +305,7 @@
         "name": { "first": "Richard", "last": "Wen" },
         "position": "Teacher",
         "college": "UCLA",
-        "description": "I'm a sophomore computer science student attending UCLA. I'm originally from Redmond Washington and grew up in Microsoft's backyard which inspired me to earn a systems engineering internship at Aerojet Rocketdyne where I designed and built a liquid fueled rocket and created a data collection system for test data, parts and decision planning. In my free time, I enjoy reading and playing Melee with friends.",
+        "description": "I'm a sophomore computer science student attending UCLA. I'm originally from Redmond Washington and grew up in Microsoft's backyard. In my free time, I enjoy reading, programming, and gaming with close friends. This summer I'll be interning at Taboola as a Front End Engineer.",
         "links": {}
       },
       {
