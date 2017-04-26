@@ -30,7 +30,7 @@ class About extends Component {
     return (
       <div className="about-app App">
         <PageHeader image={image} title={header.title} description={header.description} />
-        <div className="about page container">
+        <div className="aboutpage page">
           <div className="mission_statement">
             {missionDOM}
           </div>

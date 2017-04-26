@@ -38,23 +38,25 @@ class Team extends Component {
     return (
       <div className="App">
         <PageHeader image={image} title={header.title} description={header.description} />
-        <div className="team_page container">
-          <h1>The Founder</h1>
-          <div className="team_founder team_member_set">
-            {founderDOM}
-          </div>
-          <h1>The Faculty</h1>
-          <div className="team_faculty team_member_set">
-            {facultyDOM}
-          </div>
-          <h1>The Team Heads</h1>
-          <div className="team_board team_member_set">
-            {teamLeadsDOM}
-          </div>
-          <h1>The Teachers</h1>
-          <div className="team_teachers team_member_set">
-            {teachersDOM}
-          </div>
+        <div className="teampage page">
+          <div className="container">
+            <h1>The Founder</h1>
+            <div className="team_founder team_member_set">
+              {founderDOM}
+            </div>
+            <h1>The Faculty</h1>
+            <div className="team_faculty team_member_set">
+              {facultyDOM}
+            </div>
+            <h1>The Team Heads</h1>
+            <div className="team_board team_member_set">
+              {teamLeadsDOM}
+            </div>
+            <h1>The Teachers</h1>
+            <div className="team_teachers team_member_set">
+              {teachersDOM}
+            </div>
+            </div>
         </div>
       </div>
     );

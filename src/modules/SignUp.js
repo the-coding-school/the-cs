@@ -21,7 +21,7 @@ class SignUp extends Component {
     return (
       <div className="App">
         <PageHeader image={image} title={header.title} description={header.description} appendDOM={linkButton}/>
-        <div className="sign_up page container">
+        <div className="signuppage page">
           {curriculumDOM}
           <hr/>
           <OurCourses />

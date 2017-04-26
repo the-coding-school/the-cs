@@ -19,10 +19,9 @@ class Home extends Component {
     return (
       <div className="App">
         <Video />
-        <div className="home page">
+        <div className="homepage page">
 
           <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
-
 
           <Testimonials />
 
@@ -102,8 +101,10 @@ class Testimonials extends Component {
     })
 
     return (
-      <div className="testimonials">
-        <SlickPanel children={testimonialsDOM} options={slickOpt}/>
+      <div className="testimonials_wrapper">
+        <div className="testimonials">
+          <SlickPanel children={testimonialsDOM} options={slickOpt}/>
+        </div>
       </div>
     );
   }

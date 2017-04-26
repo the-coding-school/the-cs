@@ -13,7 +13,8 @@ $text_hg: 48px;
 $bpoint_sm: 600px;
 $bpoint_md: 1000px;
 
-$header_height: 300px;
+$header_height: 400px;
+$navbar_height: 80px;
 
 $main_font: 'Montserrat', sans-serif;
 
@@ -128,7 +129,9 @@ $main_font: 'Montserrat', sans-serif;
 .page_header {
   height: $header_height;
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: $navbar_height;
+  left: 0;
   & > div {
     position: absolute;
     top: 0;
@@ -187,7 +190,8 @@ $main_font: 'Montserrat', sans-serif;
 }
 
 footer {
-
+  position: relative;
+  z-index: 100;
   a, h1, h2, p, i, div {
     color: $white;
     font-weight: bold;
