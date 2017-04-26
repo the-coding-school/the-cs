@@ -41,7 +41,7 @@ class Team extends Component {
         <div className="teampage page">
           <div className="container">
             <h1>The Founder</h1>
-            <div className="team_founder team_member_set">
+            <div className="team_founder">
               {founderDOM}
             </div>
             <h1>The Faculty</h1>

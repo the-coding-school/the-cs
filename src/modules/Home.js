@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import demovideo from "../videos/demovideo.mp4";
-import { TitledParagraphs } from "./Skeleton";
+import { TitledParagraphs, TitledContent } from "./Skeleton";
 import dataJSON from "../json/data.json";
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
@@ -16,18 +16,16 @@ class Home extends Component {
   render() {
     const introParagraphs = dataJSON.introParagraphs;
     const partnersParagraphs = dataJSON.partnersParagraphs;
+    const locationsParagraph = dataJSON.locationsParagraph;
+
     return (
       <div className="App">
         <Video />
         <div className="homepage page">
-
           <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
-
           <Testimonials />
-
-          <div>
+          <LocationsPanel />
           <TitledParagraphs title="Our Partners" paragraphs={partnersParagraphs} />
-          </div>
           <PartnersPanel />
         </div>
       </div>
@@ -130,6 +128,14 @@ class Testimonial extends Component {
             </div>
           </div>
         </div>
+    );
+  }
+}
+
+class LocationsPanel extends Component {
+  render() {
+    return (
+      <div></div>
     );
   }
 }

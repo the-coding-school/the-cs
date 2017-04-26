@@ -10,7 +10,7 @@ $text_md: 24px;
 $text_lg: 32px;
 $text_hg: 48px;
 
-$bpoint_sm: 600px;
+$bpoint_sm: 720px;
 $bpoint_md: 1000px;
 
 $navbar_height: 80px;
@@ -125,8 +125,8 @@ $partners_image_size: 200px;
 .testimonials_wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   background-color: $blue;
 }
 

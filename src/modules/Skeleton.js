@@ -26,21 +26,23 @@ class Navbar extends Component {
     var items = this.props.items;
     var navItems = items.map((i) => {
       return (
-        <Link key={i.path} to={"/" + i.path}>
-            {i.text.toUpperCase()}
-        </Link>
+        <li className="hvr_float" key={i.path}>
+          <Link to={"/" + i.path}>
+              {i.text.toUpperCase()}
+          </Link>
+        </li>
       );
     });
 
     return (
-      <nav className="flex" id="navbar">
-        <div className="navbar_logo btn btn_inflate">
-          <div className="logo_box">
+      <nav id="navbar">
+        <div className="navbar_logo">
+          <div className="hvr_grow logo_box">
             <h1 id="long_nav_logo"><Link to="/">THE CODING SCHOOL</Link></h1>
             <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
           </div>
         </div>
-        <div className="navbar_tabs flex">{navItems}</div>
+        <div className="navbar_tabs">{navItems}</div>
       </nav>
     );
   }
@@ -108,7 +110,7 @@ class Footer extends Component {
               {
                 pages.map((i) => {
                   return (
-                    <div key={i.path}>
+                    <div className="hvr_forward" key={i.path}>
                       <Link to={"/" + i.path}>
                           {i.text}
                       </Link>
@@ -124,7 +126,7 @@ class Footer extends Component {
                 {
                   resourceLinks.map((item) => {
                     return (
-                      <div key={item.href}>
+                      <div className="hvr_forward" key={item.href}>
                         <a href={item.href}>{item.name}</a>
                       </div>
                     );
