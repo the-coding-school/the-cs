@@ -28,16 +28,29 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  letter-spacing: normal;
 }
 
 h3 {
-  font-size: $text_md;
-  line-height: $text_md * 1.37;
+  @media (min-width: $bpoint_sm) {
+    font-size: $text_md;
+    line-height: $text_md * 1.37;
+  }
+  @media (max-width: $bpoint_sm - 1) {
+    font-size: $text_sm;
+    line-height: $text_sm * 1.37;
+  }
 }
 
 h4 {
-  font-size: $text_sm;
-  line-height: $text_sm * 1.37;
+  @media (min-width: $bpoint_sm) {
+    font-size: $text_sm;
+    line-height: $text_sm * 1.37;
+  }
+  @media (max-width: $bpoint_sm - 1) {
+    font-size: $text_tn;
+    line-height: $text_tn * 1.37;
+  }
 }
 
 p {
