@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router'
 import demovideo from "../videos/demovideo.mp4";
-import { TitledParagraphs, TitledContent } from "./Skeleton";
+import { TitledParagraphs, TitledContent, LinkButton } from "./Skeleton";
 import dataJSON from "../json/data.json";
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
@@ -17,6 +18,7 @@ class Home extends Component {
     const introParagraphs = dataJSON.introParagraphs;
     const partnersParagraphs = dataJSON.partnersParagraphs;
     const locationsParagraph = dataJSON.locationsParagraph;
+    const bringcodingLink = <LinkButton text="Bring coding to your school!"> <Link to={"/sign-up"} /> </LinkButton>
 
     return (
       <div className="App">
@@ -27,7 +29,23 @@ class Home extends Component {
           <LocationsPanel />
           <TitledParagraphs title="Our Partners" paragraphs={partnersParagraphs} />
           <PartnersPanel />
+
+          <BringCodingButton />
+
+
         </div>
+      </div>
+    );
+  }
+}
+
+class BringCodingButton extends Component {
+  render() {
+    return (
+      <div className="bring_coding_button">
+        <Link to={"/sign-up"}>
+          <LinkButton text="Bring coding to your school!" />
+        </Link>
       </div>
     );
   }
@@ -89,7 +107,8 @@ class Testimonials extends Component {
       autoplay: true,
       autoplaySpeed: 8000,
       dots: true,
-      pauseOnHover: false
+      pauseOnHover: false,
+      adaptiveHeight: true
     }
     const testimonialsDOM = dataJSON.testimonials.map(function(t) {
       const imageSrc = process.env.PUBLIC_URL + "/images/testimonials/" + t.imageName;

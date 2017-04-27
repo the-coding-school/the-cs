@@ -52,6 +52,8 @@ $partners_image_size: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .partner {
@@ -216,4 +218,10 @@ $partners_image_size: 200px;
       }
     }
   }
+}
+
+.bring_coding_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

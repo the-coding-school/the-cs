@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
+import $ from 'jquery';
 
 const pages = [
   { path: "about", text: "About Us" },
@@ -22,6 +23,24 @@ export class Skeleton extends Component {
 }
 
 class Navbar extends Component {
+
+  componentDidMount() {
+    var panelOpen = false;
+
+    function togglePanel() {
+      if (panelOpen){
+        $("#navbar_panel").css({"left": "100%"});
+        panelOpen = false;
+      } else {
+        $("#navbar_panel").css({"left": "0"});
+        panelOpen = true;
+      }
+    }
+
+    $("#navbar_hamburger").click(togglePanel);
+    $("#navbar_panel a").click(togglePanel);
+  }
+
   render() {
     var items = this.props.items;
     var navItems = items.map((i) => {
@@ -42,7 +61,13 @@ class Navbar extends Component {
             <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
           </div>
         </div>
-        <div className="navbar_tabs">{navItems}</div>
+        <ul className="navbar_tabs">{navItems}</ul>
+        <div id="navbar_hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div id="navbar_panel">{navItems}</div>
       </nav>
     );
   }
@@ -234,9 +259,9 @@ export class HoverFadeImage extends Component {
 export class LinkButton extends Component {
   render() {
     return (
-      <div className="flex_center btn btn_inflate wow bounceIn">
+      <div className="link_button hvr_grow bounceIn">
         <a href={this.props.link}>
-          <button className="action_button">{this.props.text}</button>
+          <button>{this.props.text}</button>
         </a>
       </div>
     );

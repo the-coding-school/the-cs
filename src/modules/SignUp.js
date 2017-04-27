@@ -20,7 +20,7 @@ class SignUp extends Component {
     const linkButton = <LinkButton text="Sign up!" link="https://www.google.com/" />
     return (
       <div className="App">
-        <PageHeader image={image} title={header.title} description={header.description} appendDOM={linkButton}/>
+        <PageHeader image={image} title={header.title} description={header.description}/>
         <div className="signuppage page">
           {curriculumDOM}
           <hr/>
