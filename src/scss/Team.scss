@@ -1,7 +1,7 @@
 @import "Variables";
 
 .teampage {
-  padding-top: 50px;
+
   h1 {
     color: $blue;
   }
@@ -49,7 +49,7 @@
   display: flex;
   // flex-shrink: 1;
   justify-content: space-between;
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+  box-shadow: $box_shadow;
   border-radius: 4px;
   @media (min-width: $bpoint_md) {
     &:nth-child(even) {
@@ -117,11 +117,9 @@
 
 .team_member {
   padding-bottom: 10px;
-  // padding-top: 10px;
-  // text-align: center;
   width: $member_image_size;
   position: relative;
-  box-shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+  box-shadow: $box_shadow;
   border-radius: 4px;
 
   .member_image {

@@ -1,164 +1,161 @@
-@import "Variables";
-
-@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat:400,700');
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: normal;
-}
-
-h3 {
-  @media (min-width: $bpoint_sm) {
-    font-size: $text_md;
-    line-height: $text_md * 1.37;
-  }
-  @media (max-width: $bpoint_sm - 1) {
-    font-size: $text_sm;
-    line-height: $text_sm * 1.37;
-  }
-}
-
-h4 {
-  @media (min-width: $bpoint_sm) {
-    font-size: $text_sm;
-    line-height: $text_sm * 1.37;
-  }
-  @media (max-width: $bpoint_sm - 1) {
-    font-size: $text_tn;
-    line-height: $text_tn * 1.37;
-  }
-}
-
-p {
-  font-family: 'Domine', serif;
-  line-height: $text_sm * 1.37;
-}
-
-img.full {
-  width: 100%;
-}
-
-hr {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  opacity: 0.5;
-}
-
-.flex_center {
-  display: flex;
-  justify-content: center;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-.flex_nowrap {
-  flex-wrap: nowrap;
-}
-
-.container {
-  @media (max-width: $bpoint_sm - 1) {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  @media (min-width: $bpoint_sm) {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-.App {
-}
-
-.page {
-  position: relative;
-  margin-top: 480px;
-  padding-bottom: 80px;
-  z-index: 100;
-  background-color: $white;
-  width: 100%;
-}
-
-.title {
-  font-size: $text_lg;
-  color: $blue;
-}
-
-
-
-.action_button {
-  border: none;
-  border-radius: 3px;
-  background-color: $yellow;
-  font-weight: bold;
-  font-size: $text_lg;
-  padding: 20px;
-  text-align: center;
-  margin: 0 auto;
-  transition: all 0.2s;
-  cursor: pointer;
-
-  &:hover {
-    padding: 30px;
-  }
-}
-
-.cell_wrapper {
-  min-width: 50%;
-  .cell {
-    margin: 20px;
-    text-align: center;
-    border: 2px solid $blue;
-    border-radius: 3px;
-    margin-bottom: 30px;
-  }
-}
-
-.video {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.titled_content {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  @media (min-width: $bpoint_md) {
-    display: flex;
-    .title { width: 30%; }
-    .paragraphs {
-      width: 70%;
-      padding-top: 10px;
-      padding-left: 20px;
-    }
-  }
-
-  .paragraphs {
-    font-size: $text_sm;
-    color: lighten($black, 10);
-    line-height: 22px;
-
-  }
-
-  &:not(:first-child) {
-    border-top: 1px solid #ddd;
-  }
-}
+// @import "Variables";
+//
+// @import url('https://fonts.googleapis.com/css?family=Domine|Montserrat:400,700');
+//
+// html, body {
+//     max-width: 100%;
+//     overflow-x: hidden;
+// }
+//
+// body {
+//   margin: 0;
+//   font-family: 'Montserrat', sans-serif;
+// }
+//
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Montserrat', sans-serif;
+//   letter-spacing: normal;
+// }
+//
+// h3 {
+//   @media (min-width: $bpoint_sm) {
+//     font-size: $text_md;
+//     line-height: $text_md * 1.37;
+//   }
+//   @media (max-width: $bpoint_sm - 1) {
+//     font-size: $text_sm;
+//     line-height: $text_sm * 1.37;
+//   }
+// }
+//
+// h4 {
+//   @media (min-width: $bpoint_sm) {
+//     font-size: $text_sm;
+//     line-height: $text_sm * 1.37;
+//   }
+//   @media (max-width: $bpoint_sm - 1) {
+//     font-size: $text_tn;
+//     line-height: $text_tn * 1.37;
+//   }
+// }
+//
+// p {
+//   font-family: 'Domine', serif;
+//   line-height: $text_sm * 1.37;
+// }
+//
+// img.full {
+//   width: 100%;
+// }
+//
+// hr {
+//   margin-top: 50px;
+//   margin-bottom: 50px;
+//   opacity: 0.5;
+// }
+//
+// .flex_center {
+//   display: flex;
+//   justify-content: center;
+// }
+//
+// .flex {
+//   display: flex;
+// }
+//
+// .flex_wrap {
+//   flex-wrap: wrap;
+// }
+//
+// .flex_nowrap {
+//   flex-wrap: nowrap;
+// }
+//
+// .container {
+//   @media (max-width: $bpoint_sm - 1) {
+//     margin-left: 3%;
+//     margin-right: 3%;
+//   }
+//   @media (min-width: $bpoint_sm) {
+//     margin-left: 5%;
+//     margin-right: 5%;
+//   }
+// }
+//
+// .page {
+//   position: relative;
+//   margin-top: 480px;
+//   padding-bottom: 80px;
+//   z-index: 100;
+//   background-color: $white;
+//   width: 100%;
+// }
+//
+// .title {
+//   font-size: $text_lg;
+//   color: $blue;
+// }
+//
+//
+//
+// .action_button {
+//   border: none;
+//   border-radius: 3px;
+//   background-color: $yellow;
+//   font-weight: bold;
+//   font-size: $text_lg;
+//   padding: 20px;
+//   text-align: center;
+//   margin: 0 auto;
+//   transition: all 0.2s;
+//   cursor: pointer;
+//
+//   &:hover {
+//     padding: 30px;
+//   }
+// }
+//
+// .cell_wrapper {
+//   min-width: 50%;
+//   .cell {
+//     margin: 20px;
+//     text-align: center;
+//     border: 2px solid $blue;
+//     border-radius: 3px;
+//     margin-bottom: 30px;
+//   }
+// }
+//
+// .video {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 50px;
+// }
+//
+// .titled_content {
+//   padding-left: 5%;
+//   padding-right: 5%;
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+//
+//   @media (min-width: $bpoint_md) {
+//     display: flex;
+//     .title { width: 30%; }
+//     .paragraphs {
+//       width: 70%;
+//       padding-top: 10px;
+//       padding-left: 20px;
+//     }
+//   }
+//
+//   .paragraphs {
+//     font-size: $text_sm;
+//     color: lighten($black, 10);
+//     line-height: 22px;
+//
+//   }
+//
+//   &:not(:first-child) {
+//     border-top: 1px solid #ddd;
+//   }
+// }

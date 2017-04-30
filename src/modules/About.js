@@ -62,7 +62,7 @@ class OurImpact extends Component {
       <div className="our_impact">
         {impactDOM}
         <hr/>
-        <div className="statistics flex">
+        <div className="statistics">
           {statisticsDOM}
         </div>
 

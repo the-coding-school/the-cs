@@ -3,7 +3,7 @@ import { PageHeader, FontAwesomeLink, HoverFadeImage } from './Skeleton';
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/Team.scss';
-import '../scss/font-awesome.scss';
+import '../scss/_fa/font-awesome.scss';
 
 import dataJSON from '../json/data.json';
 
@@ -71,17 +71,12 @@ class HeadMember extends Component {
     const position = member.position;
     const firstName = member.name.first;
     const lastName = member.name.last;
-    const regImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + ".jpg";
-    const funImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + "_fun.jpg";
+    const memberID = firstName[0].toLowerCase() + "_" + lastName.toLowerCase();
     const description = member.description;
 
     return (
         <div className="head_member flex">
-
-          <div className="member_image">
-            <HoverFadeImage funImage={funImage} regImage={regImage}/>
-          </div>
-
+          <MemberImage memberID={memberID} />
           <div className="member_text_wrapper">
             <div className="member_text">
               <div className="member_name">{(firstName + " " + lastName).toUpperCase()}</div>
@@ -96,38 +91,68 @@ class HeadMember extends Component {
   }
 }
 
+// ------- Team Member (smaller cells) ------- //
+
 class TeamMember extends Component {
 
   render() {
-    const member = this.props.member;
-
-    const collegeID = member.college.toLowerCase().split(' ').join('_');
-    const firstName = member.name.first;
-    const lastName = member.name.last;
-    const regImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + ".jpg";
-    const funImage = firstName[0].toLowerCase() + "_" + lastName.toLowerCase() + "_fun.jpg";
+    const m = this.props.member;
+    const firstName = m.name.first;
+    const lastName = m.name.last;
+    const name = firstName + " " + lastName;
+    const memberID = firstName[0].toLowerCase() + "_" + lastName.toLowerCase();
 
     return (
       <div className="team_member_wrapper">
         <div className="team_member wow fadeIn">
-          <div className="member_image">
-            <HoverFadeImage funImage={funImage} regImage={regImage}/>
-          </div>
-          <div className={"college_attended " + collegeID}>{member.college}</div>
-          <div className="member_text">
-            <h1 className="member_name">{member.name.first + " " + member.name.last}</h1>
-            <h2 className="member_position">{member.position}</h2>
-            <div className="member_description">
-              <p>{member.description}</p>
-            </div>
-            <div className="member_links">
-              <MemberLinks links={member.links} />
-            </div>
-          </div>
-
+          <MemberImage memberID={memberID} />
+          <TeamMemberCollegeBar college={m.college} />
+          <TeamMemberDescription name={name} position={m.position} description={m.description} links={m.links} />
         </div>
       </div>
     )
+  }
+}
+
+class MemberImage extends Component {
+  render() {
+    const p = this.props;
+    const root = process.env.PUBLIC_URL + "/images/team/";
+    const regImage = root + p.memberID + ".jpg";
+    const funImage = root + p.memberID + "_fun.jpg";
+    return (
+      <div className="member_image">
+        <HoverFadeImage default={regImage} hover={funImage} />
+      </div>
+    )
+  }
+}
+
+class TeamMemberCollegeBar extends Component {
+  render() {
+    const college = this.props.college;
+    const collegeID = college.toLowerCase().split(' ').join('_');
+    return (
+      <div className={"college_attended " + collegeID}>{college}</div>
+    )
+  }
+}
+
+class TeamMemberDescription extends Component {
+  render() {
+    const p = this.props;
+    return (
+      <div className="member_text">
+        <h1 className="member_name">{p.name}</h1>
+        <h2 className="member_position">{p.position}</h2>
+        <div className="member_description">
+          <p>{p.description}</p>
+        </div>
+        <div className="member_links">
+          <MemberLinks links={p.links} />
+        </div>
+      </div>
+    );
   }
 }
 

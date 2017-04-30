@@ -244,13 +244,12 @@ export class TitledContent extends Component {
 
 export class HoverFadeImage extends Component {
   render() {
-    const root = process.env.PUBLIC_URL + "/images/team/";
-    const funImage = root + this.props.funImage;
-    const regImage = root + this.props.regImage;
+    const def = this.props.default;
+    const hov = this.props.hover;
     return (
       <div className="hover_fade_image">
-        <img className="fun" src={funImage} alt="fun" />
-        <img className="reg" src={regImage} alt="regular" />
+        <img className="fun" src={hov} alt="hover" />
+        <img className="reg" src={def} alt="default" />
       </div>
     );
   }
