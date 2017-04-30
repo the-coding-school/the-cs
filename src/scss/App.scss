@@ -1,20 +1,6 @@
+@import "Variables";
 
-// ** Variables ** //
-$blue: #00c7d2;
-$yellow: #ffcc00;
-$black: #333333;
-$white: #ffffff;
-
-$text_tn: 14px;
-$text_sm: 18px;
-$text_md: 24px;
-$text_lg: 32px;
-$text_hg: 48px;
-
-$bpoint_sm: 600px;
-$bpoint_md: 1000px;
-
-@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat:400,700');
 
 html, body {
     max-width: 100%;

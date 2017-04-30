@@ -1,20 +1,4 @@
-// ** Variables ** //
-$blue: #00c7d2;
-$yellow: #ffcc00;
-$black: #333333;
-$white: #ffffff;
-
-$text_tn: 14px;
-$text_sm: 18px;
-$text_md: 24px;
-$text_lg: 32px;
-$text_hg: 48px;
-
-$bpoint_sm: 600px;
-$bpoint_md: 1000px;
-
-$header_height: 400px;
-$navbar_height: 80px;
+@import "Variables";
 
 .aboutpage {
   margin-top: $header_height + $navbar_height;

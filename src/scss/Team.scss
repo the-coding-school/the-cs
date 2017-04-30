@@ -1,31 +1,4 @@
-// ** Variables ** //
-$blue: #00c7d2;
-$yellow: #ffcc00;
-
-$uclaBlue: #1E5EA0;
-$uclaYellow: #FBB727;
-$uscRed: #980F07;
-$uscYellow: #F9B218;
-$caltechOrange: #FF6E1E;
-$csuSacGreen: #01573C;
-$csuSacGold: #CBB778;
-$pepperdineBlue: #00205C;
-
-$red: #ff0000;
-$black: #333333;
-$white: #ffffff;
-
-$text_tn: 14px;
-$text_sm: 18px;
-$text_md: 24px;
-$text_lg: 32px;
-$text_hg: 48px;
-
-$bpoint_sm: 720px;
-$bpoint_md: 1000px;
-
-$head_member_image_size: 400px;
-$member_image_size: 300px;
+@import "Variables";
 
 .teampage {
   padding-top: 50px;

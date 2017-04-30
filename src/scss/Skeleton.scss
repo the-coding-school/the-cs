@@ -1,22 +1,4 @@
-// ** Variables ** //
-$blue: #00c7d2;
-$yellow: #ffcc00;
-$black: #333333;
-$white: #ffffff;
-
-$text_tn: 14px;
-$text_sm: 18px;
-$text_md: 24px;
-$text_lg: 32px;
-$text_hg: 48px;
-
-$bpoint_sm: 800px;
-$bpoint_md: 1000px;
-
-$header_height: 400px;
-$navbar_height: 80px;
-$box_shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
-$main_font: 'Montserrat', sans-serif;
+@import "Variables";
 
 /* Float */
 .hvr_float {

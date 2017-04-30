@@ -170,6 +170,13 @@
     ],
     "team_leads": [
       {
+        "name":  { "first": "Akila", "last": "Rajesh" },
+        "position": "Head of PR & Communications",
+        "college": "UCLA",
+        "description": "I'm a first year computer science and linguistics major. I jumped into CS classes at UCLA with absolutely no background info. It was very intimidating at first, but after I got a feel for it I had lots of fun coding! I thing this is a field truly anyone can learn and enjoy!",
+        "links": {}
+      },
+      {
         "name":  { "first": "Crystal", "last": "Hsieh" },
         "position": "Co-Head of Curriculum",
         "college": "UCLA",
@@ -191,7 +198,7 @@
         "name": { "first": "Natalie", "last": "Ethell" },
         "position": "Co-Head of Web",
         "college": "UCLA",
-        "description": "",
+        "description": "I am a senior at UCLA studying computer science and I love teaching, dogs, bagels, and anything involving puzzles. I grew up in Southern California and will be moving to Seattle to work at Microsoft after graduation.",
         "links": {}
       },
       {
@@ -207,13 +214,13 @@
         "college": "UCLA",
         "description": "I am a third year computer science student at UCLA! I have been interested in tutoring and education since high school, and even plan on being a high school math teacher after my time in industry. I will be a software engineering intern at Google this summer!",
         "links": {
-          "personal": "www.anthonymirand.com"
+          "personal": "http://www.anthonymirand.com"
         }
       },
       {
         "name":  { "first": "Bill", "last": "Derouin" },
         "position": "Advisor, Co-Head of Curriculum",
-        "college": "UCLA",
+        "college": "USC",
         "description": "",
         "links": {}
       },
@@ -328,28 +335,34 @@
       ]
     }
   ],
-  "courses": [
-    {
-      "name": "Web Coding I",
-      "description": "Web Coding I introduces students to HTML & CSS. Students will learn how to build the structure of a webpage, import text, add images, create links, and then how to add style to their webpage with color, borders, creative fonts and so much more."
-    },
-    {
-      "name": "Web Coding II",
-      "description": "In Web Coding II, students will create multiple webpages and learn how to link those webpages together to create their very own website! They'll learn how to create and add tabs, buttons, search bars, sidebars, sign-up pages and more. They'll be designing their own 'business' from record labels to pet stores to major league baseball teams and then once they've created a website for their 'company', they'll learn how to host their websites online for free!"
-    },
-    {
-      "name": "Javascript I",
-      "description": "In JS I, students will learn how to draw robots and make them move... all by writing code! To do this, they’ll learn how to navigate the text editor, JS Fiddle; how to use pixels and processing; what booleans are and how to code using variables, loops, conditionals and logical operators."
-    },
-    {
-      "name": "Javascript II",
-      "description": "In JS II, students will take their drawings and animations to the next level while learning to code using functions, loops, arrays and objects."
-    },
-    {
-      "name": "3-D Game Development",
-      "description": "3-D Game Development is our most popular and interactive course! Students will learn the fundamental tools of Unity and how to navigate its sophisticated software environment. By the end of the course, they will have a fully functional 3-D game. This alone will tremendously improve your child’s coding proficiency. Unity is the industry standard software used by all professional game developers."
-    }
-  ],
+  "courses": {
+    "web": [
+      {
+        "name": "Web Coding I",
+        "description": "Web Coding I introduces students to HTML & CSS. Students will learn how to build the structure of a webpage, import text, add images, create links, and then how to add style to their webpage with color, borders, creative fonts and so much more."
+      },
+      {
+        "name": "Web Coding II",
+        "description": "In Web Coding II, students will create multiple webpages and learn how to link those webpages together to create their very own website! They'll learn how to create and add tabs, buttons, search bars, sidebars, sign-up pages and more. They'll be designing their own 'business' from record labels to pet stores to major league baseball teams and then once they've created a website for their 'company', they'll learn how to host their websites online for free!"
+      }
+    ],
+    "js": [
+      {
+        "name": "Javascript I",
+        "description": "In JS I, students will learn how to draw robots and make them move... all by writing code! To do this, they’ll learn how to navigate the text editor, JS Fiddle; how to use pixels and processing; what booleans are and how to code using variables, loops, conditionals and logical operators."
+      },
+      {
+        "name": "Javascript II",
+        "description": "In JS II, students will take their drawings and animations to the next level while learning to code using functions, loops, arrays and objects."
+      }
+    ],
+    "unity": [
+      {
+        "name": "3-D Game Development",
+        "description": "3-D Game Development is our most popular and interactive course! Students will learn the fundamental tools of Unity and how to navigate its sophisticated software environment. By the end of the course, they will have a fully functional 3-D game. This alone will tremendously improve your child’s coding proficiency. Unity is the industry standard software used by all professional game developers."
+      }
+    ]
+  },
   "statistics": [
     {
       "description": "schools",

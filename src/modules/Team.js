@@ -11,6 +11,7 @@ class Team extends Component {
   render() {
 
     const teamData = dataJSON.team;
+
     function sortMembers(a, b) {
       const nameA = a.name.first + " " + a.name.last;
       const nameB = b.name.first + " " + b.name.last;
@@ -56,7 +57,7 @@ class Team extends Component {
             <div className="team_teachers team_member_set">
               {teachersDOM}
             </div>
-            </div>
+          </div>
         </div>
       </div>
     );

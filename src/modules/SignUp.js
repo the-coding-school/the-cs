@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/SignUp.scss';
-import { TitledParagraphs, PageHeader, LinkButton } from './Skeleton';
+import { TitledContent, TitledParagraphs, PageHeader, LinkButton } from './Skeleton';
 import dataJSON from '../json/data.json';
 
 class SignUp extends Component {
   render() {
 
     const curriculum = dataJSON.curriculumParagraphs;
+
     const curriculumDOM = curriculum.map(function(p) {
       return (
           <TitledParagraphs key={p.title} title={p.title} paragraphs={p.paragraphs} />
@@ -35,13 +36,33 @@ class OurCourses extends Component {
   render() {
 
     const courses = dataJSON.courses;
-    const coursesDOM = courses.map((c) =>
-      <Course key={c.name} name={c.name} description={c.description}/>
-    );
+
+    const htmlCurDOM = courses.web.map(function(c) {
+      return (
+          <Course key={c.name} name={c.name} description={c.description} />
+      );
+    });
+
+    const jsCurDOM = courses.js.map(function(c) {
+      return (
+          <Course key={c.name} name={c.name} description={c.description} />
+      );
+    });
+
+    const unityCurDOM = courses.unity.map(function(c) {
+      return (
+          <Course key={c.name} name={c.name} description={c.description} />
+      );
+    });
 
     return (
       <div className="our_courses">
-        {coursesDOM}
+        <h1>HTML/CSS</h1>
+        <div className="courses_row">{htmlCurDOM}</div>
+        <h1>Javascript</h1>
+        <div className="courses_row">{jsCurDOM}</div>
+        <h1>Unity</h1>
+        <div className="courses_row">{unityCurDOM}</div>
       </div>
     );
   }
