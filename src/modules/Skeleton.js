@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import $ from 'jquery';
+import logo from '../images/logo.png';
 
 const pages = [
   { path: "about", text: "About Us" },
@@ -55,12 +56,7 @@ class Navbar extends Component {
 
     return (
       <nav id="navbar">
-        <div className="navbar_logo">
-          <div className="hvr_grow logo_box">
-            <h1 id="long_nav_logo"><Link to="/">THE CODING SCHOOL</Link></h1>
-            <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
-          </div>
-        </div>
+        <LogoIcon />
         <ul className="navbar_tabs">{navItems}</ul>
         <div id="navbar_hamburger">
           <div></div>
@@ -69,6 +65,22 @@ class Navbar extends Component {
         </div>
         <div id="navbar_panel">{navItems}</div>
       </nav>
+    );
+  }
+}
+
+class LogoIcon extends Component {
+  render() {
+    // <h1 id="long_nav_logo"><Link to="/">THE CODING SCHOOL</Link></h1>
+    // <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
+    return (
+      <div className="navbar_logo">
+        <div className="logo_box">
+          <Link to="/">
+            <img src={logo}/>
+          </Link>
+        </div>
+      </div>
     );
   }
 }

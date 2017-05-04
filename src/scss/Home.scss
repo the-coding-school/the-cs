@@ -1,26 +1,43 @@
 @import "Variables";
 
-.homepage {
-  .paragraph {
+@media (max-width: $bpoint_md - 1) {
+  #video {
+    position: relative;
+    top: $navbar_height;
+    width: 100%;
+
+    .video_wrapper { width: 100%; }
+
+    video { width: 100%; }
+  }
+
+  .page.homepage {
+    margin-top: $navbar_height;
   }
 }
 
-#video {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-
-  .video_wrapper {
+@media (min-width: $bpoint_md) {
+  #video {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 0;
     width: 100%;
-    height: $header_height;
+
+    .video_wrapper {
+      width: 100%;
+      height: $header_height;
+    }
+
+    video {
+      width: 100%;
+      height: $video_height;
+      object-fit: cover;
+    }
   }
 
-  video {
-    width: 100%;
-    height: $header_height;
-    object-fit: cover;
+  .page.homepage {
+    margin-top: $video_height;
   }
 }
 

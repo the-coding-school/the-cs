@@ -131,6 +131,12 @@ nav {
     height: 100%;
     // border-right: 1px solid rgba($black, 0.1);
 
+    img {
+      height: 60px;
+      width: auto;
+      border-radius: 4px;
+    }
+
     #short_nav_logo {
       display: none;
     }
@@ -156,17 +162,6 @@ nav {
     li {
       list-style: none;
     }
-
-    a {
-      font-size: $text_md;
-      color: $white;
-      text-decoration: none;
-      background-color: $blue;
-      border-radius: 3px;
-      padding: 10px;
-    }
-
-
   }
 
   .logo_box {
