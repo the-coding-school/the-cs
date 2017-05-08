@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PageHeader, FontAwesomeLink, HoverFadeImage } from './Skeleton';
+import { PageHeader, FontAwesomeLink, HoverFadeImage, HoverFadeContent } from './Skeleton';
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/Team.scss';
@@ -57,6 +57,9 @@ class Team extends Component {
             <div className="team_teachers team_member_set">
               {teachersDOM}
             </div>
+
+            <HoverFadeContent default={<h1>Bibek</h1>} onHover={<h1>Ghimire</h1>} />
+
           </div>
         </div>
       </div>

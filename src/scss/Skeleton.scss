@@ -369,22 +369,23 @@ footer {
   }
 }
 
-.hover_fade_image {
+.hover_fade_content {
   position: relative;
   width: 100%;
   height: 100%;
-  img {
+  .hfc {
     width: 100%;
     height: 100%;
-    text-align: center;
     position: absolute;
     top: 0;
     left: 0;
     transition: all 0.5s;
-    &.reg:hover {
-      opacity: 0;
-    }
+    &.hfc_default { opacity: 1; }
+    &.hfc_hover { opacity: 0; }
   }
+
+  &:hover .hfc_default { opacity: 0; }
+  &:hover .hfc_hover { opacity: 1; }
 }
 
 .link_button button {
