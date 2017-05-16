@@ -1,0 +1,14 @@
+@import "Variables";
+
+.typeform {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.typeform-widget {
+  height: 100%;
+  width: 80%;
+  box-shadow: $box_shadow;
+}

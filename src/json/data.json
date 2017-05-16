@@ -14,6 +14,11 @@
         "image": "/images/headers/sign_up.jpg",
         "title": "Sign up for courses.",
         "description": ""
+      },
+      "getInvolved": {
+        "image": "/images/headers/get_involved.jpg",
+        "title": "Get involved with The Coding School.",
+        "description": "Giving the gift of coding not only impacts the lives of the students involved, it has the potential to change the world."
       }
   },
   "introParagraphs": [

@@ -8,7 +8,8 @@ import logo from '../images/logo.png';
 const pages = [
   { path: "about", text: "About Us" },
   { path: "team", text: "Our Team" },
-  { path: "sign-up", text: "Sign Up" }
+  { path: "sign-up", text: "Sign Up" },
+  { path: "get-involved", text: "Get Involved" }
 ];
 
 export class Skeleton extends Component {
