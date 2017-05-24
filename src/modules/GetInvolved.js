@@ -8,34 +8,76 @@ import dataJSON from '../json/data.json';
 
 class GetInvolved extends Component {
   render() {
-
-    let missionDOM = dataJSON.ourMission.map(function(section) {
-      return (
-        <TitledParagraphs title={section.title} key={section.title}
-                          paragraphs={section.paragraphs} />
-
-      );
-    });
-
-    let contentDOM = dataJSON.aboutPage.map(function(section) {
-      return (
-        <TitledParagraphs title={section.title} key={section.title}
-                          paragraphs={section.paragraphs} />
-
-      );
-    });
-
     const header = dataJSON.headers.getInvolved;
-    const image = process.env.PUBLIC_URL + header.image;
+
+    // TODO: Add donation section
+    const donP = dataJSON.paragraphs.donationsIntro;
 
     return (
       <div className="App">
-        <PageHeader image={image} title={header.title} description={header.description} />
+        <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className="getinvolved_page page">
-          <VolunteerTypeform />
+          <div className="donations_section">
+            <TitledParagraphs title={donP.title} paragraphs={donP.paragraphs} />
+            <DonationsPanel/>
+          </div>
+
         </div>
       </div>
     );
+  }
+}
+
+class DonationsPanel extends Component {
+  render() {
+
+    let options = dataJSON.donationOptions;
+    let optionsDOM = options.map(function(o) {
+      return <DonationOption option={o} key={o.amount}/>
+    })
+    return (
+      <div className="donations_panel">
+        <div className="donations_options">
+          {optionsDOM}
+        </div>
+        <DonateCustom />
+      </div>
+    );
+  }
+}
+
+class DonateCustom extends Component {
+  render() {
+    return (
+      <a className="donate_custom" href={this.props.paymentLink}>
+        Donate a custom amount.
+      </a>
+    );
+  }
+}
+
+// props: buttonText, buttonLink, optionImage
+class DonationOption extends Component {
+  render() {
+    let o = this.props.option;
+    return (
+      <div className="donation_option">
+        <img src={o.image} />
+        <DonationButton text={o.category + " ($" + o.amount + ")"} link={o.paymentLink} />
+      </div>
+    );
+  }
+}
+
+class DonationButton extends Component {
+  render() {
+    return (
+      <div className="donation_button">
+        <a href={this.props.link}>
+          {this.props.text}
+        </a>
+      </div>
+    )
   }
 }
 

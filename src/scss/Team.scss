@@ -122,9 +122,23 @@
   box-shadow: $box_shadow;
   border-radius: 4px;
 
-  .member_image {
-    width: $member_image_size;
-    height: $member_image_size;
+  @media (max-width: $bpoint_md - 1) {
+    width: $member_image_size / 2;
+    .member_image {
+      width: $member_image_size / 2;
+      height: $member_image_size / 2;
+    }
+    .member_text {
+      display: none;
+    }
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $bpoint_md) {
+    .member_image {
+      width: $member_image_size;
+      height: $member_image_size;
+    }
   }
 
   .college_attended {
@@ -169,6 +183,7 @@
     .member_position {
       font-size: $text_tn;
     }
+
   }
 
   .member_links {

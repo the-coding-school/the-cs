@@ -257,13 +257,11 @@ export class TitledContent extends Component {
 
 export class HoverFadeImage extends Component {
   render() {
-    const def = this.props.default;
-    const hov = this.props.hover;
-    const funDOM = <img className="fun" src={hov} alt="hover" />
-    const hoverDOM = <img className="reg" src={def} alt="default" />
+    const defaultDOM = <img className="default_img" src={this.props.default} alt="hover" />
+    const hoverDOM = <img className="hover_img" src={this.props.hover} alt="default" />
     return (
       <div className="hover_fade_image">
-        <HoverFadeContent default={funDOM} onHover={hoverDOM} />
+        <HoverFadeContent default={defaultDOM} onHover={hoverDOM} />
       </div>
     );
   }

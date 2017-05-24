@@ -15,24 +15,19 @@ import $ from 'jquery';
 
 class Home extends Component {
   render() {
-    const introParagraphs = dataJSON.introParagraphs;
-    const partnersParagraphs = dataJSON.partnersParagraphs;
-    const locationsParagraph = dataJSON.locationsParagraph;
+    const miP = dataJSON.paragraphs.mainIntro;
+    const pP = dataJSON.paragraphs.partnersIntro;
     const bringcodingLink = <LinkButton text="Bring coding to your school!"> <Link to={"/sign-up"} /> </LinkButton>
 
     return (
       <div className="App">
         <Video />
         <div className="homepage page">
-          <TitledParagraphs title="The Coding School" paragraphs={introParagraphs} />
+          <TitledParagraphs title={miP.title} paragraphs={miP.paragraphs} />
           <Testimonials />
           <LocationsPanel />
-          <TitledParagraphs title="Our Partners" paragraphs={partnersParagraphs} />
+          <TitledParagraphs title={pP.title} paragraphs={pP.paragraphs} />
           <PartnersPanel />
-
-          <BringCodingButton />
-
-
         </div>
       </div>
     );
@@ -107,7 +102,7 @@ class Testimonials extends Component {
       autoplay: true,
       autoplaySpeed: 8000,
       dots: true,
-      pauseOnHover: false,
+      pauseOnHover: true,
       adaptiveHeight: true
     }
     const testimonialsDOM = dataJSON.testimonials.map(function(t) {
@@ -138,11 +133,13 @@ class Testimonial extends Component {
             </div>
             <div className="testimonial_text">
               <div className="testimonial_quote">
-                <h3>{'"' + this.props.quote + '"'}</h3>
+                {'"' + this.props.quote + '"'}
               </div>
               <div className="testimonial_author">
-                <h3>{this.props.author.toUpperCase()}</h3>
-                <h4>{this.props.context}</h4>
+                {this.props.author.toUpperCase()}
+              </div>
+              <div className="testimonial_context">
+                {this.props.context}
               </div>
             </div>
           </div>

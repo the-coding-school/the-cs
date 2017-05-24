@@ -1,149 +1,4 @@
 {
-  "headers": {
-      "about": {
-        "image": "/images/headers/about.jpg",
-        "title": "Learn a little more about who we are.",
-        "description": "Learn about our mission, who we are, what we do, and why we do it."
-      },
-      "team": {
-        "image": "/images/headers/team.jpg",
-        "title": "Meet our amazing team that makes this all possible.",
-        "description": "Our team consists of bright and dedicated computer science students – ranging from undergraduates to PhD candidates. With a passion for ensuring that the next generation receives the coding training that they wish they had had, our team is dedicated to making coding fun and relatable while still providing students with the vital real-world skills they’ll need to succeed."
-      },
-      "signUp": {
-        "image": "/images/headers/sign_up.jpg",
-        "title": "Sign up for courses.",
-        "description": ""
-      },
-      "getInvolved": {
-        "image": "/images/headers/get_involved.jpg",
-        "title": "Get involved with The Coding School.",
-        "description": "Giving the gift of coding not only impacts the lives of the students involved, it has the potential to change the world."
-      }
-  },
-  "introParagraphs": [
-    "The Coding School is a 501c3 non-profit that teaches computer programming to elementary and middle school students. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes."
-  ],
-  "testimonials": [
-    {
-      "author": "Ireland",
-      "context": "Student at Lincoln Middle School",
-      "date": "",
-      "quote": "Last school year, at my school, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. A dream of mine now, is to take on computer science as a profession.",
-      "imageName": "ireland.jpg"
-    },
-    {
-      "author": "Benjamin",
-      "context": "Student at Michael J Castori School",
-      "date": "",
-      "quote": "I didn’t know [what coding was] before this class. I liked how I got to create my own website.",
-      "imageName": "placeholder.jpg"
-    },
-    {
-      "author": "Angel",
-      "context": "Student at Michael J Castori School",
-      "date": "",
-      "quote": "The best thing about [The Coding School] class is that it was helpful because now I want to become an Engineer.",
-      "imageName": "placeholder.jpg"
-    },
-    {
-      "author": "Kian Lavi",
-      "context": "Parent at Beverly Vista School",
-      "date": "June 2016",
-      "quote": "Do you know when you might start registering kiddos for this upcoming school year, or what classes you guys will be teaching? As someone in tech, I think what you guys are doing is really inspiring!",
-      "imageName": "placeholder.jpg"
-    }
-  ],
-  "locationsParagraph": [
-    "We are proud to be at these schools."
-  ],
-  "partnersParagraphs": [
-    "To ensure quality curriculum and outreach, we are proud to be partnered with these great organizations."
-  ],
-  "ourMission": [
-    {
-      "title": "Our Mission",
-      "paragraphs": [
-          "Our mission is to ensure our children are equipped to thrive in this technologically-driven world."
-      ]
-    }
-  ],
-  "aboutPage": [
-    {
-      "title": "Who We Are",
-      "paragraphs": [
-        "Founded in 2014, The Coding School is a 501c3 non-profit dedicated to equipping children with the skills and knowledge needed to thrive in our tech-driven world.",
-        "We teach coding to elementary, middle and high school students so this universal language becomes second nature. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes. However, there is a fundamental disconnect between what students are learning in school and what is happening in the real world.",
-        "Whilst growing up through the US education system, founder Kiera Peltz witnessed this disconnect personally. Disappointed in the level of computer science education offered to K-12 students, Kiera researched how other countries were educating their children. She felt the American system was not preparing students for a future where computer language will be the universal language for education, work and play. She sought a way to fix this gap; founding The Coding School in 2014."
-      ]
-    },
-    {
-      "title": "What We Do",
-      "paragraphs": [
-        "Our team offers long-term coding education with weekly classes as part of a 3-year curriculum.",
-        "We at The Coding School believe that coding is a source of empowerment. Yes, we’re training the next generation of coders, but we’re also training the next generation of problem solvers who will become CEOs, politicians, and scientists."
-      ]
-    },
-    {
-      "title": "Why We Do It",
-      "paragraphs": [
-        "There is a fundamental disconnect between what students are learning in school and what is happening in the real world. The current education system is not preparing students with the necessary critical thinking and computational skills necessary to succeed and address the most pressing issues in the 21st century.",
-        "That’s where The Coding School comes in. We aim to bridge this gap."
-      ]
-    }
-  ],
-  "ourImpact": [
-    {
-      "title": "Our Impact",
-      "paragraphs": [
-        "Uniquely, we deliver quality and assured curriculum directly to students in their schools -- regardless of socio-economic status.  This is delivered by passionate experts who live and breath coding and inspire children with the real-world applications.  Our children need to thrive, compete and operate in our ever-increasing tech-driven economy.  We are preparing the minds of children to be thinkers and problem solvers, and perhaps one day one of our students will create the innovation that overcomes a major societal challenge!"
-      ]
-    }
-  ],
-  "partners": [
-    {
-      "name": "USC STEM Consortium",
-      "description": "",
-      "imageName": "uscstem.png",
-      "link": "https://stem-ed.usc.edu/stem-consortium/"
-    },
-    {
-      "name": "USC Viterbi School of Engineering",
-      "description": "",
-      "imageName": "viterbi.png",
-      "link": "https://viterbi.usc.edu/"
-    },
-    {
-      "name": "USC Joint Education Project",
-      "description": "",
-      "imageName": "uscjoint.png",
-      "link": "https://dornsife.usc.edu/joint-educational-project/"
-    },
-    {
-      "name": "Brown University Computing & Information Services",
-      "description": "",
-      "imageName": "brownuniversity.png",
-      "link": "https://it.brown.edu/"
-    },
-    {
-      "name": "Friends of Hawthorne",
-      "description": "",
-      "imageName": "hawthorne.png",
-      "link": "https://www.friendsofhawthorne.org/"
-    },
-    {
-      "name": "UCLA",
-      "description": "",
-      "imageName": "ucla.png",
-      "link": "https://www.ucla.edu/"
-    },
-    {
-      "name": "Santa Monica-Malibu Unified School District",
-      "description": "",
-      "imageName": "smmusd.png",
-      "link": "https://www.smmusd.org/"
-    }
-  ],
   "team": {
     "founder": [
       {
@@ -333,14 +188,52 @@
       }
     ]
   },
-  "curriculumParagraphs": [
+
+  "partners": [
     {
-      "title": "Our Curriculum",
-      "paragraphs": [
-        "Our 3-year plan is designed to get students excited about coding by exposing them to a variety of coding languages in which they can create projects that come to life with each computer keystroke. While creating websites, animated drawings and action games they’ll also be learning the key coding concepts that are universal across all coding languages. In addition, our courses are geared to improve the student’s critical and computational thinking skills and also to lay the groundwork in providing them with the competitive edge for colleges and jobs."
-      ]
+      "name": "USC STEM Consortium",
+      "description": "",
+      "imageName": "uscstem.png",
+      "link": "https://stem-ed.usc.edu/stem-consortium/"
+    },
+    {
+      "name": "USC Viterbi School of Engineering",
+      "description": "",
+      "imageName": "viterbi.png",
+      "link": "https://viterbi.usc.edu/"
+    },
+    {
+      "name": "USC Joint Education Project",
+      "description": "",
+      "imageName": "uscjoint.png",
+      "link": "https://dornsife.usc.edu/joint-educational-project/"
+    },
+    {
+      "name": "Brown University Computing & Information Services",
+      "description": "",
+      "imageName": "brownuniversity.png",
+      "link": "https://it.brown.edu/"
+    },
+    {
+      "name": "Friends of Hawthorne",
+      "description": "",
+      "imageName": "hawthorne.png",
+      "link": "https://www.friendsofhawthorne.org/"
+    },
+    {
+      "name": "UCLA",
+      "description": "",
+      "imageName": "ucla.png",
+      "link": "https://www.ucla.edu/"
+    },
+    {
+      "name": "Santa Monica-Malibu Unified School District",
+      "description": "",
+      "imageName": "smmusd.png",
+      "link": "https://www.smmusd.org/"
     }
   ],
+
   "courses": {
     "web": [
       {
@@ -369,6 +262,7 @@
       }
     ]
   },
+
   "statistics": [
     {
       "description": "schools",
@@ -384,6 +278,162 @@
       "description": "minority students",
       "number": "44%",
       "imageName": "minorities_icon.png"
+    },
+    {
+      "description": "female students",
+      "number": "32%",
+      "imageName": "femalestudents_icon.png"
+    }
+  ],
+
+  "headers": {
+      "about": {
+        "image": "/images/headers/about.jpg",
+        "title": "Learn a little more about who we are.",
+        "description": "Learn about our mission, who we are, what we do, and why we do it."
+      },
+      "team": {
+        "image": "/images/headers/team.jpg",
+        "title": "Meet our amazing team that makes this all possible.",
+        "description": "Our team consists of bright and dedicated computer science students – ranging from undergraduates to PhD candidates. With a passion for ensuring that the next generation receives the coding training that they wish they had had, our team is dedicated to making coding fun and relatable while still providing students with the vital real-world skills they’ll need to succeed."
+      },
+      "signUp": {
+        "image": "/images/headers/sign_up.jpg",
+        "title": "Sign up for courses.",
+        "description": ""
+      },
+      "getInvolved": {
+        "image": "/images/headers/get_involved.jpg",
+        "title": "Get involved with The Coding School.",
+        "description": "Giving the gift of coding not only impacts the lives of the students involved, it has the potential to change the world."
+      }
+  },
+
+  "paragraphs": {
+    "mainIntro": {
+        "title": "The Coding School",
+        "paragraphs": [
+          "The Coding School is a 501c3 non-profit that teaches computer programming to elementary and middle school students. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes."
+        ]
+      },
+    "partnersIntro": {
+        "title": "Our Partners",
+        "paragraphs": [
+          "To ensure quality curriculum and outreach, we are proud to be partnered with these great organizations."
+        ]
+      },
+    "ourMission": {
+        "title": "Our Mission",
+        "paragraphs": [
+            "Our mission is to ensure our children are equipped to thrive in this technologically-driven world."
+        ]
+      },
+    "aboutPage": [
+      {
+        "title": "Who We Are",
+        "paragraphs": [
+          "Founded in 2014, The Coding School is a 501c3 non-profit dedicated to equipping children with the skills and knowledge needed to thrive in our tech-driven world.",
+          "We teach coding to elementary, middle and high school students so this universal language becomes second nature. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes. However, there is a fundamental disconnect between what students are learning in school and what is happening in the real world.",
+          "Whilst growing up through the US education system, founder Kiera Peltz witnessed this disconnect personally. Disappointed in the level of computer science education offered to K-12 students, Kiera researched how other countries were educating their children. She felt the American system was not preparing students for a future where computer language will be the universal language for education, work and play. She sought a way to fix this gap; founding The Coding School in 2014."
+        ]
+      },
+      {
+        "title": "What We Do",
+        "paragraphs": [
+          "Our team offers long-term coding education with weekly classes as part of a 3-year curriculum.",
+          "We at The Coding School believe that coding is a source of empowerment. Yes, we’re training the next generation of coders, but we’re also training the next generation of problem solvers who will become CEOs, politicians, and scientists."
+        ]
+      },
+      {
+        "title": "Why We Do It",
+        "paragraphs": [
+          "There is a fundamental disconnect between what students are learning in school and what is happening in the real world. The current education system is not preparing students with the necessary critical thinking and computational skills necessary to succeed and address the most pressing issues in the 21st century.",
+          "That’s where The Coding School comes in. We aim to bridge this gap."
+        ]
+      }
+    ],
+    "ourImpact": [
+      {
+        "title": "Our Impact",
+        "paragraphs": [
+          "Uniquely, we deliver quality and assured curriculum directly to students in their schools -- regardless of socio-economic status.  This is delivered by passionate experts who live and breath coding and inspire children with the real-world applications.  Our children need to thrive, compete and operate in our ever-increasing tech-driven economy.  We are preparing the minds of children to be thinkers and problem solvers, and perhaps one day one of our students will create the innovation that overcomes a major societal challenge!"
+        ]
+      }
+    ],
+    "curriculum": [
+      {
+        "title": "Our Curriculum",
+        "paragraphs": [
+          "Our 3-year plan is designed to get students excited about coding by exposing them to a variety of coding languages in which they can create projects that come to life with each computer keystroke. While creating websites, animated drawings and action games they’ll also be learning the key coding concepts that are universal across all coding languages. In addition, our courses are geared to improve the student’s critical and computational thinking skills and also to lay the groundwork in providing them with the competitive edge for colleges and jobs."
+        ]
+      }
+    ],
+    "donationsIntro": {
+        "title": "Donate",
+        "paragraphs": [
+          "$x ensures 30 kids learn how to code.",
+          "The Coding School is a 501c3 organization. Your donation is tax deductible. When you make a donation through PayPal, you will automatically receive a receipt that can be used for tax deduction purposes."
+        ]
+      }
+  },
+
+  "testimonials": [
+    {
+      "author": "Dr. Yusuf Allahjah",
+      "context": "Assistant Principal at John Adams Middle School",
+      "date": "",
+      "quote": "TCS leveled the playing field and gave these skills and opportunities to all students – regardless of economic ability.  TheCodingSchool provides outstanding instruction with an equal opportunity to all students who wouldn’t have these opportunities otherwise.",
+      "imageName": "yusufallahjah.jpg"
+
+    },
+    {
+      "author": "Ireland",
+      "context": "Student at Lincoln Middle School",
+      "date": "",
+      "quote": "Last school year, at my school, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. A dream of mine now, is to take on computer science as a profession.",
+      "imageName": "ireland.jpg"
+    },
+    {
+      "author": "Benjamin",
+      "context": "Student at Michael J Castori School",
+      "date": "",
+      "quote": "I didn’t know [what coding was] before this class. I liked how I got to create my own website.",
+      "imageName": "placeholder.jpg"
+    },
+    {
+      "author": "Angel",
+      "context": "Student at Michael J Castori School",
+      "date": "",
+      "quote": "The best thing about [The Coding School] class is that it was helpful because now I want to become an Engineer.",
+      "imageName": "placeholder.jpg"
+    },
+    {
+      "author": "Kian Lavi",
+      "context": "Parent at Beverly Vista School",
+      "date": "June 2016",
+      "quote": "Do you know when you might start registering kiddos for this upcoming school year, or what classes you guys will be teaching? As someone in tech, I think what you guys are doing is really inspiring!",
+      "imageName": "placeholder.jpg"
+    }
+  ],
+
+  "donationOptions": [
+    {
+      "image": "http://www.placehold.it/200x200",
+      "category": "Fund a child",
+      "amount": 50,
+      "paymentLink": ""
+    },
+    {
+      "image": "http://www.placehold.it/200x200",
+      "category": "Fund a classroom",
+      "amount": 500,
+      "paymentLink": ""
+    },
+    {
+      "image": "http://www.placehold.it/200x200",
+      "category": "Fund a school",
+      "amount": 5000,
+      "paymentLink": ""
     }
   ]
 }

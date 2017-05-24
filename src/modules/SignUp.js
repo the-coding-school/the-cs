@@ -8,7 +8,7 @@ import dataJSON from '../json/data.json';
 class SignUp extends Component {
   render() {
 
-    const curriculum = dataJSON.curriculumParagraphs;
+    const curriculum = dataJSON.paragraphs.curriculum;
 
     const curriculumDOM = curriculum.map(function(p) {
       return (
@@ -24,8 +24,6 @@ class SignUp extends Component {
         <PageHeader image={image} title={header.title} description={header.description}/>
         <div className="signuppage page">
           {curriculumDOM}
-          <hr/>
-          <OurCourses />
         </div>
       </div>
     );

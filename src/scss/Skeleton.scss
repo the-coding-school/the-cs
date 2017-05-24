@@ -414,7 +414,6 @@ footer {
 .page {
   position: relative;
   margin-top: $navbar_height + $header_height;
-  padding-top: 50px;
   padding-bottom: 50px;
   z-index: 100;
   background-color: $white;
@@ -441,8 +440,8 @@ footer {
 .titled_content {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   .title {
     font-size: $text_lg;

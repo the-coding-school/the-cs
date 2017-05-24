@@ -7,16 +7,9 @@ import dataJSON from '../json/data.json';
 
 class About extends Component {
   render() {
+    let missionP = dataJSON.paragraphs.ourMission;
 
-    let missionDOM = dataJSON.ourMission.map(function(section) {
-      return (
-        <TitledParagraphs title={section.title} key={section.title}
-                          paragraphs={section.paragraphs} />
-
-      );
-    });
-
-    let contentDOM = dataJSON.aboutPage.map(function(section) {
+    let contentDOM = dataJSON.paragraphs.aboutPage.map(function(section) {
       return (
         <TitledParagraphs title={section.title} key={section.title}
                           paragraphs={section.paragraphs} />
@@ -32,7 +25,7 @@ class About extends Component {
         <PageHeader image={image} title={header.title} description={header.description} />
         <div className="aboutpage page">
           <div className="mission_statement">
-            {missionDOM}
+            <TitledParagraphs title={missionP.title} paragraphs={missionP.paragraphs} />
           </div>
           <hr />
           <OurImpact />
@@ -50,7 +43,7 @@ class OurImpact extends Component {
   render() {
 
     const iconRoot = process.env.PUBLIC_URL + "/images/statistics/";
-    const impact = dataJSON.ourImpact;
+    const impact = dataJSON.paragraphs.ourImpact;
     const impactDOM = impact.map(function(i) {
       return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
     })
