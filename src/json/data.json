@@ -94,6 +94,13 @@
     ],
     "teachers": [
       {
+        "name":  { "first": "Stacy", "last": "Miller" },
+        "position": "Teacher",
+        "college": "UCLA",
+        "description": "I am a 3rd year student at UCLA studying Computer Science. I teach with The Coding School because I want to help promote interest in Computer Science in the next generations! Last Summer, I was an Explorer Intern at Microsoft, and this upcoming Summer I will return as a SWE intern.",
+        "links": {}
+      },
+      {
         "name":  { "first": "Uma", "last": "Lakshminarayan" },
         "position": "PR Rep, Teacher",
         "college": "UCLA",

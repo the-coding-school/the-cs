@@ -57,9 +57,6 @@ class Team extends Component {
             <div className="team_teachers team_member_set">
               {teachersDOM}
             </div>
-
-            <HoverFadeContent default={<h1>Bibek</h1>} onHover={<h1>Ghimire</h1>} />
-
           </div>
         </div>
       </div>
