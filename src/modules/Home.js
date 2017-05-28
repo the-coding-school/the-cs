@@ -16,7 +16,7 @@ import $ from 'jquery';
 class Home extends Component {
   render() {
     const miP = dataJSON.paragraphs.mainIntro;
-    const pP = dataJSON.paragraphs.partnersIntro;
+    const pP = dataJSON.paragraphs.partnershipsIntro;
     const bringcodingLink = <LinkButton text="Bring coding to your school!"> <Link to={"/sign-up"} /> </LinkButton>
 
     return (

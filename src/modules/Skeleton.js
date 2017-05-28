@@ -7,8 +7,8 @@ import logo from '../images/logo.png';
 
 const pages = [
   { path: "about", text: "About Us" },
-  { path: "team", text: "Our Team" },
-  { path: "sign-up", text: "Sign Up" },
+  { path: "team", text: "Team" },
+  { path: "our-programs", text: "Programs" },
   { path: "get-involved", text: "Get Involved" }
 ];
 
@@ -223,7 +223,7 @@ export class FontAwesomeLink extends Component {
 export class TextBlock extends Component {
   render() {
     let paragraphs = this.props.paragraphs.map(function(p) {
-      return <p key={p.substr(0, 10)}>{p}</p>
+      return <p key={p}>{p}</p>
     });
 
     return (<div className="paragraphs"> {paragraphs} </div>);

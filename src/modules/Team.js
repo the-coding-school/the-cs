@@ -41,8 +41,8 @@ class Team extends Component {
         <PageHeader image={image} title={header.title} description={header.description} />
         <div className="teampage page">
           <div className="container">
-            <h1>The Founder</h1>
             <div className="team_founder">
+              <h1>The Founder</h1>
               {founderDOM}
             </div>
             <h1>The Faculty</h1>

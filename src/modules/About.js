@@ -9,12 +9,17 @@ class About extends Component {
   render() {
     let missionP = dataJSON.paragraphs.ourMission;
 
-    let contentDOM = dataJSON.paragraphs.aboutPage.map(function(section) {
+    const aboutDOM = dataJSON.paragraphs.aboutPage.map(function(section) {
       return (
-        <TitledParagraphs title={section.title} key={section.title}
-                          paragraphs={section.paragraphs} />
-
+        <TitledParagraphs title={section.title} key={section.title} paragraphs={section.paragraphs} />
       );
+    });
+
+    const philosophyDOM = dataJSON.paragraphs.codingPhilosophy.map(function(section) {
+      return (
+        <TitledParagraphs title={section.title} key={section.title} paragraphs={section.paragraphs} />
+      );
+
     });
 
     const header = dataJSON.headers.about;
@@ -28,11 +33,9 @@ class About extends Component {
             <TitledParagraphs title={missionP.title} paragraphs={missionP.paragraphs} />
           </div>
           <hr />
-          <OurImpact />
+          <div className="about_statement"> {aboutDOM} </div>
           <hr />
-          <div className="about_statement">
-            {contentDOM}
-          </div>
+          <div className="coding_philosophy"> {philosophyDOM} </div>
         </div>
       </div>
     );

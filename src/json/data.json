@@ -88,7 +88,7 @@
         "name":  { "first": "Christie", "last": "Matthews" },
         "position": "Head of Grants",
         "college": "UCLA",
-        "description": "I'm a junior computer science student at UCLA and I ",
+        "description": "I joined The Coding School because I love teaching and working with children. Being able to use my background as a Computer Science major is just a plus! This summer I'll be interning at Facebook as a Production Engineer. I plan on working in the tech industry when I graduate next year, but after that I hope to teach some day whether in K-12 or at a university.",
         "links": {}
       }
     ],
@@ -234,6 +234,12 @@
       "link": "https://www.ucla.edu/"
     },
     {
+      "name": "UCLA Henry Samueli School of Engineering",
+      "description": "",
+      "imageName": "ucla_hsseas.png",
+      "link": "https://www.engineering.ucla.edu/"
+    },
+    {
       "name": "Santa Monica-Malibu Unified School District",
       "description": "",
       "imageName": "smmusd.png",
@@ -283,6 +289,11 @@
     },
     {
       "description": "minority students",
+      "number": "55%",
+      "imageName": "minorities_icon.png"
+    },
+    {
+      "description": "low socio-economic students",
       "number": "44%",
       "imageName": "minorities_icon.png"
     },
@@ -302,11 +313,11 @@
       "team": {
         "image": "/images/headers/team.jpg",
         "title": "Meet our amazing team that makes this all possible.",
-        "description": "Our team consists of bright and dedicated computer science students – ranging from undergraduates to PhD candidates. With a passion for ensuring that the next generation receives the coding training that they wish they had had, our team is dedicated to making coding fun and relatable while still providing students with the vital real-world skills they’ll need to succeed."
+        "description": "Our teaching team is composed of over 120 computer science students from six universities in California – USC, UCLA, Caltech, Pepperdine, Cal State – Northridge, and Cal State – Sacramento. Ranging from undergraduates to PhD candidates, members of our team have: developed popular mobile apps, sent satellites up into space, programmed high performance speedboats for professional extreme athletes, and worked for Facebook, Google, SpaceX, Intel, Microsoft, just to name a few."
       },
-      "signUp": {
-        "image": "/images/headers/sign_up.jpg",
-        "title": "Sign up for courses.",
+      "ourPrograms": {
+        "image": "/images/headers/our_programs.jpg",
+        "title": "Check out the programs we offer.",
         "description": ""
       },
       "getInvolved": {
@@ -323,39 +334,18 @@
           "The Coding School is a 501c3 non-profit that teaches computer programming to elementary and middle school students. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes."
         ]
       },
-    "partnersIntro": {
-        "title": "Our Partners",
-        "paragraphs": [
-          "To ensure quality curriculum and outreach, we are proud to be partnered with these great organizations."
-        ]
-      },
     "ourMission": {
         "title": "Our Mission",
         "paragraphs": [
-            "Our mission is to ensure our children are equipped to thrive in this technologically-driven world."
+            "To ensure the next generation is equipped to thrive in an increasingly tech-driven world."
         ]
       },
     "aboutPage": [
       {
         "title": "Who We Are",
         "paragraphs": [
-          "Founded in 2014, The Coding School is a 501c3 non-profit dedicated to equipping children with the skills and knowledge needed to thrive in our tech-driven world.",
-          "We teach coding to elementary, middle and high school students so this universal language becomes second nature. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes. However, there is a fundamental disconnect between what students are learning in school and what is happening in the real world.",
-          "Whilst growing up through the US education system, founder Kiera Peltz witnessed this disconnect personally. Disappointed in the level of computer science education offered to K-12 students, Kiera researched how other countries were educating their children. She felt the American system was not preparing students for a future where computer language will be the universal language for education, work and play. She sought a way to fix this gap; founding The Coding School in 2014."
-        ]
-      },
-      {
-        "title": "What We Do",
-        "paragraphs": [
-          "Our team offers long-term coding education with weekly classes as part of a 3-year curriculum.",
-          "We at The Coding School believe that coding is a source of empowerment. Yes, we’re training the next generation of coders, but we’re also training the next generation of problem solvers who will become CEOs, politicians, and scientists."
-        ]
-      },
-      {
-        "title": "Why We Do It",
-        "paragraphs": [
-          "There is a fundamental disconnect between what students are learning in school and what is happening in the real world. The current education system is not preparing students with the necessary critical thinking and computational skills necessary to succeed and address the most pressing issues in the 21st century.",
-          "That’s where The Coding School comes in. We aim to bridge this gap."
+          "The Coding School is a 501c3 organization that aims to empower the next generation through computer science education. Recognizing coding as the universal language of the 21st century, we believe coding education must be dynamic as we are not just training the next generation of coders but future leaders and problem solvers who will become CEOs, politicians, artists and scientific innovators. Thus, we are pushing the boundaries of traditional coding education, embracing a diverse set of approaches and programs to ensure all students, regardless of socioeconomic background, geographic location, or learning differences, develop the skills necessary to thrive and tackle the most pressing issues facing our world.",
+          "Founded by a Brown undergrad in 2014, The Coding School consists of a teaching team of 120 computer science and engineering students from six universities in California who are passionate about teaching the next generation the power of computer science. Through afterschool classes, we have taught over 2,500 K-8 students how to code at 16 schools in Los Angeles and Sacramento."
         ]
       }
     ],
@@ -363,7 +353,10 @@
       {
         "title": "Our Impact",
         "paragraphs": [
-          "Uniquely, we deliver quality and assured curriculum directly to students in their schools -- regardless of socio-economic status.  This is delivered by passionate experts who live and breath coding and inspire children with the real-world applications.  Our children need to thrive, compete and operate in our ever-increasing tech-driven economy.  We are preparing the minds of children to be thinkers and problem solvers, and perhaps one day one of our students will create the innovation that overcomes a major societal challenge!"
+          "By offering ongoing coding education, students develop the computational and critical thinking skills necessary to succeed in an increasingly tech-driven world. They become creators, innovators, and problem solvers, which translates to improvements in academic performance and postsecondary readiness. Moreover, these readily transferrable and highly sought after skills increase the opportunities for social mobility by expanding students’ employment options and prepare them for the 21st century workplace.",
+          "In the long term, our dynamic coding initiatives will help address two of the main problems in the field of computer science: a shortage of coders and a lack of diversity.",
+          "With regard to a shortage of coders, research shows that early exposure to computer science increases the chances students will pursue careers in computer programming. By providing classes as early as elementary school and continuing through high school, we are exposing students early on to coding, increasing their awareness of the variety of opportunities in the field, and most importantly, breaking down potential barriers that discourage students later on from learning coding by teaching this way of thinking early on.",
+          "While our programs will increase the overall pool of computer scientists, our initiatives will also increase the diversity of computer scientists, overcoming a much larger and more difficult challenge. By offering coding classes specifically for underrepresented groups and communities, personalizing the educational experience to ensure traditional barriers to entry are eliminated, and providing long-term mentorship with individuals from similar backgrounds, we are helping foster confidence and empowerment in groups who are typically underrepresented – including minorities, females, students from low socioeconomic backgrounds and rural communities, and students with learning disabilities. By addressing systemic issues in the diversity pipeline through early education initiatives, this process sets the groundwork to significantly increase the number of diverse individuals entering the field who otherwise would be discouraged or not be likely to pursue this career path."
         ]
       }
     ],
@@ -379,9 +372,63 @@
         "title": "Donate",
         "paragraphs": [
           "$x ensures 30 kids learn how to code.",
-          "The Coding School is a 501c3 organization. Your donation is tax deductible. When you make a donation through PayPal, you will automatically receive a receipt that can be used for tax deduction purposes."
+          "The Coding School is a 501c3 organization. Your gift is tax deductible to the extent allowed by the law. When you make a donation through PayPal, you will automatically receive a receipt that can be used for tax deduction purposes.  Our public charity number is 46-5097610."
         ]
+    },
+    "partnershipsIntro": {
+        "title": "Partner With Us",
+        "paragraphs": [
+          "Partnerships are essential to maximizing the impact our program can have. If you or your company is interested in learning more, please contact us.",
+          "In addition, The Coding School is proud to have been awarded the Brown Venture Launch Fund from Brown University Social Innovation Initiative."
+        ]
+    },
+    "schoolsIntro": {
+        "title": "Bring Coding to Your School",
+        "paragraphs": [
+          "If you are interested in bringing coding education to your students, please contact us."
+        ]
+    },
+    "volunteerIntro": {
+        "title": "Volunteer",
+        "paragraphs": [
+          "We are always looking for passionate coders to join our teaching team, as well as non-coders to help run and expand our programs. If you're interested, contact us!"
+        ]
+    },
+    "codingPhilosophy": [
+      {
+          "title": "Our Coding Philosophy",
+          "paragraphs": [
+            "At The Coding School, our programs are designed based on the following principles:",
+            "Coding is the key to social mobility. That’s why we are dedicated to providing coding lessons to socioeconomically disadvantaged communities and integrating classes into the school curriculum so all students will be introduced to computer programming.",
+            "Coding is a marathon, not a sprint. It requires long-term, continuous commitment. We’ve developed a three-year curriculum to ensure that students aren’t just given a sneak peak into the exciting world of computer science but that they have the support and guidance to develop their coding skills with years of taught lessons.",
+            "Coding empowers students with learning disabilities. Often left out of discussions surrounding coding education, we’ve found students with learning differences not only flourish due to the introduction of coding, but their passion and dedication has a butterfly effect in improving their other academic subjects as well. We’re devoted to making sure these students have the same opportunities to learn how to code. In partnership with Santa Monica-Malibu Unified School District, we’ve created a pilot coding program designed for students with learning disabilities.",
+            "There is not a one-size-fits all to coding education. Diverse approaches to coding education are necessary to achieve diversity in computer science. We are committed to developing innovative teaching styles and approaches to ensure no student is excluded or discouraged from learning how to code. That’s why we created Code Connect, an online platform that offers one-to-one coding instruction for underrepresented individuals that are often deterred from coding due a host of systemic educational factors."
+          ]
       }
+    ],
+    "ourPrograms": [
+      {
+          "title": "Classroom Programs: The Key to Social Mobility",
+          "paragraphs": [
+            "Beginning in January 2014, we offer three-year long coding classes for K-12 students during the school day and after-school. With a minimum of two teachers per class, we make sure students get individualized support to fully understand the material. Throughout the courses, students learn the fundamental basics of computer programming by developing websites using HTML and CSS, animations using JavaScript, and game development using C#.",
+            "Ultimately, our goal is to have our classes during the school day, as well as to increase the number of low socioeconomic communities we serve, to ensure that every student, regardless of whether they or their parents recognize the importance of coding, is exposed to computer programming."
+          ]
+      },
+      {
+          "title": "codeConnects: A Diverse Approach to Achieving Diversity",
+          "paragraphs": [
+            "We believe to achieve diversity in computer science, we must embrace diverse approaches to coding education so we’re reimagining how we teach computer science to address the structural barriers inherent to our current educational environment. codeConnects is an initiative that aims to empower middle and high school students who are traditionally underrepresented in the field of computer science, such as women, minorities, individuals with disabilities, those from low socioeconomic backgrounds, and rural communities.",
+            "codeConnects is an online platform that offers one-on-one computer science instruction and mentorship to underrepresented middle and high school students. Pairing each student with a professional software engineer or university student majoring in computer science, students participate in weekly, face-to-face coding lessons using our platforms’ collaborative editing and video chat features. Through year-long instruction, students will learn real 21st century skills, from basic coding concepts to more advanced skills like building websites and mobile apps. Through personalized lessons, students will develop in-depth knowledge of CS skills and relationships with mentors, cultivate individualized passions, and gain confidence through personal encouragement."
+          ]
+      },
+      {
+          "title": "Learning Disabilities and Coding: Seeing Learning Differences As Assets, Not Detriments",
+          "paragraphs": [
+            "This program was inspired by two brothers with learning disabilities who took our class and fell in love with coding. While they typically faced difficulties concentrating and lack of enthusiasm, the brothers displayed passion and focus in coding class, which also had a butterfly effect into their other academic subjects. The assistant principal, witnessing the boys’ academic improvements and newfound desire to become engineers, asked us to create a program to ensure students with learning disabilities can be empowered through coding.",
+            "As a response, we partnered with the Santa Monica-Malibu Unified School District to offer a pilot coding program for students with learning disabilities. Our overall goal in creating this initiative is to change the conversation surrounding learning disabilities through awareness and accessibility. We aspire to empower these students through coding, and moreover, help them see they can make meaningful contributions to the field of computer science."
+          ]
+      }
+    ]
   },
 
   "testimonials": [
@@ -389,7 +436,7 @@
       "author": "Dr. Yusuf Allahjah",
       "context": "Assistant Principal at John Adams Middle School",
       "date": "",
-      "quote": "TCS leveled the playing field and gave these skills and opportunities to all students – regardless of economic ability.  TheCodingSchool provides outstanding instruction with an equal opportunity to all students who wouldn’t have these opportunities otherwise.",
+      "quote": "TCS leveled the playing field and gave these skills and opportunities to all students – regardless of economic ability. The Coding School provides outstanding instruction with an equal opportunity to all students who wouldn’t have these opportunities otherwise.",
       "imageName": "yusufallahjah.jpg"
 
     },

@@ -4,7 +4,7 @@ import { Skeleton } from "./modules/Skeleton";
 import Home from './modules/Home';
 import About from './modules/About';
 import Team from './modules/Team';
-import SignUp from "./modules/SignUp"
+import OurPrograms from "./modules/OurPrograms"
 import GetInvolved from "./modules/GetInvolved";
 import { Router, Route, hashHistory } from 'react-router'
 
@@ -14,7 +14,7 @@ ReactDOM.render((
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/team" component={Team} />
-      <Route path="/sign-up" component={SignUp} />
+      <Route path="/our-programs" component={OurPrograms} />
       <Route path="/get-involved" component={GetInvolved} />
     </Route>
   </Router>

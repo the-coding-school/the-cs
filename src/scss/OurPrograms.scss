@@ -1,0 +1,39 @@
+@import "Variables";
+
+.our_courses {
+  h1 {
+    margin-left: 5%;
+    color: $blue;
+  }
+}
+
+.courses_row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.course_wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+.course {
+  padding: 30px;
+  margin: 20px;
+  box-shadow: $box_shadow;
+  border-radius: 4px;
+  max-width: 85%;
+  width: 300px;
+  .course_title {
+    color: $blue;
+    font-size: $text_md;
+    font-weight: bold;
+  }
+  .course_description {
+    color: $black;
+    font-size: $text_sm;
+  }
+}
