@@ -7,7 +7,7 @@ import '../scss/_fa/font-awesome.scss';
 
 import dataJSON from '../json/data.json';
 
-class Team extends Component {
+class TeamPage extends Component {
   render() {
 
     const teamData = dataJSON.team;
@@ -175,4 +175,4 @@ class MemberLinks extends Component {
   }
 }
 
-export default Team;
+export default TeamPage;

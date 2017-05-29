@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Skeleton } from "./modules/Skeleton";
-import Home from './modules/Home';
-import About from './modules/About';
-import Team from './modules/Team';
-import OurPrograms from "./modules/OurPrograms"
-import GetInvolved from "./modules/GetInvolved";
+import HomePage from './modules/HomePage';
+import AboutPage from './modules/AboutPage';
+import TeamPage from './modules/TeamPage';
+import OurProgramsPage from "./modules/OurProgramsPage"
+import GetInvolvedPage from "./modules/GetInvolvedPage";
 import { Router, Route, hashHistory } from 'react-router'
 
 ReactDOM.render((
   <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route component={Skeleton}>
-      <Route path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/team" component={Team} />
-      <Route path="/our-programs" component={OurPrograms} />
-      <Route path="/get-involved" component={GetInvolved} />
+      <Route path="/" component={HomePage} />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/team" component={TeamPage} />
+      <Route path="/our-programs" component={OurProgramsPage} />
+      <Route path="/get-involved" component={GetInvolvedPage} />
     </Route>
   </Router>
 

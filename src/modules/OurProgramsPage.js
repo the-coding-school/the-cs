@@ -5,7 +5,7 @@ import '../scss/OurPrograms.scss';
 import { TitledContent, TitledParagraphs, PageHeader, LinkButton } from './Skeleton';
 import dataJSON from '../json/data.json';
 
-class OurPrograms extends Component {
+class OurProgramsPage extends Component {
   render() {
 
     const programs = dataJSON.paragraphs.ourPrograms;
@@ -83,4 +83,4 @@ class Course extends Component {
   }
 }
 
-export default OurPrograms;
+export default OurProgramsPage;

@@ -1,89 +1,27 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+import $ from 'jquery';
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
-import $ from 'jquery';
-import logo from '../images/logo.png';
+import '../css/slick.css';
+import '../css/slick-theme.css';
+import 'slick-carousel';
 
-const pages = [
-  { path: "about", text: "About Us" },
-  { path: "team", text: "Team" },
-  { path: "our-programs", text: "Programs" },
-  { path: "get-involved", text: "Get Involved" }
-];
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+import dataJSON from "../json/data.json";
 
 export class Skeleton extends Component {
    render() {
       return (
          <div>
-            <Navbar name="The Coding School" items={pages}/>
+            <Navbar name="The Coding School" items={dataJSON.sitePages}/>
             {this.props.children}
             <Footer/>
          </div>
       );
    }
-}
-
-class Navbar extends Component {
-
-  componentDidMount() {
-    var panelOpen = false;
-
-    function togglePanel() {
-      if (panelOpen){
-        $("#navbar_panel").css({"left": "100%"});
-        panelOpen = false;
-      } else {
-        $("#navbar_panel").css({"left": "0"});
-        panelOpen = true;
-      }
-    }
-
-    $("#navbar_hamburger").click(togglePanel);
-    $("#navbar_panel a").click(togglePanel);
-  }
-
-  render() {
-    var items = this.props.items;
-    var navItems = items.map((i) => {
-      return (
-        <li className="hvr_float" key={i.path}>
-          <Link to={"/" + i.path}>
-              {i.text.toUpperCase()}
-          </Link>
-        </li>
-      );
-    });
-
-    return (
-      <nav id="navbar">
-        <LogoIcon />
-        <ul className="navbar_tabs">{navItems}</ul>
-        <div id="navbar_hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div id="navbar_panel">{navItems}</div>
-      </nav>
-    );
-  }
-}
-
-class LogoIcon extends Component {
-  render() {
-    // <h1 id="long_nav_logo"><Link to="/">THE CODING SCHOOL</Link></h1>
-    // <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
-    return (
-      <div className="navbar_logo">
-        <div className="logo_box">
-          <Link to="/">
-            <img src={logo}/>
-          </Link>
-        </div>
-      </div>
-    );
-  }
 }
 
 export class PageHeader extends Component {
@@ -105,105 +43,6 @@ export class PageHeader extends Component {
           {(p.appendDOM)}
         </div>
       </div>
-    );
-  }
-}
-
-class Footer extends Component {
-
-  // should contain
-  // * contact information
-  // * resource websites
-
-  render() {
-    const resourceLinks = [
-      {
-        name: "Code.org",
-        href: "http://www.code.org"
-      },
-      {
-        name: "Codecademy",
-        href: "http://www.codecademy.com"
-      },
-      {
-        name: "Python Tutorial",
-        href: "https://docs.python.org/3/tutorial/index.html"
-      },
-      {
-        name: "Python Documentation",
-        href: "https://docs.python.org/3/"
-      },
-      {
-        name: "AP Computer Science",
-        href: "https://apstudent.collegeboard.org/apcourse/ap-computer-science-a"
-      }
-    ]
-    const linkedInLink = "https://www.linkedin.com/company/the-coding-school";
-    return (
-        <footer>
-
-          <div className="footer_top">
-            <div className="int_links col-md-4">
-              <h2>Links</h2>
-              {
-                pages.map((i) => {
-                  return (
-                    <div className="hvr_forward" key={i.path}>
-                      <Link to={"/" + i.path}>
-                          {i.text}
-                      </Link>
-                    </div>
-                  );
-                })
-              }
-            </div>
-
-            <div className="ext_resources col-md-4">
-              <div>
-                <h2>Resources</h2>
-                {
-                  resourceLinks.map((item) => {
-                    return (
-                      <div className="hvr_forward" key={item.href}>
-                        <a href={item.href}>{item.name}</a>
-                      </div>
-                    );
-                  })
-                }
-              </div>
-            </div>
-
-            <div className="contact_info col-md-4">
-
-              <h2>Contact</h2>
-              <a href={linkedInLink}>
-                <div className="font_awesome">
-                  <i className="fa fa-linkedin-square"/> <span className="icon_name">LinkedIn</span>
-                </div>
-              </a>
-
-              <div className="main_font">
-                <i className="fa fa-envelope"/> info.thecodingschool@gmail.com
-              </div>
-
-              <div className="main_font">
-                <i className="fa fa-phone"/> (323)-790-9992
-              </div>
-
-              <p><strong>The Coding School</strong>
-              <br/>3940 Laurel Cyn Blvd Ste 153
-              <br/>Los Angeles, CA 91604</p>
-            </div>
-          </div>
-
-          <hr/>
-
-          <div className="footer_bottom">
-            <p>The Coding School © 2017</p>
-          </div>
-
-
-        </footer>
     );
   }
 }
@@ -266,6 +105,7 @@ export class HoverFadeImage extends Component {
     );
   }
 }
+
 // Accepts two attributes:
 //  - default: the content you want to show up normally
 //  - onHover: the content you want to show up on hover
@@ -290,6 +130,20 @@ export class LinkButton extends Component {
         <a href={this.props.link}>
           <button>{this.props.text}</button>
         </a>
+      </div>
+    );
+  }
+}
+
+export class SlickPanel extends Component {
+  componentDidMount() {
+    $(".slick_panel").slick(this.props.options);
+  }
+
+  render() {
+    return (
+      <div className="slick_panel">
+        {this.props.children}
       </div>
     );
   }

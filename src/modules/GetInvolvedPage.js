@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import { TitledParagraphs, PageHeader } from './Skeleton';
 import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/GetInvolved.scss';
+
+import { TitledParagraphs, PageHeader } from './Skeleton';
+import Partners from "./Partners.js";
+
 import dataJSON from '../json/data.json';
 
 
-class GetInvolved extends Component {
+class GetInvolvedPage extends Component {
   render() {
     const header = dataJSON.headers.getInvolved;
     const donP = dataJSON.paragraphs.donationsIntro;
@@ -30,10 +33,8 @@ class GetInvolved extends Component {
         <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className="getinvolved_page page">
 
-          <div className="partnerships_section">
-            <TitledParagraphs title={parP.title} paragraphs={parP.paragraphs} />
-            <PartnersPanel />
-          </div>
+          <Partners />
+
           <div className="schools_section">
             <TitledParagraphs title={schP.title} paragraphs={schP.paragraphs} />
           </div>
@@ -169,4 +170,4 @@ class VolunteerTypeform extends Component {
   }
 }
 
-export default GetInvolved;
+export default GetInvolvedPage;

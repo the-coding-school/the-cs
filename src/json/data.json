@@ -1,4 +1,11 @@
 {
+  "sitePages": [
+    { "path": "about", "text": "About Us" },
+    { "path": "team", "text": "Team" },
+    { "path": "our-programs", "text": "Programs" },
+    { "path": "get-involved", "text": "Get Involved" }
+  ],
+
   "team": {
     "founder": [
       {
@@ -81,7 +88,7 @@
         "name":  { "first": "Bill", "last": "Derouin" },
         "position": "Advisor, Co-Head of Curriculum",
         "college": "USC",
-        "description": "",
+        "description": "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
         "links": {}
       },
       {
@@ -93,6 +100,20 @@
       }
     ],
     "teachers": [
+      {
+        "name":  { "first": "Bennett", "last": "Lee" },
+        "position": "Teacher",
+        "college": "USC",
+        "description": "I am an aspiring entrepreneur, veteran software developer, and dabbling musician. After graduating from USC Marshall & Viterbi, I've been a Full Stack Engineer @ Tapiture, Software Engineer @ USC ISI, and a Lead iOS Instructor @ General Assembly. I have a passion for empowering others to build the app of their dreams.",
+        "links": {}
+      },
+      {
+        "name":  { "first": "Nicholas", "last": "Roewe" },
+        "position": "Teacher",
+        "college": "USC",
+        "description": "I’ve had the pleasure of interning at Two Bit Circus where we worked on Gala events to get kids excited about STEM! I’ve also worked on a website project where we made a card based multiplayer game with a back end database that stored user info.",
+        "links": {}
+      },
       {
         "name":  { "first": "Stacy", "last": "Miller" },
         "position": "Teacher",
@@ -331,7 +352,7 @@
     "mainIntro": {
         "title": "The Coding School",
         "paragraphs": [
-          "The Coding School is a 501c3 non-profit that teaches computer programming to elementary and middle school students. We believe that learning how to code is like learning a foreign language, and the earlier students begin learning this new way of thinking, the easier it becomes."
+          "The Coding School (TCS) is a 501c3 organization that aims to empower the next generation through computer science education. We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students, regardless of socioeconomic background, geographic location, or learning differences, develop the skills necessary to thrive and tackle the most pressing issues facing our world."
         ]
       },
     "ourMission": {
@@ -442,28 +463,28 @@
     },
     {
       "author": "Ireland",
-      "context": "Student at Lincoln Middle School",
+      "context": "9th Grade Student",
       "date": "",
       "quote": "Last school year, at my school, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. A dream of mine now, is to take on computer science as a profession.",
       "imageName": "ireland.jpg"
     },
     {
       "author": "Benjamin",
-      "context": "Student at Michael J Castori School",
+      "context": "Student",
       "date": "",
       "quote": "I didn’t know [what coding was] before this class. I liked how I got to create my own website.",
       "imageName": "placeholder.jpg"
     },
     {
       "author": "Angel",
-      "context": "Student at Michael J Castori School",
+      "context": "Student",
       "date": "",
       "quote": "The best thing about [The Coding School] class is that it was helpful because now I want to become an Engineer.",
       "imageName": "placeholder.jpg"
     },
     {
-      "author": "Kian Lavi",
-      "context": "Parent at Beverly Vista School",
+      "author": "Kian",
+      "context": "Elementary School Parent",
       "date": "June 2016",
       "quote": "Do you know when you might start registering kiddos for this upcoming school year, or what classes you guys will be teaching? As someone in tech, I think what you guys are doing is really inspiring!",
       "imageName": "placeholder.jpg"
@@ -488,6 +509,29 @@
       "category": "Fund a school",
       "amount": 5000,
       "paymentLink": ""
+    }
+  ],
+
+  "externalLinks": [
+    {
+      "name": "Code.org",
+      "link": "http://www.code.org"
+    },
+    {
+      "name": "Codecademy",
+      "link": "http://www.codecademy.com"
+    },
+    {
+      "name": "Python Tutorial",
+      "link": "https://docs.python.org/3/tutorial/index.html"
+    },
+    {
+      "name": "Python Documentation",
+      "link": "https://docs.python.org/3/"
+    },
+    {
+      "name": "AP Computer Science",
+      "link": "https://apstudent.collegeboard.org/apcourse/ap-computer-science-a"
     }
   ]
 }

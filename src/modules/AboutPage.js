@@ -5,7 +5,7 @@ import '../scss/Skeleton.scss';
 import '../scss/About.scss';
 import dataJSON from '../json/data.json';
 
-class About extends Component {
+class AboutPage extends Component {
   render() {
     let missionP = dataJSON.paragraphs.ourMission;
 
@@ -80,4 +80,4 @@ class Statistic extends Component {
   }
 }
 
-export default About;
+export default AboutPage;
