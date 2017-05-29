@@ -12,7 +12,7 @@ class OurProgramsPage extends Component {
 
     const programsDOM = programs.map(function(p) {
       return (
-          <TitledParagraphs key={p.title} title={p.title} paragraphs={p.paragraphs} />
+          <TitledParagraphs key={p.title} title={p.title} subtitle={p.subtitle} paragraphs={p.paragraphs} />
       );
     });
 

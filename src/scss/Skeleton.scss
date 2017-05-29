@@ -197,12 +197,13 @@ nav {
       color: $blue;
       width: 100%;
       height: 100%;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 15px;
+      padding-right: 15px;
       display: flex;
       align-items: center;
       font-family: 'Montserrat', sans-serif;
       font-weight: bold;
+      font-size: $text_tn;
     }
   }
 
@@ -440,17 +441,22 @@ footer {
 .titled_content {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   .title {
     font-size: $text_md;
     color: $blue;
   }
 
+  .subtitle {
+    font-size: $text_sm;
+    color: lighten($black, 20);
+  }
+
   @media (min-width: $bpoint_md) {
     display: flex;
-    .title { width: 30%; }
+    .title_side { width: 30%; }
     .paragraphs {
       width: 70%;
       padding-top: 10px;
@@ -468,4 +474,16 @@ footer {
   &:not(:first-child) {
     border-top: 1px solid #ddd;
   }
+}
+
+.section_header {
+  font-size: $text_md;
+  color: $white;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: $blue;
 }

@@ -42,42 +42,5 @@ class AboutPage extends Component {
   }
 }
 
-class OurImpact extends Component {
-  render() {
-
-    const iconRoot = process.env.PUBLIC_URL + "/images/statistics/";
-    const impact = dataJSON.paragraphs.ourImpact;
-    const impactDOM = impact.map(function(i) {
-      return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
-    })
-    const statistics = dataJSON.statistics;
-    const statisticsDOM = statistics.map(function(s) {
-      return <Statistic key={s.description} imageSrc={iconRoot + s.imageName} number={s.number} description={s.description} />
-    });
-    return (
-      <div className="our_impact">
-        {impactDOM}
-        <hr/>
-        <div className="statistics">
-          {statisticsDOM}
-        </div>
-
-      </div>
-    );
-  }
-}
-
-class Statistic extends Component {
-  render() {
-    const p = this.props;
-    return (
-      <div className="statistic wow zoomIn">
-        <img alt="statistic" src={p.imageSrc} width="80" height="80" />
-        <h2>{p.number}</h2>
-        <p>{p.description}</p>
-      </div>
-    );
-  }
-}
 
 export default AboutPage;

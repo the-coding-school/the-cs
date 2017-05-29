@@ -47,6 +47,17 @@ export class PageHeader extends Component {
   }
 }
 
+export class SectionHeader extends Component {
+  render() {
+    return (
+      <div className="section_header">
+        {this.props.title}
+        {this.props.subtitle}
+      </div>
+    );
+  }
+}
+
 export class FontAwesomeLink extends Component {
   render() {
     const link = this.props.link;
@@ -73,22 +84,27 @@ export class TitledParagraphs extends Component {
   render() {
     const title = this.props.title;
     const paragraphs = <TextBlock paragraphs={this.props.paragraphs} />;
+    let tpDOM = undefined;
+    if ('subtitle' in this.props) {
+      tpDOM = <TitledContent title={title} subtitle={this.props.subtitle} content={paragraphs} />
+    } else {
+      tpDOM = <TitledContent title={title} content={paragraphs} />
+    }
     return (
-      <div className="paragraph">
-        <TitledContent title={title} content={paragraphs} />
-      </div>
+      <div className="paragraph"> {tpDOM} </div>
     );
   }
 }
 
 export class TitledContent extends Component {
   render() {
-    const title = this.props.title;
-    const content = this.props.content;
     return (
-      <div className="titled_content" key={title}>
-        <h1 className="title">{title}</h1>
-        {content}
+      <div className="titled_content" key={this.props.title}>
+        <div className="title_side">
+          <h1 className="title">{this.props.title}</h1>
+          { ('subtitle' in this.props) && <h2 className="subtitle">{this.props.subtitle}</h2> }
+        </div>
+        {this.props.content}
       </div>
     );
   }
