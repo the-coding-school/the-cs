@@ -1,5 +1,33 @@
 @import "Variables";
 
+#video {
+  .video_wrapper {
+    position: relative;
+  }
+  .video_overlay_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($black, 0.5);
+    color: $white;
+    text-shadow: 2px 2px $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h1 {
+      font-family: $font_primary;
+      margin-bottom: 0px;
+    }
+    h2 {
+      font-family: $font_secondary;
+    }
+  }
+}
+
+// Small screens
 @media (max-width: $bpoint_md - 1) {
   #video {
     position: relative;
@@ -7,6 +35,12 @@
     width: 100%;
 
     .video_wrapper { width: 100%; }
+
+    .video_overlay_text {
+      height: 100%;
+      h1 { font-size: $text_md; }
+      h2 { font-size: $text_tn; }
+    }
 
     video { width: 100%; }
   }
@@ -26,7 +60,12 @@
 
     .video_wrapper {
       width: 100%;
-      height: $header_height;
+    }
+
+    .video_overlay_text {
+      height: $video_height;
+      h1 { font-size: $text_hg; }
+      h2 { font-size: $text_sm; }
     }
 
     video {
@@ -37,7 +76,7 @@
   }
 
   .page.homepage {
-    margin-top: $video_height;
+    margin-top: $video_height + $navbar_height;
   }
 }
 

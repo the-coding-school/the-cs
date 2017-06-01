@@ -38,6 +38,20 @@
     ],
     "team_leads": [
       {
+        "name":  { "first": "Laura", "last": "Felenstein" },
+        "position": "Graphic Designer",
+        "college": "Brown University",
+        "description": "I am a junior at Brown University and am the Graphics Editor for the Brown Daily Herald. I’m so excited to be a part of something that creates such tremendous opportunities.",
+        "links": {}
+      },
+      {
+        "name":  { "first": "Aditi", "last": "Sharma" },
+        "position": "Curriculum Development",
+        "college": "UCLA",
+        "description": "I am a Computer Science and Engineering major at UCLA. I had the opportunity to intern at Wipro in India last summer and I will be interning at Amazon this summer. I enjoy writing, baking, and binge watching TV shows.",
+        "links": {}
+      },
+      {
         "name":  { "first": "Akila", "last": "Rajesh" },
         "position": "Head of PR & Communications",
         "college": "UCLA",
@@ -93,6 +107,13 @@
         "links": {}
       },
       {
+        "name":  { "first": "Jason", "last": "Lin" },
+        "position": "Head of Development",
+        "college": "USC",
+        "description": "I am a senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way.",
+        "links": {}
+      },
+      {
         "name":  { "first": "Christie", "last": "Matthews" },
         "position": "Head of Grants",
         "college": "UCLA",
@@ -143,13 +164,6 @@
         "position": "Teacher",
         "college": "UCLA",
         "description": "I am a freshman Computer Science and Engineering student at UCLA. In high school, I became really interested in computers and taught myself how to build and program an electric car. Besides coding, I love playing basketball, swimming, and watching movies.",
-        "links": {}
-      },
-      {
-        "name":  { "first": "Jason", "last": "Lin" },
-        "position": "Director of Development",
-        "college": "USC",
-        "description": "I am a Senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way.",
         "links": {}
       },
       {
@@ -327,6 +341,10 @@
   ],
 
   "headers": {
+      "homepage": {
+        "title": "The Coding School",
+        "description": "Empowering the next generation to become problem solvers and future leaders through code"
+      },
       "about": {
         "image": "/images/headers/about.jpg",
         "title": "Learn a little more about who we are.",

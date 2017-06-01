@@ -36,6 +36,7 @@ class TeamPage extends Component {
 
     const header = dataJSON.headers.team;
     const image = process.env.PUBLIC_URL + header.image;
+
     return (
       <div className="App">
         <PageHeader image={image} title={header.title} description={header.description} />
@@ -45,10 +46,6 @@ class TeamPage extends Component {
               <h1>The Founder</h1>
               {founderDOM}
             </div>
-            <h1>The Faculty</h1>
-            <div className="team_faculty team_member_set">
-              {facultyDOM}
-            </div>
             <h1>The Team Heads</h1>
             <div className="team_board team_member_set">
               {teamLeadsDOM}
@@ -56,6 +53,10 @@ class TeamPage extends Component {
             <h1>The Teachers</h1>
             <div className="team_teachers team_member_set">
               {teachersDOM}
+            </div>
+            <h1>The Faculty</h1>
+            <div className="team_faculty team_member_set">
+              {facultyDOM}
             </div>
           </div>
         </div>
@@ -144,13 +145,11 @@ class TeamMemberDescription extends Component {
     return (
       <div className="member_text">
         <h1 className="member_name">{p.name}</h1>
-        <h2 className="member_position">{p.position}</h2>
-        <div className="member_description">
-          <p>{p.description}</p>
-        </div>
-        <div className="member_links">
-          <MemberLinks links={p.links} />
-        </div>
+        <div className="member_position">{p.position}</div>
+
+        <div className="member_links"><MemberLinks links={p.links} /></div>
+        <div className="member_description">{p.description}</div>
+
       </div>
     );
   }

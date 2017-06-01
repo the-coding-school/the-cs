@@ -46,6 +46,8 @@
 .member_description {
   color: lighten($black, 20%);
   font-size: $text_tn;
+  line-height: 1.76 * $text_tn;
+  font-family: $font_secondary;
 }
 
 .head_member {
@@ -127,23 +129,23 @@
   border-radius: 4px;
 
   @media (max-width: $bpoint_md - 1) {
-    width: $member_image_size / 2;
+    // width: $member_image_size / 2;
     .member_image {
-      width: $member_image_size / 2;
-      height: $member_image_size / 2;
+      // width: $member_image_size / 2;
+      // height: $member_image_size / 2;
     }
     .member_text {
-      display: none;
+      // display: none;
     }
-    padding-bottom: 0;
+    // padding-bottom: 0;
   }
 
-  @media (min-width: $bpoint_md) {
+  // @media (min-width: $bpoint_md) {
     .member_image {
       width: $member_image_size;
       height: $member_image_size;
     }
-  }
+  // }
 
   .college_attended {
     text-align: center;
@@ -186,15 +188,15 @@
 
     .member_position {
       font-size: $text_tn;
+      font-weight: bold;
     }
-
   }
 
   .member_links {
+    padding-top: 2px;
+    padding-bottom: 2px;
     a {
       color: lighten($black, 20%);
-      padding-left: 5px;
-      padding-right: 5px;
     }
   }
 }

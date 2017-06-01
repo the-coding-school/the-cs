@@ -64,7 +64,12 @@ export class FontAwesomeLink extends Component {
     const classNames = this.props.classNames;
     if (this.props.link) {
       return (
-        <a href={link}><i className={classNames}></i></a>
+        <a href={link}>
+          <span className="fa-stack fa-md">
+            <i className="fa fa-square fa-stack-2x"></i>
+            <i className={classNames + " fa-stack-1x"}></i>
+          </span>
+        </a>
       );
     }
   }

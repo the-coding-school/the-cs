@@ -6,11 +6,15 @@
 
 .statistics {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .statistic {
-  width: percentage(1/3);
+  // width: percentage(1/4);
+  min-width: 200px;
   text-align: center;
   img {
     border-radius: 50%;

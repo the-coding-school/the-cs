@@ -477,13 +477,26 @@ footer {
 }
 
 .section_header {
-  font-size: $text_md;
+  @media (max-width: $bpoint_sm - 1) {
+    font-size: $text_md;
+  }
+  @media (min-width: $bpoint_sm) {
+    font-size: $text_hg;
+  }
   color: $white;
   text-align: center;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  // margin-top: 50px;
+  // margin-bottom: 50px;
   background-color: $blue;
+}
+
+.fa-stack {
+  .fa-stack-2x { color: $black; }
+  .fa-stack-1x { color: white; }
+  &:hover {
+    .fa-stack-2x { color: $yellow; }
+  }
 }
