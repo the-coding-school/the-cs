@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/OurPrograms.scss';
 import { TitledContent, TitledParagraphs, PageHeader, LinkButton } from './Skeleton';
@@ -30,57 +29,57 @@ class OurProgramsPage extends Component {
   }
 }
 
-class OurCourses extends Component {
-  render() {
-
-    const courses = dataJSON.courses;
-
-    const htmlCurDOM = courses.web.map(function(c) {
-      return (
-          <Course key={c.name} name={c.name} description={c.description} />
-      );
-    });
-
-    const jsCurDOM = courses.js.map(function(c) {
-      return (
-          <Course key={c.name} name={c.name} description={c.description} />
-      );
-    });
-
-    const unityCurDOM = courses.unity.map(function(c) {
-      return (
-          <Course key={c.name} name={c.name} description={c.description} />
-      );
-    });
-
-    return (
-      <div className="our_courses">
-        <h1>HTML/CSS</h1>
-        <div className="courses_row">{htmlCurDOM}</div>
-        <h1>Javascript</h1>
-        <div className="courses_row">{jsCurDOM}</div>
-        <h1>Unity</h1>
-        <div className="courses_row">{unityCurDOM}</div>
-      </div>
-    );
-  }
-}
-
-class Course extends Component {
-  render() {
-    return (
-      <div className="course_wrapper">
-        <div className="course wow fadeInUp">
-          <div className="course_title">
-            <p>{this.props.name}</p>
-          </div>
-          <div className="course_description">
-            <p>{this.props.description}</p>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
+// class OurCourses extends Component {
+//   render() {
+//
+//     const courses = dataJSON.courses;
+//
+//     const htmlCurDOM = courses.web.map(function(c) {
+//       return (
+//           <Course key={c.name} name={c.name} description={c.description} />
+//       );
+//     });
+//
+//     const jsCurDOM = courses.js.map(function(c) {
+//       return (
+//           <Course key={c.name} name={c.name} description={c.description} />
+//       );
+//     });
+//
+//     const unityCurDOM = courses.unity.map(function(c) {
+//       return (
+//           <Course key={c.name} name={c.name} description={c.description} />
+//       );
+//     });
+//
+//     return (
+//       <div className="our_courses">
+//         <h1>HTML/CSS</h1>
+//         <div className="courses_row">{htmlCurDOM}</div>
+//         <h1>Javascript</h1>
+//         <div className="courses_row">{jsCurDOM}</div>
+//         <h1>Unity</h1>
+//         <div className="courses_row">{unityCurDOM}</div>
+//       </div>
+//     );
+//   }
+// }
+//
+// class Course extends Component {
+//   render() {
+//     return (
+//       <div className="course_wrapper">
+//         <div className="course wow fadeInUp">
+//           <div className="course_title">
+//             <p>{this.props.name}</p>
+//           </div>
+//           <div className="course_description">
+//             <p>{this.props.description}</p>
+//           </div>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
 export default OurProgramsPage;

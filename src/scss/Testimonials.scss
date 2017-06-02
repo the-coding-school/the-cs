@@ -1,0 +1,77 @@
+@import "Variables";
+
+.testimonials_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: $blue;
+}
+
+.testimonials {
+  width: 80%;
+}
+
+.testimonial_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonial {
+  background-color: $blue;
+  position: relative;
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .testimonial_image {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .testimonial_text {
+    color: $white;
+
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $font_secondary;
+    font-size: $text_md;
+
+    .testimonial_quote {
+      font-family: $font_secondary;
+      font-size: $text_sm;
+      line-height: $text_sm * 1.37;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .testimonial_author {
+      font-family: $font_primary;
+      font-size: $text_md;
+      font-weight: bold;
+    }
+
+    .testimonial_context {
+      font-family: $font_primary;
+      font-size: $text_sm;
+    }
+  }
+}
+
+// White prev/next arrows for slide-panel
+.testimonials .slick-dots li button:before,
+.testimonials .slick-prev:before,
+.testimonials .slick-next:before {
+  color: $white !important;
+}

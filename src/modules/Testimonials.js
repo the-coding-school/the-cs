@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { SlickPanel } from './Skeleton';
-import '../scss/App.scss';
+import "../scss/Testimonials.scss";
 import dataJSON from '../json/data.json';
 
 class Testimonials extends Component {

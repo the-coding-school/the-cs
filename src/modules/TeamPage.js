@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { PageHeader, FontAwesomeLink, HoverFadeImage, HoverFadeContent } from './Skeleton';
-import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import '../scss/Team.scss';
 import '../scss/_fa/font-awesome.scss';
 
-import dataJSON from '../json/data.json';
+import teamJSON from '../json/team.json';
+import dataJSON from "../json/data.json";
 
 class TeamPage extends Component {
   render() {
 
-    const teamData = dataJSON.team;
+    const teamData = teamJSON.team;
 
     function sortMembers(a, b) {
       const nameA = a.name.first + " " + a.name.last;

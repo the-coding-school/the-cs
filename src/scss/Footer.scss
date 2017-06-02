@@ -1,0 +1,59 @@
+@import "Variables";
+
+footer {
+  position: relative;
+  z-index: 100;
+  a, h1, h2, p, i, div {
+    color: $white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  background-color: $blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .footer_top {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    @media (max-width: $bpoint_sm) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .footer_bottom {
+    text-align: center;
+  }
+
+  .icon_name {
+    text-decoration: underline;
+  }
+
+  .social_links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  a {
+    color: $white;
+    transition: all 0.4s;
+    text-decoration: none;
+
+  }
+  .contact_info p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba($white, 1.0);
+  }
+}

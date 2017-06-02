@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
-import '../scss/App.scss';
-import '../scss/Skeleton.scss';
+import "../scss/Footer.scss";
 import dataJSON from "../json/data.json";
 
 class Footer extends Component {

@@ -1,16 +1,20 @@
+// Import React Components
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import $ from 'jquery';
-import '../scss/App.scss';
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+// Import CSS
 import '../scss/Skeleton.scss';
 import '../css/slick.css';
 import '../css/slick-theme.css';
 import 'slick-carousel';
 
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-
+// Import data
 import dataJSON from "../json/data.json";
+
+// Import Miscellaneous
+import $ from 'jquery';
 
 export class Skeleton extends Component {
    render() {

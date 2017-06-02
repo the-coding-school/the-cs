@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { TitledParagraphs } from './Skeleton';
-import '../scss/App.scss';
 import '../scss/Skeleton.scss';
+import "../scss/Partners.scss";
 import '../css/animate.css';
 import dataJSON from '../json/data.json';
 

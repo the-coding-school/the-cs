@@ -1,5 +1,9 @@
 @import "Variables";
 
+$donation_option_image_size: 200px;
+
+// ------------------------------
+
 .donations_panel {
   display: flex;
   flex-direction: column;
@@ -61,7 +65,6 @@
     text-decoration: none;
   }
 }
-
 
 .typeform {
   width: 100%;

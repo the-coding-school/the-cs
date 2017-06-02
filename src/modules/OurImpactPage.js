@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../scss/App.scss';
 import '../scss/Skeleton.scss';
 import { TitledContent, TitledParagraphs, PageHeader, SectionHeader, LinkButton } from './Skeleton';
 import dataJSON from '../json/data.json';

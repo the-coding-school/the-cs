@@ -1,16 +1,11 @@
 @import "Variables";
 
-.teampage {
+$head_member_image_size: 400px;
+$member_image_size: 300px;
 
-  h1 {
-    color: $blue;
-  }
-}
+// ------------------------------
 
-.row {
-  margin-top: 150px;
-  margin-bottom: 70px;
-}
+.teampage h1 { color: $blue; }
 
 .team {
   width: 100%;
@@ -53,7 +48,6 @@
 .head_member {
   margin-bottom: 50px;
   display: flex;
-  // flex-shrink: 1;
   justify-content: space-between;
   box-shadow: $box_shadow;
   border-radius: 4px;
@@ -79,9 +73,11 @@
       width: 65%;
       flex-shrink: 1;
     }
+
     .member_image {
       width: $head_member_image_size;
       height: $head_member_image_size;
+
       img {
         width: $head_member_image_size;
         height: $head_member_image_size;
@@ -119,84 +115,67 @@
 .team_member_wrapper {
   display: flex;
   justify-content: center;
-}
+  .team_member {
+    padding-bottom: 10px;
+    width: $member_image_size;
+    position: relative;
+    box-shadow: $box_shadow;
+    border-radius: 4px;
 
-.team_member {
-  padding-bottom: 10px;
-  width: $member_image_size;
-  position: relative;
-  box-shadow: $box_shadow;
-  border-radius: 4px;
-
-  @media (max-width: $bpoint_md - 1) {
-    // width: $member_image_size / 2;
-    .member_image {
-      // width: $member_image_size / 2;
-      // height: $member_image_size / 2;
-    }
-    .member_text {
-      // display: none;
-    }
-    // padding-bottom: 0;
-  }
-
-  // @media (min-width: $bpoint_md) {
     .member_image {
       width: $member_image_size;
       height: $member_image_size;
     }
-  // }
 
-  .college_attended {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: $black;
-    color: $white;
-    font-size: $text_sm;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    &.ucla {
-      background-color: $uclaBlue;
-      color: $uclaYellow;
-    }
-    &.usc {
-      background-color: $uscRed;
-      color: $uscYellow;
-    }
-    &.caltech {
-      background-color: $caltechOrange;
+    .college_attended {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: $black;
       color: $white;
-    }
-    &.csu_sacramento {
-      background-color: $csuSacGreen;
-      color: $csuSacGold;
-    }
-    &.pepperdine_university {
-      background-color: $pepperdineBlue;
-      color: $white;
-    }
-  }
-
-  .member_text {
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    .member_name {
       font-size: $text_sm;
-    }
-
-    .member_position {
-      font-size: $text_tn;
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
+      &.ucla {
+        background-color: $uclaBlue;
+        color: $uclaYellow;
+      }
+      &.usc {
+        background-color: $uscRed;
+        color: $uscYellow;
+      }
+      &.caltech {
+        background-color: $caltechOrange;
+        color: $white;
+      }
+      &.csu_sacramento {
+        background-color: $csuSacGreen;
+        color: $csuSacGold;
+      }
+      &.pepperdine_university {
+        background-color: $pepperdineBlue;
+        color: $white;
+      }
     }
-  }
 
-  .member_links {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    a {
-      color: lighten($black, 20%);
+    .member_text {
+      padding: 20px;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      .member_name {
+        font-size: $text_sm;
+      }
+
+      .member_position {
+        font-size: $text_tn;
+        font-weight: bold;
+      }
+    }
+
+    .member_links {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      a { color: lighten($black, 20%); }
     }
   }
 }

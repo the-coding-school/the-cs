@@ -5,7 +5,6 @@ import { TitledParagraphs, TitledContent, LinkButton } from "./Skeleton";
 import dataJSON from "../json/data.json";
 import Testimonials from "./Testimonials";
 import Partners from "./Partners";
-import '../scss/App.scss';
 import '../scss/Home.scss';
 import videoPoster from "../images/video_poster.jpg";
 import $ from 'jquery';

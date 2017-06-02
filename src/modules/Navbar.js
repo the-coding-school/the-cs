@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
-import '../scss/App.scss';
-import '../scss/Skeleton.scss';
+import "../scss/Navbar.scss";
 import $ from 'jquery';
 import logo from '../images/logo.png';
 import dataJSON from "../json/data.json";
@@ -29,7 +28,7 @@ class Navbar extends Component {
     var items = this.props.items;
     var navItems = items.map((i) => {
       return (
-        <li className="hvr_float" key={i.path}>
+        <li className="n" key={i.path}>
           <Link to={"/" + i.path}>
               {i.text.toUpperCase()}
           </Link>
@@ -42,9 +41,9 @@ class Navbar extends Component {
         <LogoIcon />
         <ul className="navbar_tabs">{navItems}</ul>
         <div id="navbar_hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div/>
+          <div/>
+          <div/>
         </div>
         <div id="navbar_panel">{navItems}</div>
       </nav>
