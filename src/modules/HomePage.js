@@ -28,6 +28,7 @@ class HomePage extends Component {
   }
 }
 
+
 class HomeVideo extends Component {
   render() {
     return (
@@ -38,8 +39,10 @@ class HomeVideo extends Component {
             Your browser does not support the video tag.
           </video>
           <div className="video_overlay_text">
-            <h1>{dataJSON.headers.homepage.title}</h1>
-            <h2>{dataJSON.headers.homepage.description}</h2>
+            <div className="text_boxes wow fadeInLeftBig">
+              <span className="typedjs_title title">{dataJSON.headers.homepage.title}</span>
+              <span className="typedjs_subtitle subtitle">{dataJSON.headers.homepage.description}</span>
+            </div>
           </div>
         </div>
       </div>

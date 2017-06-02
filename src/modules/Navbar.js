@@ -28,7 +28,7 @@ class Navbar extends Component {
     var items = this.props.items;
     var navItems = items.map((i) => {
       return (
-        <li className="n" key={i.path}>
+        <li className="hvr_float" key={i.path}>
           <Link to={"/" + i.path}>
               {i.text.toUpperCase()}
           </Link>
@@ -58,9 +58,7 @@ class LogoIcon extends Component {
     return (
       <div className="navbar_logo">
         <div className="logo_box">
-          <Link to="/">
-            <img src={logo}/>
-          </Link>
+          <Link to="/">THE CODING SCHOOL</Link>
         </div>
       </div>
     );
