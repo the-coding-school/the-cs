@@ -41,7 +41,7 @@ $partners_image_size: 100px;
       font-weight: bold;
       text-align: center;
       font-size: $text_min;
-      line-height: $text_min * 1.35;
+      line-height: $text_min * $line_height_scale_norm;
     }
   }
   img {

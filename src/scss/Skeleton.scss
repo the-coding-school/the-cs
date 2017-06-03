@@ -19,33 +19,31 @@ h1, h2, h3, h4, h5, h6 {
 h3 {
   @media (min-width: $bpoint_sm) {
     font-size: $text_md;
-    line-height: $text_md * 1.37;
+    line-height: $text_md * $line_height_scale_norm;
   }
   @media (max-width: $bpoint_sm - 1) {
     font-size: $text_sm;
-    line-height: $text_sm * 1.37;
+    line-height: $text_sm * $line_height_scale_norm;
   }
 }
 
 h4 {
   @media (min-width: $bpoint_sm) {
     font-size: $text_sm;
-    line-height: $text_sm * 1.37;
+    line-height: $text_sm * $line_height_scale_norm;
   }
   @media (max-width: $bpoint_sm - 1) {
     font-size: $text_tn;
-    line-height: $text_tn * 1.37;
+    line-height: $text_tn * $line_height_scale_norm;
   }
 }
 
 p {
   font-family: 'Domine', serif;
-  line-height: $text_sm * 1.37;
+  line-height: $text_sm * $line_height_scale_norm;
 }
 
 hr {
-  margin-top: 50px;
-  margin-bottom: 50px;
   opacity: 0.5;
 }
 
@@ -248,7 +246,7 @@ hr {
   .paragraphs {
     font-size: $text_sm;
     color: lighten($black, 10);
-    line-height: 22px;
+    line-height: $text_sm * $line_height_scale_high;
 
   }
 

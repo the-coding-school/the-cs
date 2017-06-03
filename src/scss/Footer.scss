@@ -10,11 +10,10 @@ footer {
     font-weight: normal;
     font-family: $font_primary;
   }
-  a {
+  a, p {
+    font-size: $text_sm;
     font-family: $font_secondary;
-  }
-  p {
-    line-height: normal;
+    line-height: $line_height_scale_norm * $text_sm;
   }
 
   background-color: $blue;

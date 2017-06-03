@@ -11,47 +11,59 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
 }
 
 .philosophy_wrapper {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 20px;
-  border-style: solid;
-  border-color: white;
-  border-width: 1vw;
-  border-radius: 50px;
-  background-color: $blue;
+  @media (max-width: $bpoint_md  - 1) {
+    width: 100%;
+  }
+  @media (min-width: $bpoint_md) {
+    width: 50%;
+  }
 }
 
 .philosophy {
-
-  width: 30vw;
-  height: 15vw;
+  padding: 20px;
+  background-color: $white;
+  border: 3px solid $blue;
+  width: 100%;
   position: relative;
-  margin: 1vw;
+  margin: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  span .philosophy_text {
-    color: $white;
+  .philosophy_text {
+    color: $black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    .philosophy_main{
+      font-size: $text_sm;
+      font-family: $font_primary;
+      font-weight: bold;
+    }
+
+    .divider {
+      height: 1px;
+      border: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background-image: linear-gradient(to right, rgba($black, 0), rgba($black, 0), rgba($black, 0.5), rgba($black, 0), rgba($black, 0));
+    }
+
+    .philosophy_secondary {
+      font-size: $text_tn;
+      line-height: $text_tn * $line_height_scale_norm;
+      font-family: $font_secondary;
+
+    }
   }
-
-}
-
-.philosophy_main {
-  font-size: 1.6vw;
-  padding-bottom: 0.8vw;
-}
-
-.philosophy_secondary {
-  font-size: 1.2vw;
 }

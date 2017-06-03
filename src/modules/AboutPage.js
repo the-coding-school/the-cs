@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TitledParagraphs, TitledContent, PageHeader, Philosophies } from './Skeleton';
+import { TitledParagraphs, TitledContent, PageHeader, SectionHeader, Philosophies } from './Skeleton';
 import '../scss/Skeleton.scss';
 import '../scss/About.scss';
 import '../scss/Philosophies.scss';
@@ -34,8 +34,11 @@ class AboutPage extends Component {
           </div>
           <hr />
           <div className="about_statement"> {aboutDOM} </div>
-          <hr />
-          <div className="coding_philosophy"> <TitledContent title="Our Coding Philosophy" content={<Philosophies/>} /> </div>
+
+          <SectionHeader title="Our Coding Philosophy" />
+          <Philosophies />
+
+
         </div>
       </div>
     );

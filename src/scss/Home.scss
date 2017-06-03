@@ -15,12 +15,12 @@ $video_height: 450px;
 
   @media (max-width: $bpoint_md - 1) {
     font-size: $text_tn;
-    line-height: $text_tn * 1.75;
+    line-height: $text_tn * $line_height_scale_high;
   }
 
   @media (min-width: $bpoint_md) {
     font-size: $text_sm;
-    line-height: $text_sm * 1.75;
+    line-height: $text_sm * $line_height_scale_high;
   }
 }
 

@@ -46,7 +46,7 @@ $member_image_size: 300px;
 .member_description {
   color: lighten($black, 20%);
   font-size: $text_tn;
-  line-height: 1.76 * $text_tn;
+  line-height: $line_height_scale_high * $text_tn;
   font-family: $font_secondary;
 }
 

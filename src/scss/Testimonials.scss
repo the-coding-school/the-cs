@@ -53,13 +53,13 @@
     @media (max-width: $bpoint_sm - 1) {
       .testimonial_quote {
         font-size: $text_tn;
-        line-height: $text_tn * 1.37;
+        line-height: $text_tn * $line_height_scale_norm;
       }
     }
     @media (min-width: $bpoint_sm) {
       .testimonial_quote {
         font-size: $text_sm;
-        line-height: $text_sm * 1.37;
+        line-height: $text_sm * $line_height_scale_norm;
       }
     }
     .testimonial_quote {

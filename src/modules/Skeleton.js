@@ -178,7 +178,7 @@ export class Philosophies extends Component {
   render() {
     const philosophiesDOM = dataJSON.philosophies.map((p) =>  {
       return (
-        <Philosophy main={p.main} secondary={p.secondary} />
+        <Philosophy key={p.main} main={p.main} secondary={p.secondary} />
       );
     })
 
@@ -197,12 +197,13 @@ class Philosophy extends Component {
     return (
       <div className="philosophy_wrapper">
         <div className="philosophy">
-          <span>  
+
             <div className="philosophy_text">
               <div className="philosophy_main"> {this.props.main} </div>
+              <div className="divider" />
               <div className="philosophy_secondary"> {this.props.secondary} </div>
             </div>
-          </span>
+
         </div>
       </div>
     );
