@@ -1,6 +1,6 @@
 @import "Variables";
 
-$partners_image_size: 200px;
+$partners_image_size: 100px;
 
 // ------------------------------
 
@@ -40,7 +40,8 @@ $partners_image_size: 200px;
       color: white;
       font-weight: bold;
       text-align: center;
-      font-size: $text_tn;
+      font-size: $text_min;
+      line-height: $text_min * 1.35;
     }
   }
   img {

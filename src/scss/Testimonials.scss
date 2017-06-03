@@ -22,7 +22,9 @@
 .testimonial {
   background-color: $blue;
   position: relative;
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -48,10 +50,20 @@
     font-family: $font_secondary;
     font-size: $text_md;
 
+    @media (max-width: $bpoint_sm - 1) {
+      .testimonial_quote {
+        font-size: $text_tn;
+        line-height: $text_tn * 1.37;
+      }
+    }
+    @media (min-width: $bpoint_sm) {
+      .testimonial_quote {
+        font-size: $text_sm;
+        line-height: $text_sm * 1.37;
+      }
+    }
     .testimonial_quote {
       font-family: $font_secondary;
-      font-size: $text_sm;
-      line-height: $text_sm * 1.37;
       margin-top: 25px;
       margin-bottom: 25px;
     }

@@ -19,7 +19,7 @@ class HomePage extends Component {
       <div className="App">
         <HomeVideo />
         <div className="homepage page">
-          <TitledParagraphs title={miP.title} paragraphs={miP.paragraphs} />
+          <IntroBlurb />
           <Testimonials />
           <Partners />
         </div>
@@ -39,12 +39,22 @@ class HomeVideo extends Component {
             Your browser does not support the video tag.
           </video>
           <div className="video_overlay_text">
-            <div className="text_boxes wow fadeInLeftBig">
+            <div className="text_boxes wow fadeInDown">
               <span className="typedjs_title title">{dataJSON.headers.homepage.title}</span>
               <span className="typedjs_subtitle subtitle">{dataJSON.headers.homepage.description}</span>
             </div>
           </div>
         </div>
+      </div>
+    );
+  }
+}
+
+class IntroBlurb extends Component {
+  render() {
+    return (
+      <div className="intro_blurb">
+        {dataJSON.introBlurb}
       </div>
     );
   }

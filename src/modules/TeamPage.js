@@ -43,18 +43,18 @@ class TeamPage extends Component {
         <div className="teampage page">
           <div className="container">
             <div className="team_founder">
-              <h1>The Founder</h1>
+              <h1 className="team_section_title">The Founder</h1>
               {founderDOM}
             </div>
-            <h1>The Team Heads</h1>
+            <h1 className="team_section_title">The Team Heads</h1>
             <div className="team_board team_member_set">
               {teamLeadsDOM}
             </div>
-            <h1>The Teachers</h1>
+            <h1 className="team_section_title">The Teachers</h1>
             <div className="team_teachers team_member_set">
               {teachersDOM}
             </div>
-            <h1>The Faculty</h1>
+            <h1 className="team_section_title">The Faculty</h1>
             <div className="team_faculty team_member_set">
               {facultyDOM}
             </div>

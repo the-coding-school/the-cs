@@ -4,6 +4,26 @@ $video_height: 450px;
 
 // ------------------------------
 
+.intro_blurb {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: lighten($black, 20);
+  font-family: $font_secondary;
+  padding-left: 10vw;
+  padding-right: 10vw;
+
+  @media (max-width: $bpoint_md - 1) {
+    font-size: $text_tn;
+    line-height: $text_tn * 1.75;
+  }
+
+  @media (min-width: $bpoint_md) {
+    font-size: $text_sm;
+    line-height: $text_sm * 1.75;
+  }
+}
+
 #video {
   width: 100%;
   top: $navbar_height;

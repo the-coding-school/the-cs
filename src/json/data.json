@@ -1,4 +1,6 @@
 {
+  "introBlurb": "The Coding School (TCS) is a 501c3 organization that aims to empower the next generation through computer science education. We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students, regardless of socioeconomic background, geographic location, or learning differences, develop the skills necessary to thrive and tackle the most pressing issues facing our world.",
+
   "sitePages": [
     { "path": "about", "text": "About Us" },
     { "path": "team", "text": "Our Team" },
@@ -122,27 +124,27 @@
       },
       "about": {
         "image": "/images/headers/about.jpg",
-        "title": "Learn a little more about who we are.",
+        "title": "About Us",
         "description": "Learn about our mission, who we are, what we do, and why we do it."
       },
       "team": {
         "image": "/images/headers/team.jpg",
-        "title": "Meet our amazing team that makes this all possible.",
+        "title": "Our Team",
         "description": "Our teaching team is composed of over 120 computer science students from six universities in California – USC, UCLA, Caltech, Pepperdine, Cal State – Northridge, and Cal State – Sacramento. Ranging from undergraduates to PhD candidates, members of our team have: developed popular mobile apps, sent satellites up into space, programmed high performance speedboats for professional extreme athletes, and worked for Facebook, Google, SpaceX, Intel, Microsoft, just to name a few."
       },
       "ourPrograms": {
         "image": "/images/headers/our_programs.jpg",
-        "title": "Check out the programs we offer.",
+        "title": "Our Programs",
         "description": ""
       },
       "ourImpact": {
-        "image": "/images/headers/our_programs.jpg",
-        "title": "",
+        "image": "/images/headers/our_impact.jpg",
+        "title": "Our Impact",
         "description": ""
       },
       "getInvolved": {
         "image": "/images/headers/get_involved.jpg",
-        "title": "Get involved with The Coding School.",
+        "title": "Get Involved",
         "description": "Giving the gift of coding not only impacts the lives of the students involved, it has the potential to change the world."
       }
   },
