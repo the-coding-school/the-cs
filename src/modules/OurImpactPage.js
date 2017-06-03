@@ -16,7 +16,7 @@ class OurImpactPage extends Component {
         <PageHeader image={image} title={header.title} description={header.description}/>
         <div className="ourimpact_page page">
           <Statistics />
-          <SectionHeader title={"Our Impact"} />
+          <SectionHeader title={"Our Footprint"} />
           <OurImpact />
           <SectionHeader title={"Our Unique Approach"} />
           <OurUniqueApproach />

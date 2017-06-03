@@ -5,7 +5,7 @@
     { "path": "about", "text": "About Us" },
     { "path": "team", "text": "Our Team" },
     { "path": "programs", "text": "Programs" },
-    { "path": "impact", "text": "Our Impact" },
+    { "path": "impact", "text": "Our Footprint" },
     { "path": "get-involved", "text": "Get Involved" }
   ],
 
@@ -59,6 +59,25 @@
       "link": "https://www.smmusd.org/"
     }
   ],
+
+  "philosophies": [
+    {
+      "main": "Coding is the key to social mobility.",
+      "secondary": "That’s why we are dedicated to providing coding lessons to socioeconomically disadvantaged communities and integrating classes into the school day so all students will be introduced to computer programming."
+    },
+    {
+      "main": "Coding is like a foreign language: the earlier students begin learning, the easier it becomes. ",
+      "secondary": "Plus, it requires long-term, continuous commitment. We’ve developed a three-year curriculum to ensure that students aren’t just introduced to the world of computer science but that they have the support and guidance to develop their coding skills with years of taught lessons."
+    },
+    {
+      "main": "Coding can help students with different learning styles thrive. ",
+      "secondary": "Often left out of discussions surrounding coding education, we’ve found students with special needs flourish due to the introduction of coding, and so we’re devoted to making sure these students have the same opportunities to learn how to code."
+    },
+    {
+      "main": "Diverse approaches to coding education must be embraced to achieve diversity in computer science.",
+      "secondary": ""
+    }
+  ],  
 
   "courses": {
     "web": [
@@ -173,7 +192,7 @@
     ],
     "ourImpact": [
       {
-        "title": "Our Impact",
+        "title": "Our Footprint",
         "paragraphs": [
           "By offering ongoing coding education, students develop the computational and critical thinking skills necessary to succeed in an increasingly tech-driven world. They become creators, innovators, and problem solvers, which translates to improvements in academic performance and postsecondary readiness. Moreover, these readily transferrable and highly sought after skills increase the opportunities for social mobility by expanding students’ employment options and prepare them for the 21st century workplace.",
           "In the long term, our dynamic coding initiatives will help address two of the main problems in the field of computer science: a shortage of coders and a lack of diversity.",
