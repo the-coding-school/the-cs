@@ -1,0 +1,57 @@
+@import "Variables";
+
+.philosophies_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.philosophies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.philosophy_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1vw;
+  border-radius: 50px;
+  background-color: $blue;
+}
+
+.philosophy {
+
+  width: 30vw;
+  height: 15vw;
+  position: relative;
+  margin: 1vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span .philosophy_text {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+}
+
+.philosophy_main {
+  font-size: 1.6vw;
+  padding-bottom: 0.8vw;
+}
+
+.philosophy_secondary {
+  font-size: 1.2vw;
+}

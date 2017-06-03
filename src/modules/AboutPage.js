@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { TitledParagraphs, TitledContent, PageHeader, Philosophies } from './Skeleton';
 import '../scss/Skeleton.scss';
 import '../scss/About.scss';
+import '../scss/Philosophies.scss';
 import dataJSON from '../json/data.json';
 
 class AboutPage extends Component {
