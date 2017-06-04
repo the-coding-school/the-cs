@@ -167,8 +167,13 @@ $member_image_size: 300px;
       padding: 20px;
       padding-top: 10px;
       padding-bottom: 0px;
-      .member_name {
-        font-size: $text_sm;
+
+      .member_name_row {
+        display: flex;
+        justify-content: space-between;
+        .member_name {
+          font-size: $text_sm;
+        }
       }
 
       .member_position {
@@ -180,7 +185,11 @@ $member_image_size: 300px;
     .member_links {
       padding-top: 2px;
       padding-bottom: 2px;
-      a { color: lighten($black, 20%); }
+      a {
+        color: lighten($black, 20%);
+        margin-left: 2px;
+        margin-right: 2px;
+      }
     }
   }
 }

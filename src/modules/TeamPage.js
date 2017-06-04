@@ -144,10 +144,13 @@ class TeamMemberDescription extends Component {
     const p = this.props;
     return (
       <div className="member_text">
-        <h1 className="member_name">{p.name}</h1>
+        <div className="member_name_row">
+          <h1 className="member_name">{p.name}</h1>
+          <div className="member_links"><MemberLinks links={p.links} /></div>
+        </div>
         <div className="member_position">{p.position}</div>
 
-        <div className="member_links"><MemberLinks links={p.links} /></div>
+
         <div className="member_description">{p.description}</div>
 
       </div>
@@ -161,13 +164,13 @@ class MemberLinks extends Component {
     return (
       <span className="member_links">
         {links.personal &&
-           <FontAwesomeLink link={links.personal} classNames="fa fa-home"/>
+           <FontAwesomeLink link={links.personal} classNames="fa fa-external-link-square"/>
          }
         {links.facebook &&
-          <FontAwesomeLink link={links.facebook} classNames="fa fa-facebook"/>
+          <FontAwesomeLink link={links.facebook} classNames="fa fa-facebook-square"/>
         }
         {links.linkedin &&
-          <FontAwesomeLink link={links.linkedin} classNames="fa fa-linkedin"/>
+          <FontAwesomeLink link={links.linkedin} classNames="fa fa-linkedin-square"/>
         }
       </span>
     );

@@ -66,13 +66,16 @@ export class FontAwesomeLink extends Component {
   render() {
     const link = this.props.link;
     const classNames = this.props.classNames;
+    /*
+    <span className="fa-stack fa-sm">
+      <i className="fa fa-square fa-stack-2x"></i>
+      <i className={classNames + " fa-stack-1x"}></i>
+    </span>
+    */
     if (this.props.link) {
       return (
         <a href={link}>
-          <span className="fa-stack fa-md">
-            <i className="fa fa-square fa-stack-2x"></i>
-            <i className={classNames + " fa-stack-1x"}></i>
-          </span>
+          <i className={classNames + " fa-lg hvr_grow"}></i>
         </a>
       );
     }

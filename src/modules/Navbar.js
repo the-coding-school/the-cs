@@ -28,7 +28,7 @@ class Navbar extends Component {
     var items = this.props.items;
     var navItems = items.map((i) => {
       return (
-        <li className="hvr_float" key={i.path}>
+        <li className="hvr_grow" key={i.path}>
           <Link to={"/" + i.path}>
               {i.text.toUpperCase()}
           </Link>

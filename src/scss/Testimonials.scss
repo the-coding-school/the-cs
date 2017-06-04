@@ -50,18 +50,6 @@
     font-family: $font_secondary;
     font-size: $text_md;
 
-    @media (max-width: $bpoint_sm - 1) {
-      .testimonial_quote {
-        font-size: $text_tn;
-        line-height: $text_tn * $line_height_scale_norm;
-      }
-    }
-    @media (min-width: $bpoint_sm) {
-      .testimonial_quote {
-        font-size: $text_sm;
-        line-height: $text_sm * $line_height_scale_norm;
-      }
-    }
     .testimonial_quote {
       font-family: $font_secondary;
       margin-top: 25px;
@@ -70,13 +58,39 @@
 
     .testimonial_author {
       font-family: $font_primary;
-      font-size: $text_md;
       font-weight: bold;
     }
 
     .testimonial_context {
       font-family: $font_primary;
-      font-size: $text_sm;
+    }
+
+    // Small screens
+    @media (max-width: $bpoint_sm - 1) {
+      .testimonial_quote {
+        font-size: $text_tn;
+        line-height: $text_tn * $line_height_scale_norm;
+      }
+      .testimonial_author {
+        font-size: $text_sm;
+      }
+      .testimonial_context {
+        font-size: $text_tn;
+      }
+    }
+
+    // Large screens
+    @media (min-width: $bpoint_sm) {
+      .testimonial_quote {
+        font-size: $text_sm;
+        line-height: $text_sm * $line_height_scale_norm;
+      }
+      .testimonial_author {
+        font-size: $text_md;
+      }
+      .testimonial_context {
+        font-size: $text_sm;
+      }
     }
   }
 }
