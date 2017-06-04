@@ -127,7 +127,7 @@
     {
       "description": "low socio-economic students",
       "number": "44%",
-      "imageName": "minorities_icon.png"
+      "imageName": "low_socioeconomic_icon.png"
     },
     {
       "description": "female students",
@@ -158,7 +158,7 @@
       },
       "ourImpact": {
         "image": "/images/headers/our_impact.jpg",
-        "title": "Our Impact",
+        "title": "Our Footprint",
         "description": ""
       },
       "getInvolved": {

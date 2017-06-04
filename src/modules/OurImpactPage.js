@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../scss/Skeleton.scss';
+import '../scss/OurFootprint.scss';
 import { TitledContent, TitledParagraphs, PageHeader, SectionHeader, LinkButton } from './Skeleton';
 import dataJSON from '../json/data.json';
 
@@ -16,7 +17,7 @@ class OurImpactPage extends Component {
         <PageHeader image={image} title={header.title} description={header.description}/>
         <div className="ourimpact_page page">
           <Statistics />
-          <SectionHeader title={"Our Footprint"} />
+          <hr/>
           <OurImpact />
           <SectionHeader title={"Our Unique Approach"} />
           <OurUniqueApproach />
