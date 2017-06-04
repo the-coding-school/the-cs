@@ -267,9 +267,15 @@ hr {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  // margin-top: 50px;
-  // margin-bottom: 50px;
-  background-color: $blue;
+  background-image:
+    linear-gradient(
+      to right,
+      rgba($blue, 0.2),
+      rgba($blue, 1),
+      rgba($blue, 1),
+      rgba($blue, 1),
+      rgba($blue, 0.2)
+    );
 }
 
 .fa-stack {
