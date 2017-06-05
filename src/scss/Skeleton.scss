@@ -162,12 +162,9 @@ hr {
     top: 0;
     left: 0;
     transition: all 0.5s;
-    &.hfc_default { opacity: 1; }
-    &.hfc_hover { opacity: 0; }
   }
 
   &:hover .hfc_default { opacity: 0; }
-  &:hover .hfc_hover { opacity: 1; }
 }
 
 .link_button button {
@@ -263,15 +260,7 @@ hr {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image:
-    linear-gradient(
-      to right,
-      rgba($blue, 0.2),
-      rgba($blue, 1),
-      rgba($blue, 1),
-      rgba($blue, 1),
-      rgba($blue, 0.2)
-    );
+  background-image: $blue_fade_bg;
 }
 
 .member_links {

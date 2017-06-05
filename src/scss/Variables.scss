@@ -4,16 +4,6 @@ $yellow: #ffcc00;
 $black: #333333;
 $white: #ffffff;
 
-// School Colors
-$uclaBlue: #1E5EA0;
-$uclaYellow: #FBB727;
-$uscRed: #980F07;
-$uscYellow: #F9B218;
-$caltechOrange: #FF6E1E;
-$csuSacGreen: #01573C;
-$csuSacGold: #CBB778;
-$pepperdineBlue: #00205C;
-
 // Typography
 $font_primary: 'Montserrat', sans-serif;
 $font_secondary: 'Domine', serif;
@@ -36,3 +26,11 @@ $header_height: 300px;
 
 // Miscellaneous Styles
 $box_shadow: 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12);
+$blue_fade_bg: linear-gradient(
+  to right,
+  rgba($blue, 0.5),
+  rgba($blue, 1),
+  rgba($blue, 1),
+  rgba($blue, 1),
+  rgba($blue, 0.5)
+);

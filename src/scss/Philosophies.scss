@@ -30,7 +30,9 @@
 .philosophy {
   padding: 20px;
   background-color: $white;
-  border: 3px solid $blue;
+  // border: 3px solid $blue;
+  box-shadow: $box_shadow;
+  border-radius: 5px;
   width: 100%;
   position: relative;
   margin: 20px;
@@ -40,7 +42,6 @@
   justify-content: space-between;
 
   .philosophy_text {
-    color: $black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -48,6 +49,7 @@
     .philosophy_main{
       font-size: $text_sm;
       font-family: $font_primary;
+      color: $blue;
       font-weight: bold;
     }
 
@@ -63,7 +65,7 @@
       font-size: $text_tn;
       line-height: $text_tn * $line_height_scale_norm;
       font-family: $font_secondary;
-
+      color: $black;
     }
   }
 }

@@ -3,6 +3,17 @@
 $head_member_image_size: 400px;
 $member_image_size: 300px;
 
+// School Colors
+$uclaBlue: #1E5EA0;
+$uclaYellow: #FBB727;
+$uscRed: #980F07;
+$uscYellow: #F9B218;
+$caltechOrange: #FF6E1E;
+$csuSacGreen: #01573C;
+$csuSacGold: #CBB778;
+$pepperdineBlue: #00205C;
+$brownUniBrown: #3A1E1A;
+
 // ------------------------------
 
 .teampage h1 { color: $blue; }
@@ -159,6 +170,10 @@ $member_image_size: 300px;
       }
       &.pepperdine_university {
         background-color: $pepperdineBlue;
+        color: $white;
+      }
+      &.brown_university {
+        background-color: $brownUniBrown;
         color: $white;
       }
     }

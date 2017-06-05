@@ -5,11 +5,12 @@
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: $blue;
+  background-image: $blue_fade_bg;
 }
 
 .testimonials {
   width: 80%;
+
 }
 
 .testimonial_wrapper {
@@ -20,7 +21,7 @@
 }
 
 .testimonial {
-  background-color: $blue;
+  // background-color: $blue;
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
