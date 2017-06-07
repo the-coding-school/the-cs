@@ -32,7 +32,7 @@ class HomePage extends Component {
             </div>
             <div className="homepage_panel_wrapper">
               <div className="homepage_panel">
-                <h1 className="centered_header">Schools We Teach At</h1>
+                <h1 className="centered_header">School Districts We Have Coding Programs In</h1>
                 <SchoolsPanel />
               </div>
             </div>

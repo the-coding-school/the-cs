@@ -50,16 +50,16 @@
 
   "schools": [
     {
-      "name": "Twin Rivers Unified School District",
-      "description": "",
-      "imageName": "twinrivers_usd.png",
-      "link": "http://www.twinriversusd.org/"
-    },
-    {
       "name": "Santa Monica-Malibu USD",
       "description": "",
       "imageName": "smm_usd.png",
       "link": "https://www.smmusd.org/"
+    },
+    {
+      "name": "Twin Rivers Unified School District",
+      "description": "",
+      "imageName": "twinrivers_usd.png",
+      "link": "http://www.twinriversusd.org/"
     },
     {
       "name": "LVUSD",
@@ -84,6 +84,18 @@
       "description": "",
       "imageName": "cssa.png",
       "link": "http://www.ccsa.org/"
+    },
+    {
+      "name": "Culver City USD",
+      "description": "",
+      "imageName": "culvercity_usd.png",
+      "link": "http://www.ccusd.org//"
+    },
+    {
+      "name": "Beverly Hills USD",
+      "description": "",
+      "imageName": "beverlyhills_usd.png",
+      "link": "http://www.bhusd.org/"
     }
   ],
 

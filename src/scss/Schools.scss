@@ -22,7 +22,7 @@ $schools_image_size: 100px;
   position: relative;
 
   .school_description {
-    border-radius: 50%;
+    // border-radius: 50%;
     opacity: 0.0;
     width: 100%;
     height: 100%;
@@ -46,7 +46,7 @@ $schools_image_size: 100px;
   }
   img {
     z-index: 100;
-    border-radius: 50%;
+    // border-radius: 50%;
     width: $schools_image_size;
     height: $schools_image_size;
   }

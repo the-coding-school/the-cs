@@ -21,6 +21,7 @@ export class SchoolsPanel extends Component {
   render() {
 
     function sortSchools(a, b) {
+      if (a.name === "Santa Monica-Malibu USD") return -1;
       if (a.name < b.name) return -1;
       if (a.name > b.name) return 1;
       return 0;
