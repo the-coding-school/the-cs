@@ -16,7 +16,7 @@ ReactDOM.render((
       <Route path="/about" component={AboutPage} />
       <Route path="/team" component={TeamPage} />
       <Route path="/programs" component={OurProgramsPage} />
-      <Route path="/impact" component={OurImpactPage} />
+      <Route path="/footprint" component={OurImpactPage} />
       <Route path="/get-involved" component={GetInvolvedPage} />
     </Route>
   </Router>

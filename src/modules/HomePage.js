@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router'
 import homepage_video from "../videos/homepage_video.mp4";
-import { TitledParagraphs, TitledContent, LinkButton } from "./Skeleton";
+import { TitledParagraphs, TitledContent, LinkButton, SectionHeader } from "./Skeleton";
 import dataJSON from "../json/data.json";
 import Testimonials from "./Testimonials";
-import Partners from "./Partners";
+import { PartnersPanel } from "./Partners";
+import { SchoolsPanel } from "./Schools";
 import '../scss/Home.scss';
 import videoPoster from "../images/video_poster.jpg";
 import $ from 'jquery';
@@ -21,7 +22,21 @@ class HomePage extends Component {
         <div className="homepage page">
           <IntroBlurb />
           <Testimonials />
-          <Partners />
+          <div className="homepage_panels">
+            <div className="homepage_panel_wrapper">
+              <div className="homepage_panel">
+                <h1 className="centered_header">Our Partners</h1>
+                <PartnersPanel />
+                <p>In addition, The Coding School is proud to have been awarded the Brown Venture Launch Fund from Brown University Social Innovation Initiative.</p>
+              </div>
+            </div>
+            <div className="homepage_panel_wrapper">
+              <div className="homepage_panel">
+                <h1 className="centered_header">Schools We Teach At</h1>
+                <SchoolsPanel />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -5,7 +5,7 @@ import "../scss/Partners.scss";
 import '../css/animate.css';
 import dataJSON from '../json/data.json';
 
-class Partners extends Component {
+export class Partners extends Component {
   render() {
     const pP = dataJSON.paragraphs.partnershipsIntro;
     return (
@@ -17,7 +17,7 @@ class Partners extends Component {
   }
 }
 
-class PartnersPanel extends Component {
+export class PartnersPanel extends Component {
   render() {
 
     function sortPartners(a, b) {
@@ -54,5 +54,3 @@ class Partner extends Component {
     );
   }
 }
-
-export default Partners;

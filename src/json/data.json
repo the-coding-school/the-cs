@@ -3,9 +3,9 @@
 
   "sitePages": [
     { "path": "about", "text": "About Us" },
-    { "path": "team", "text": "Our Team" },
+    { "path": "footprint", "text": "Our Footprint" },
     { "path": "programs", "text": "Programs" },
-    { "path": "impact", "text": "Our Footprint" },
+    { "path": "team", "text": "Our Team" },
     { "path": "get-involved", "text": "Get Involved" }
   ],
 
@@ -41,22 +41,49 @@
       "link": "https://www.friendsofhawthorne.org/"
     },
     {
-      "name": "Twin Rivers Unified School Districut",
-      "description": "",
-      "imageName": "twinriversusd.png",
-      "link": "http://www.twinriversusd.org/"
-    },
-    {
       "name": "UCLA Henry Samueli School of Engineering",
       "description": "",
       "imageName": "ucla_hsseas.png",
       "link": "https://www.engineering.ucla.edu/"
+    }
+  ],
+
+  "schools": [
+    {
+      "name": "Twin Rivers Unified School District",
+      "description": "",
+      "imageName": "twinrivers_usd.png",
+      "link": "http://www.twinriversusd.org/"
     },
     {
-      "name": "Santa Monica-Malibu Unified School District",
+      "name": "Santa Monica-Malibu USD",
       "description": "",
-      "imageName": "smmusd.png",
+      "imageName": "smm_usd.png",
       "link": "https://www.smmusd.org/"
+    },
+    {
+      "name": "LVUSD",
+      "description": "",
+      "imageName": "lv_usd.png",
+      "link": "http://www.lvusd.org/"
+    },
+    {
+      "name": "Glendale USD",
+      "description": "",
+      "imageName": "glendale_usd.png",
+      "link": "https://www.gusd.net/"
+    },
+    {
+      "name": "LA USD",
+      "description": "",
+      "imageName": "la_usd.png",
+      "link": "http://home.lausd.net/"
+    },
+    {
+      "name": "California Charter Schools Association",
+      "description": "",
+      "imageName": "cssa.png",
+      "link": "http://www.ccsa.org/"
     }
   ],
 

@@ -268,3 +268,11 @@ hr {
     color: $black;
   }
 }
+
+.centered_header {
+  color: $blue;
+  font-size: $text_lg;
+  font-family: $font_primary;
+  width: 100%;
+  text-align: center;
+}

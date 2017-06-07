@@ -103,3 +103,20 @@ $video_height: 450px;
 
   .page.homepage { margin-top: $video_height + $navbar_height; }
 }
+
+.homepage_panels {
+  display: flex;
+  flex-wrap: wrap;
+  .homepage_panel_wrapper {
+    @media (min-width: $bpoint-md) {
+      width: 100%;
+    }
+    @media (max-width: $bpoint-md - 1) {
+      width: 100%;
+    }
+  }
+  .homepage_panel {
+    padding: 20px;
+    text-align: center;
+  }
+}

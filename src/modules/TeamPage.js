@@ -80,7 +80,7 @@ class HeadMember extends Component {
           <MemberImage memberID={memberID} />
           <div className="member_text_wrapper">
             <div className="member_text">
-              <div className="member_name">{(firstName + " " + lastName).toUpperCase()}</div>
+              <div className="member_name">{(firstName)}</div>
               <div className="member_position">{position.toUpperCase()}</div>
               <div className="member_description">
                 <p>{description}</p>
@@ -100,7 +100,7 @@ class TeamMember extends Component {
     const m = this.props.member;
     const firstName = m.name.first;
     const lastName = m.name.last;
-    const name = firstName + " " + lastName;
+    const name = firstName;
     const memberID = firstName[0].toLowerCase() + "_" + lastName.toLowerCase();
 
     return (
