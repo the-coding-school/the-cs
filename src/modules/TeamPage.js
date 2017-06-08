@@ -76,27 +76,17 @@ class HeadMember extends Component {
     const description = member.description;
 
     return (
-        <div className="head_member">
-        
-          <div className="head_member_top">
-            <MemberImage memberID={memberID} />
-            <div className="member_text_wrapper">
-              <div className="member_text">
-                <div className="member_name">{(firstName)}</div>
-                <div className="member_position">{position.toUpperCase()}</div>
-                <div className="member_blurb">
-                  <p>{member.blurb}</p>
-                </div>
+        <div className="head_member flex">
+          <MemberImage memberID={memberID} />
+          <div className="member_text_wrapper">
+            <div className="member_text">
+              <div className="member_name">{(firstName)}</div>
+              <div className="member_position">{position.toUpperCase()}</div>
+              <div className="member_description">
+                <p>{description}</p>
               </div>
             </div>
           </div>
-
-          <div className="head_member_bottom">
-            <div className="member_description">
-              <p>{description}</p>
-            </div>
-          </div>
-
         </div>
     );
   }
