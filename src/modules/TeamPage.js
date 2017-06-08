@@ -25,12 +25,17 @@ class TeamPage extends Component {
       return ( <TeamMember key={id} member={m}/> );
     }
 
+    function mapFaculty(m) {
+      const id = m.name.first + "_" + m.name.last;
+      return ( <FacultyMember key={id} member={m}/> );
+    }
+
     const founderDOM = teamData.founder.sort(sortMembers).map((m) => {
       const id = m.name.first + "_" + m.name.last;
       return <HeadMember key={id} member={m}/>
     });
 
-    const facultyDOM = teamData.faculty.sort(sortMembers).map(mapMembers);
+    const facultyDOM = teamData.faculty.sort(sortMembers).map(mapFaculty);
     const teamLeadsDOM = teamData.team_leads.sort(sortMembers).map(mapMembers);
     const teachersDOM = teamData.teachers.sort(sortMembers).map(mapMembers);
 
@@ -73,17 +78,17 @@ class HeadMember extends Component {
     const firstName = member.name.first;
     const lastName = member.name.last;
     const memberID = firstName[0].toLowerCase() + "_" + lastName.toLowerCase();
-    const description = member.description;
 
     return (
         <div className="head_member flex">
           <MemberImage memberID={memberID} />
           <div className="member_text_wrapper">
             <div className="member_text">
-              <div className="member_name">{(firstName)}</div>
+              <div className="member_name">{(firstName + " " + lastName)}</div>
               <div className="member_position">{position.toUpperCase()}</div>
               <div className="member_description">
-                <p>{description}</p>
+                <p>{member.achievements}</p>
+                <p>{member.description}</p>
               </div>
             </div>
           </div>
@@ -92,8 +97,6 @@ class HeadMember extends Component {
   }
 }
 
-// ------- Team Member (smaller cells) ------- //
-
 class TeamMember extends Component {
 
   render() {
@@ -101,6 +104,26 @@ class TeamMember extends Component {
     const firstName = m.name.first;
     const lastName = m.name.last;
     const name = firstName;
+    const memberID = firstName[0].toLowerCase() + "_" + lastName.toLowerCase();
+
+    return (
+      <div className="team_member_wrapper">
+        <div className="team_member wow fadeIn">
+          <MemberImage memberID={memberID} />
+          <TeamMemberCollegeBar college={m.college} />
+          <TeamMemberDescription name={name} position={m.position} description={m.description} links={m.links} />
+        </div>
+      </div>
+    )
+  }
+}
+
+class FacultyMember extends Component {
+  render() {
+    const m = this.props.member;
+    const firstName = m.name.first;
+    const lastName = m.name.last;
+    const name = firstName + " " + lastName;
     const memberID = firstName[0].toLowerCase() + "_" + lastName.toLowerCase();
 
     return (

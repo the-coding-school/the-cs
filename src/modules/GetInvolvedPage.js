@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { TitledParagraphs, PageHeader } from './Skeleton';
+import PartnersPanel from "./Partners";
 import '../scss/Skeleton.scss';
 import '../scss/GetInvolved.scss';
 
-import { TitledParagraphs, PageHeader } from './Skeleton';
-import Partners from "./Partners.js";
+
 
 import dataJSON from '../json/data.json';
 
@@ -18,25 +19,21 @@ class GetInvolvedPage extends Component {
 
     // TODO: Add donations section back in once finalized
     // TODO: Add form links for all sections once created
-    /*
-
-    <div className="donations_section">
-      <TitledParagraphs title={donP.title} paragraphs={donP.paragraphs} />
-      <DonationsPanel/>
-    </div>
-
-    */
 
     return (
       <div className="App">
         <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className="getinvolved_page page">
 
-          <Partners />
+          <div className="partners_section">
+            <TitledParagraphs title={parP.title} paragraphs={parP.paragraphs} />
+            <PartnersPanel />
+          </div>
 
           <div className="schools_section">
             <TitledParagraphs title={schP.title} paragraphs={schP.paragraphs} />
           </div>
+          
           <div className="volunteer_section">
             <TitledParagraphs title={volP.title} paragraphs={volP.paragraphs} />
           </div>
@@ -46,44 +43,44 @@ class GetInvolvedPage extends Component {
     );
   }
 }
-
-class PartnersPanel extends Component {
-
-  render() {
-    function sortPartners(a, b) {
-      if (a.name < b.name) return -1;
-      if (a.name > b.name) return 1;
-      return 0;
-    }
-
-    const partnersDOM = dataJSON.partners.sort(sortPartners).map((p) => {
-      const imageSrc = process.env.PUBLIC_URL + "/images/partners/" + p.imageName;
-      return <Partner key={p.name} imageSrc={imageSrc} name={p.name} description={p.description} link={p.link}/>
-    });
-
-    return (
-      <div className="partners">
-        {partnersDOM}
-      </div>
-    );
-  }
-}
-
-class Partner extends Component {
-  render() {
-    const p = this.props;
-    return (
-      <div className="partner_wrapper">
-        <a href={p.link}>
-        <div className="partner wow fadeIn">
-          <img src={p.imageSrc} alt="partner" width="180" height="180" />
-          <div className="partner_description"><p>{p.name}</p></div>
-        </div>
-        </a>
-      </div>
-    );
-  }
-}
+//
+// class PartnersPanel extends Component {
+//
+//   render() {
+//     function sortPartners(a, b) {
+//       if (a.name < b.name) return -1;
+//       if (a.name > b.name) return 1;
+//       return 0;
+//     }
+//
+//     const partnersDOM = dataJSON.partners.sort(sortPartners).map((p) => {
+//       const imageSrc = process.env.PUBLIC_URL + "/images/partners/" + p.imageName;
+//       return <Partner key={p.name} imageSrc={imageSrc} name={p.name} description={p.description} link={p.link}/>
+//     });
+//
+//     return (
+//       <div className="partners">
+//         {partnersDOM}
+//       </div>
+//     );
+//   }
+// }
+//
+// class Partner extends Component {
+//   render() {
+//     const p = this.props;
+//     return (
+//       <div className="partner_wrapper">
+//         <a href={p.link}>
+//         <div className="partner wow fadeIn">
+//           <img src={p.imageSrc} alt="partner" width="180" height="180" />
+//           <div className="partner_description"><p>{p.name}</p></div>
+//         </div>
+//         </a>
+//       </div>
+//     );
+//   }
+// }
 
 class DonationsPanel extends Component {
   render() {
