@@ -5,8 +5,8 @@ $video_height: 450px;
 // ------------------------------
 
 .intro_blurb {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
   color: lighten($black, 20);
   font-family: $font_secondary;
@@ -14,12 +14,12 @@ $video_height: 450px;
   padding-right: 10vw;
 
   @media (max-width: $bpoint_md - 1) {
-    font-size: $text_tn;
+    font-size: $text_sm;
     line-height: $text_tn * $line_height_scale_high;
   }
 
   @media (min-width: $bpoint_md) {
-    font-size: $text_sm;
+    font-size: $text_md;
     line-height: $text_sm * $line_height_scale_high;
   }
 }

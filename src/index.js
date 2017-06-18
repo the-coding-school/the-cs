@@ -10,7 +10,8 @@ import GetInvolvedPage from "./modules/GetInvolvedPage";
 import { Router, Route, hashHistory, browserHistory } from 'react-router'
 
 ReactDOM.render((
-  <Router onUpdate={() => window.scrollTo(0, 0)} history={browserHistory}>
+  // TODO: Set up server to allow for back/refresh using browserHistory
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route component={Skeleton}>
       <Route path="/" component={HomePage} />
       <Route path="/about" component={AboutPage} />
