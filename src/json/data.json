@@ -357,21 +357,21 @@
     },
     {
       "author": "Ireland",
-      "context": "Student, Lincoln Middle School",
+      "context": "7th Grade Student",
       "date": "",
       "quote": "Last school year, at my school, your company ran two classes on Python and HTML and CSS. I loved them so much and they were so fun that coding is now one of my favorite hobbies. A dream of mine now, is to take on computer science as a profession.",
       "imageName": "ireland.jpg"
     },
     {
       "author": "Benjamin",
-      "context": "Student",
+      "context": "6th Grade Student",
       "date": "",
       "quote": "I didn’t know what coding was before this class. I liked how I got to create my own website.",
       "imageName": "placeholder.jpg"
     },
     {
       "author": "Angel",
-      "context": "Student",
+      "context": "6th Grade Student",
       "date": "",
       "quote": "The best thing about The Coding School class is that it was helpful because now I want to become an Engineer.",
       "imageName": "placeholder.jpg"
@@ -384,7 +384,7 @@
       "imageName": "placeholder.jpg"
     },
     {
-      "author": "Martin Powers",
+      "author": "Dr. Martin Powers",
       "context": "Principal",
       "date": "June 2016",
       "quote": "I want to thank The Coding School for the opportunity for my 4th, 5th, & 6th grade students to learn computer coding from your fantastic college student instructors. School attendance on days with coding was improved, students loved being involved and growing new skills as well as the role modeling to my students from the college instructors",
@@ -392,7 +392,7 @@
     },
     {
       "author": "Sean Alstott",
-      "context": "Assistant Principal, Lincoln Middle School",
+      "context": "Assistant Principal, Lincoln Middle School/Morro Bay High School", 
       "date": "June 2016",
       "quote": "First off, thanks so much for introducing Lincoln Middle School to coding! The kids have had a great time and parents are ecstatic to have their kids become computer engineers.",
       "imageName": "placeholder.jpg"
