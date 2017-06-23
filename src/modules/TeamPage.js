@@ -1,45 +1,30 @@
-import React, { Component } from 'react';
-import { PageHeader, FontAwesomeLink, HoverFadeImage, HoverFadeContent } from './Skeleton';
-import '../scss/Skeleton.scss';
-import '../scss/Team.scss';
-import '../scss/_fa/font-awesome.scss';
+import React, { Component } from "react";
+import { PageHeader, FontAwesomeLink} from "./Skeleton";
+import { HoverFadeImage } from "./HoverFade.js";
+import "../scss/Skeleton.scss";
+import "../scss/Team.scss";
+import "../scss/_fa/font-awesome.scss";
 
-import teamJSON from '../json/team.json';
-import dataJSON from "../json/data.json";
+import team from "../json/team.json";
+import headers from "../json/headers.json";
 
 class TeamPage extends Component {
   render() {
 
-    const teamData = teamJSON.team;
+    function getMemberID(m) { return m.name.first + "_" + m.name.last; }
 
     function sortMembers(a, b) {
-      const nameA = a.name.first + " " + a.name.last;
-      const nameB = b.name.first + " " + b.name.last;
-      if (nameA < nameB) return -1;
-      if (nameA > nameB) return 1;
+      if (getMemberID(a) < getMemberID(b)) return -1;
+      if (getMemberID(a) > getMemberID(b)) return 1;
       return 0;
     }
 
-    function mapMembers(m) {
-      const id = m.name.first + "_" + m.name.last;
-      return ( <TeamMember key={id} member={m}/> );
-    }
+    const founderDOM = <HeadMember member={team.founder}/>
+    const facultyDOM = team.faculty.sort(sortMembers).map((m) => <FacultyMember key={getMemberID(m)} member={m}/> );
+    const teamLeadsDOM = team.teamLeads.sort(sortMembers).map((m) => <TeamMember key={getMemberID(m)} member={m}/> );
+    const teachersDOM = team.teachers.sort(sortMembers).map((m) => <TeamMember key={getMemberID(m)} member={m}/> );
 
-    function mapFaculty(m) {
-      const id = m.name.first + "_" + m.name.last;
-      return ( <FacultyMember key={id} member={m}/> );
-    }
-
-    const founderDOM = teamData.founder.sort(sortMembers).map((m) => {
-      const id = m.name.first + "_" + m.name.last;
-      return <HeadMember key={id} member={m}/>
-    });
-
-    const facultyDOM = teamData.faculty.sort(sortMembers).map(mapFaculty);
-    const teamLeadsDOM = teamData.team_leads.sort(sortMembers).map(mapMembers);
-    const teachersDOM = teamData.teachers.sort(sortMembers).map(mapMembers);
-
-    const header = dataJSON.headers.team;
+    const header = headers.team;
     const image = process.env.PUBLIC_URL + header.image;
 
     return (
@@ -51,16 +36,19 @@ class TeamPage extends Component {
               <h1 className="team_section_title">The Founder</h1>
               {founderDOM}
             </div>
-            <h1 className="team_section_title">The Team Heads</h1>
-            <div className="team_board team_member_set">
+
+            <div className="team_heads team_member_set">
+              <h1 className="team_section_title">The Team Heads</h1>
               {teamLeadsDOM}
             </div>
-            <h1 className="team_section_title">The Teachers</h1>
+
             <div className="team_teachers team_member_set">
+              <h1 className="team_section_title">The Teachers</h1>
               {teachersDOM}
             </div>
-            <h1 className="team_section_title">The Faculty</h1>
+
             <div className="team_faculty team_member_set">
+              <h1 className="team_section_title">The Faculty</h1>
               {facultyDOM}
             </div>
           </div>
@@ -98,7 +86,6 @@ class HeadMember extends Component {
 }
 
 class TeamMember extends Component {
-
   render() {
     const m = this.props.member;
     const firstName = m.name.first;
@@ -140,10 +127,9 @@ class FacultyMember extends Component {
 
 class MemberImage extends Component {
   render() {
-    const p = this.props;
     const root = process.env.PUBLIC_URL + "/images/team/";
-    const regImage = root + p.memberID + ".jpg";
-    const funImage = root + p.memberID + "_fun.jpg";
+    const regImage = root + this.props.memberID + ".jpg";
+    const funImage = root + this.props.memberID + "_fun.jpg";
     return (
       <div className="member_image">
         <HoverFadeImage default={regImage} hover={funImage} />
@@ -155,7 +141,7 @@ class MemberImage extends Component {
 class TeamMemberCollegeBar extends Component {
   render() {
     const college = this.props.college;
-    const collegeID = college.toLowerCase().split(' ').join('_');
+    const collegeID = college.toLowerCase().split(" ").join("_");
     return (
       <div className={"college_attended " + collegeID}>{college}</div>
     )
@@ -172,10 +158,7 @@ class TeamMemberDescription extends Component {
           <div className="member_links"><MemberLinks links={p.links} /></div>
         </div>
         <div className="member_position">{p.position}</div>
-
-
         <div className="member_description">{p.description}</div>
-
       </div>
     );
   }

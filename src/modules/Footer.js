@@ -1,13 +1,16 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router'
+import React, { Component } from "react";
+import { Link } from "react-router"
 import "../scss/Footer.scss";
-import dataJSON from "../json/data.json";
 
 class Footer extends Component {
   render() {
     return (
         <footer>
-          <FooterTop />
+          <div className="footer_top">
+            <InternalLinks links={this.props.internalLinks}/>
+            <ExternalLinks />
+            <ContactInfo />
+          </div>
           <hr />
           <FooterBottom />
         </footer>
@@ -18,7 +21,6 @@ class Footer extends Component {
 class FooterBottom extends Component {
   render() {
     return (
-
       <div className="footer_bottom">
         <p>The Coding School © 2017</p>
       </div>
@@ -26,34 +28,21 @@ class FooterBottom extends Component {
   }
 }
 
-class FooterTop extends Component {
-  render() {
-    return (
-      <div className="footer_top">
-        <InternalLinks />
-        <ExternalLinks />
-        <ContactInfo />
-      </div>
-    );
-  }
-}
-
 class InternalLinks extends Component {
   render() {
+
+    const linksDOM = this.props.links.map((i) => {
+      return (
+        <div className="hvr_forward" key={i.path}>
+          <Link to={"/" + i.path}> {i.name} </Link>
+        </div>
+      );
+    });
+
     return (
       <div className="int_links">
         <h2>Links</h2>
-        {
-          dataJSON.sitePages.map((i) => {
-            return (
-              <div className="hvr_forward" key={i.path}>
-                <Link to={"/" + i.path}>
-                    {i.text}
-                </Link>
-              </div>
-            );
-          })
-        }
+        { linksDOM }
       </div>
     );
   }
@@ -61,19 +50,28 @@ class InternalLinks extends Component {
 
 class ExternalLinks extends Component {
   render() {
+
+    const externalLinks = [
+      { "name": "Code.org", "link": "http://www.code.org" },
+      { "name": "Codecademy", "link": "http://www.codecademy.com" },
+      { "name": "Python Tutorial", "link": "https://docs.python.org/3/tutorial/index.html" },
+      { "name": "Python Documentation", "link": "https://docs.python.org/3/" },
+      { "name": "AP Computer Science", "link": "https://apstudent.collegeboard.org/apcourse/ap-computer-science-a" }
+    ]
+
+    const externalLinksDOM = externalLinks.map((item) => {
+      return (
+        <div className="hvr_forward" key={item.name}>
+          <a href={item.link}>{item.name}</a>
+        </div>
+      );
+    })
+
     return (
       <div className="ext_links">
         <div>
           <h2>Resources</h2>
-          {
-            dataJSON.externalLinks.map((item) => {
-              return (
-                <div className="hvr_forward" key={item.name}>
-                  <a href={item.link}>{item.name}</a>
-                </div>
-              );
-            })
-          }
+          {externalLinksDOM}
         </div>
       </div>
     );

@@ -1,28 +1,31 @@
-// Import React Components
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, { Component } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-// Import CSS
-import '../scss/Skeleton.scss';
-import '../css/slick.css';
-import '../css/slick-theme.css';
-import 'slick-carousel';
+import "../scss/Skeleton.scss";
+import "../css/slick.css";
+import "../css/slick-theme.css";
+import "slick-carousel";
 
-// Import data
-import dataJSON from "../json/data.json";
-
-// Import Miscellaneous
-import $ from 'jquery';
+// Unfortunately, jQuery is required in order to use slick (carousel)
+import $ from "jquery";
 
 export class Skeleton extends Component {
    render() {
+
+     const sitePages = [
+       { "path": "about", "name": "About Us" },
+       { "path": "footprint", "name": "Our Footprint" },
+       { "path": "programs", "name": "Our Programs" },
+       { "path": "team", "name": "Our Team" },
+       { "path": "get-involved", "name": "Get Involved" }
+     ]
+
       return (
          <div>
-            <Navbar name="The Coding School" items={dataJSON.sitePages}/>
+            <Navbar name="The Coding School" items={sitePages}/>
             {this.props.children}
-            <Footer/>
+            <Footer internalLinks={sitePages}/>
          </div>
       );
    }
@@ -97,7 +100,7 @@ export class TitledParagraphs extends Component {
     const title = this.props.title;
     const paragraphs = <TextBlock paragraphs={this.props.paragraphs} />;
     let tpDOM = undefined;
-    if ('subtitle' in this.props) {
+    if ("subtitle" in this.props) {
       tpDOM = <TitledContent title={title} subtitle={this.props.subtitle} content={paragraphs} />
     } else {
       tpDOM = <TitledContent title={title} content={paragraphs} />
@@ -114,38 +117,9 @@ export class TitledContent extends Component {
       <div className="titled_content" key={this.props.title}>
         <div className="title_side">
           <h1 className="title">{this.props.title}</h1>
-          { ('subtitle' in this.props) && <h2 className="subtitle">{this.props.subtitle}</h2> }
+          { ("subtitle" in this.props) && <h2 className="subtitle">{this.props.subtitle}</h2> }
         </div>
         {this.props.content}
-      </div>
-    );
-  }
-}
-
-export class HoverFadeImage extends Component {
-  render() {
-    const defaultDOM = <img className="default_img" src={this.props.default} alt="hover" />
-    const hoverDOM = <img className="hover_img" src={this.props.hover} alt="default" />
-    return (
-      <div className="hover_fade_image">
-        <HoverFadeContent default={defaultDOM} onHover={hoverDOM} />
-      </div>
-    );
-  }
-}
-
-// Accepts two attributes:
-//  - default: the content you want to show up normally
-//  - onHover: the content you want to show up on hover
-// Sample Usage:
-//  <HoverFadeContent default={ <h1>Hello</h1> } onHover={ <h1>World</h1> } />
-//  Another sample usage is the HoverFadeImage component above
-export class HoverFadeContent extends Component {
-  render() {
-    return (
-      <div className="hover_fade_content">
-        <div className="hfc hfc_hover"> {this.props.onHover} </div>
-        <div className="hfc hfc_default"> {this.props.default} </div>
       </div>
     );
   }
@@ -172,42 +146,6 @@ export class SlickPanel extends Component {
     return (
       <div className="slick_panel">
         {this.props.children}
-      </div>
-    );
-  }
-}
-
-export class Philosophies extends Component {
-  render() {
-    const philosophiesDOM = dataJSON.philosophies.map((p) =>  {
-      return (
-        <Philosophy key={p.main} main={p.main} secondary={p.secondary} />
-      );
-    })
-
-    return (
-      <div className="philosophies_wrapper">
-        <div className="philosophies">
-          {philosophiesDOM}
-        </div>
-      </div>
-    );
-  }
-}
-
-class Philosophy extends Component {
-  render() {
-    return (
-      <div className="philosophy_wrapper">
-        <div className="philosophy">
-
-            <div className="philosophy_text">
-              <div className="philosophy_main"> {this.props.main} </div>
-              <div className="divider" />
-              <div className="philosophy_secondary"> {this.props.secondary} </div>
-            </div>
-
-        </div>
       </div>
     );
   }

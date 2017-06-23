@@ -1,60 +1,72 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router'
+import React, { Component } from "react";
+import { Link } from "react-router"
 import "../scss/Navbar.scss";
-import $ from 'jquery';
-import logo from '../images/logo.png';
-import dataJSON from "../json/data.json";
 
 class Navbar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      panelOpen: false
+    };
+    this.openPanel = this.openPanel.bind(this);
+    this.closePanel = this.closePanel.bind(this);
+    this.togglePanel = this.togglePanel.bind(this);
+  }
+
+  openPanel() {
+    document.getElementById("navbar_panel").classList.add("panel_open");
+    this.setState(() => ({ panelOpen: true }));
+  }
+
+  closePanel() {
+    document.getElementById("navbar_panel").classList.remove("panel_open");
+    this.setState(() => ({panelOpen: false}));
+  }
+
+  togglePanel() {
+    if (this.state.panelOpen) { this.closePanel(); }
+    else { this.openPanel(); }
+  }
 
   componentDidMount() {
-    var panelOpen = false;
-
-    function togglePanel() {
-      if (panelOpen){
-        $("#navbar_panel").css({"left": "100%"});
-        panelOpen = false;
-      } else {
-        $("#navbar_panel").css({"left": "0"});
-        panelOpen = true;
-      }
-    }
-
-    $("#navbar_hamburger").click(togglePanel);
-    $("#navbar_panel a").click(togglePanel);
+    // Enable click-toggle for slide-out navbar items panel
+    const that = this;
+    document.getElementById("navbar_hamburger").onclick = this.togglePanel;
+    const navItems = document.getElementsByClassName("nav_item");
+    Array.from(navItems).forEach(function(element) {
+      element.addEventListener("click", that.closePanel);
+    });
   }
 
   render() {
-    var items = this.props.items;
-    var navItems = items.map((i) => {
-      return (
-        <li className="hvr_grow" key={i.path}>
-          <Link to={"/" + i.path}>
-              {i.text.toUpperCase()}
-          </Link>
-        </li>
-      );
-    });
+    var navItems = this.props.items.map((i) => <NavItem key={i.path} item={i} />);
 
     return (
       <nav id="navbar">
         <LogoIcon />
         <ul className="navbar_tabs">{navItems}</ul>
-        <div id="navbar_hamburger">
-          <div/>
-          <div/>
-          <div/>
-        </div>
+        <div id="navbar_hamburger"><div/><div/><div/></div>
         <div id="navbar_panel">{navItems}</div>
       </nav>
     );
   }
 }
 
+class NavItem extends Component {
+  render() {
+    const i = this.props.item
+    return (
+      <li className="hvr_grow nav_item" key={i.path}>
+        <Link to={"/" + i.path}>
+            {i.name.toUpperCase()}
+        </Link>
+      </li>
+    );
+  }
+}
+
 class LogoIcon extends Component {
   render() {
-    // <h1 id="long_nav_logo"><Link to="/">THE CODING SCHOOL</Link></h1>
-    // <h1 id="short_nav_logo"><Link to="/">TCS</Link></h1>
     return (
       <div className="navbar_logo">
         <div className="logo_box">
@@ -64,7 +76,5 @@ class LogoIcon extends Component {
     );
   }
 }
-
-
 
 export default Navbar;

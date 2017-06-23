@@ -143,14 +143,15 @@ nav {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  top: 0;
-  left: 100%;
   transition: all 0.5s;
   background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  top: 0;
+  left: 100%;
+  &.panel_open { left: 0; }
 
   li {
     padding-bottom: 20px;

@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import { TitledParagraphs, PageHeader } from './Skeleton';
-import PartnersPanel from "./Partners";
-import '../scss/Skeleton.scss';
-import '../scss/GetInvolved.scss';
+import React, { Component } from "react";
+import { TitledParagraphs, PageHeader } from "./Skeleton";
+import PartnersPanel from "./PartnersPanel";
 
+import "../scss/Skeleton.scss";
+import "../scss/GetInvolved.scss";
 
-
-import dataJSON from '../json/data.json';
-
+import dataJSON from "../json/data.json";
+import headers from "../json/headers.json";
 
 class GetInvolvedPage extends Component {
   render() {
-    const header = dataJSON.headers.getInvolved;
-    const donP = dataJSON.paragraphs.donationsIntro;
+    const header = headers.getInvolved;
+    // const donP = dataJSON.paragraphs.donationsIntro;
     const parP = dataJSON.paragraphs.partnershipsIntro;
     const schP = dataJSON.paragraphs.schoolsIntro;
     const volP = dataJSON.paragraphs.volunteerIntro;
@@ -33,7 +32,7 @@ class GetInvolvedPage extends Component {
           <div className="schools_section">
             <TitledParagraphs title={schP.title} paragraphs={schP.paragraphs} />
           </div>
-          
+
           <div className="volunteer_section">
             <TitledParagraphs title={volP.title} paragraphs={volP.paragraphs} />
           </div>
@@ -81,89 +80,89 @@ class GetInvolvedPage extends Component {
 //     );
 //   }
 // }
-
-class DonationsPanel extends Component {
-  render() {
-
-    let options = dataJSON.donationOptions;
-    let optionsDOM = options.map(function(o) {
-      return <DonationOption option={o} key={o.amount}/>
-    })
-    return (
-      <div className="donations_panel">
-        <div className="donations_options">
-          {optionsDOM}
-        </div>
-        <DonateCustom />
-      </div>
-    );
-  }
-}
-
-class DonateCustom extends Component {
-  render() {
-    return (
-      <a className="donate_custom" href={this.props.paymentLink}>
-        Donate a custom amount.
-      </a>
-    );
-  }
-}
-
-// props: buttonText, buttonLink, optionImage
-class DonationOption extends Component {
-  render() {
-    let o = this.props.option;
-    return (
-      <div className="donation_option">
-        <img src={o.image} />
-        <DonationButton text={o.category + " ($" + o.amount + ")"} link={o.paymentLink} />
-      </div>
-    );
-  }
-}
-
-class DonationButton extends Component {
-  render() {
-    return (
-      <div className="donation_button">
-        <a href={this.props.link}>
-          {this.props.text}
-        </a>
-      </div>
-    )
-  }
-}
-
-class VolunteerTypeform extends Component {
-
-  componentDidMount() {
-    (function(){
-      var qs,js,q,s,d=document,
-          gi=d.getElementById,
-          ce=d.createElement,
-          gt=d.getElementsByTagName,
-          id='typef_orm',
-          b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
-      if(!gi.call(d,id)) {
-        js=ce.call(d,'script');
-        js.id=id;js.src=b+'widget.js';
-        q=gt.call(d,'script')[0];
-        q.parentNode.insertBefore(js,q)
-      }
-    })()
-  }
-
-
-  render() {
-    //style="width:100%;height:500px;"
-    return (
-      <div className="typeform" id="volunteer_typeform">
-        <div className="typeform-widget" data-url="https://thecodingschool.typeform.com/to/K0Nggc" data-text="Volunteer" ></div>
-
-      </div>
-    );
-  }
-}
+//
+// class DonationsPanel extends Component {
+//   render() {
+//
+//     let options = dataJSON.donationOptions;
+//     let optionsDOM = options.map(function(o) {
+//       return <DonationOption option={o} key={o.amount}/>
+//     })
+//     return (
+//       <div className="donations_panel">
+//         <div className="donations_options">
+//           {optionsDOM}
+//         </div>
+//         <DonateCustom />
+//       </div>
+//     );
+//   }
+// }
+//
+// class DonateCustom extends Component {
+//   render() {
+//     return (
+//       <a className="donate_custom" href={this.props.paymentLink}>
+//         Donate a custom amount.
+//       </a>
+//     );
+//   }
+// }
+//
+// // props: buttonText, buttonLink, optionImage
+// class DonationOption extends Component {
+//   render() {
+//     let o = this.props.option;
+//     return (
+//       <div className="donation_option">
+//         <img src={o.image} alt={"donate " + o}/>
+//         <DonationButton text={o.category + " ($" + o.amount + ")"} link={o.paymentLink} />
+//       </div>
+//     );
+//   }
+// }
+//
+// class DonationButton extends Component {
+//   render() {
+//     return (
+//       <div className="donation_button">
+//         <a href={this.props.link}>
+//           {this.props.text}
+//         </a>
+//       </div>
+//     )
+//   }
+// }
+//
+// class VolunteerTypeform extends Component {
+//
+//   componentDidMount() {
+//     (function(){
+//       var qs,js,q,s,d=document,
+//           gi=d.getElementById,
+//           ce=d.createElement,
+//           gt=d.getElementsByTagName,
+//           id="typef_orm",
+//           b="https://s3-eu-west-1.amazonaws.com/share.typeform.com/";
+//       if(!gi.call(d,id)) {
+//         js=ce.call(d,"script");
+//         js.id=id;js.src=b+"widget.js";
+//         q=gt.call(d,"script")[0];
+//         q.parentNode.insertBefore(js,q)
+//       }
+//     })()
+//   }
+//
+//
+//   render() {
+//     //style="width:100%;height:500px;"
+//     return (
+//       <div className="typeform" id="volunteer_typeform">
+//         <div className="typeform-widget" data-url="https://thecodingschool.typeform.com/to/K0Nggc" data-text="Volunteer" ></div>
+//
+//       </div>
+//     );
+//   }
+// }
 
 export default GetInvolvedPage;

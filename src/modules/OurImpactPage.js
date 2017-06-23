@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
-import '../scss/Skeleton.scss';
-import '../scss/OurFootprint.scss';
-import { TitledContent, TitledParagraphs, PageHeader, SectionHeader, LinkButton } from './Skeleton';
-import dataJSON from '../json/data.json';
+import React, { Component } from "react";
+import "../scss/Skeleton.scss";
+import "../scss/OurFootprint.scss";
+import { TitledParagraphs, PageHeader, SectionHeader } from "./Skeleton";
+import dataJSON from "../json/data.json";
+import headers from "../json/headers.json";
+import statistics from "../json/statistics.json"
 
 class OurImpactPage extends Component {
   render() {
-
-    const programs = dataJSON.paragraphs.ourImpact;
-
-    const header = dataJSON.headers.ourImpact;
+    const header = headers.ourImpact;
     const image = process.env.PUBLIC_URL + header.image;
-    const linkButton = <LinkButton text="Sign up!" link="https://www.google.com/" />
+
     return (
       <div className="App">
         <PageHeader image={image} title={header.title} description={header.description}/>
@@ -33,7 +32,7 @@ class Statistics extends Component {
     return (
       <div className="statistics">
         {
-          dataJSON.statistics.map(function(s) {
+          statistics.map(function(s) {
             return <Statistic key={s.description} imageSrc={statsIconRoot + s.imageName} number={s.number} description={s.description} />
           })
         }

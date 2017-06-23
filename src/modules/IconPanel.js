@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import '../scss/Skeleton.scss';
+import React, { Component } from "react";
+import "../scss/Skeleton.scss";
 import "../scss/IconPanel.scss";
-import '../css/animate.css';
+import "../css/animate.css";
 
 class IconPanel extends Component {
   render() {

@@ -1,10 +1,12 @@
 ## Project Basics
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) but has been ejected using `npm eject`, which means there is full access to the Webpack and Babel configuration of the project.
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) but has been ejected using `npm eject`, which means there is full access to the Webpack configuration of the project.
 
-This was done in order to implement SCSS and React Router.
+This was done primarily in order to implement SCSS and React Router but confers various other customizability benefits as well.
 
-### Usage
+### Getting Set UP
+
+First, `cd` to project folder and `npm install` all project dependencies.
 
 To run locally:
 `npm run start`
@@ -12,15 +14,28 @@ To run locally:
 To build project to `build` folder:
 `npm run build`
 
-To deploy to gh-pages for this repo:
-`npm run deploy`
+Upload/deploy to AWS by compressing contents of `build` folder into a .zip and upload at:
+https://console.aws.amazon.com/quickstart-website/website/aws-website-tcs-8ayqf
 
----
+## Project Structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+The main React Component that gets rendered into the DOM, `<Router>` is inside `src/index.js`. This conditionally renders the appropriate Page module depending on whether the client is viewing the homepage or one of the tabs.
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+### Modules
+The project consists of ReactJS components separated into contextually distinct modules, in the `/src/modules` folder. There are three types of files within `modules`.
+  1. page modules (ending in `Page.js`) -- contain the Components that are directly rendered via the Router
+  2. accessory modules -- just about everything else (like Navbar.js, Footer.js, Testimonials.js), the idea behind these is to separate out any components not specifically relevant to any given Page module.
+  3. skeleton module (`Skeleton.js`) -- contains components that don't specifically apply to any accessory module (e.g. more general purpose components)
+
+### Styles
+The stylesheets for this project are in SCSS and are all located in `src/scss`. There remains work to be done in appropriately modularizing the `.scss` files so that there is very nearly a one-to-one correspondence between them and the modules.
+
+### Assets
+Due to the dynamic nature of asset loading (e.g. the pictures for each team member), the images are saved statically in `public/images`, sorted into folders. A string representing the location of this `public` folder can be accessed in JS by using `public.env.PUBLIC_URL`.
+
+In the `src/json` folder, you can find all the data for page text, team members, testimonials, etc. These JSON's are imported as needed in .js files via `import`.
+
+The rest of this README is what comes default with any create-react-app project and was not written by me (Bibek).
 
 ## Table of Contents
 
@@ -930,7 +945,7 @@ This feature is experimental and still [has major usage issues](https://github.c
 
 ### Editor Integration
 
-If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates. 
+If you use [Visual Studio Code](https://code.visualstudio.com), there is a [Jest extension](https://github.com/orta/vscode-jest) which works with Create React App out of the box. This provides a lot of IDE-like features while using a text editor: showing the status of a test run with potential fail messages inline, starting and stopping the watcher automatically, and offering one-click snapshot updates.
 
 ![VS Code Jest Preview](https://cloud.githubusercontent.com/assets/49038/20795349/a032308a-b7c8-11e6-9b34-7eeac781003f.png)
 

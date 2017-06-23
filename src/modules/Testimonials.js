@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { SlickPanel } from './Skeleton';
+import React, { Component } from "react";
+import { SlickPanel } from "./Skeleton";
 import "../scss/Testimonials.scss";
-import dataJSON from '../json/data.json';
+import testimonials from "../json/testimonials.json";
 
 class Testimonials extends Component {
   render() {
@@ -12,10 +12,10 @@ class Testimonials extends Component {
       pauseOnHover: true,
       adaptiveHeight: true
     }
-    const testimonialsDOM = dataJSON.testimonials.map(function(t) {
+    const testimonialsDOM = testimonials.map(function(t, i) {
       const imageSrc = process.env.PUBLIC_URL + "/images/testimonials/" + t.imageName;
       return (
-        <Testimonial key={t.author} imageSrc={imageSrc} quote={t.quote} author={t.author} context={t.context}/>
+        <Testimonial key={"testimonial-" + i} imageSrc={imageSrc} quote={t.quote} author={t.author} context={t.context}/>
       );
     })
 

@@ -1,0 +1,27 @@
+[
+  {
+    "description": "schools",
+    "number": "16",
+    "imageName": "school_icon.png"
+  },
+  {
+    "description": "students",
+    "number": "2,500",
+    "imageName": "students_icon.png"
+  },
+  {
+    "description": "minority students",
+    "number": "55%",
+    "imageName": "minorities_icon.png"
+  },
+  {
+    "description": "low socio-economic students",
+    "number": "44%",
+    "imageName": "low_socioeconomic_icon.png"
+  },
+  {
+    "description": "female students",
+    "number": "32%",
+    "imageName": "femalestudents_icon.png"
+  }
+]
