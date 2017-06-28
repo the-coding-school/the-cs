@@ -218,6 +218,20 @@
       "college": "UCLA",
       "description": "I'm a second year statistics and applied math major at UCLA who loves the challenges of coding. This summer, I’ll be a data science intern at Ticketmaster right here in LA! In my spare time, you can find me running around LA or competing as a fake attorney in mock trial.",
       "links": {}
+    },
+    {
+      "name": { "first": "Micah", "last": "Benn" },
+      "position": "Teacher",
+      "college": "Pepperdine University",
+      "description": "I'm a fourth-year student at Pepperdine University, where I study Computer Science and Math. I've studied in Switzerland, and interned in Singapore as an iOS Engineer with Buuuk. At a hackathon in Zürich, Switzerland, I built a security tool that notifies devices whenever another device wakes or sleeps. I teach children coding because I myself learned in middle school.",
+      "links": {}
+    },
+    {
+      "name": { "first": "Arvin", "last": "Flores" },
+      "position": "Teacher",
+      "college": "CSU Northridge",
+      "description": "I worked at a department called Matador Emerging Technology Arts Lab (METALab) at CSUN, where I led the development of the first iOS mobile application utilizing the React Native library. I believe that one of the most valuable things programming teaches individuals to do is how to problem solve and think critically. By equipping students at a young age with this skillset, you're properly preparing them for their futures.",
+      "links": {}
     }
   ]
 }
