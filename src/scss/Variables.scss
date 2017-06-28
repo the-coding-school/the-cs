@@ -3,6 +3,7 @@ $blue: #00c7d2;
 $yellow: #ffcc00;
 $black: #333333;
 $white: #ffffff;
+$red: #e10000;
 
 // Typography
 $font_primary: 'Montserrat', sans-serif;
@@ -17,7 +18,8 @@ $line_height_scale_norm: 1.37;
 $line_height_scale_high: 1.75;
 
 // Media Breakpoints
-$bpoint_sm: 600px;
+$bpoint_tn: 600px;
+$bpoint_sm: 800px;
 $bpoint_md: 1000px;
 
 // Component Sizes
@@ -34,3 +36,8 @@ $blue_fade_bg: linear-gradient(
   rgba($blue, 1),
   rgba($blue, 0.5)
 );
+
+// Z-Indexes
+$z_page: 100;
+$z_navbar: 200;
+$z_modal_container: 300;

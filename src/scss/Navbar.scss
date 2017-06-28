@@ -10,7 +10,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: $z_navbar;
   background-color: $white;
   box-shadow: $box_shadow;
 }
@@ -129,7 +129,7 @@ nav {
   align-items: center;
   flex-direction: column;
   cursor: pointer;
-  z-index: 900;
+  z-index: $z_navbar;
   & > div {
     width: 20px;
     height: 4px;
@@ -139,7 +139,7 @@ nav {
 }
 
 #navbar_panel {
-  z-index: 800;
+  z-index: $z_navbar;
   width: 100vw;
   height: 100vh;
   position: absolute;

@@ -1,7 +1,7 @@
 @import "Variables";
 
 $head_member_image_size: 400px;
-$member_image_size: 300px;
+$member_image_size: 200px;
 
 // School Colors
 $uclaBlue: #1E5EA0;
@@ -18,40 +18,31 @@ $brownUniBrown: #3A1E1A;
 
 .teampage h1 { color: $blue; }
 
-.team {
+.team_section {
   width: 100%;
-  justify-content: center;
-
-  & > * {
-    padding: 20px;
+  padding-top: 50px;
+  .team_section_title {
+    text-align: center;
   }
 }
 
-.team_section_title {
-  width: 100%;
-  text-align: center;
-}
-
-.team_founder {
-  padding-top: 50px;
-}
-
-.team_member_set {
+.team_member_array {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   & > * {
-    padding: 20px;
+    padding: 0px;
   }
 }
 
 .member_name {
   color: $blue;
   font-weight: bold;
+  font-size: $text_md;
 }
 
 .member_position {
-  color: lighten($black, 20%);
+  font-size: $text_tn;
 }
 
 .member_description {
@@ -61,155 +52,170 @@ $brownUniBrown: #3A1E1A;
   font-family: $font_secondary;
 }
 
-.head_member {
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: $box_shadow;
-  border-radius: 4px;
-  @media (min-width: $bpoint_md) {
-    &:nth-child(even) {
-      .member_image {
-        order: 1;
-      }
-      .member_text_wrapper {
-        order: 2;
-      }
-    }
-    &:nth-child(odd) {
-      .member_image {
-        order: 2;
-      }
-      .member_text_wrapper {
-        order: 1;
-      }
-    }
-
-    .member_text_wrapper {
-      width: 65%;
-      flex-shrink: 1;
-    }
-
-    .member_image {
-      width: $head_member_image_size;
-      height: $head_member_image_size;
-
-      img {
-        width: $head_member_image_size;
-        height: $head_member_image_size;
-        margin: 0 auto;
-      }
-    }
-  }
-
-  @media (max-width: $bpoint_md - 1) {
-    flex-wrap: wrap;
-    align-items: center;
-    .member_image {
-      width: $head_member_image_size * 0.65;
-      height: $head_member_image_size * 0.65;
-      img {
-        width: $head_member_image_size * 0.65;
-        height: $head_member_image_size * 0.65;
-      }
-    }
-
-  }
-
-  .member_text {
-    padding: 25px;
-
-    .member_name {
-      font-size: $text_md;
-    }
-    .member_position {
-      font-size: $text_sm;
-    }
-  }
+.member_blurb {
+  padding-top: 10px;
+  font-size: 12px;
+  color: $black;
+  font-family: $font_secondary;
+  font-style: italic;
 }
 
-.team_member_wrapper {
+.member_image {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
-  .team_member {
-    padding-bottom: 10px;
+  * {
+    height: $member_image_size;
+  }
+  .member_image_background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    * { width: 100% !important; }
+    img {
+      filter: blur(5px) brightness(50%);
+      object-fit: cover;
+    }
+  }
+  .member_image_main {
     width: $member_image_size;
-    position: relative;
-    box-shadow: $box_shadow;
-    border-radius: 4px;
+    height: $member_image_size;
+  }
+}
 
-    .member_image {
-      width: $member_image_size;
-      height: $member_image_size;
+.member_card {
+
+  @media (min-width: $bpoint_sm) {
+    .member_image_background {
+      display: none;
     }
-
-    .college_attended {
-      text-align: center;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: $black;
-      color: $white;
-      font-size: $text_sm;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
-      &.ucla {
-        background-color: $uclaBlue;
-        color: $uclaYellow;
-      }
-      &.usc {
-        background-color: $uscRed;
-        color: $uscYellow;
-      }
-      &.caltech {
-        background-color: $caltechOrange;
-        color: $white;
-      }
-      &.csu_sacramento {
-        background-color: $csuSacGreen;
-        color: $csuSacGold;
-      }
-      &.pepperdine_university {
-        background-color: $pepperdineBlue;
-        color: $white;
-      }
-      &.brown_university {
-        background-color: $brownUniBrown;
-        color: $white;
+    .member_card_row {
+      flex-direction: row;
+      .member_description {
+        padding-left: 20px;
+        padding-right: 20px;
       }
     }
+  }
 
-    .member_text {
-      padding: 20px;
-      padding-top: 10px;
-      padding-bottom: 0px;
-
-      .member_name_row {
+  @media (max-width: $bpoint_sm - 1) {
+    .member_image_background {
         display: flex;
-        justify-content: space-between;
-        .member_name {
-          font-size: $text_sm;
+        width: 100%;
+        img {
+          width: 100%;
+          height: $member_image_size;
         }
-      }
-
-      .member_position {
-        font-size: $text_tn;
-        font-weight: bold;
-      }
     }
-
-    .member_links {
-      padding-top: 2px;
-      padding-bottom: 2px;
-      a {
-        color: lighten($black, 20%);
-        margin-left: 2px;
-        margin-right: 2px;
+    .member_image {
+      display: flex;
+      justify-content: center;
+    }
+    .member_card_row {
+      flex-direction: column;
+      .member_description {
+        padding-top: 20px;
       }
     }
   }
 }
 
+.member_cell_wrapper {
+  box-shadow: $box_shadow;
+  border: none;
+}
 
-.hover_fade_image img {
-  width: 100%;
+.member_cell {
+  display: flex;
+  justify-content: center;
+  width: $member_image_size;
+  position: relative;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .member_main_info {
+      bottom: 0;
+    }
+  }
+
+  .member_main_info {
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: $member_image_size - 16px;
+    padding: 8px;
+    background-color: rgba($black, 0.9);
+    transition: bottom 0.2s ease;
+  }
+
+  .member_name {
+    font-size: $text_sm;
+  }
+  .member_position {
+    font-size: $text_min;
+    color: $white;
+  }
+}
+
+.member_college {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $black;
+  color: $white;
+  font-size: $text_tn;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  &.ucla {
+    background-color: $uclaBlue;
+    color: $uclaYellow;
+  }
+  &.usc {
+    background-color: $uscRed;
+    color: $uscYellow;
+  }
+  &.caltech {
+    background-color: $caltechOrange;
+    color: $white;
+  }
+  &.csu_sacramento {
+    background-color: $csuSacGreen;
+    color: $csuSacGold;
+  }
+  &.pepperdine_university {
+    background-color: $pepperdineBlue;
+    color: $white;
+  }
+  &.brown_university {
+    background-color: $brownUniBrown;
+    color: $white;
+  }
+}
+
+.member_close_button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+
+  i {
+    color: $blue;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.member_links {
+  display: flex;
+  justify-content: space-between;
+  a:not(:last-child) {
+    margin-right: 5px;
+  }
 }
