@@ -112,7 +112,12 @@ class MemberCell extends Component {
       <div className="member_cell_wrapper" onClick={this.props.onClick}>
         <div className="member_cell wow fadeIn">
           <MemberImage background={false} memberID={memberID} />
-          <MemberMainInfo name={name} position={m.position} />
+          <MemberInfoOverlay
+            name={name}
+            position={m.position}
+            description={m.description}
+            college={m.college}
+            />
         </div>
       </div>
     )
@@ -259,6 +264,7 @@ class MemberImage extends Component {
     const root = process.env.PUBLIC_URL + "/images/team/";
     const regImage = root + this.props.memberID + ".jpg";
     const funImage = root + this.props.memberID + "_fun.jpg";
+    // <HoverFadeImage default={regImage} hover={funImage} />
     return (
       <div className="member_image">
         {this.props.background && (<div className="member_image_background">
@@ -266,25 +272,39 @@ class MemberImage extends Component {
         </div>
         )}
         <div className="member_image_main">
-          <HoverFadeImage default={regImage} hover={funImage} />
+          <img src={regImage} alt={this.props.memberID}/>
         </div>
       </div>
     )
   }
 }
 
-class MemberMainInfo extends Component {
+class MemberInfoOverlay extends Component {
   render() {
     const p = this.props
-    const infoStyles = {
-
-    }
     return (
-      <div className="member_main_info">
-        <MemberName name={p.name} />
-        <MemberPosition position={p.position} color={"#ffffff"}/>
+      <div className="member_info_overlay">
+        <div className="member_main_info">
+          <MemberName name={p.name} />
+          <MemberPosition position={p.position}/>
+        </div>
+        <div className="member_secondary_info">
+          <MemberDescription description={p.description} />
+          <MemberCollegeBar college={p.college} />
+        </div>
+
       </div>
     )
+  }
+}
+
+class OverlayOpenButton extends Component {
+  render() {
+    return (
+      <div className="overlay_open_button">
+        <i className="fa fa-chevron-up" />
+      </div>
+    );
   }
 }
 
@@ -315,9 +335,7 @@ class MemberDescription extends Component {
 class MemberBlurb extends Component {
   render() {
     return (
-      <div className="member_blurb">
-        {this.props.blurb}
-      </div>
+      <div className="member_blurb"> {this.props.blurb} </div>
     );
   }
 }
