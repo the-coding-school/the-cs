@@ -119,6 +119,7 @@ class MemberCell extends Component {
             college={m.college}
             />
         </div>
+        <MemberCollegeBar college={m.college} />
       </div>
     )
   }
@@ -290,9 +291,7 @@ class MemberInfoOverlay extends Component {
         </div>
         <div className="member_secondary_info">
           <MemberDescription description={p.description} />
-          <MemberCollegeBar college={p.college} />
         </div>
-
       </div>
     )
   }
