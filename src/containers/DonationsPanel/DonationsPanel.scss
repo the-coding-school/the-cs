@@ -1,0 +1,32 @@
+@import '../../scss/Variables';
+
+.donations_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $blue;
+  padding: 80px 10%;
+  padding-bottom: 30px;
+  text-align: center;
+  .title {
+    color: $white;
+    font-size: $text_lg;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  .message {
+    color: $white;
+    font-size: $text_sm;
+    line-height: $text_sm * $line_height_scale_norm;
+  }
+  .tax_message {
+    color: rgba($white, 0.75);
+    font-size: $text_tn;
+    line-height: $text_tn * $line_height_scale_norm;
+  }
+  .donations_options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

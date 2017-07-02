@@ -46,7 +46,7 @@
     color: $white;
     @media (min-width: $bpoint_md) {
       h1 {
-        font-size: $text_md;
+        font-size: $text_lg;
       }
       p {
         font-size: $text_sm;
@@ -55,7 +55,7 @@
     }
     @media (max-width: $bpoint_md - 1) {
       h1 {
-        font-size: $text_sm;
+        font-size: $text_md;
       }
       p {
         font-size: $text_tn;

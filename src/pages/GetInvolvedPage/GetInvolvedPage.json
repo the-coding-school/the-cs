@@ -11,27 +11,7 @@
         "$x ensures 30 kids learn how to code.",
         "The Coding School is a 501c3 organization. Your gift is tax deductible to the extent allowed by the law. When you make a donation through PayPal, you will automatically receive a receipt that can be used for tax deduction purposes.  Our public charity number is 46-5097610."
       ]
-    },
-    "options": [
-      {
-        "image": "http://www.placehold.it/200x200",
-        "category": "Fund a child",
-        "amount": 50,
-        "paymentLink": ""
-      },
-      {
-        "image": "http://www.placehold.it/200x200",
-        "category": "Fund a classroom",
-        "amount": 500,
-        "paymentLink": ""
-      },
-      {
-        "image": "http://www.placehold.it/200x200",
-        "category": "Fund a school",
-        "amount": 5000,
-        "paymentLink": ""
-      }
-    ]
+    }
   },
   "partnerships": {
     "paragraphs": {
