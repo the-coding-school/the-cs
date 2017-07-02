@@ -1,0 +1,21 @@
+@import "../../../scss/Variables.scss";
+
+.member_cell_wrapper {
+  box-shadow: $box_shadow;
+  border-radius: 5px;
+}
+
+.member_cell {
+  display: flex;
+  justify-content: center;
+  width: $member_image_size;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .member_info_overlay {
+      top: 0;
+    }
+  }
+}

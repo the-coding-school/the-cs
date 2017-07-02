@@ -1,0 +1,46 @@
+@import "../../../scss/Variables";
+
+$uclaBlue: #1E5EA0;
+$uclaYellow: #FBB727;
+$uscRed: #980F07;
+$uscYellow: #F9B218;
+$caltechOrange: #FF6E1E;
+$csuSacGreen: #01573C;
+$csuSacGold: #CBB778;
+$pepperdineBlue: #00205C;
+$brownUniBrown: #3A1E1A;
+
+.member_college_bar {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $black;
+  color: $white;
+  font-size: $text_tn;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  &.ucla {
+    background-color: $uclaBlue;
+    color: $uclaYellow;
+  }
+  &.usc {
+    background-color: $uscRed;
+    color: $uscYellow;
+  }
+  &.caltech {
+    background-color: $caltechOrange;
+    color: $white;
+  }
+  &.csu_sacramento {
+    background-color: $csuSacGreen;
+    color: $csuSacGold;
+  }
+  &.pepperdine_university {
+    background-color: $pepperdineBlue;
+    color: $white;
+  }
+  &.brown_university {
+    background-color: $brownUniBrown;
+    color: $white;
+  }
+}

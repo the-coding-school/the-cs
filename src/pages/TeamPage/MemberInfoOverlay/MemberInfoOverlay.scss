@@ -1,0 +1,55 @@
+@import '../../../scss/Variables.scss';
+
+.member_cell {
+
+  &:hover {
+    .member_info_overlay {
+      top: 0;
+    }
+  }
+
+  .member_info_overlay {
+    position: absolute;
+    top: $member_image_size - 30px - 2 * $info_overlay_padding;
+    width: $member_image_size - 16px;
+    transition: all 0.3s ease;
+    background-color: rgba($black, 0.9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    .member_main_info {
+      width: $member_image_size - 16px;
+      padding: $info_overlay_padding;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .member_secondary_info {
+      width: $member_image_size - 2 * $info_overlay_padding;
+      padding: $info_overlay_padding;
+      padding-top: 0px;
+    }
+
+    .member_name {
+      font-size: $text_sm;
+    }
+    .member_position {
+      font-size: $text_min;
+      color: $white;
+    }
+
+    .member_description {
+      color: $white;
+      font-size: 10px;
+      line-height: $text_tn * $line_height_scale_low;
+      font-family: $font_primary;
+      padding-bottom: 8px;
+    }
+
+  }
+
+
+}

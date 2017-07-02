@@ -1,0 +1,64 @@
+@import "../../../scss/Variables.scss";
+
+.member_image {
+
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  * { height: $member_image_size; }
+
+  .member_image_background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    * { width: 100% !important; }
+
+    img {
+      filter: blur(5px) brightness(50%);
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+  .member_image_main {
+    width: $member_image_size;
+    position: relative;
+  }
+
+
+  @media (min-width: $bpoint_sm) {
+    .member_image_background {
+      display: none;
+    }
+    .member_card_row {
+      flex-direction: row;
+      .member_description {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  @media (max-width: $bpoint_sm - 1) {
+
+    .member_image {
+      display: flex;
+      justify-content: center;
+
+      .member_image_background {
+        display: flex;
+      }
+
+      .member_card_row {
+        flex-direction: column;
+        .member_description {
+          padding-top: 20px;
+        }
+      }
+
+    }
+  }
+}

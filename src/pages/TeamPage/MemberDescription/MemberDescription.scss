@@ -1,0 +1,8 @@
+@import "../../../scss/Variables.scss";
+
+.member_description {
+  color: lighten($black, 20%);
+  font-size: $text_tn;
+  line-height: $line_height_scale_high * $text_tn;
+  font-family: $font_secondary;
+}

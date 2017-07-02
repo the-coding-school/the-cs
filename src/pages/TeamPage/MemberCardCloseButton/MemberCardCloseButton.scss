@@ -1,0 +1,15 @@
+@import '../../../scss/Variables.scss';
+
+.member_card_close_button {
+  position: absolute;
+  bottom: 25px;
+  right: 15px;
+  cursor: pointer;
+  background-color: $blue;
+  border-radius: 3px;
+  color: white;
+  padding: 5px 10px;
+  &:hover {
+    background-color: $red;
+  }
+}

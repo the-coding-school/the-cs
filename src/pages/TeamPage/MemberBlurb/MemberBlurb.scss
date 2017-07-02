@@ -1,0 +1,9 @@
+@import '../../../scss/Variables.scss';
+
+.member_blurb {
+  padding-top: 10px;
+  font-size: 12px;
+  color: $black;
+  font-family: $font_secondary;
+  font-style: italic;
+}
