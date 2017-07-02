@@ -22,18 +22,18 @@ https://console.aws.amazon.com/quickstart-website/website/aws-website-tcs-8ayqf
 The main React Component that gets rendered into the DOM, `<Router>` is inside `src/index.js`. This conditionally renders the appropriate Page module depending on whether the client is viewing the homepage or one of the tabs.
 
 ### Modules
-The project consists of ReactJS components separated into contextually distinct modules, in the `/src/modules` folder. There are three types of files within `modules`.
-  1. page modules (ending in `Page.js`) -- contain the Components that are directly rendered via the Router
-  2. accessory modules -- just about everything else (like Navbar.js, Footer.js, Testimonials.js), the idea behind these is to separate out any components not specifically relevant to any given Page module.
-  3. skeleton module (`Skeleton.js`) -- contains components that don't specifically apply to any accessory module (e.g. more general purpose components)
+The project consists of ReactJS components separated into three levels:
+1. components -- generic, reusable React components (e.g. TextBlock, TitledParagraphs, IconPanels, HoverCard, etc.)
+2. containers -- larger components that use smaller components (e.g. Testimonials, PartnersPanel, Statistics, etc.)
+3. pages -- the actual pages that are shown on the website; these are passed into a `Router` component in `src/index.js`
 
 ### Styles
-The stylesheets for this project are in SCSS and are all located in `src/scss`. There remains work to be done in appropriately modularizing the `.scss` files so that there is very nearly a one-to-one correspondence between them and the modules.
+The stylesheets for this project are in SCSS and are all located alongside the respective React components.
 
 ### Assets
-Due to the dynamic nature of asset loading (e.g. the pictures for each team member), the images are saved statically in `public/images`, sorted into folders. A string representing the location of this `public` folder can be accessed in JS by using `public.env.PUBLIC_URL`.
+Due to the dynamic nature of asset loading (e.g. the pictures for each team member), most of the images are saved statically in `public/images`, sorted into folders. A string representing the location of this `public` folder can be accessed in JS by using `public.env.PUBLIC_URL`.
 
-In the `src/json` folder, you can find all the data for page text, team members, testimonials, etc. These JSON's are imported as needed in .js files via `import`.
+There is also a lot of JSON-formatted data stored in various places, where relevant (e.g. the TeamPage component folder contains `team.json` which has all the team data)
 
 The rest of this README is what comes default with any create-react-app project and was not written by me (Bibek).
 
