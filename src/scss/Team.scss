@@ -5,249 +5,172 @@ $member_image_size: 250px;
 $info_overlay_padding: 8px;
 
 // School Colors
-$uclaBlue: #1E5EA0;
-$uclaYellow: #FBB727;
-$uscRed: #980F07;
-$uscYellow: #F9B218;
-$caltechOrange: #FF6E1E;
-$csuSacGreen: #01573C;
-$csuSacGold: #CBB778;
-$pepperdineBlue: #00205C;
-$brownUniBrown: #3A1E1A;
+
 
 // ------------------------------
 
 .teampage h1 { color: $blue; }
 
-.team_section {
-  width: 100%;
-  padding-top: 50px;
-  .team_section_title {
-    text-align: center;
-  }
-}
 
-.team_member_array {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  & > * {
-    padding: 10px;
-  }
-}
 
-.member_name {
-  color: $blue;
-  font-weight: bold;
-  font-size: $text_md;
-}
+// .member_name {
+//   color: $blue;
+//   font-weight: bold;
+//   font-size: $text_md;
+// }
 
-.member_position {
-  font-size: $text_tn;
-}
+// .member_position {
+//   font-size: $text_tn;
+// }
 
-.member_description {
-  color: lighten($black, 20%);
-  font-size: $text_tn;
-  line-height: $line_height_scale_high * $text_tn;
-  font-family: $font_secondary;
-}
+// .member_description {
+//   color: lighten($black, 20%);
+//   font-size: $text_tn;
+//   line-height: $line_height_scale_high * $text_tn;
+//   font-family: $font_secondary;
+// }
 
-.member_blurb {
-  padding-top: 10px;
-  font-size: 12px;
-  color: $black;
-  font-family: $font_secondary;
-  font-style: italic;
-}
+// .member_blurb {
+//   padding-top: 10px;
+//   font-size: 12px;
+//   color: $black;
+//   font-family: $font_secondary;
+//   font-style: italic;
+// }
 
-.member_image {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  * {
-    height: $member_image_size;
-  }
-  .member_image_background {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
+// .member_image {
+//   position: relative;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   * {
+//     height: $member_image_size;
+//   }
+//   .member_image_background {
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     overflow: hidden;
+//
+//     * { width: 100% !important; }
+//     img {
+//       filter: blur(5px) brightness(50%);
+//       object-fit: cover;
+//     }
+//   }
+//   .member_image_main {
+//     width: $member_image_size;
+//     height: $member_image_size;
+//     position: relative;
+//   }
+// }
+//
+// .member_card {
+//
+//   @media (min-width: $bpoint_sm) {
+//     .member_image_background {
+//       display: none;
+//     }
+//     .member_card_row {
+//       flex-direction: row;
+//       .member_description {
+//         padding-left: 20px;
+//         padding-right: 20px;
+//       }
+//     }
+//   }
+//
+//   @media (max-width: $bpoint_sm - 1) {
+//     .member_image_background {
+//         display: flex;
+//         width: 100%;
+//         img {
+//           width: 100%;
+//           height: $member_image_size;
+//         }
+//     }
+//     .member_image {
+//       display: flex;
+//       justify-content: center;
+//     }
+//     .member_card_row {
+//       flex-direction: column;
+//       .member_description {
+//         padding-top: 20px;
+//       }
+//     }
+//   }
+// }
 
-    * { width: 100% !important; }
-    img {
-      filter: blur(5px) brightness(50%);
-      object-fit: cover;
-    }
-  }
-  .member_image_main {
-    width: $member_image_size;
-    height: $member_image_size;
-    position: relative;
-  }
-}
+// .member_cell_wrapper {
+//   box-shadow: $box_shadow;
+//   border-radius: 5px;
+// }
+//
+// .member_cell {
+//   display: flex;
+//   justify-content: center;
+//   width: $member_image_size;
+//   position: relative;
+//   overflow: hidden;
+//   cursor: pointer;
+//
+//   &:hover {
+//     .member_info_overlay {
+//       top: 0;
+//     }
+//   }
+//
+//   .member_main_info {
+//     width: $member_image_size - 16px;
+//     padding: $info_overlay_padding;
+//     height: 30px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+//
+//   .member_secondary_info {
+//     width: $member_image_size - 2 * $info_overlay_padding;
+//     padding: $info_overlay_padding;
+//     padding-top: 0px;
+//   }
+//
+//   .overlay_open_button {
+//     position: absolute;
+//     top: 10px;
+//     right: 15px;
+//     i { color: $white }
+//   }
+//
+//   .member_name {
+//     font-size: $text_sm;
+//   }
+//   .member_position {
+//     font-size: $text_min;
+//     color: $white;
+//   }
+//
+//   .member_description {
+//     color: $white;
+//     font-size: 10px;
+//     line-height: $text_tn * $line_height_scale_low;
+//     font-family: $font_primary;
+//     padding-bottom: 8px;
+//   }
+// }
 
-.member_card {
-
-  @media (min-width: $bpoint_sm) {
-    .member_image_background {
-      display: none;
-    }
-    .member_card_row {
-      flex-direction: row;
-      .member_description {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-  }
-
-  @media (max-width: $bpoint_sm - 1) {
-    .member_image_background {
-        display: flex;
-        width: 100%;
-        img {
-          width: 100%;
-          height: $member_image_size;
-        }
-    }
-    .member_image {
-      display: flex;
-      justify-content: center;
-    }
-    .member_card_row {
-      flex-direction: column;
-      .member_description {
-        padding-top: 20px;
-      }
-    }
-  }
-}
-
-.member_cell_wrapper {
-  box-shadow: $box_shadow;
-  border-radius: 5px;
-}
-
-.member_cell {
-  display: flex;
-  justify-content: center;
-  width: $member_image_size;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-
-  &:hover {
-    .member_info_overlay {
-      top: 0;
-    }
-  }
-
-  .member_main_info {
-    width: $member_image_size - 16px;
-    padding: $info_overlay_padding;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .member_secondary_info {
-    width: $member_image_size - 2 * $info_overlay_padding;
-    padding: $info_overlay_padding;
-    padding-top: 0px;
-  }
-
-  .member_info_overlay {
-    position: absolute;
-    top: $member_image_size - 30px - 2 * $info_overlay_padding;
-    width: $member_image_size - 16px;
-    transition: all 0.3s ease;
-    background-color: rgba($black, 0.9);
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-
-  .overlay_open_button {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    i { color: $white }
-  }
-
-  .member_name {
-    font-size: $text_sm;
-  }
-  .member_position {
-    font-size: $text_min;
-    color: $white;
-  }
-
-  .member_description {
-    color: $white;
-    font-size: 10px;
-    line-height: $text_tn * $line_height_scale_low;
-    font-family: $font_primary;
-    padding-bottom: 8px;
-  }
-}
-
-.member_college {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: $black;
-  color: $white;
-  font-size: $text_tn;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  &.ucla {
-    background-color: $uclaBlue;
-    color: $uclaYellow;
-  }
-  &.usc {
-    background-color: $uscRed;
-    color: $uscYellow;
-  }
-  &.caltech {
-    background-color: $caltechOrange;
-    color: $white;
-  }
-  &.csu_sacramento {
-    background-color: $csuSacGreen;
-    color: $csuSacGold;
-  }
-  &.pepperdine_university {
-    background-color: $pepperdineBlue;
-    color: $white;
-  }
-  &.brown_university {
-    background-color: $brownUniBrown;
-    color: $white;
-  }
-}
-
-.member_close_button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-
-  i {
-    color: $blue;
-    &:hover {
-      color: $red;
-    }
-  }
-}
-
-.member_links {
-  display: flex;
-  justify-content: space-between;
-  a:not(:last-child) {
-    margin-right: 5px;
-  }
-}
+// .member_close_button {
+//   position: absolute;
+//   top: 15px;
+//   right: 15px;
+//   cursor: pointer;
+//
+//   i {
+//     color: $blue;
+//     &:hover {
+//       color: $red;
+//     }
+//   }
+// }

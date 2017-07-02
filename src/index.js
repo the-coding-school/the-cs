@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Skeleton } from './modules/Skeleton';
-import HomePage from './modules/HomePage';
-import AboutPage from './modules/AboutPage';
-import TeamPage from './modules/TeamPage';
-import OurProgramsPage from './modules/OurProgramsPage';
-import OurImpactPage from './modules/OurImpactPage';
-import GetInvolvedPage from './modules/GetInvolvedPage';
+import { Skeleton } from './components/Skeleton';
+import HomePage from './components/HomePage';
+import AboutPage from './components/AboutPage';
+import TeamPage from './pages/TeamPage';
+import OurProgramsPage from './components/OurProgramsPage';
+import OurImpactPage from './components/OurImpactPage';
+import GetInvolvedPage from './components/GetInvolvedPage';
 import { Router, Route, hashHistory } from 'react-router'
 
 ReactDOM.render((
