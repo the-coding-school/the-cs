@@ -1,0 +1,17 @@
+@import '../../scss/Variables';
+
+.section_header {
+  @media (max-width: $bpoint_sm - 1) {
+    font-size: $text_md;
+  }
+  @media (min-width: $bpoint_sm) {
+    font-size: $text_lg;
+  }
+  color: $white;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+  background-image: $blue_fade_bg;
+}

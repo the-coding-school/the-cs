@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FontAwesomeLink } from '../../../components/Skeleton';
+import FontAwesomeLink from '../../../components/FontAwesomeLink';
 
 import './MemberLinks.scss';
 import '../../../scss/_fa/font-awesome.scss';

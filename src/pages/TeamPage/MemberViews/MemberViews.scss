@@ -1,0 +1,8 @@
+.member_views {
+  .member_card {
+    max-height: 80vh;
+    .member_description {
+      overflow: scroll;
+    }
+  }
+}

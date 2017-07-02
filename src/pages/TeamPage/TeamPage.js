@@ -1,11 +1,12 @@
 import React from 'react';
-import { PageHeader } from '../../components/Skeleton';
+import PageHeader from '../../components/PageHeader';
 
 import MemberCard from './MemberCard';
 import TeamSection from './TeamSection';
 
 import team from './team.json';
-import headers from '../../json/headers.json';
+import headerImage from './TeamPage.jpg';
+import pageData from './TeamPage.json';
 
 export default class TeamPage extends React.Component {
   render() {
@@ -18,12 +19,11 @@ export default class TeamPage extends React.Component {
       return 0;
     }
 
-    const header = headers.team;
-    const image = process.env.PUBLIC_URL + header.image;
+    const header = pageData.header;
 
     return (
       <div className='App'>
-        <PageHeader image={image} title={header.title} description={header.description} />
+        <PageHeader image={headerImage} title={header.title} description={header.description} />
         <div className='teampage page'>
           <div className='container'>
             <div className='team_founder team_section'>

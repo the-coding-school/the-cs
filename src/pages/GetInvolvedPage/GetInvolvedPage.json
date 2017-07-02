@@ -1,0 +1,61 @@
+{
+  "header": {
+    "image": "/images/headers/get_involved.jpg",
+    "title": "Get Involved",
+    "description": "Giving the gift of coding not only impacts the lives of the students involved, it has the potential to change the world."
+  },
+  "donations": {
+    "paragraphs": {
+      "title": "Donate",
+      "paragraphs": [
+        "$x ensures 30 kids learn how to code.",
+        "The Coding School is a 501c3 organization. Your gift is tax deductible to the extent allowed by the law. When you make a donation through PayPal, you will automatically receive a receipt that can be used for tax deduction purposes.  Our public charity number is 46-5097610."
+      ]
+    },
+    "options": [
+      {
+        "image": "http://www.placehold.it/200x200",
+        "category": "Fund a child",
+        "amount": 50,
+        "paymentLink": ""
+      },
+      {
+        "image": "http://www.placehold.it/200x200",
+        "category": "Fund a classroom",
+        "amount": 500,
+        "paymentLink": ""
+      },
+      {
+        "image": "http://www.placehold.it/200x200",
+        "category": "Fund a school",
+        "amount": 5000,
+        "paymentLink": ""
+      }
+    ]
+  },
+  "partnerships": {
+    "paragraphs": {
+      "title": "Partner With Us",
+      "paragraphs": [
+        "Partnerships are essential to maximizing the impact our program can have. If you or your company is interested in learning more, please contact us.",
+        "In addition, The Coding School is proud to have been awarded the Brown Venture Launch Fund from Brown University Social Innovation Initiative."
+      ]
+    }
+  },
+  "schools": {
+    "paragraphs": {
+      "title": "Bring Coding to Your School",
+      "paragraphs": [
+        "If you are interested in bringing coding education to your students, please contact us."
+      ]
+    }
+  },
+  "volunteer": {
+    "paragraphs": {
+      "title": "Volunteer",
+      "paragraphs": [
+        "We are always looking for passionate coders to join our teaching team, as well as non-coders to help run and expand our programs. If you're interested, contact us!"
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './MemberImage.scss';
-import { HoverFadeImage } from '../../../components/HoverFade';
+import HoverFadeImage from '../../../components/HoverFadeImage';
 
 export default class MemberImage extends React.Component {
   render() {
@@ -12,11 +12,11 @@ export default class MemberImage extends React.Component {
     return (
       <div className="member_image">
         {this.props.background && (<div className="member_image_background">
-          <HoverFadeImage default={regImage} hover={funImage} />
+          <HoverFadeImage regular={regImage} hover={funImage} />
         </div>
         )}
         <div className="member_image_main">
-          <img src={regImage} alt={this.props.imageID}/>
+          <HoverFadeImage regular={regImage} hover={funImage} />
         </div>
       </div>
     );

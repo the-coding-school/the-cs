@@ -1,0 +1,79 @@
+@import '../../../scss/Variables';
+
+$video_height: 450px;
+
+.home_video {
+  width: 100%;
+  top: $navbar_height;
+
+  .video_wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .video_overlay_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($black, 0.5);
+    color: $white;
+    text-shadow: 2px 2px $black;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text_boxes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      font-family: $font_primary;
+      margin-bottom: 0px;
+    }
+    .subtitle { font-family: $font_secondary; }
+  }
+
+  video { width: 100%; }
+}
+
+// Small screens
+@media (max-width: $bpoint_md - 1) {
+  .home_video {
+    position: relative;
+    top: $navbar_height;
+
+    .video_overlay_text {
+      height: 100%;
+      .title { font-size: $text_md; }
+      .subtitle { font-size: $text_tn; }
+    }
+  }
+}
+
+// Large screens
+@media (min-width: $bpoint_md) {
+  .home_video {
+    position: fixed;
+    top: $navbar_height;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+
+    video {
+      height: $video_height;
+      object-fit: cover;
+    }
+
+    .video_overlay_text {
+      height: $video_height;
+      .title { font-size: $text_hg; }
+      .subtitle { font-size: $text_sm; }
+    }
+  }
+}

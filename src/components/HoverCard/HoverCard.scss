@@ -1,0 +1,26 @@
+@import "../../scss/Variables";
+
+.hover_card_wrapper {
+  display: flex;
+  justify-content: center;
+  @media (max-width: $bpoint_md  - 1) {
+    width: 100%;
+  }
+  @media (min-width: $bpoint_md) {
+    width: 50%;
+  }
+}
+
+.hover_card {
+  padding: 20px;
+  background-color: $white;
+  box-shadow: $box_shadow;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

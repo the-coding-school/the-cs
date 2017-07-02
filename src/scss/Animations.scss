@@ -1,0 +1,37 @@
+.hvr_float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr_float:hover, .hvr_float:focus, .hvr_float:active {
+  transform: translateY(-8px);
+}
+
+/* Grow */
+.hvr_grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr_grow:hover, .hvr_grow:focus, .hvr_grow:active {
+  transform: scale(1.1);
+}
+
+/* Forward */
+.hvr_forward {
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.hvr_forward:hover, .hvr_forward:focus, .hvr_forward:active {
+  transform: translateX(8px);
+}

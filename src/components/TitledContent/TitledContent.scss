@@ -1,0 +1,32 @@
+@import '../../scss/Variables';
+
+.titled_content {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .title {
+    font-size: $text_md;
+    color: $blue;
+  }
+
+  .subtitle {
+    font-size: $text_sm;
+    color: lighten($black, 20);
+  }
+
+  @media (min-width: $bpoint_md) {
+    display: flex;
+    .title_side { width: 30%; }
+    .content_side {
+      width: 70%;
+      // padding-top: 10px;
+      padding-left: 20px;
+    }
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid #ddd;
+  }
+}

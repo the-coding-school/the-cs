@@ -3,6 +3,8 @@ import React from 'react';
 import MemberCell from '../MemberCell';
 import MemberCard from '../MemberCard';
 
+import './MemberViews.scss';
+
 export default class MemberViews extends React.Component {
 
   constructor(props) {
@@ -54,7 +56,7 @@ export default class MemberViews extends React.Component {
     }
 
     return (
-      <div className='team_member_views' style={{position: 'relative'}}>
+      <div className='member_views' style={{position: 'relative'}}>
         <MemberCell
           onClick={this.toggleModal}
           name={name}

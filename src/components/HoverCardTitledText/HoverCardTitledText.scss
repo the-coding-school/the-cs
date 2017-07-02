@@ -1,0 +1,29 @@
+@import '../../scss/Variables';
+
+.hover_card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .hover_card_title {
+    font-size: $text_sm;
+    font-family: $font_primary;
+    color: $blue;
+    font-weight: bold;
+  }
+
+  .hover_card_divider {
+    height: 1px;
+    border: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-image: linear-gradient(to right, rgba($black, 0), rgba($black, 0), rgba($black, 0.5), rgba($black, 0), rgba($black, 0));
+  }
+
+  .hover_card_description {
+    font-size: $text_tn;
+    line-height: $text_tn * $line_height_scale_norm;
+    font-family: $font_secondary;
+    color: $black;
+  }
+}

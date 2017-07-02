@@ -1,0 +1,7 @@
+@import '../../scss/Variables';
+
+.text_block {
+  font-size: $text_sm;
+  color: lighten($black, 10);
+  line-height: $text_sm * $line_height_scale_high;
+}

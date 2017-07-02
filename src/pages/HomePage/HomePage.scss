@@ -1,0 +1,46 @@
+@import '../../scss/Variables';
+
+$video_height: 450px;
+
+.intro_blurb {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+  color: lighten($black, 20);
+  font-family: $font_secondary;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  .main {
+    color: $blue;
+    font-weight: bold;
+    font-family: $font_primary;
+  }
+
+  @media (max-width: $bpoint_md - 1) {
+    font-size: $text_sm;
+    line-height: $text_sm * $line_height_scale_high;
+    // .main {
+    //   font-size: $text_md;
+    //   line-height: $text_md * $line_height_scale_high;
+    // }
+  }
+
+  @media (min-width: $bpoint_md) {
+    font-size: $text_md;
+    line-height: $text_md * $line_height_scale_high;
+    // .main {
+    //   font-size: $text_md;
+    //   line-height: $text_md * $line_height_scale_high;
+    // }
+  }
+}
+
+// Small screens
+@media (max-width: $bpoint_md - 1) {
+  .page.homepage { margin-top: $navbar_height; }
+}
+
+// Large screens
+@media (min-width: $bpoint_md) {
+  .page.homepage { margin-top: $video_height + $navbar_height; }
+}
