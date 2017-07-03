@@ -2,13 +2,15 @@ import React from 'react';
 
 import './DonateCustom.scss';
 
+const DEFAULT_DONATION = 25;
+
 export default class DonateCustom extends React.Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      donationAmount: 50
+      donationAmount: DEFAULT_DONATION
     }
   }
 
