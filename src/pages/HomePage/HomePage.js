@@ -29,7 +29,6 @@ class HomePage extends Component {
           <SectionHeader title='Our Partners' />
           <div className='homepage_panel container'>
             <PartnersPanel />
-            <p>In addition, The Coding School is proud to have been awarded the Brown Venture Launch Fund from Brown University Social Innovation Initiative.</p>
           </div>
 
           <SectionHeader

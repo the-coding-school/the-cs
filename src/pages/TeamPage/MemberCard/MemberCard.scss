@@ -4,7 +4,38 @@
   display: none;
 }
 
+.member_card_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .member_card {
+  position: relative;
+  background-color: $white;
+  box-shadow: $box_shadow;
+  width: 80%;
+  max-width: 800px;
+  padding: 25px;
+
+  .member_name {
+    font-size: $text_md;
+  }
+
+  .member_card_row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .member_card_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .member_info_bar {
+    margin-bottom: 20px;
+  }
 
   .member_description {
 

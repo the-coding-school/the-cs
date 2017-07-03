@@ -14,9 +14,17 @@ export default class Testimonials extends React.Component {
       adaptiveHeight: true
     }
     const testimonialsDOM = testimonials.map(function(t, i) {
-      const imageSrc = process.env.PUBLIC_URL + '/images/testimonials/' + t.imageName;
+
+      const imagePath = process.env.PUBLIC_URL + '/images/testimonials/' + t.imageName;
+      const imageSrc = (t.imageName === '') ? null : imagePath;
+
       return (
-        <Testimonial key={'testimonial-' + i} imageSrc={imageSrc} quote={t.quote} author={t.author} context={t.context}/>
+        <Testimonial
+          key={'testimonial-' + i}
+          imageSrc={imageSrc}
+          quote={t.quote}
+          author={t.author}
+          context={t.context}/>
       );
     })
 

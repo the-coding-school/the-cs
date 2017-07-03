@@ -12,10 +12,10 @@ export default class SectionHeader extends React.Component {
 
     return (
       <div className="section_header">
-        <div className="section_header_title">
-          {title}
+        <div className="title">
+          {title.toUpperCase()}
         </div>
-        <div className="section_header_subtitle">
+        <div className="subtitle">
           {subtitle}
         </div>
       </div>
