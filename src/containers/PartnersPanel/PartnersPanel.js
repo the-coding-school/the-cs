@@ -2,6 +2,8 @@ import React from 'react';
 import IconPanel from '../../components/IconPanel';
 import partners from './partners.json';
 
+import './PartnersPanel.scss';
+
 export default class PartnersPanel extends React.Component {
   render() {
 
@@ -16,6 +18,7 @@ export default class PartnersPanel extends React.Component {
     return (
       <div className='partners_panel'>
         <IconPanel items={partners} />
+        <p>In addition, The Coding School is proud to have been awarded the Brown Venture Launch Fund from Brown University Social Innovation Initiative.</p>
       </div>
     );
   }

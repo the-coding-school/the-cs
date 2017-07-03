@@ -1,7 +1,12 @@
+@import '../../../scss/Variables';
+
 .member_links {
   display: flex;
   justify-content: space-between;
   a:not(:last-child) {
     margin-right: 5px;
+  }
+  i {
+    color: $black;
   }
 }

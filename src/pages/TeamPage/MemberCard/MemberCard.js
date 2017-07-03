@@ -26,59 +26,27 @@ export default class MemberCard extends React.Component {
       links
     } = this.props;
 
-    const flexWrapperStyles = {
-      display: 'flex',
-      width: '100%',
-      justifyContent: 'center'
-    }
-    const cardStyles = {
-      position: 'relative',
-      backgroundColor: 'white',
-      borderRadius: '5px',
-      boxShadow: '0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.2), 0 1px 8px 0 rgba(0,0,0,.12)',
-      width: '80%',
-      maxWidth: '800px',
-      padding: '25px'
-    }
-    const rowStyles = {
-      display: 'flex',
-      width: '100%',
-      justifyContent: 'space-between',
-    }
-    const colStyles = {
-      display: 'flex',
-      flexDirection: 'column',
-    }
-    const infoStyles = {
-      marginBottom: '20px',
-    }
-    const flexStyle = {
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between'
-    }
-
     return (
-      <div className='member_card_wrapper' style={flexWrapperStyles}>
-        <div className='member_card' style={cardStyles}>
+      <div className='member_card_wrapper'>
+        <div className='member_card'>
 
         { modal && <MemberCardCloseButton onClick={onClick} /> }
 
-        <div className='member_info_bar' style={infoStyles}>
+        <div className='member_info_bar'>
           <MemberName name={name} />
-          <div style={flexStyle}>
-            <MemberPosition position={position} color={'#333333'}/>
+          <div className='member_card_row'>
+            <MemberPosition position={position} />
             <MemberLinks links={links} />
           </div>
         </div>
 
-          <div className='member_card_row' style={rowStyles}>
-            <div className='member_card_column' style={colStyles}>
+          <div className='member_card_row'>
+            <div className='member_card_column'>
               <MemberImage background={true} imageID={memberID} />
               <MemberCollegeBar college={college} />
               {blurb && <MemberBlurb blurb={blurb}/> }
             </div>
-            <div className='member_card_column' style={colStyles}>
+            <div className='member_card_column'>
               <MemberDescription description={description} />
             </div>
           </div>
