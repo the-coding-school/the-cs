@@ -99,5 +99,5 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "http://www.the-cs.org/"
+  "homepage": "http://the-cs.org"
 }
