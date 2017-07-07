@@ -18,16 +18,9 @@ body {
 .page {
   position: relative;
   margin-top: $navbar_height + $header_height;
-  padding-bottom: 50px;
   z-index: $z_page;
   background-color: $white;
   width: 100%;
-}
-
-
-.page p {
-  font-family: $font_secondary;
-  line-height: $text_sm * $line_height_scale_norm;
 }
 
 .centered_header {

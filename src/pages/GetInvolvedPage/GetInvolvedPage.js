@@ -24,11 +24,11 @@ export default class GetInvolvedPage extends React.Component {
         <PageHeader image={headerImage} title={header.title} description={header.description} />
         <div className='getinvolved_page page'>
 
+          <DonationsPanel />
+
           <div className='involvement_panel_wrapper'>
             <InvolvementPanel />
           </div>
-
-          <DonationsPanel />
 
         </div>
       </div>

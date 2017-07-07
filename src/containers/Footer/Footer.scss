@@ -15,7 +15,7 @@ footer {
     line-height: $line_height_scale_norm * $text_sm;
   }
 
-  background-color: $blue;
+  background-color: $black;
   padding-top: 10px;
   padding-bottom: 10px;
 
@@ -33,7 +33,10 @@ footer {
   }
 
   .footer_bottom {
-    text-align: center;
+    p {
+      text-align: center;
+      font-family: $font_primary;
+    }
   }
 
   .icon_name {
