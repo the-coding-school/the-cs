@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './DonateCustom.scss';
+import '../../../scss/General.scss';
 
 const DEFAULT_DONATION = 25;
 
@@ -50,13 +51,13 @@ export default class DonateCustom extends React.Component {
           />
 
           <input
-            className="donation_text_field"
+            className="input_field"
             type='text'
             value={'$' + numberWithCommas(this.state.donationAmount)}
             onChange={this.updateAmount.bind(this)}
           />
 
-          <input className="donation_button" type='submit' value='Donate' />
+          <input className="button" type='submit' value='Donate' />
         </form>
       </div>
 

@@ -1,0 +1,53 @@
+@import '../../scss/Variables';
+
+.option_bar {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+
+  // Small screens
+  @media (max-width: $bpoint_sm - 1) {
+    flex-direction: column;
+    .option_bar_option {
+      border-left: 2px solid $blue;
+      border-right: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      &:first-child {
+        border-top: 2px solid $blue;
+      }
+    }
+  }
+
+  // Large screens
+  @media (min-width: $bpoint_sm) {
+
+    flex-direction: row;
+
+    .option_bar_option {
+      border-top: 2px solid $blue;
+      border-bottom: 2px solid $blue;
+      border-right: 2px solid $blue;
+      &:first-child {
+        border-left: 2px solid $blue;
+      }
+    }
+  }
+
+  .option_bar_option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 30px;
+    height: 15px;
+    cursor: pointer;
+
+    background-color: $white;
+    color: $blue;
+
+    &.selected {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+}
