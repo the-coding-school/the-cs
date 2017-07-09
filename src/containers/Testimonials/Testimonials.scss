@@ -3,12 +3,13 @@
 .testimonials_wrapper {
   display: flex;
   justify-content: center;
-  background-image: $blue_fade_bg;
+  // background-image: $blue_fade_bg;
+  background: $blue;
 }
 
 .testimonials {
   width: 80%;
-  max-width: 800px;
+  max-width: $container_max_width;
   margin: 50px auto;
 }
 
@@ -20,11 +21,9 @@
 }
 
 .testimonial {
-  // background-color: $blue;
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 10;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -67,30 +66,14 @@
 
     // Small screens
     @media (max-width: $bpoint_sm - 1) {
-      .testimonial_quote {
-        font-size: $text_tn;
-        line-height: $text_tn * $line_height_scale_norm;
-      }
-      .testimonial_author {
-        font-size: $text_sm;
-      }
-      .testimonial_context {
-        font-size: $text_tn;
-      }
+      font-size: $text_sm;
+      line-height: $text_sm * $line_height_scale_norm;
     }
 
     // Large screens
     @media (min-width: $bpoint_sm) {
-      .testimonial_quote {
-        font-size: $text_sm;
-        line-height: $text_sm * $line_height_scale_norm;
-      }
-      .testimonial_author {
-        font-size: $text_md;
-      }
-      .testimonial_context {
-        font-size: $text_sm;
-      }
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_norm;
     }
   }
 }
@@ -100,4 +83,13 @@
 .testimonials .slick-prev:before,
 .testimonials .slick-next:before {
   color: $white !important;
+}
+
+.testimonials .slick-dots li button:before {
+  font-size: 25px;
+}
+
+.testimonials .slick-prev:before,
+.testimonials .slick-next:before {
+  font-size: 40px;
 }

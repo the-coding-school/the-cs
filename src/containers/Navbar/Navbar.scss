@@ -7,6 +7,7 @@ nav {
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   position: fixed;
   top: 0;
@@ -47,7 +48,7 @@ nav {
     text-decoration: none;
     color: $white;
     font-weight: bold;
-    font-size: $text_sm;
+    font-size: $text_md;
   }
 
   img {
@@ -118,24 +119,24 @@ nav {
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: $text_tn;
+    font-size: $text_sm;
   }
 }
 
 #navbar_hamburger {
   padding: 5px;
   padding-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   cursor: pointer;
-  z-index: $z_navbar;
+  z-index: $z_hamburger;
+  display: flex;
+  flex-direction: column;
   & > div {
     width: 20px;
     height: 4px;
-    margin-bottom: 2px;
     background-color: $white;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
   }
 }
 

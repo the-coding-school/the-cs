@@ -44,23 +44,18 @@
     align-items: center;
     text-align: center;
     color: $white;
-    @media (min-width: $bpoint_md) {
-      h1 {
-        font-size: $text_lg;
-      }
-      p {
-        font-size: $text_sm;
-        line-height: $text_sm * $line_height_scale_high;
-      }
+
+    h1 {
+      font-size: $text_hg;
     }
+    p {
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_high;
+    }
+
+    // Large screens
     @media (max-width: $bpoint_md - 1) {
-      h1 {
-        font-size: $text_md;
-      }
-      p {
-        font-size: $text_tn;
-        line-height: $text_tn * $line_height_scale_high;
-      }
+      p { display: none; }
     }
   }
 }

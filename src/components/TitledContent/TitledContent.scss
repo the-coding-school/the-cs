@@ -1,18 +1,23 @@
 @import '../../scss/Variables';
 
+.titled_content_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .titled_content {
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 90%;
 
   .title {
-    font-size: $text_md;
+    font-size: $text_lg;
     color: $blue;
   }
 
   .subtitle {
-    font-size: $text_sm;
+    font-size: $text_md;
     color: lighten($black, 20);
   }
 
