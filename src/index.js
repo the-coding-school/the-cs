@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
-
 import Skeleton from './containers/Skeleton';
 import routes from './routes';
 
@@ -10,7 +9,9 @@ ReactDOM.render((
   // hashHistory inserts an ugly '#' after 'the-cs.org/'
 
   <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
-    {routes}
+    <Route component={Skeleton}>
+      {routes}
+    </Route>
   </Router>
-  
+
 ), document.getElementById('root'));

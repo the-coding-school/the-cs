@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 
 import './Footer.scss';
 import '../../scss/Animations.scss';
+import footerImage from './footer.png';
 
 export default class Footer extends Component {
   render() {
@@ -13,7 +14,6 @@ export default class Footer extends Component {
             <ExternalLinks />
             <ContactInfo />
           </div>
-          <hr />
           <FooterBottom />
         </footer>
     );
@@ -24,7 +24,9 @@ class FooterBottom extends Component {
   render() {
     return (
       <div className='footer_bottom'>
-        <p>The Coding School © 2017</p>
+        <div className='footer_image'>
+          <img src={footerImage} />
+        </div>
       </div>
     );
   }

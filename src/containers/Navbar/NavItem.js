@@ -5,11 +5,14 @@ import '../../scss/Animations.scss';
 
 export default class NavItem extends React.Component {
   render() {
-    const i = this.props.item
+    const {
+      path,
+      name
+    } = this.props.item;
     return (
-      <li className='hvr_grow nav_item' key={i.path}>
-        <Link to={'/' + i.path}>
-            {i.name.toUpperCase()}
+      <li className='hvr_grow nav_item' key={path}>
+        <Link to={path}>
+          {name.toUpperCase()}
         </Link>
       </li>
     );

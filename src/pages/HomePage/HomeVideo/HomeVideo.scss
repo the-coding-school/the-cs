@@ -1,7 +1,5 @@
 @import '../../../scss/Variables';
 
-$video_height: 450px;
-
 .home_video {
   width: 100%;
   top: $navbar_height;
@@ -16,9 +14,9 @@ $video_height: 450px;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba($black, 0.5);
+    background-color: rgba($black, 0.8);
     color: $white;
-    text-shadow: 2px 2px $black;
+    // text-shadow: 2px 2px $black;
     text-align: center;
     font-weight: bold;
     display: flex;

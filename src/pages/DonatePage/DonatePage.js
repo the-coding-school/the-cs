@@ -1,14 +1,13 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
 import DonationsPanel from '../../containers/DonationsPanel';
-import InvolvementPanel from '../../containers/InvolvementPanel';
 
-import './GetInvolvedPage.scss';
+import './DonatePage.scss';
 
-import pageData from './GetInvolvedPage.json';
-import headerImage from './GetInvolvedPage.jpg';
+import pageData from './DonatePage.json';
+import headerImage from './DonatePage.jpg';
 
-export default class GetInvolvedPage extends React.Component {
+export default class DonatePage extends React.Component {
   render() {
     const {
       header,
@@ -22,11 +21,9 @@ export default class GetInvolvedPage extends React.Component {
     return (
       <div className='App'>
         <PageHeader image={headerImage} title={header.title} description={header.description} />
-        <div className='getinvolved_page page'>
+        <div className='donate_page page'>
 
-          <div className='involvement_panel_wrapper'>
-            <InvolvementPanel />
-          </div>
+        <DonationsPanel />
 
         </div>
       </div>

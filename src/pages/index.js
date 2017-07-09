@@ -4,6 +4,7 @@ import OurFootprintPage from './OurFootprintPage';
 import OurProgramsPage from './OurProgramsPage';
 import TeamPage from './TeamPage';
 import GetInvolvedPage from './GetInvolvedPage';
+import DonatePage from './DonatePage';
 
 export {
   HomePage,
@@ -11,5 +12,6 @@ export {
   OurFootprintPage,
   OurProgramsPage,
   TeamPage,
-  GetInvolvedPage
+  GetInvolvedPage,
+  DonatePage
 }

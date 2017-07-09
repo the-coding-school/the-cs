@@ -23,6 +23,10 @@ body {
   width: 100%;
 }
 
+.page.homepage {
+  margin-top: $navbar_height + $video_height;
+}
+
 .centered_header {
   text-align: center;
   color: $blue;
@@ -59,7 +63,11 @@ body {
   color: $black;
   font-family: $font_primary;
   font-size: $text_md;
-  border: 2px solid lighten($black, 50);
+  border: 4px solid lighten($black, 75);
   border-radius: 5px;
   padding: 10px;
+  &:focus {
+    outline: none;
+    border: 4px solid $yellow;
+  }
 }

@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   margin: 10px auto;
+  width: 100%;
+  border-radius: 5px;
 
   // Small screens
   @media (max-width: $bpoint_sm - 1) {
@@ -37,13 +39,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 
-    padding: 10px 30px;
+    padding: 20px 30px;
     height: 15px;
     cursor: pointer;
 
     background-color: $white;
     color: $blue;
+    font-size: $text_md;
 
     &.selected {
       background-color: $blue;
