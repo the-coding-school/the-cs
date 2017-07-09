@@ -24,10 +24,10 @@ export default class HomeVideo extends React.Component {
           </video>
           <div className='video_overlay_text'>
             <div className='intro_blurb'>
-              <div className='intro_blurb_image'>
+              <div className='intro_blurb_image wow fadeInLeft'>
                 <img src={introBlurbImage} alt='girl using iPad'/>
               </div>
-              <div className='intro_blurb_text'>
+              <div className='intro_blurb_text wow fadeInRight'>
                 <div className='primary'>{homeIntroBlurb.primary}</div>
                 <div className='secondary'>{homeIntroBlurb.secondary}</div>
               </div>
