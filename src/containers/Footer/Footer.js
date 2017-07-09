@@ -25,7 +25,7 @@ class FooterBottom extends Component {
     return (
       <div className='footer_bottom'>
         <div className='footer_image'>
-          <img src={footerImage} />
+          <img src={footerImage} alt='footer'/>
         </div>
       </div>
     );

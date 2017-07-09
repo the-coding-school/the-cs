@@ -6,9 +6,9 @@ import poster from './homepage_video_poster.jpg';
 import introBlurbImage from '../introblurb.png';
 export default class HomeVideo extends React.Component {
   render() {
-    const {
-      header
-    } = this.props;
+    // const {
+    //   header
+    // } = this.props;
 
     const homeIntroBlurb = {
       primary: 'The Coding School (TCS) is a 501c3 organization that aims to empower the next generation through computer science education.',

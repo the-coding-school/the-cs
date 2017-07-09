@@ -1,6 +1,5 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
-import DonationsPanel from '../../containers/DonationsPanel';
 import InvolvementPanel from '../../containers/InvolvementPanel';
 
 import './GetInvolvedPage.scss';
@@ -11,10 +10,7 @@ import headerImage from './GetInvolvedPage.jpg';
 export default class GetInvolvedPage extends React.Component {
   render() {
     const {
-      header,
-      partnerships,
-      schools,
-      volunteer
+      header
     } = pageData;
 
     // TODO: Add form links for all sections once created

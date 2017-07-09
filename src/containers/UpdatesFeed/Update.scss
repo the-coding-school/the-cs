@@ -1,0 +1,130 @@
+@import '../../scss/Variables';
+
+.update_wrapper {
+  width: 100%;
+}
+
+.update {
+  padding: 35px;
+  border: 2px solid lighten($black, 50);
+  margin-bottom: 25px;
+  .title {
+    font-family: $font_primary;
+    color: $blue;
+  }
+
+  .date {
+    font-family: $font_primary;
+    color: $black;
+    font-weight: bold;
+    min-width: 100px;
+  }
+
+  .body {
+    font-family: $font_secondary;
+    color: $black;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .image_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .image {
+      margin-bottom: 5px;
+      img {
+        box-shadow: $box_shadow;
+      }
+    }
+    .image_caption {
+      font-style: italic;
+      font-family: $font_secondary;
+    }
+  }
+
+  a {
+    color: $blue;
+  }
+
+  // Small screens
+  @media (max-width: $bpoint_sm - 1) {
+    .row {
+      flex-direction: column;
+    }
+
+    .title {
+      order: 2;
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_high;
+    }
+
+    .date {
+      order: 1;
+      font-size: $text_sm;
+      line-height: $text_sm * $line_height_scale_high;
+    }
+
+    .body {
+      font-size: $text_sm;
+      line-height: $text_sm * $line_height_scale_high;
+    }
+
+
+    .image_wrapper {
+      margin-bottom: 20px;
+      .image {
+        img {
+          max-width: 80vw;
+        }
+      }
+    }
+  }
+
+  // Large screens
+  @media (min-width: $bpoint_sm) {
+
+    .row {
+      &.first {
+        align-items: flex-end;
+      }
+      &.second {
+        justify-content: flex-start;
+      }
+    }
+
+    .title {
+      order: 1;
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_high;
+    }
+
+    .date {
+      order: 2;
+      font-size: $text_sm;
+      line-height: $text_sm * $line_height_scale_high;
+      text-align: right;
+    }
+
+    .body {
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_high;
+      padding-left: 20px;
+    }
+
+    .image {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}

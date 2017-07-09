@@ -10,10 +10,7 @@ import headerImage from './DonatePage.jpg';
 export default class DonatePage extends React.Component {
   render() {
     const {
-      header,
-      partnerships,
-      schools,
-      volunteer
+      header
     } = pageData;
 
     // TODO: Add form links for all sections once created
