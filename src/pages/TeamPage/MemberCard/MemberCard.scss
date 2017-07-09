@@ -15,11 +15,11 @@
   background-color: $white;
   box-shadow: $box_shadow;
   width: 80%;
-  max-width: 800px;
+  max-width: $container_max_width;
   padding: 25px;
 
   .member_name {
-    font-size: $text_md;
+    font-size: $text_lg;
   }
 
   .member_card_row {

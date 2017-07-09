@@ -28,7 +28,7 @@ export default class DonateCustom extends React.Component {
     }
 
     const EMAIL = "info.thecodingschool@gmail.com";
-    const MESSAGE = "Or donate a custom amount.";
+    const MESSAGE = "Or donate a custom amount. Any donation helps.";
     const DESCRIPTION = "Your gift empowers children with the skills and confidence necessary to become future leaders and problem solvers."
 
     return (

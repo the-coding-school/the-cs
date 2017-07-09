@@ -1,28 +1,39 @@
 @import '../../scss/Variables';
 
+.donations_panel_wrapper {
+  width: 100%;
+  background-color: $blue;
+  display: flex;
+  justify-content: center;
+}
+
 .donations_panel {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $blue;
-  padding: 80px 10%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: $container_max_width;
+  width: 80%;
   padding-bottom: 30px;
   text-align: center;
   .title {
     color: $white;
-    font-size: $text_lg;
+    font-size: $text_hg;
     font-weight: bold;
     margin-bottom: 25px;
   }
   .message {
     color: $white;
-    font-size: $text_sm;
-    line-height: $text_sm * $line_height_scale_norm;
+    font-size: $text_md;
+    line-height: $text_md * $line_height_scale_norm;
+    margin-bottom: 50px;
   }
   .tax_message {
     color: rgba($white, 0.75);
-    font-size: $text_tn;
-    line-height: $text_tn * $line_height_scale_norm;
+    font-size: $text_sm;
+    line-height: $text_sm * $line_height_scale_norm;
   }
   .donations_options {
     display: flex;

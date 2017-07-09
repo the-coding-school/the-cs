@@ -29,7 +29,7 @@ class AboutPage extends React.Component {
         />
         <div className='aboutpage page'>
           <div className='about_statement'> {aboutDOM} </div>
-          <SectionHeader title='Our Coding Philosophy' />
+          <SectionHeader title='Our Philosophy' />
           <Philosophies />
         </div>
       </div>

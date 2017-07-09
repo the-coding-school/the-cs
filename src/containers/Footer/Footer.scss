@@ -3,16 +3,17 @@
 footer {
   position: relative;
   color: $white;
-    // font-weight: bold;
 
   h2 {
     font-weight: normal;
     font-family: $font_primary;
+    font-size: $text_lg;
+    line-height: $text_lg * $line_height_scale_norm;
   }
   a, p {
-    font-size: $text_sm;
+    font-size: $text_md;
+    line-height: $text_md * $line_height_scale_norm;
     font-family: $font_secondary;
-    line-height: $line_height_scale_norm * $text_sm;
   }
 
   background-color: $black;

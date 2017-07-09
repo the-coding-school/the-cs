@@ -69,7 +69,7 @@ export default class MemberViews extends React.Component {
         { this.state.isOpen &&
           <div className='modal_container' style={modalStyles}>
             <div className='modal_background' style={bgStyles} onClick={this.toggleModal}/>
-            <div className='modal_content' onClick={this.preventClick}>
+            <div className='modal_content animated zoomIn' onClick={this.preventClick}>
               <MemberCard
                 modal={true}
                 onClick={this.toggleModal}

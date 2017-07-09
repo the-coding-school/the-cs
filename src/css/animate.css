@@ -2722,6 +2722,7 @@
 }
 
 .zoomIn {
+  visibility: visible;
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
 }

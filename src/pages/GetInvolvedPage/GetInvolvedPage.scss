@@ -1,10 +1,12 @@
+@import '../../scss/Variables';
+
 .involvement_panel_wrapper {
   display: flex;
   justify-content: center;
 
   .involvement_panel {
     width: 90%;
-    max-width: 1000px;
+    max-width: $container_max_width;
 
     display: flex;
     flex-direction: column;

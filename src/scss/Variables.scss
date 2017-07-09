@@ -26,9 +26,10 @@ $bpoint_sm: 800px;
 $bpoint_md: 1000px;
 
 // Component Sizes
-$navbar_height: 60px;
+$navbar_height: 80px;
 $header_height: 400px;
 $video_height: 800px;
+$container_max_width: 1200px;
 
 $head_member_image_size: 400px;
 $member_image_size: 250px;
@@ -48,4 +49,5 @@ $blue_fade_bg: linear-gradient(
 // Z-Indexes
 $z_page: 100;
 $z_navbar: 200;
+$z_hamburger: 400;
 $z_modal_container: 300;
