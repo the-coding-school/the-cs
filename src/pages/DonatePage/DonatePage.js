@@ -16,8 +16,6 @@ export default class DonatePage extends React.Component {
       volunteer
     } = pageData;
 
-    // TODO: Add form links for all sections once created
-
     return (
       <div className='App'>
         <PageHeader image={headerImage} title={header.title} description={header.description} />
