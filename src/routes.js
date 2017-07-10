@@ -1,7 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router';
-
-import Skeleton from './containers/Skeleton';
 import {
   HomePage,
   AboutPage,

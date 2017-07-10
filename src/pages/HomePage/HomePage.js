@@ -7,24 +7,18 @@ import HomeVideo from './HomeVideo';
 import SectionHeader from '../../components/SectionHeader';
 
 import pageData from './HomePage.json';
-import introBlurbImage from './introblurb.png';
 
 import './HomePage.scss';
 
 class HomePage extends Component {
   render() {
 
-    const homeIntroBlurb = {
-      primary: 'The Coding School (TCS) is a 501c3 organization that aims to empower the next generation through computer science education.',
-      secondary: 'We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students, regardless of socioeconomic background, geographic location, or learning differences, develop the skills necessary to thrive and tackle the most pressingissues facing our world.'
-    }
-
     return (
       <div className='App'>
         <HomeVideo header={pageData.header} />
         <div className='homepage page'>
 
-          
+
 
           <Testimonials />
 
