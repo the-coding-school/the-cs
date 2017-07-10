@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.f3e60933.css",
-  "main.css.map": "static/css/main.f3e60933.css.map",
-  "main.js": "static/js/main.3b83f98e.js",
-  "main.js.map": "static/js/main.3b83f98e.js.map",
+  "main.css": "static/css/main.19d2ed13.css",
+  "main.css.map": "static/css/main.19d2ed13.css.map",
+  "main.js": "static/js/main.b690ceaa.js",
+  "main.js.map": "static/js/main.b690ceaa.js.map",
   "static/media/AboutPage.jpg": "static/media/AboutPage.196d77ef.jpg",
+  "static/media/DonatePage.jpg": "static/media/DonatePage.213a10e2.jpg",
   "static/media/GetInvolvedPage.jpg": "static/media/GetInvolvedPage.73b8ebba.jpg",
   "static/media/OurFootprintPage.jpg": "static/media/OurFootprintPage.dc1b7d11.jpg",
   "static/media/OurProgramsPage.jpg": "static/media/OurProgramsPage.4a94f280.jpg",
@@ -13,10 +14,12 @@
   "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
+  "static/media/footer.png": "static/media/footer.046671f2.png",
   "static/media/fundchild.jpg": "static/media/fundchild.2b514f3b.jpg",
   "static/media/fundclassroom.jpg": "static/media/fundclassroom.55781ae3.jpg",
   "static/media/fundschool.jpg": "static/media/fundschool.d1333344.jpg",
   "static/media/homepage_video.mp4": "static/media/homepage_video.7ce6df04.mp4",
   "static/media/homepage_video_poster.jpg": "static/media/homepage_video_poster.79b6a76b.jpg",
+  "static/media/introblurb.png": "static/media/introblurb.9b101b24.png",
   "static/media/slick.svg": "static/media/slick.f97e3bbf.svg"
 }
