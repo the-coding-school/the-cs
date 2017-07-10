@@ -6,8 +6,8 @@
 
 .update {
   padding: 35px;
-  border: 2px solid lighten($black, 50);
   margin-bottom: 25px;
+  box-shadow: $box_shadow;
   .title {
     font-family: $font_primary;
     color: $blue;

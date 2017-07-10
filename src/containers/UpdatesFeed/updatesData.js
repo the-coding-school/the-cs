@@ -1,11 +1,11 @@
-import image1 from '../../../public/images/classroom/1.png';
+import madeItOnTV from './images/tv.png';
 
 export default [
   {
       title: 'We made it on TV!',
       date: '07/07/2017',
-      body: 'Kiera and Akila had an awesome TV interview on LA18! Check it out <a href="http://www.google.com/">here</a>',
-      image: image1,
+      body: 'Kiera and Akila had an awesome TV interview on LA18! LA18 broadcasts to 5.6 million households daily in LA and is the leading Asian television station in the US. Check it out <a href="http://www.google.com/">here</a>',
+      image: madeItOnTV,
       imageCaption: 'This is a sample image caption'
   },
   {
