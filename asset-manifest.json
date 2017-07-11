@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.19d2ed13.css",
   "main.css.map": "static/css/main.19d2ed13.css.map",
-  "main.js": "static/js/main.b690ceaa.js",
-  "main.js.map": "static/js/main.b690ceaa.js.map",
+  "main.js": "static/js/main.a63723a8.js",
+  "main.js.map": "static/js/main.a63723a8.js.map",
   "static/media/AboutPage.jpg": "static/media/AboutPage.196d77ef.jpg",
   "static/media/DonatePage.jpg": "static/media/DonatePage.213a10e2.jpg",
   "static/media/GetInvolvedPage.jpg": "static/media/GetInvolvedPage.73b8ebba.jpg",
@@ -21,5 +21,6 @@
   "static/media/homepage_video.mp4": "static/media/homepage_video.7ce6df04.mp4",
   "static/media/homepage_video_poster.jpg": "static/media/homepage_video_poster.79b6a76b.jpg",
   "static/media/introblurb.png": "static/media/introblurb.9b101b24.png",
-  "static/media/slick.svg": "static/media/slick.f97e3bbf.svg"
+  "static/media/slick.svg": "static/media/slick.f97e3bbf.svg",
+  "static/media/tv.png": "static/media/tv.8f050f83.png"
 }
