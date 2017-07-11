@@ -1,0 +1,21 @@
+@import '../../../scss/Variables';
+
+.statistic {
+  min-width: 200px;
+  text-align: center;
+  img {
+    opacity: 0.75;
+  }
+
+  h2 {
+    color: $blue;
+    margin-top: 8px;
+    margin-bottom: 3px;
+  }
+
+  p {
+    color: lighten($black, 10);
+    margin-top: 0px;
+    margin-bottom: 3px;
+  }
+}

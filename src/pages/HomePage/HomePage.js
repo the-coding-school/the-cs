@@ -6,7 +6,7 @@ import SchoolsPanel from '../../containers/SchoolsPanel';
 import HomeVideo from './HomeVideo';
 import SectionHeader from '../../components/SectionHeader';
 
-import pageData from './HomePage.json';
+import pageData from './HomePageData';
 
 import './HomePage.scss';
 
