@@ -2,14 +2,14 @@ import React from 'react';
 import Update from './Update';
 import SectionHeader from '../../components/SectionHeader';
 
-import updates from './updatesData';
+import updates from './UpdatesFeedData';
 import './UpdatesFeed.scss';
 
 export default class UpdatesFeed extends React.Component {
   render() {
-    
+
     // Slicing updates array to only show recent updates
-    const NUM_UPDATES_SHOWN = 3;
+    const NUM_UPDATES_SHOWN = 5;
 
     const recencySort = (a, b) => {
       if (a.date > b.date) return -1;

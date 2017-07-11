@@ -43,7 +43,8 @@
     .image {
       margin-bottom: 5px;
       img {
-        box-shadow: $box_shadow;
+        max-height: 300px;
+        max-width: 500px;
       }
     }
     .image_caption {
@@ -95,7 +96,7 @@
 
     .row {
       &.first {
-        align-items: flex-end;
+        align-items: flex-start;
       }
       &.second {
         justify-content: flex-start;
@@ -110,15 +111,15 @@
 
     .date {
       order: 2;
-      font-size: $text_sm;
-      line-height: $text_sm * $line_height_scale_high;
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_high;
       text-align: right;
     }
 
     .body {
       font-size: $text_md;
       line-height: $text_md * $line_height_scale_high;
-      padding-left: 20px;
+      padding-left: 50px;
     }
 
     .image {

@@ -10,6 +10,7 @@ export default class Update extends React.Component {
       date,
       body,
       image,
+      imageLink,
       imageCaption
     } = this.props.update;
 
@@ -33,7 +34,9 @@ export default class Update extends React.Component {
             {image && (
               <div className='image_wrapper'>
                 <div className='image'>
-                  <img src={image} alt='update'/>
+                  <a href={imageLink}>
+                    <img src={image} alt='update'/>
+                  </a>
                 </div>
                 {imageCaption && (
                   <div className='image_caption'>
