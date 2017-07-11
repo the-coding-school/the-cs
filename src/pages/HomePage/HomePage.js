@@ -18,8 +18,6 @@ class HomePage extends Component {
         <HomeVideo header={pageData.header} />
         <div className='homepage page'>
 
-
-
           <Testimonials />
 
           <SectionHeader title='Our Partners' />

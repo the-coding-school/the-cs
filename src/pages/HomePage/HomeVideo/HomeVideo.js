@@ -15,7 +15,7 @@ export default class HomeVideo extends React.Component {
             <source src={video} type='video/mp4'/>
             Your browser does not support the video tag.
           </video>
-          <div className='video_overlay_text'>
+          <div className='video_overlay'>
             <IntroBlurb />
           </div>
         </div>
@@ -23,10 +23,3 @@ export default class HomeVideo extends React.Component {
     );
   }
 }
-
-/* OLD video_overlay_text
-<div className='text_boxes wow fadeInDown'>
-  <span className='typedjs_title title'>{header.title}</span>
-  <span className='typedjs_subtitle subtitle'>{header.description}</span>
-</div>
-*/

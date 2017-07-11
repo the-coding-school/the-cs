@@ -1,11 +1,7 @@
 @import '../../scss/Variables';
 
-// Small screens
-@media (max-width: $bpoint_md - 1) {
-  .page.homepage { margin-top: $navbar_height; }
-}
-
-// Large screens
-@media (min-width: $bpoint_md) {
-  .page.homepage { margin-top: $video_height + $navbar_height; }
+.page.homepage {
+  position: relative;
+  top: $navbar_height - 4;
+  margin-top: 0;
 }
