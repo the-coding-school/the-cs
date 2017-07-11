@@ -1,8 +1,8 @@
 @import '../../scss/Variables';
 
 .intro_blurb {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   padding-left: 10vw;
   padding-right: 10vw;
 
@@ -73,7 +73,7 @@
       }
       .secondary {
         font-size: $text_md;
-        line-height: $text_md * $line_height_scale_high;
+        line-height: $text_md * $line_height_scale_norm;
       }
     }
     .calls_to_action {
