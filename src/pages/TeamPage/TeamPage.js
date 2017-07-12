@@ -50,7 +50,7 @@ export default class TeamPage extends React.Component {
 
             <TeamSection
               teamType='team_teachers'
-              title='Teachers'
+              title='Sampling of Our Teachers'
               members={team.teachers.sort(sortMembers)}
               showFullName={false}
             />
