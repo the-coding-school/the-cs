@@ -6,6 +6,8 @@ import SchoolsPanel from '../../containers/SchoolsPanel';
 import HomeVideo from './HomeVideo';
 import SectionHeader from '../../components/SectionHeader';
 import UpdatesFeed from '../../containers/UpdatesFeed';
+import PromoVideo from '../../containers/PromoVideo';
+
 import pageData from './HomePage.json';
 
 import './HomePage.scss';
@@ -17,8 +19,15 @@ class HomePage extends Component {
       <div className='App'>
         <HomeVideo header={pageData.header} />
         <div className='homepage page'>
-
-          <UpdatesFeed />
+          
+          <div className='video_and_updates'>
+            <div className='wrapper'>
+              <PromoVideo />
+            </div>
+            <div className='wrapper'>
+              <UpdatesFeed />
+            </div>
+          </div>
 
           <Testimonials />
 

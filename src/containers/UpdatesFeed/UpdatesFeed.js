@@ -20,9 +20,6 @@ export default class UpdatesFeed extends React.Component {
     return (
       <div className='updates_feed_wrapper'>
         <div className='updates_feed'>
-        <SectionHeader
-          title='Updates'
-        />
           { updates.sort(recencySort).map(u => (
               <Update key={u.title} update={u} />
           )).slice(0,NUM_UPDATES_SHOWN)}
