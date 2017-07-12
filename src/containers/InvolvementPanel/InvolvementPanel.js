@@ -19,7 +19,7 @@ export default class InvolvementPanel extends React.Component {
         view: <VolunteerFormView />
       },
       BRING_TO_SCHOOL: {
-        text: 'Bring TCS to your school',
+        text: 'Bring coding to your school',
         view: <BringToSchoolFormView />
       },
       PARTNER: {
