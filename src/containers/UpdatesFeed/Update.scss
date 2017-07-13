@@ -2,16 +2,15 @@
 
 .update_wrapper {
   width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }
 
 .update {
   padding: 35px;
   box-shadow: $box_shadow;
-
-
-  &:not(:last-child) {
-    margin-bottom: 35px;
-  }
 
   .title {
     font-size: $text_smmd;
@@ -20,7 +19,7 @@
     color: $blue;
 
     margin-bottom: 10px;
-    
+
     a {
       text-decoration: none;
     }
@@ -30,7 +29,7 @@
     font-size: $text_sm;
     line-height: $text_sm * $line_height_scale_norm;
     font-family: $font_primary;
-    color: $black;
+    color: lighten($black, 25);
     font-weight: bold;
     min-width: 100px;
   }

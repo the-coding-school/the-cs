@@ -10,9 +10,14 @@
   .video_and_updates {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    .wrapper {
+    padding-bottom: 50px;
+    .promo_video_wrapper {
       padding: 30px;
+      flex-grow: 1;
+    }
+    .updates_feed_wrapper {
+      padding: 30px;
+      max-width: 600px;
     }
     .promo_video {
       video {
@@ -20,9 +25,14 @@
       }
     }
 
-    .updates_feed {
-      // min-width: 600px;
-      max-width: 800px;
+    // Small screens
+    @media (max-width: $bpoint_md - 1) {
+      justify-content: center;
+    }
+
+    // Large screens
+    @media (min-width: $bpoint_md) {
+      justify-content: space-between;
     }
   }
 

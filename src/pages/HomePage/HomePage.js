@@ -19,14 +19,10 @@ class HomePage extends Component {
       <div className='App'>
         <HomeVideo header={pageData.header} />
         <div className='homepage page'>
-          
+
           <div className='video_and_updates'>
-            <div className='wrapper'>
-              <PromoVideo />
-            </div>
-            <div className='wrapper'>
-              <UpdatesFeed />
-            </div>
+            <PromoVideo />
+            <UpdatesFeed />
           </div>
 
           <Testimonials />

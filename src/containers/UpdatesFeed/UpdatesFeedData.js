@@ -1,5 +1,3 @@
-import madeItOnTV from './images/tv.png';
-
 export default [
   {
       title: {
@@ -11,6 +9,18 @@ export default [
       image: {
         source: require('./images/medium_article.png'),
         link: "https://medium.com/@cameronscwhite/how-college-students-are-solving-the-biggest-problem-in-computer-science-2fe7b7aca3af",
+      }
+  },
+  {
+      title: {
+        text: 'In the News: The Coding School Makes An Appearance on TV channel LA18',
+        link: "https://m.facebook.com/story.php?story_fbid=1339373276170398&id=413381655436236&_rdr"
+      },
+      date: '06/30/2017',
+      body: '',
+      image: {
+        source: require('./images/la18_interview.png'),
+        link: "https://m.facebook.com/story.php?story_fbid=1339373276170398&id=413381655436236&_rdr"
       }
   }
 ]

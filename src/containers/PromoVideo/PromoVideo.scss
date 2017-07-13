@@ -1,0 +1,9 @@
+.promo_video {
+  .section_header {
+    * {
+      // Need there to be (invisible) text to safely align video
+      // with updates feed
+      color: rgba(0,0,0,0) !important;
+    }
+  }
+}
