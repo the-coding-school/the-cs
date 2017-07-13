@@ -6,14 +6,29 @@
 
 .update {
   padding: 35px;
-  margin-bottom: 25px;
   box-shadow: $box_shadow;
+
+
+  &:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
   .title {
+    font-size: $text_smmd;
+    line-height: $text_smmd * $line_height_scale_norm;
     font-family: $font_primary;
     color: $blue;
+
+    margin-bottom: 10px;
+    
+    a {
+      text-decoration: none;
+    }
   }
 
   .date {
+    font-size: $text_sm;
+    line-height: $text_sm * $line_height_scale_norm;
     font-family: $font_primary;
     color: $black;
     font-weight: bold;
@@ -21,8 +36,16 @@
   }
 
   .body {
-    font-family: $font_secondary;
+    font-size: $text_sm;
+    line-height: $text_sm * $line_height_scale_norm;
+    font-family: $font_primary;
     color: $black;
+
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   .row {
@@ -40,11 +63,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
     .image {
-      margin-bottom: 5px;
+      width: 100%;
       img {
-        max-height: 300px;
-        max-width: 500px;
+        width: 100%;
       }
     }
     .image_caption {
@@ -55,77 +78,5 @@
 
   a {
     color: $blue;
-  }
-
-  // Small screens
-  @media (max-width: $bpoint_sm - 1) {
-    .row {
-      flex-direction: column;
-    }
-
-    .title {
-      order: 2;
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_high;
-    }
-
-    .date {
-      order: 1;
-      font-size: $text_sm;
-      line-height: $text_sm * $line_height_scale_high;
-    }
-
-    .body {
-      font-size: $text_sm;
-      line-height: $text_sm * $line_height_scale_high;
-    }
-
-
-    .image_wrapper {
-      margin-bottom: 20px;
-      .image {
-        img {
-          max-width: 80vw;
-        }
-      }
-    }
-  }
-
-  // Large screens
-  @media (min-width: $bpoint_sm) {
-
-    .row {
-      &.first {
-        align-items: flex-start;
-      }
-      &.second {
-        justify-content: flex-start;
-      }
-    }
-
-    .title {
-      order: 1;
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_high;
-    }
-
-    .date {
-      order: 2;
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_high;
-      text-align: right;
-    }
-
-    .body {
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_high;
-      padding-left: 50px;
-    }
-
-    .image {
-      img {
-        max-width: 300px;
-      }
-    }
   }
 }

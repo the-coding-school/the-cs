@@ -5,3 +5,30 @@
   top: $navbar_height - 4;
   margin-top: 0;
 }
+
+.homepage {
+  .video_and_updates {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .wrapper {
+      padding: 30px;
+    }
+    .promo_video {
+      video {
+        width: 100%;
+      }
+    }
+
+    .updates_feed {
+      // min-width: 600px;
+      max-width: 800px;
+    }
+  }
+
+  @media (max-width: $bpoint_md - 1) {
+    .video_and_updates {
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -11,7 +11,8 @@ export default class Update extends React.Component {
       body,
       image,
       imageLink,
-      imageCaption
+      imageCaption,
+      updateLink
     } = this.props.update;
 
     const dangerousHTML = (text) => { return {__html: text}; };
@@ -24,33 +25,37 @@ export default class Update extends React.Component {
     ).toUpperCase();
 
     return (
+
       <div className='update_wrapper'>
         <div className='update'>
-          <div className='row first'>
-            <div className='title'>{title}</div>
-            <div className='date'>{formattedDate}</div>
+          <div className='date'>{formattedDate}</div>
+          <div className='title'>
+            <a href={title.link}>
+              {title.text}
+            </a>
           </div>
-          <div className='row second'>
-            {image && (
-              <div className='image_wrapper'>
-                <div className='image'>
-                  <a href={imageLink}>
-                    <img src={image} alt='update'/>
-                  </a>
-                </div>
-                {imageCaption && (
-                  <div className='image_caption'>
-                    {imageCaption}
-                  </div>
-                )}
 
+          <div
+            className='body'
+            dangerouslySetInnerHTML={dangerousHTML(body)}
+          />
+
+          {image && (<div className='image_wrapper'>
+
+            <div className='image'>
+              <a href={image.link}>
+                <img src={image.source} alt='update'/>
+              </a>
+            </div>
+
+            {imageCaption && (
+              <div className='image_caption'>
+                {imageCaption}
               </div>
             )}
-            <div
-              className='body'
-              dangerouslySetInnerHTML={dangerousHTML(body)}
-            />
-          </div>
+
+          </div>)}
+
         </div>
       </div>
     );
