@@ -4,7 +4,6 @@ import Testimonials from '../../containers/Testimonials';
 import PartnersPanel from '../../containers/PartnersPanel';
 import SchoolsPanel from '../../containers/SchoolsPanel';
 import HomeVideo from './HomeVideo';
-import SectionHeader from '../../components/SectionHeader';
 import UpdatesFeed from '../../containers/UpdatesFeed';
 import PromoVideo from '../../containers/PromoVideo';
 
@@ -26,20 +25,8 @@ class HomePage extends Component {
           </div>
 
           <Testimonials />
-
-          <SectionHeader title='Our Partners' />
-          <div className='homepage_panel container'>
-            <PartnersPanel />
-          </div>
-
-          <SectionHeader
-            title='School Districts We Have Coding Programs In'
-          />
-          <div className='homepage_panel container'>
-
-
-            <SchoolsPanel />
-          </div>
+          <PartnersPanel />
+          <SchoolsPanel />
 
         </div>
       </div>
