@@ -3,8 +3,6 @@
 .page_header {
   height: $header_height;
   width: 100%;
-  position: fixed;
-  top: $navbar_height;
   left: 0;
   & > div {
     position: absolute;

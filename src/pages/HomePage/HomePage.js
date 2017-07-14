@@ -15,9 +15,9 @@ class HomePage extends Component {
   render() {
 
     return (
-      <div className='App'>
+      <div className='home_page page'>
         <HomeVideo header={pageData.header} />
-        <div className='homepage page'>
+        <div className='page_contents'>
 
           <div className='video_and_updates'>
             <PromoVideo />

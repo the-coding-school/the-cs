@@ -16,9 +16,9 @@ export default class OurFootprintPage extends React.Component {
     });
 
     return (
-      <div className='App'>
+      <div className='our_footprint_page page'>
         <PageHeader image={headerImage} title={header.title} description={header.description}/>
-        <div className='our_footprint_page page'>
+        <div className='page_contents'>
           <StatisticsPanel />
           <hr/>
 
