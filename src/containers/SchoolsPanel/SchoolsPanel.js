@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SectionHeader from '../../components/SectionHeader';
-import IconPanel from '../../components/IconPanel';
+import SectionHeader from 'components/SectionHeader';
+import IconPanel from 'components/IconPanel';
 
 import schools from './schools.json';
 

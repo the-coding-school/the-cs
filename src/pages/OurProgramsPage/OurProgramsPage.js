@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import TitledParagraphs from '../../components/TitledParagraphs';
-import PageHeader from '../../components/PageHeader';
+import TitledParagraphs from 'components/TitledParagraphs';
+import PageHeader from 'components/PageHeader';
 
 import pageData from './OurProgramsPage.json';
 import headerImage from './OurProgramsPage.jpg';

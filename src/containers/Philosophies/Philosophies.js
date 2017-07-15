@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HoverCardTitledText from '../../components/HoverCardTitledText';
+import HoverCardTitledText from 'components/HoverCardTitledText';
 
 import philosophies from './philosophies.json';
 

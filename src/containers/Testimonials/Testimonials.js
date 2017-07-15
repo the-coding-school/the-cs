@@ -1,5 +1,5 @@
 import React from 'react';
-import SlickPanel from '../../components/SlickPanel';
+import SlickPanel from 'components/SlickPanel';
 import Testimonial from './Testimonial';
 import './Testimonials.scss';
 import testimonials from './testimonials.json';

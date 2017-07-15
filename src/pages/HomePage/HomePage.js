@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import Testimonials from 'containers/Testimonials';
-import PartnersPanel from '../../containers/PartnersPanel';
-import SchoolsPanel from '../../containers/SchoolsPanel';
+import PartnersPanel from 'containers/PartnersPanel';
+import SchoolsPanel from 'containers/SchoolsPanel';
 import HomeVideo from './HomeVideo';
-import UpdatesFeed from '../../containers/UpdatesFeed';
-import PromoVideo from '../../containers/PromoVideo';
+import UpdatesFeed from 'containers/UpdatesFeed';
+import PromoVideo from 'containers/PromoVideo';
 
 import pageData from './HomePage.json';
 

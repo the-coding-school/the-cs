@@ -1,6 +1,6 @@
 import React from 'react';
-import PageHeader from '../../components/PageHeader';
-import DonationsPanel from '../../containers/DonationsPanel';
+import PageHeader from 'components/PageHeader';
+import DonationsPanel from 'containers/DonationsPanel';
 
 import './DonatePage.scss';
 

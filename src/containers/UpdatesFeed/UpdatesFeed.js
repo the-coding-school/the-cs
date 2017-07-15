@@ -1,6 +1,6 @@
 import React from 'react';
 import Update from './Update';
-import SectionHeader from '../../components/SectionHeader';
+import SectionHeader from 'components/SectionHeader';
 
 import updates from './UpdatesFeedData';
 import './UpdatesFeed.scss';

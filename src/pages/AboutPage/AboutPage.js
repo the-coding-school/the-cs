@@ -1,8 +1,8 @@
 import React from 'react';
-import PageHeader from '../../components/PageHeader';
-import TitledParagraphs from '../../components/TitledParagraphs';
-import SectionHeader from '../../components/SectionHeader';
-import Philosophies from '../../containers/Philosophies';
+import PageHeader from 'components/PageHeader';
+import TitledParagraphs from 'components/TitledParagraphs';
+import SectionHeader from 'components/SectionHeader';
+import Philosophies from 'containers/Philosophies';
 
 import pageData from './AboutPage.json'
 import headerImage from './AboutPage.jpg';

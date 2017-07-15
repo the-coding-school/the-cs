@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './MemberImage.scss';
-import HoverFadeImage from '../../../components/HoverFadeImage';
+import HoverFadeImage from 'components/HoverFadeImage';
 
 export default class MemberImage extends React.Component {
   render() {

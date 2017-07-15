@@ -1,8 +1,8 @@
 import React from 'react';
-import TitledParagraphs from '../../components/TitledParagraphs';
-import PageHeader from '../../components/PageHeader';
-import SectionHeader from '../../components/SectionHeader';
-import StatisticsPanel from '../../containers/StatisticsPanel';
+import TitledParagraphs from 'components/TitledParagraphs';
+import PageHeader from 'components/PageHeader';
+import SectionHeader from 'components/SectionHeader';
+import StatisticsPanel from 'containers/StatisticsPanel';
 
 import pageData from './OurFootprintPage.json';
 import headerImage from './OurFootprintPage.jpg';
