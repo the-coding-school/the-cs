@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Testimonials from '../../containers/Testimonials';
+import Testimonials from 'containers/Testimonials';
 import PartnersPanel from '../../containers/PartnersPanel';
 import SchoolsPanel from '../../containers/SchoolsPanel';
 import HomeVideo from './HomeVideo';

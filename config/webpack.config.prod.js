@@ -6,9 +6,8 @@ var ManifestPlugin = require('webpack-manifest-plugin');
 var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var url = require('url');
 var paths = require('./paths');
+var path = require('path');
 var getClientEnvironment = require('./env');
-
-
 
 function ensureSlash(path, needsSlash) {
   var hasSlash = path.endsWith('/');
@@ -85,7 +84,8 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web'
-    }
+    },
+    root: path.resolve('./src')
   },
 
   module: {
