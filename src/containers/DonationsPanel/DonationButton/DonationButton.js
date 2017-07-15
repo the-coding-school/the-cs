@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './DonationButton.scss';
-import '../../../scss/General.scss';
+import 'scss/General.scss';
 
 export default class DonationButton extends React.Component {
   render() {

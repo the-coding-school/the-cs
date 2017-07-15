@@ -4,7 +4,7 @@ import Footer from '../Footer';
 import { pages } from '../../routes';
 
 import './Skeleton.scss';
-import '../../scss/General.scss';
+import 'scss/General.scss';
 
 export default class Skeleton extends Component {
    render() {

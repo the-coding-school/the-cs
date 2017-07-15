@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router'
 
 import './Footer.scss';
-import '../../scss/Animations.scss';
+import 'scss/Animations.scss';
 import footerImage from './footer.png';
 
 export default class Footer extends Component {

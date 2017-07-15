@@ -3,7 +3,7 @@ import React from 'react';
 import FontAwesomeLink from 'components/FontAwesomeLink';
 
 import './MemberLinks.scss';
-import '../../../scss/_fa/font-awesome.scss';
+import 'scss/_fa/font-awesome.scss';
 
 export default class MemberLinks extends React.Component {
   render() {

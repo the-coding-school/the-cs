@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router'
 
-import '../../scss/Animations.scss';
+import 'scss/Animations.scss';
 
 export default class NavItem extends React.Component {
   render() {

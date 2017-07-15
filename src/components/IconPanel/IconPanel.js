@@ -2,7 +2,7 @@ import React from 'react';
 import Icon from './Icon';
 
 import './IconPanel.scss';
-import '../../css/animate.css';
+import 'css/animate.css';
 
 export default class IconPanel extends React.Component {
   render() {

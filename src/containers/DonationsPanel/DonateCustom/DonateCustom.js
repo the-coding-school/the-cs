@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './DonateCustom.scss';
-import '../../../scss/General.scss';
+import 'scss/General.scss';
 
 const DEFAULT_DONATION = 25;
 

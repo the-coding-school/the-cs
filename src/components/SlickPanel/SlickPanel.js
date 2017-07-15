@@ -1,7 +1,7 @@
 import React from 'react';
 
-import '../../css/slick.css';
-import '../../css/slick-theme.css';
+import 'css/slick.css';
+import 'css/slick-theme.css';
 import './SlickPanel.scss';
 
 import 'slick-carousel';
