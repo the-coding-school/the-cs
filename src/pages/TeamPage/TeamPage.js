@@ -22,9 +22,9 @@ export default class TeamPage extends React.Component {
     const header = pageData.header;
 
     return (
-      <div className='App'>
+      <div className='team_page page'>
         <PageHeader image={headerImage} title={header.title} description={header.description} />
-        <div className='teampage page'>
+        <div className='page_contents'>
           <div className='container'>
             <div className='team_founder team_section'>
               <h1 className='team_section_title'>The Founder</h1>

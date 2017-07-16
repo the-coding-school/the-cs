@@ -2,14 +2,16 @@
 
 .home_video {
   width: 100%;
-  top: $navbar_height;
 
   .video_wrapper {
+    display: block;
     position: relative;
     width: 100%;
+    overflow-y: hidden;
   }
 
   .video_overlay {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,14 +38,15 @@
     .subtitle { font-family: $font_secondary; }
   }
 
-  video { width: 100%; }
+  video {
+    display: block;
+    width: 100%;
+  }
 }
 
 // Small screens
 @media (max-width: $bpoint_md - 1) {
   .home_video {
-    position: relative;
-    top: $navbar_height;
 
     .video_overlay {
       height: 100%;
@@ -56,8 +59,6 @@
 // Large screens
 @media (min-width: $bpoint_md) {
   .home_video {
-    position: relative;
-    top: $navbar_height;
     z-index: 0;
     width: 100%;
 

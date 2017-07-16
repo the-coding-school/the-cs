@@ -17,9 +17,9 @@ class OurProgramsPage extends Component {
     const header = pageData.header;
 
     return (
-      <div className='App'>
+      <div className='our_programs_page page'>
         <PageHeader image={headerImage} title={header.title} description={header.description}/>
-        <div className='signuppage page'>
+        <div className='page_contents'>
           {programsDOM}
         </div>
       </div>

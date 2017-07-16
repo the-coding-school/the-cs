@@ -14,9 +14,9 @@ export default class DonatePage extends React.Component {
     } = pageData;
 
     return (
-      <div className='App'>
+      <div className='donate_page page'>
         <PageHeader image={headerImage} title={header.title} description={header.description} />
-        <div className='donate_page page'>
+        <div className='page_contents'>
 
         <DonationsPanel />
 

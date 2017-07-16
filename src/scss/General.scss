@@ -22,7 +22,11 @@ a {
 
 .page {
   position: relative;
-  margin-top: $navbar_height + $header_height;
+  top: $navbar_height;
+}
+
+.page_contents {
+  position: relative;
   z-index: $z_page;
   background-color: $white;
   width: 100%;

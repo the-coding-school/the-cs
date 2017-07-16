@@ -1,12 +1,11 @@
 @import '~scss/Variables';
 
-.page.homepage {
+.home_page .page_contents {
   position: relative;
-  top: $navbar_height - 4;
-  margin-top: 0;
 }
 
-.homepage {
+.home_page {
+
   .video_and_updates {
     display: flex;
     flex-direction: row;

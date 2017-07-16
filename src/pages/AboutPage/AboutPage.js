@@ -21,13 +21,13 @@ class AboutPage extends React.Component {
     const header = pageData.header;
 
     return (
-      <div className='about-app App'>
+      <div className='about_page page'>
         <PageHeader
           image={headerImage}
           title={header.title}
           description={header.description}
         />
-        <div className='aboutpage page'>
+        <div className='page_contents'>
           <div className='about_statement'> {aboutDOM} </div>
           <SectionHeader title='Our Philosophy' />
           <Philosophies />
