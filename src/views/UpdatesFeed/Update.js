@@ -9,10 +9,7 @@ export default class Update extends React.Component {
       title,
       date,
       body,
-      image,
-      imageLink,
-      imageCaption,
-      updateLink
+      image
     } = this.props.update;
 
     const dangerousHTML = (text) => { return {__html: text}; };
@@ -48,9 +45,9 @@ export default class Update extends React.Component {
               </a>
             </div>
 
-            {imageCaption && (
+            {image.caption && (
               <div className='image_caption'>
-                {imageCaption}
+                {image.caption}
               </div>
             )}
 
