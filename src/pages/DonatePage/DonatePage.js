@@ -1,11 +1,10 @@
 import React from 'react';
 import PageHeader from 'components/PageHeader';
-import DonationsPanel from 'containers/DonationsPanel';
+import DonationsPanel from 'views/DonationsPanel';
 
 import './DonatePage.scss';
 
-import pageData from './DonatePage.json';
-import headerImage from './DonatePage.jpg';
+import pageData from './DonatePageData';
 
 export default class DonatePage extends React.Component {
   render() {
@@ -15,7 +14,7 @@ export default class DonatePage extends React.Component {
 
     return (
       <div className='donate_page page'>
-        <PageHeader image={headerImage} title={header.title} description={header.description} />
+        <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className='page_contents'>
 
         <DonationsPanel />

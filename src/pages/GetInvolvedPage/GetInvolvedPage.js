@@ -1,11 +1,10 @@
 import React from 'react';
 import PageHeader from 'components/PageHeader';
-import InvolvementPanel from 'containers/InvolvementPanel';
+import InvolvementPanel from 'views/InvolvementPanel';
 
 import './GetInvolvedPage.scss';
 
-import pageData from './GetInvolvedPage.json';
-import headerImage from './GetInvolvedPage.jpg';
+import pageData from './GetInvolvedPageData';
 
 export default class GetInvolvedPage extends React.Component {
   render() {
@@ -15,7 +14,7 @@ export default class GetInvolvedPage extends React.Component {
 
     return (
       <div className='get_involved_page page'>
-        <PageHeader image={headerImage} title={header.title} description={header.description} />
+        <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className='page_contents'>
 
           <div className='involvement_panel_wrapper'>
