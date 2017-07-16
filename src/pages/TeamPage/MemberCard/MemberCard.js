@@ -18,12 +18,12 @@ export default class MemberCard extends React.Component {
       modal,
       onClick,
       name,
-      memberID,
       position,
       description,
       blurb,
       college,
-      links
+      links,
+      images
     } = this.props;
 
     return (
@@ -42,7 +42,7 @@ export default class MemberCard extends React.Component {
 
           <div className='member_card_row'>
             <div className='member_card_column'>
-              <MemberImage background={true} imageID={memberID} />
+              <MemberImage background={true} images={images} />
               <MemberCollegeBar college={college} />
               {blurb && <MemberBlurb blurb={blurb}/> }
             </div>
