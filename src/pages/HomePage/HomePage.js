@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-import Testimonials from 'containers/Testimonials';
-import PartnersPanel from 'containers/PartnersPanel';
-import SchoolsPanel from 'containers/SchoolsPanel';
+import Testimonials from 'views/Testimonials';
+import PartnersPanel from 'views/PartnersPanel';
+import SchoolsPanel from 'views/SchoolsPanel';
 import HomeVideo from './HomeVideo';
-import UpdatesFeed from 'containers/UpdatesFeed';
-import PromoVideo from 'containers/PromoVideo';
-
-import pageData from './HomePage.json';
+import UpdatesFeed from 'views/UpdatesFeed';
+import PromoVideo from 'views/PromoVideo';
 
 import './HomePage.scss';
 
@@ -16,7 +14,7 @@ class HomePage extends Component {
 
     return (
       <div className='home_page page'>
-        <HomeVideo header={pageData.header} />
+        <HomeVideo />
         <div className='page_contents'>
 
           <div className='video_and_updates'>

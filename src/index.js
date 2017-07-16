@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
-import Skeleton from './containers/Skeleton';
+import Skeleton from './views/Skeleton';
 import routes from './routes';
 
 ReactDOM.render((
