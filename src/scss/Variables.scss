@@ -13,9 +13,8 @@ $font_secondary: 'Domine', serif;
 $text_min: 12px;
 $text_tn: 14px;
 $text_sm: 16px;
-$text_smmd: 20px;
-$text_md: 24px;
-$text_lg: 32px;
+$text_md: 20px;
+$text_lg: 28px;
 $text_hg: 48px;
 $line_height_scale_low: 1.20;
 $line_height_scale_norm: 1.37;
@@ -24,10 +23,10 @@ $line_height_scale_high: 1.75;
 // Media Breakpoints
 $bpoint_tn: 600px;
 $bpoint_sm: 800px;
-$bpoint_md: 1200px;
+$bpoint_md: 1000px;
 
 // Component Sizes
-$navbar_height: 80px;
+$navbar_height: 50px;
 $header_height: 400px;
 $video_height: 800px;
 $container_max_width: 1200px;
