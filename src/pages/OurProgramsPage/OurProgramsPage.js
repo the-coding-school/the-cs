@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import TitledParagraphs from 'components/TitledParagraphs';
 import PageHeader from 'components/PageHeader';
 
-import pageData from './OurProgramsPage.json';
-import headerImage from './OurProgramsPage.jpg';
+import pageData from './OurProgramsPageData';
 
 class OurProgramsPage extends Component {
   render() {
@@ -17,9 +16,9 @@ class OurProgramsPage extends Component {
     const header = pageData.header;
 
     return (
-      <div className='our_programs_page page'>
-        <PageHeader image={headerImage} title={header.title} description={header.description}/>
-        <div className='page_contents'>
+      <div className='App'>
+        <PageHeader image={header.image} title={header.title} description={header.description}/>
+        <div className='signuppage page'>
           {programsDOM}
         </div>
       </div>

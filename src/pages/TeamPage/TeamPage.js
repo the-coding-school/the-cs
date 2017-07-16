@@ -5,8 +5,7 @@ import MemberCard from './MemberCard';
 import TeamSection from './TeamSection';
 
 import team from './team.json';
-import headerImage from './TeamPage.jpg';
-import pageData from './TeamPage.json';
+import pageData from './TeamPageData';
 
 export default class TeamPage extends React.Component {
   render() {
@@ -22,9 +21,9 @@ export default class TeamPage extends React.Component {
     const header = pageData.header;
 
     return (
-      <div className='team_page page'>
-        <PageHeader image={headerImage} title={header.title} description={header.description} />
-        <div className='page_contents'>
+      <div className='App'>
+        <PageHeader image={header.image} title={header.title} description={header.description} />
+        <div className='teampage page'>
           <div className='container'>
             <div className='team_founder team_section'>
               <h1 className='team_section_title'>The Founder</h1>

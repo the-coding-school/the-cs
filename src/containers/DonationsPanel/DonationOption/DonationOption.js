@@ -9,12 +9,12 @@ export default class DonationOption extends React.Component {
     const {
       amount,
       category,
-      imageSrc,
+      image,
       buttonID
     } = this.props;
     return (
       <div className='donation_option'>
-        <img className='wow zoomIn' src={imageSrc} alt={'donate $' + amount}/>
+        <img className='wow zoomIn' src={image} alt={'donate $' + amount}/>
         <DonationButton
           text={category + ' ($' + amount + ')'}
           buttonID={buttonID}

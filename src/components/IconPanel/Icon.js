@@ -5,13 +5,14 @@ export default class Icon extends React.Component {
     const {
       name,
       link,
-      imageSrc
+      image
     } = this.props;
+
     return (
       <div className='icon_panel_icon_wrapper'>
         <a href={link}>
           <div className='icon_panel_icon wow fadeIn'>
-            <img src={imageSrc} alt={name}/>
+            <img src={image} alt={name}/>
             <div className='icon_panel_icon_name'>
               <p>{name}</p>
             </div>
