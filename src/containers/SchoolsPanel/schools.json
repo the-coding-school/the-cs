@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Santa Monica-Malibu USD",
+    "description": "",
+    "imageName": "smm_usd.png",
+    "link": "https://www.smmusd.org/"
+  },
+  {
+    "name": "Twin Rivers Unified School District",
+    "description": "",
+    "imageName": "twinrivers_usd.png",
+    "link": "http://www.twinriversusd.org/"
+  },
+  {
+    "name": "LVUSD",
+    "description": "",
+    "imageName": "lv_usd.png",
+    "link": "http://www.lvusd.org/"
+  },
+  {
+    "name": "Glendale USD",
+    "description": "",
+    "imageName": "glendale_usd.png",
+    "link": "https://www.gusd.net/"
+  },
+  {
+    "name": "LA USD",
+    "description": "",
+    "imageName": "la_usd.png",
+    "link": "http://home.lausd.net/"
+  },
+  {
+    "name": "California Charter Schools Association",
+    "description": "",
+    "imageName": "cssa.png",
+    "link": "http://www.ccsa.org/"
+  },
+  {
+    "name": "Culver City USD",
+    "description": "",
+    "imageName": "culvercity_usd.png",
+    "link": "http://www.ccusd.org//"
+  },
+  {
+    "name": "Beverly Hills USD",
+    "description": "",
+    "imageName": "beverlyhills_usd.png",
+    "link": "http://www.bhusd.org/"
+  }
+]

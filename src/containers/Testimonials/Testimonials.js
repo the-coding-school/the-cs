@@ -1,9 +1,8 @@
 import React from 'react';
 import SlickPanel from 'components/SlickPanel';
 import Testimonial from './Testimonial';
-import testimonialsData from './TestimonialsData';
 import './Testimonials.scss';
-
+import testimonials from './testimonials.json';
 
 export default class Testimonials extends React.Component {
   render() {
@@ -14,23 +13,25 @@ export default class Testimonials extends React.Component {
       pauseOnHover: true,
       adaptiveHeight: true
     }
+    const testimonialsDOM = testimonials.map(function(t, i) {
+
+      const imagePath = process.env.PUBLIC_URL + '/images/testimonials/' + t.imageName;
+      const imageSrc = (t.imageName === '') ? null : imagePath;
+
+      return (
+        <Testimonial
+          key={'testimonial-' + i}
+          imageSrc={imageSrc}
+          quote={t.quote}
+          author={t.author}
+          context={t.context}/>
+      );
+    })
 
     return (
       <div className='testimonials_wrapper'>
         <div className='testimonials'>
-          <SlickPanel options={slickOpt}>
-            {
-              testimonialsData.map((t, i) => (
-                <Testimonial
-                  key={'testimonial-' + i}
-                  image={t.image}
-                  quote={t.quote}
-                  author={t.author}
-                  context={t.context}
-                />
-              ))
-            }
-          </SlickPanel>
+          <SlickPanel children={testimonialsDOM} options={slickOpt}/>
         </div>
       </div>
     );

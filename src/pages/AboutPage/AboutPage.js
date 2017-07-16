@@ -4,7 +4,8 @@ import TitledParagraphs from 'components/TitledParagraphs';
 import SectionHeader from 'components/SectionHeader';
 import Philosophies from 'containers/Philosophies';
 
-import pageData from './AboutPageData.js'
+import pageData from './AboutPage.json'
+import headerImage from './AboutPage.jpg';
 
 class AboutPage extends React.Component {
   render() {
@@ -22,7 +23,7 @@ class AboutPage extends React.Component {
     return (
       <div className='about_page page'>
         <PageHeader
-          image={header.image}
+          image={headerImage}
           title={header.title}
           description={header.description}
         />

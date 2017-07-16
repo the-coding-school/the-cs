@@ -4,7 +4,7 @@ export default class Testimonial extends React.Component {
   render() {
 
     const {
-      image,
+      imageSrc,
       quote,
       author,
       context
@@ -14,7 +14,7 @@ export default class Testimonial extends React.Component {
         <div className='testimonial_wrapper'>
           <div className='testimonial'>
             <div className='testimonial_image'>
-              { image && <img src={image} alt='testimonial' /> }
+              { imageSrc && <img src={imageSrc} alt='testimonial' /> }
             </div>
             <div className='testimonial_text'>
               <div className='testimonial_quote'>

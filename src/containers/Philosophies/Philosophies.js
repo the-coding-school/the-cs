@@ -2,7 +2,7 @@ import React from 'react';
 
 import HoverCardTitledText from 'components/HoverCardTitledText';
 
-import philosophies from './PhilosophiesData';
+import philosophies from './philosophies.json';
 
 import './Philosophies.scss';
 

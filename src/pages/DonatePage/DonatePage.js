@@ -4,16 +4,19 @@ import DonationsPanel from 'containers/DonationsPanel';
 
 import './DonatePage.scss';
 
-import pageData from './DonatePageData';
+import pageData from './DonatePage.json';
+import headerImage from './DonatePage.jpg';
 
 export default class DonatePage extends React.Component {
   render() {
-    const header = pageData.header;
+    const {
+      header
+    } = pageData;
 
     return (
-      <div className='App'>
-        <PageHeader image={header.image} title={header.title} description={header.description} />
-        <div className='donate_page page'>
+      <div className='donate_page page'>
+        <PageHeader image={headerImage} title={header.title} description={header.description} />
+        <div className='page_contents'>
 
         <DonationsPanel />
 

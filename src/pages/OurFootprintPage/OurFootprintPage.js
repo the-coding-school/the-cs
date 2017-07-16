@@ -4,7 +4,8 @@ import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import StatisticsPanel from 'containers/StatisticsPanel';
 
-import pageData from './OurFootprintPageData';
+import pageData from './OurFootprintPage.json';
+import headerImage from './OurFootprintPage.jpg';
 
 export default class OurFootprintPage extends React.Component {
   render() {
@@ -15,9 +16,9 @@ export default class OurFootprintPage extends React.Component {
     });
 
     return (
-      <div className='App'>
-        <PageHeader image={header.image} title={header.title} description={header.description}/>
-        <div className='our_footprint_page page'>
+      <div className='our_footprint_page page'>
+        <PageHeader image={headerImage} title={header.title} description={header.description}/>
+        <div className='page_contents'>
           <StatisticsPanel />
           <hr/>
 

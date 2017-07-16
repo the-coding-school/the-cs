@@ -7,7 +7,7 @@ import HomeVideo from './HomeVideo';
 import UpdatesFeed from 'containers/UpdatesFeed';
 import PromoVideo from 'containers/PromoVideo';
 
-import pageData from './HomePageData';
+import pageData from './HomePage.json';
 
 import './HomePage.scss';
 

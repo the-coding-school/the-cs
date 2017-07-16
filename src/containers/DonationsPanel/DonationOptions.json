@@ -1,0 +1,20 @@
+{
+  "child": {
+    "image": "http://www.placehold.it/200x200",
+    "category": "Fund a child",
+    "amount": 100,
+    "buttonID": "Q6U2GUJ87L59J"
+  },
+  "classroom": {
+    "image": "http://www.placehold.it/200x200",
+    "category": "Fund a classroom",
+    "amount": 1500,
+    "buttonID": "CZQKLGDDQNFUU"
+  },
+  "school": {
+    "image": "http://www.placehold.it/200x200",
+    "category": "Fund a school",
+    "amount": 5000,
+    "buttonID": "4E47AZWD8YTBC"
+  }
+}
