@@ -27,19 +27,6 @@ public/
 scripts/
 src/
   components/
-    Button/
-    FontAwesomeLink/
-    HoverCard/
-    HoverCardTitledText/
-    HoverFadeContent/
-    HoverFadeImage/
-    IconPanel/
-    PageHeader/
-    SectionHeader/
-    SlickPanel/
-    TextBlock/
-    TitledContent/
-    TitledParagraphs/
   css/
   fonts/
   js/
