@@ -96,7 +96,7 @@ class ContactInfo extends Component {
         </a>
 
         <div className='main_font'>
-          <p><i className='fa fa-envelope'/> info.thecodingschool@gmail.com</p>
+          <p><i className='fa fa-envelope'/>info@the-cs.org</p>
         </div>
 
         <p><strong>The Coding School</strong>

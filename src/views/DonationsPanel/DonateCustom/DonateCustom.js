@@ -27,7 +27,7 @@ export default class DonateCustom extends React.Component {
       return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
-    const EMAIL = "info.thecodingschool@gmail.com";
+    const EMAIL = "info@the-cs.org";
     const MESSAGE = "Or donate a custom amount. Any donation helps.";
     const DESCRIPTION = "Your gift empowers children with the skills and confidence necessary to become future leaders and problem solvers."
 
