@@ -87,9 +87,6 @@ nav {
     justify-content: center;
     cursor: pointer;
     height: 100%;
-    &:not(:last-child) {
-      border-right: 2px solid rgba($white, 0.5);
-    }
   }
 
   a {
