@@ -18,7 +18,7 @@ export default class MemberCell extends React.Component {
     } = this.props;
 
     return (
-      <div className='member_cell_wrapper wow fadeInUp' onClick={onClick}>
+      <div className='member_cell_wrapper wow fadeIn' onClick={onClick}>
         <div className='member_cell'>
           <MemberImage
             background={false}

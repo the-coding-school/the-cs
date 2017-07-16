@@ -89,7 +89,7 @@ class ContactInfo extends Component {
       <div className='contact_info'>
 
         <h2>Contact</h2>
-        <a href={linkedInLink}>
+        <a target='_blank' href={linkedInLink}>
           <div className='font_awesome'>
             <i className='fa fa-linkedin-square'/> <span className='icon_name'>LinkedIn</span>
           </div>

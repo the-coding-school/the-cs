@@ -30,7 +30,7 @@ export default class Update extends React.Component {
         <div className='update'>
           <div className='date'>{formattedDate}</div>
           <div className='title'>
-            <a href={title.link}>
+            <a target='_blank' href={title.link}>
               {title.text}
             </a>
           </div>
@@ -43,7 +43,7 @@ export default class Update extends React.Component {
           {image && (<div className='image_wrapper'>
 
             <div className='image'>
-              <a href={image.link}>
+              <a target='_blank' href={image.link}>
                 <img src={image.source} alt='update'/>
               </a>
             </div>
