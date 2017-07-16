@@ -66,7 +66,7 @@ class ExternalLinks extends Component {
     const externalLinksDOM = externalLinks.map((item) => {
       return (
         <div className='hvr_forward' key={item.name}>
-          <a href={item.link}>{item.name}</a>
+          <a target='_blank' href={item.link}>{item.name}</a>
         </div>
       );
     })
@@ -95,7 +95,7 @@ class ContactInfo extends Component {
           </div>
         </a>
 
-        <div className='main_font'>
+        <div className='font_awesome'>
           <p><i className='fa fa-envelope'/>info@the-cs.org</p>
         </div>
 

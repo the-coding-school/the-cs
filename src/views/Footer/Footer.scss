@@ -66,9 +66,16 @@ footer {
     text-decoration: none;
 
   }
-  .contact_info p {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  .contact_info {
+    .font_awesome {
+      i {
+        margin-right: 5px;
+      }
+    }
+    p {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
   }
 
   hr {
