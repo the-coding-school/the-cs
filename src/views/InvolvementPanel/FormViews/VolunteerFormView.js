@@ -73,8 +73,9 @@ export default class VolunteerFormView extends React.Component {
   ]
   return (
    <FormView
-    className="volunteer_form_view"
+    className='volunteer_form_view'
     formMessage={formMessage}
+    formId='volunteer'
     inputFields={inputFields}
    />
   );

@@ -66,8 +66,9 @@ export default class BringToSchoolFormView extends React.Component {
     ]
     return (
       <FormView
-        className="bring_coding_form_view"
+        className='bring_coding_form_view'
         formMessage={formMessage}
+        formId='bring_coding_to_school'
         inputFields={inputFields}
       />
     );

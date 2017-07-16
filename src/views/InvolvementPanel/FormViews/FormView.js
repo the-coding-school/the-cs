@@ -58,6 +58,7 @@ export default class FormView extends React.Component {
         ></div>
 
         <div className='form_inputs'>
+          <input type='hidden' name='form_type' value={this.props.formId} />
           { this.renderInputFields() }
         </div>
 

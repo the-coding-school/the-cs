@@ -67,8 +67,9 @@ export default class PartnerFormView extends React.Component {
     ]
     return (
       <FormView
-        className="volunteer_form_view"
+        className='partner_form_view'
         formMessage={formMessage}
+        formId='partner'
         inputFields={inputFields}
       />
     );
