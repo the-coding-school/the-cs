@@ -6,7 +6,6 @@ import './MemberArray.scss';
 
 export default class MemberArray extends React.Component {
   render() {
-    function getMemberID(m) { return m.name.first + '_' + m.name.last; }
 
     const {
       members,
@@ -23,13 +22,13 @@ export default class MemberArray extends React.Component {
       <div className='member_array' style={arrayStyles}>
         { members.map((m) =>
           <MemberViews
-            key={getMemberID(m)}
+            key={m.name.first + '_' + m.name.last}
             name={m.name.first + (showFullName ? (" " + m.name.last) : "")}
-            memberID={m.name.first[0].toLowerCase() + '_' + m.name.last.toLowerCase()}
             position={m.position}
             description={m.description}
             blurb={m.blurb}
             college={m.college}
+            images={m.images}
             links={m.links}
           />
         )}

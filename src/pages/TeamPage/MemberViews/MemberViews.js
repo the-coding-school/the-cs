@@ -26,11 +26,11 @@ export default class MemberViews extends React.Component {
   render() {
     const {
       name,
-      memberID,
       position,
       description,
       college,
       blurb,
+      images,
       links
     } = this.props;
 
@@ -60,10 +60,10 @@ export default class MemberViews extends React.Component {
         <MemberCell
           onClick={this.toggleModal}
           name={name}
-          memberID={memberID}
           position={position}
           description={description}
           college={college}
+          images={images}
         />
 
         { this.state.isOpen &&
@@ -74,12 +74,12 @@ export default class MemberViews extends React.Component {
                 modal={true}
                 onClick={this.toggleModal}
                 name={name}
-                memberID={memberID}
                 position={position}
                 description={description}
                 blurb={blurb}
                 college={college}
                 links={links}
+                images={images}
               />
             </div>
           </div>

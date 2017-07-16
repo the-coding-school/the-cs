@@ -4,8 +4,8 @@ import PageHeader from 'components/PageHeader';
 import MemberCard from './MemberCard';
 import TeamSection from './TeamSection';
 
-import team from './team.json';
-import pageData from './TeamPageData';
+import team from './TeamMembersData';
+import pageData from './TeamPage.json';
 
 export default class TeamPage extends React.Component {
   render() {
@@ -19,6 +19,7 @@ export default class TeamPage extends React.Component {
     }
 
     const header = pageData.header;
+    const founder = team.founders[0];
 
     return (
       <div className='App'>
@@ -26,17 +27,17 @@ export default class TeamPage extends React.Component {
         <div className='teampage page'>
           <div className='container'>
             <div className='team_founder team_section'>
-              <h1 className='team_section_title'>The Founder</h1>
+              <h1 className='team_section_title'>Founder</h1>
               <MemberCard
                 modal={false}
                 onClick={null}
-                name={team.founder.name.first + " " + team.founder.name.last}
-                memberID={team.founder.name.first[0].toLowerCase() + '_' + team.founder.name.last.toLowerCase()}
-                position={team.founder.position}
-                description={team.founder.description}
-                blurb={team.founder.blurb}
-                college={team.founder.college}
-                links={team.founder.links}
+                name={founder.name.first + " " + founder.name.last}
+                position={founder.position}
+                description={founder.description}
+                blurb={founder.blurb}
+                college={founder.college}
+                links={founder.links}
+                images={founder.images}
               />
             </div>
 
