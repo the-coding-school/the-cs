@@ -11,10 +11,10 @@ export default class MemberCell extends React.Component {
     const {
       onClick,
       name,
-      memberID,
       position,
       description,
-      college
+      college,
+      images
     } = this.props;
 
     return (
@@ -22,7 +22,7 @@ export default class MemberCell extends React.Component {
         <div className='member_cell'>
           <MemberImage
             background={false}
-            imageID={memberID}
+            images={images}
           />
           <MemberInfoOverlay
             name={name}
