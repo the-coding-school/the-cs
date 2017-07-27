@@ -9,6 +9,10 @@ $csuSacGreen: #01573C;
 $csuSacGold: #CBB778;
 $pepperdineBlue: #00205C;
 $brownUniBrown: #3A1E1A;
+$indianaCrimson: #990000;
+$indianaCream: #EEEDEB;
+$umichBlue: #00274C;
+$umichYellow: #FFCB05;
 
 .member_college_bar {
   text-align: center;
@@ -43,4 +47,13 @@ $brownUniBrown: #3A1E1A;
     background-color: $brownUniBrown;
     color: $white;
   }
+  &.indiana_university {
+    background-color: $indianaCrimson;
+    color: $indianaCream;  
+  }
+  &.umich {
+    background-color: $umichBlue;
+    color: $umichYellow;
+  }
+
 }

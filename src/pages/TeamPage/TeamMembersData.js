@@ -69,18 +69,18 @@ let teamMembers = {
       }
     },
     {
-      name: { first: "Natalie", last: "Ethell" },
+      name:  { first: "Mindi", last: "Cao" },
       position: "Co-Head of Web",
       college: "UCLA",
-      description: "I am a senior at UCLA studying computer science and I love teaching, dogs, bagels, and anything involving puzzles. I grew up in Southern California and will be moving to Seattle to work at Microsoft after graduation.",
+      description: "I'm a sophomore at UCLA, and I enjoy teaching. Outside of coding I enjoy rock climbing and painting.",
       blurb: "",
       links: {}
     },
     {
-      name:  { first: "Mindi", last: "Cao" },
-      position: "Web Designer",
+      name: { first: "Natalie", last: "Ethell" },
+      position: "Co-Head of Web",
       college: "UCLA",
-      description: "I'm a sophomore at UCLA, and I enjoy teaching. Outside of coding I enjoy rock climbing and painting.",
+      description: "I am a senior at UCLA studying computer science and I love teaching, dogs, bagels, and anything involving puzzles. I grew up in Southern California and will be moving to Seattle to work at Microsoft after graduation.",
       blurb: "",
       links: {}
     },
@@ -95,14 +95,6 @@ let teamMembers = {
       }
     },
     {
-      name:  { first: "Bill", last: "Derouin" },
-      position: "Advisor, Co-Head of Curriculum",
-      college: "USC",
-      description: "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
-      blurb: "",
-      links: {}
-    },
-    {
       name:  { first: "Jason", last: "Lin" },
       position: "Head of Development",
       college: "USC",
@@ -115,6 +107,46 @@ let teamMembers = {
       position: "Head of Grants",
       college: "UCLA",
       description: "I joined The Coding School because I love teaching and working with children. Being able to use my background as a Computer Science major is just a plus! This summer I'll be interning at Facebook as a Production Engineer. I plan on working in the tech industry when I graduate next year, but after that I hope to teach some day whether in K-12 or at a university.",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Andy", last: "Patterson" },
+      position: "Co-Head of Web",
+      college: "Indiana University",
+      description: "I am a professional software engineer specializing in web applications at Genesys. I was an undergraduate and graduate instructor at IU teaching an introduction to machine learning course and love to help design curriculum for introductory programming or introductory data science/machine learning.",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Amy", last: "Baer" },
+      position: "Co-Chair of Development",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alejandro", last: "Fischer" },
+      position: "Co-Chair of Development",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name:  { first: "Stacy", last: "Miller" },
+      position: "Co-Chair of Intstructors",
+      college: "UCLA",
+      description: "I am a 3rd year student at UCLA studying Computer Science. I teach with The Coding School because I want to help promote interest in Computer Science in the next generations! Last Summer, I was an Explorer Intern at Microsoft, and this upcoming Summer I will return as a SWE intern.",
+      blurb: "",
+      links: {}
+    },
+    {
+      name:  { first: "Uma", last: "Lakshminarayan" },
+      position: "Co-Chair of Instructors",
+      college: "UCLA",
+      description: "I am a 2nd year computer science student at UCLA. I love the logic and practical use of coding, and I want to share that with others. Outside of the classroom, I am part of an acapella team. I am constantly singing or making music. I'm also a huge Game of Thrones fan! This summer I will be interning at Microsoft for their Explore program.",
       blurb: "",
       links: {}
     }
@@ -141,22 +173,6 @@ let teamMembers = {
       position: "Teacher",
       college: "USC",
       description: "I’ve had the pleasure of interning at Two Bit Circus where we worked on Gala events to get kids excited about STEM! I’ve also worked on a website project where we made a card based multiplayer game with a back end database that stored user info.",
-      blurb: "",
-      links: {}
-    },
-    {
-      name:  { first: "Stacy", last: "Miller" },
-      position: "Teacher",
-      college: "UCLA",
-      description: "I am a 3rd year student at UCLA studying Computer Science. I teach with The Coding School because I want to help promote interest in Computer Science in the next generations! Last Summer, I was an Explorer Intern at Microsoft, and this upcoming Summer I will return as a SWE intern.",
-      blurb: "",
-      links: {}
-    },
-    {
-      name:  { first: "Uma", last: "Lakshminarayan" },
-      position: "PR Rep, Teacher",
-      college: "UCLA",
-      description: "I am a 2nd year computer science student at UCLA. I love the logic and practical use of coding, and I want to share that with others. Outside of the classroom, I am part of an acapella team. I am constantly singing or making music. I'm also a huge Game of Thrones fan! This summer I will be interning at Microsoft for their Explore program.",
       blurb: "",
       links: {}
     },
