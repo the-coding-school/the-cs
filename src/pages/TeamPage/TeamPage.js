@@ -56,17 +56,17 @@ export default class TeamPage extends React.Component {
             />
 
             <TeamSection
-              teamType='team_faculty'
-              title='Faculty'
-              members={team.faculty.sort(sortMembers)}
-              fullName={true}
-            />
-
-            <TeamSection
               teamType='team_teachers'
               title='CodeConnects Teachers'
               members={team.ccTeachers.sort(sortMembers)}
               showFullName={false}
+            />
+
+            <TeamSection
+              teamType='team_faculty'
+              title='Faculty'
+              members={team.faculty.sort(sortMembers)}
+              showFullName={true}
             />
 
           </div>

@@ -20,7 +20,7 @@ export default class TeamSection extends React.Component {
         <SectionHeader title={title} />
         <MemberArray
           members={members}
-          fullName={showFullName}
+          showFullName={showFullName}
           />
       </div>
     );
