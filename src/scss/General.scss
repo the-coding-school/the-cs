@@ -104,3 +104,21 @@ a {
     color: lighten($black, 65);
   }
 }
+
+// For those pesky non-responsive iframes
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+
+  &.res-16-by-9 { padding-bottom: 56.25%; }
+  &.res-4-by-3 { padding-bottom: 75%; }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}

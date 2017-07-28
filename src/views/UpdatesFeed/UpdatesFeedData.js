@@ -17,6 +17,16 @@ export default [
         link: "https://m.facebook.com/story.php?story_fbid=1339373276170398&id=413381655436236&_rdr"
       },
       date: '06/30/2017',
-      body: `<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLa18KoreanTV%2Fvideos%2F1339373276170398%2F&show_text=0&width=560" width="560" height="420" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>`,
+      body: `
+        <div class='iframe-container res-4-by-3'>
+          <iframe
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FLa18KoreanTV%2Fvideos%2F1339373276170398%2F&show_text=0&width=560"
+            scrolling="no"
+            frameborder="0"
+            allowTransparency="true"
+            allowFullScreen="true"
+          ></iframe>
+        </div>
+      `,
   }
 ]
