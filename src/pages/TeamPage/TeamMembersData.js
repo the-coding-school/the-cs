@@ -349,7 +349,7 @@ let teamMembers = {
       links: {}
     },
     {
-      name: { first: "Andrea", last: "Bolivar Matos" },
+      name: { first: "Andrea", last: "Bolivar-Matos" },
       position: "Teacher",
       college: "MIT",
       description: "",
@@ -383,7 +383,7 @@ let teamMembers = {
     {
       name: { first: "Benjamin", last: "Garlington" },
       position: "Teacher",
-      college: "JSU",
+      college: "Jackson State",
       description: "",
       blurb: "",
       links: {}
@@ -405,7 +405,7 @@ let teamMembers = {
       links: {}
     },
     {
-      name: { first: "Bryan", last: "Hernández" },
+      name: { first: "Bryan", last: "Hernandez" },
       position: "Teacher",
       college: "University of Puerto Rico",
       description: "",
@@ -431,7 +431,7 @@ let teamMembers = {
     {
       name: { first: "Daniel", last: "Dover" },
       position: "Teacher",
-      college: "MSU",
+      college: "MSState",
       description: "",
       blurb: "",
       links: {}
@@ -455,7 +455,7 @@ let teamMembers = {
     {
       name: { first: "Dolica", last: "Gopisetty" },
       position: "Teacher",
-      college: "Mason",
+      college: "George Mason",
       description: "",
       blurb: "",
       links: {}
@@ -527,7 +527,7 @@ let teamMembers = {
     {
       name: { first: "Isaac", last: "Sheikh" },
       position: "Teacher",
-      college: "Mason",
+      college: "George Mason",
       description: "",
       blurb: "",
       links: {}
@@ -581,7 +581,7 @@ let teamMembers = {
       links: {}
     },
     {
-      name: { first: "Kiarsha", last: "Mannnix" },
+      name: { first: "Kiarsha", last: "Mannix" },
       position: "Teacher",
       college: "WCSU",
       description: "",
@@ -613,7 +613,7 @@ let teamMembers = {
       links: {}
     },
     {
-      name: { first: "Leya", last: "Breanna Baltaxe" },
+      name: { first: "Leya", last: "Breanna-Baltaxe" },
       position: "Teacher",
       college: "UCSC",
       description: "",
@@ -719,7 +719,7 @@ let teamMembers = {
     {
       name: { first: "Omnia", last: "Elemary" },
       position: "Teacher",
-      college: "Mason",
+      college: "George Mason",
       description: "",
       blurb: "",
       links: {}
@@ -735,7 +735,7 @@ let teamMembers = {
     {
       name: { first: "Priyanka", last: "Lamichhane" },
       position: "Teacher",
-      college: "St. Cloud State",
+      college: "St Cloud State",
       description: "",
       blurb: "",
       links: {}
@@ -805,7 +805,7 @@ let teamMembers = {
       links: {}
     },
     {
-      name: { first: "Ye Joo", last: "Oh" },
+      name: { first: "Ye-Joo", last: "Oh" },
       position: "Teacher",
       college: "Calvin College",
       description: "",
@@ -815,7 +815,7 @@ let teamMembers = {
     {
       name: { first: "Zachary", last: "Peters" },
       position: "Teacher",
-      college: "WNE",
+      college: "West New England",
       description: "",
       blurb: "",
       links: {}
