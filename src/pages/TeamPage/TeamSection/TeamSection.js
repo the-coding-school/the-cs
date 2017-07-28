@@ -1,5 +1,6 @@
 import React from 'react';
 
+import SectionHeader from 'components/SectionHeader';
 import MemberArray from '../MemberArray';
 
 import "./TeamSection.scss";
@@ -16,7 +17,7 @@ export default class TeamSection extends React.Component {
 
     return (
       <div className={teamType + ' team_section'}>
-        <h1 className='team_section_title'>{title}</h1>
+        <SectionHeader title={title} />
         <MemberArray
           members={members}
           fullName={showFullName}

@@ -1,6 +1,6 @@
 import React from 'react';
 import PageHeader from 'components/PageHeader';
-
+import SectionHeader from 'components/SectionHeader';
 import MemberCard from './MemberCard';
 import TeamSection from './TeamSection';
 
@@ -27,7 +27,7 @@ export default class TeamPage extends React.Component {
         <div className='page_contents'>
           <div className='container'>
             <div className='team_founder team_section'>
-              <h1 className='team_section_title'>Founder</h1>
+              <SectionHeader title='Founder'/>
               <MemberCard
                 modal={false}
                 onClick={null}

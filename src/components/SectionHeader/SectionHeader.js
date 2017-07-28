@@ -13,7 +13,7 @@ export default class SectionHeader extends React.Component {
     return (
       <div className="section_header">
         <div className="title">
-          {title.toUpperCase()}
+          {title}
         </div>
         <div className="subtitle">
           {subtitle}
