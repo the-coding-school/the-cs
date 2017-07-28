@@ -3,7 +3,7 @@
 .member_cell {
 
   &:hover {
-    .member_info_overlay {
+    .member_info_overlay.hoverUp {
       top: 0;
     }
   }

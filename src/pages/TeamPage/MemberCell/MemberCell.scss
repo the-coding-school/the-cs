@@ -12,10 +12,4 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-
-  &:hover {
-    .member_info_overlay {
-      top: 0;
-    }
-  }
 }
