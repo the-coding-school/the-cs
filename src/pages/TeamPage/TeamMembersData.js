@@ -69,18 +69,18 @@ let teamMembers = {
       }
     },
     {
-      name: { first: "Natalie", last: "Ethell" },
+      name:  { first: "Mindi", last: "Cao" },
       position: "Co-Head of Web",
       college: "UCLA",
-      description: "I am a senior at UCLA studying computer science and I love teaching, dogs, bagels, and anything involving puzzles. I grew up in Southern California and will be moving to Seattle to work at Microsoft after graduation.",
+      description: "I'm a sophomore at UCLA, and I enjoy teaching. Outside of coding I enjoy rock climbing and painting.",
       blurb: "",
       links: {}
     },
     {
-      name:  { first: "Mindi", last: "Cao" },
-      position: "Web Designer",
+      name: { first: "Natalie", last: "Ethell" },
+      position: "Co-Head of Web",
       college: "UCLA",
-      description: "I'm a sophomore at UCLA, and I enjoy teaching. Outside of coding I enjoy rock climbing and painting.",
+      description: "I am a senior at UCLA studying computer science and I love teaching, dogs, bagels, and anything involving puzzles. I grew up in Southern California and will be moving to Seattle to work at Microsoft after graduation.",
       blurb: "",
       links: {}
     },
@@ -95,14 +95,6 @@ let teamMembers = {
       }
     },
     {
-      name:  { first: "Bill", last: "Derouin" },
-      position: "Advisor, Co-Head of Curriculum",
-      college: "USC",
-      description: "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
-      blurb: "",
-      links: {}
-    },
-    {
       name:  { first: "Jason", last: "Lin" },
       position: "Head of Development",
       college: "USC",
@@ -115,6 +107,46 @@ let teamMembers = {
       position: "Head of Grants",
       college: "UCLA",
       description: "I joined The Coding School because I love teaching and working with children. Being able to use my background as a Computer Science major is just a plus! This summer I'll be interning at Facebook as a Production Engineer. I plan on working in the tech industry when I graduate next year, but after that I hope to teach some day whether in K-12 or at a university.",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Andy", last: "Patterson" },
+      position: "Co-Head of Web",
+      college: "Indiana University",
+      description: "I am a professional software engineer specializing in web applications at Genesys. I was an undergraduate and graduate instructor at IU teaching an introduction to machine learning course and love to help design curriculum for introductory programming or introductory data science/machine learning.",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Amy", last: "Baer" },
+      position: "Co-Chair of Development",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alejandro", last: "Fischer" },
+      position: "Co-Chair of Development",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name:  { first: "Stacy", last: "Miller" },
+      position: "Co-Chair of Intstructors",
+      college: "UCLA",
+      description: "I am a 3rd year student at UCLA studying Computer Science. I teach with The Coding School because I want to help promote interest in Computer Science in the next generations! Last Summer, I was an Explorer Intern at Microsoft, and this upcoming Summer I will return as a SWE intern.",
+      blurb: "",
+      links: {}
+    },
+    {
+      name:  { first: "Uma", last: "Lakshminarayan" },
+      position: "Co-Chair of Instructors",
+      college: "UCLA",
+      description: "I am a 2nd year computer science student at UCLA. I love the logic and practical use of coding, and I want to share that with others. Outside of the classroom, I am part of an acapella team. I am constantly singing or making music. I'm also a huge Game of Thrones fan! This summer I will be interning at Microsoft for their Explore program.",
       blurb: "",
       links: {}
     }
@@ -141,22 +173,6 @@ let teamMembers = {
       position: "Teacher",
       college: "USC",
       description: "I’ve had the pleasure of interning at Two Bit Circus where we worked on Gala events to get kids excited about STEM! I’ve also worked on a website project where we made a card based multiplayer game with a back end database that stored user info.",
-      blurb: "",
-      links: {}
-    },
-    {
-      name:  { first: "Stacy", last: "Miller" },
-      position: "Teacher",
-      college: "UCLA",
-      description: "I am a 3rd year student at UCLA studying Computer Science. I teach with The Coding School because I want to help promote interest in Computer Science in the next generations! Last Summer, I was an Explorer Intern at Microsoft, and this upcoming Summer I will return as a SWE intern.",
-      blurb: "",
-      links: {}
-    },
-    {
-      name:  { first: "Uma", last: "Lakshminarayan" },
-      position: "PR Rep, Teacher",
-      college: "UCLA",
-      description: "I am a 2nd year computer science student at UCLA. I love the logic and practical use of coding, and I want to share that with others. Outside of the classroom, I am part of an acapella team. I am constantly singing or making music. I'm also a huge Game of Thrones fan! This summer I will be interning at Microsoft for their Explore program.",
       blurb: "",
       links: {}
     },
@@ -263,6 +279,560 @@ let teamMembers = {
       position: "Teacher",
       college: "CSU Northridge",
       description: "I worked at a department called Matador Emerging Technology Arts Lab (METALab) at CSUN, where I led the development of the first iOS mobile application utilizing the React Native library. I believe that one of the most valuable things programming teaches individuals to do is how to problem solve and think critically. By equipping students at a young age with this skillset, you're properly preparing them for their futures.",
+      blurb: "",
+      links: {}
+    }
+  ],
+  ccTeachers: [
+    {
+      name: { first: "Abhimanyu", last: "Muchhal" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Adel", last: "Beitvashahi" },
+      position: "Teacher",
+      college: "Indiana University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Aishni", last: "Parab" },
+      position: "Teacher",
+      college: "UCSC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alborz", last: "Bral" },
+      position: "Teacher",
+      college: "UCSB",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alexander", last: "Arnold" },
+      position: "Teacher",
+      college: "Capital One",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alexander", last: "Ulyanov" },
+      position: "Teacher",
+      college: "US Army",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alexandre", last: "Rochaix" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Alison", last: "Chao" },
+      position: "Teacher",
+      college: "UCSB",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Andrea", last: "Bolivar-Matos" },
+      position: "Teacher",
+      college: "MIT",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Andrew", last: "Guan" },
+      position: "Teacher",
+      college: "Stanford",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Andrew", last: "Rosen" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Ariadna", last: "Gonzalez" },
+      position: "Teacher",
+      college: "UNC Greensboro",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Benjamin", last: "Garlington" },
+      position: "Teacher",
+      college: "Jackson State",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Bo", last: "Curry" },
+      position: "Teacher",
+      college: "Duke",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Brian", last: "Greenberg" },
+      position: "Teacher",
+      college: "Bowdoin College",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Bryan", last: "Hernandez" },
+      position: "Teacher",
+      college: "University of Puerto Rico",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Carlos", last: "Velez" },
+      position: "Teacher",
+      college: "Turabo University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Chris", last: "Salem" },
+      position: "Teacher",
+      college: "Pixel Velocity",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Daniel", last: "Dover" },
+      position: "Teacher",
+      college: "MSState",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Devanshi", last: "Thakar" },
+      position: "Teacher",
+      college: "UCSC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Diego", last: "Valdez" },
+      position: "Teacher",
+      college: "Gonzaga",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Dolica", last: "Gopisetty" },
+      position: "Teacher",
+      college: "George Mason",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Emma", last: "Huang" },
+      position: "Teacher",
+      college: "Boston College",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Eva", last: "Lomazov" },
+      position: "Teacher",
+      college: "UCSC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Fatema", last: "Fakhruddin" },
+      position: "Teacher",
+      college: "NEIU",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Gavin", last: "Mack" },
+      position: "Teacher",
+      college: "UCSC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Gloria", last: "Fang" },
+      position: "Teacher",
+      college: "MIT",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Harish", last: "Shanker" },
+      position: "Teacher",
+      college: "Columbia",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Holly", last: "McKenzie" },
+      position: "Teacher",
+      college: "OLE Miss",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Imani", last: "Palmer" },
+      position: "Teacher",
+      college: "UIUC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Isaac", last: "Sheikh" },
+      position: "Teacher",
+      college: "George Mason",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Jack", last: "Lenz" },
+      position: "Teacher",
+      college: "Indiana University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Jennifer", last: "Lauriello" },
+      position: "Teacher",
+      college: "OLE Miss",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "John", last: "Fletcher" },
+      position: "Teacher",
+      college: "Indiana University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Jordan", last: "Taylor" },
+      position: "Teacher",
+      college: "Indiana University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Jorge", last: "Salas" },
+      position: "Teacher",
+      college: "UNC Greensboro",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Junius", last: "Murphy" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Kiarsha", last: "Mannix" },
+      position: "Teacher",
+      college: "WCSU",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "KJ", last: "Famulegun" },
+      position: "Teacher",
+      college: "Howard University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Kristina", last: "Gauthier" },
+      position: "Teacher",
+      college: "Ford Motors",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Lee", last: "Easson" },
+      position: "Teacher",
+      college: "OLE Miss",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Leya", last: "Breanna-Baltaxe" },
+      position: "Teacher",
+      college: "UCSC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Lisa", last: "Truong" },
+      position: "Teacher",
+      college: "JP Morgan",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Lynette", last: "Lopez" },
+      position: "Teacher",
+      college: "Miami University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Maheen", last: "Khan" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Matthew", last: "Chen" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Matthew", last: "Moreno" },
+      position: "Teacher",
+      college: "Puget Sound",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Matthew", last: "Yang" },
+      position: "Teacher",
+      college: "WUSTL",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Megan", last: "Shea" },
+      position: "Teacher",
+      college: "Indiana University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Michael", last: "Eberle" },
+      position: "Teacher",
+      college: "John Hopkins",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Mohammed", last: "Faizuddin" },
+      position: "Teacher",
+      college: "NEIU",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Nicole", last: "Seo" },
+      position: "Teacher",
+      college: "IBM Watson",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Nikita", last: "Karim" },
+      position: "Teacher",
+      college: "WCSU",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Ochaun", last: "Marshall" },
+      position: "Teacher",
+      college: "UNC Greensboro",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Omnia", last: "Elemary" },
+      position: "Teacher",
+      college: "George Mason",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Priya", last: "Saravanan" },
+      position: "Teacher",
+      college: "Indiana University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Priyanka", last: "Lamichhane" },
+      position: "Teacher",
+      college: "St Cloud State",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Ragapriya", last: "Sivakumar" },
+      position: "Teacher",
+      college: "USC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Reece", last: "Griffith" },
+      position: "Teacher",
+      college: "John Hopkins",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Robert", last: "Garrett" },
+      position: "Teacher",
+      college: "Miami University",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Shane", last: "Johnson" },
+      position: "Teacher",
+      college: "Enterprise",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Sunil", last: "Dokuru" },
+      position: "Teacher",
+      college: "Quorum",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Tessa", last: "Weidmann" },
+      position: "Teacher",
+      college: "University of Cincinnati",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Ugur", last: "Armagan" },
+      position: "Teacher",
+      college: "NEIU",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Viet", last: "Nguyen" },
+      position: "Teacher",
+      college: "UCSC",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Ye-Joo", last: "Oh" },
+      position: "Teacher",
+      college: "Calvin College",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Zachary", last: "Peters" },
+      position: "Teacher",
+      college: "West New England",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Zachary", last: "Sang" },
+      position: "Teacher",
+      college: "University of Cincinnati",
+      description: "",
+      blurb: "",
+      links: {}
+    },
+    {
+      name: { first: "Zhongren", last: "Gao" },
+      position: "Teacher",
+      college: "UMich",
+      description: "",
       blurb: "",
       links: {}
     }

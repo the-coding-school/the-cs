@@ -9,6 +9,45 @@ $csuSacGreen: #01573C;
 $csuSacGold: #CBB778;
 $pepperdineBlue: #00205C;
 $brownUniBrown: #3A1E1A;
+$indianaCrimson: #990000;
+$indianaCream: #EEEDEB;
+$umichBlue: #00274C;
+$umichYellow: #FFCB05;
+$ucscBlue: #00458C;
+$ucscYellow: #F1B521;
+$ucsbBlue: #18335D;
+$ucsbYellow: #FFCE34;
+$mitRed: #A31F34;
+$stanfordCardinal: #8C1515;
+$uncgBlue: #003366;
+$uncgYellow: #FFCC00;
+$jsuBlue: #002147;
+$dukeBlue: #001A57;
+$msstateRed: #660000;
+$bcRed: #862633;
+$bcGold: #CBBD9B;
+$gonzagaBlue: #06274F;
+$masonGreen: #006633;
+$masonYellow: #FFCC33;
+$neiuBlue: #004A98;
+$neiuYellow: #FDB813;
+$columbiaBlue: #174785;
+$olemissBlue: #00205B;
+$olemissRed: #C8102E;
+$uiucNavy: #131F33;
+$uiucOrange: #FA6300;
+$howardBlue: #003A63;
+$howardGrey: #5F6062;
+$wcsuBlue: #021E2F;
+$miamiRed: #B61E2E;
+$wustlRed: #A51417;
+$jhuBlue: #002D72;
+$stcloudRed: #CD1041;
+$calvinRed: #97252B;
+$calvinYellow: #F3CD00;
+$cincinnatiRed: #E00122;
+$pugetRed: #660000;
+
 
 .member_college_bar {
   text-align: center;
@@ -43,4 +82,125 @@ $brownUniBrown: #3A1E1A;
     background-color: $brownUniBrown;
     color: $white;
   }
+  &.indiana_university {
+    background-color: $indianaCrimson;
+    color: $indianaCream;  
+  }
+  &.umich {
+    background-color: $umichBlue;
+    color: $umichYellow;
+  }
+  &.ucsc {
+    background-color: $ucscBlue;
+    color: $ucscYellow;
+  }
+  &.ucsb {
+    background-color: $ucsbBlue;
+    color: $ucsbYellow;
+  }
+  &.mit {
+    background-color: $mitRed;
+    color: $white;
+  }
+  &.stanford {
+    background-color: $stanfordCardinal;
+    color: $white;
+  }
+  &.unc_greensboro {
+    background-color: $uncgBlue;
+    color: $uncgYellow;
+  }
+  &.jackson_state {
+    background-color: $jsuBlue;
+    color: $white;
+  }
+  &.duke {
+    background-color: $dukeBlue;
+    color: $white;
+  }
+  &.bowdoin_college {
+    background-color: $black;
+    color: $white;
+  }
+  &.university_of_puerto_rico {
+    background-color: #006400;
+    color: $white;
+  }
+  &.turabo_university {
+    background-color: $caltechOrange;
+    color: $white;
+  }
+  &.msstate {
+    background-color: $msstateRed;
+    color: $white;
+  }
+  &.boston_college {
+    background-color: $bcRed;
+    color: $bcGold;
+  }
+  &.gonzaga {
+    background-color: $gonzagaBlue;
+    color: $white;
+  }
+  &.george_mason {
+    background-color: $masonGreen;
+    color: $masonYellow;
+  }
+  &.neiu {
+    background-color: $neiuBlue;
+    color: $neiuYellow;
+  }
+  &.columbia {
+    background-color: $columbiaBlue;
+    color: $white;
+  }
+  &.ole_miss {
+    background-color: $olemissBlue;
+    color: $olemissRed;
+  }
+  &.uiuc {
+    background-color: $uiucNavy;
+    color: $uiucOrange;
+  }
+  &.howard_university {
+    background-color: $howardBlue;
+    color: $white;
+  }
+  &.wcsu {
+    background-color: $wcsuBlue;
+    color: $white;
+  }
+  &.miami_university {
+    background-color: $miamiRed;
+    color: $white;
+  }
+  &.wustl {
+    background-color: $wustlRed;
+    color: $white;
+  }
+  &.john_hopkins {
+    background-color: $jhuBlue;
+    color: $white;
+  }
+  &.st_cloud_state {
+    background-color: $stcloudRed;
+    color: $white;
+  }
+  &.calvin_college {
+    background-color: $calvinRed;
+    color: $calvinYellow;
+  }
+  &.university_of_cincinnati {
+    background-color: $cincinnatiRed;
+    color: $white;
+  }
+  &.west_new_england {
+    background-color: $jhuBlue;
+    color: #white;
+  }
+  &.puget_sound {
+    background-color: $pugetRed;
+    color: $white;
+  }
+
 }
