@@ -10,13 +10,9 @@ import pageData from './TeamPageData';
 export default class TeamPage extends React.Component {
   render() {
 
-    function getMemberID(m) { return m.name.first + '_' + m.name.last; }
-
-    function sortMembers(a, b) {
-      if (getMemberID(a) < getMemberID(b)) return -1;
-      if (getMemberID(a) > getMemberID(b)) return 1;
-      return 0;
-    }
+    const memID = m => (m.name.first + '_' + m.name.last);
+    const sortMembersAlphabetically = (a, b) => (memID(a) < memID(b)) ? -1 : 1;
+    const sortMembersByDefinedOrder = (a, b) => (a.order < b.order) ? -1 : 1;
 
     const header = pageData.header;
     const founder = team.founders[0];
@@ -44,28 +40,22 @@ export default class TeamPage extends React.Component {
             <TeamSection
               teamType='team_heads'
               title='Team Heads'
-              members={team.teamLeads.sort(sortMembers)}
+              members={team.teamLeads.sort(sortMembersByDefinedOrder)}
               showFullName={false}
             />
 
             <TeamSection
               teamType='team_teachers'
-              title='Sampling of Our Teachers'
-              members={team.teachers.sort(sortMembers)}
+              title='Teachers'
+              members={team.teachers.sort(sortMembersAlphabetically)}
               showFullName={false}
             />
-
-            <TeamSection
-              teamType='team_teachers'
-              title='CodeConnects Teachers'
-              members={team.ccTeachers.sort(sortMembers)}
-              showFullName={false}
-            />
+            <SectionHeader subtitle={'...and many more!'} />
 
             <TeamSection
               teamType='team_faculty'
               title='Faculty'
-              members={team.faculty.sort(sortMembers)}
+              members={team.faculty.sort(sortMembersAlphabetically)}
               showFullName={true}
             />
 

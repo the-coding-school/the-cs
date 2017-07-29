@@ -38,7 +38,8 @@ let teamMembers = {
       college: "Brown University",
       description: "I am a junior at Brown University and am the Graphics Editor for the Brown Daily Herald. I’m so excited to be a part of something that creates such tremendous opportunities.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 15,
     },
     {
       name:  { first: "Akila", last: "Rajesh" },
@@ -46,7 +47,8 @@ let teamMembers = {
       college: "UCLA",
       description: "I'm a first year computer science and linguistics major. I jumped into CS classes at UCLA with absolutely no background info. It was very intimidating at first, but after I got a feel for it I had lots of fun coding! I think this is a field truly anyone can learn and enjoy!",
       blurb: "",
-      links: {}
+      links: {},
+      order: 1
     },
     {
       name:  { first: "Crystal", last: "Hsieh" },
@@ -54,7 +56,8 @@ let teamMembers = {
       college: "UCLA",
       description: "I am a fourth-year computer science major at UCLA who cherishes her friends, her family, and her faith. I've had the privilege of interning at Google the past three summers, working in their New York, Mountain View, and Zurich offices. I'm also passionate about inspiring the next generation of women techies through developing summer tech camps and teaching coding at local middle schools.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 8
     },
     {
       name: { first: "Bibek", last: "Ghimire" },
@@ -66,7 +69,8 @@ let teamMembers = {
         personal: "http://www.bibekg.com",
         linkedin: "http://www.linkedin.com/in/bibekgg",
         facebook: "http://www.facebook.com/in/bibekghim"
-      }
+      },
+      order: 2
     },
     {
       name:  { first: "Mindi", last: "Cao" },
@@ -74,7 +78,8 @@ let teamMembers = {
       college: "UCLA",
       description: "I'm a sophomore at UCLA, and I enjoy teaching. Outside of coding I enjoy rock climbing and painting.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 3
     },
     {
       name: { first: "Natalie", last: "Ethell" },
@@ -82,7 +87,8 @@ let teamMembers = {
       college: "UCLA",
       description: "I am a senior at UCLA studying computer science and I love teaching, dogs, bagels, and anything involving puzzles. I grew up in Southern California and will be moving to Seattle to work at Microsoft after graduation.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 12
     },
     {
       name:  { first: "Anthony", last: "Mirand" },
@@ -92,7 +98,8 @@ let teamMembers = {
       blurb: "",
       links: {
         personal: "http://www.anthonymirand.com"
-      }
+      },
+      order: 4
     },
     {
       name:  { first: "Jason", last: "Lin" },
@@ -100,7 +107,9 @@ let teamMembers = {
       college: "USC",
       description: "I am a senior studying Computer Science and Business Administration at the University of Southern California. A technology enthusiast, I enjoyed creating applications and websites that help solve real life problems. I hope to bring my passion for education and my self-taught CS experience together to teach programming the most effective way.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 5
+
     },
     {
       name:  { first: "Christie", last: "Matthews" },
@@ -108,7 +117,8 @@ let teamMembers = {
       college: "UCLA",
       description: "I joined The Coding School because I love teaching and working with children. Being able to use my background as a Computer Science major is just a plus! This summer I'll be interning at Facebook as a Production Engineer. I plan on working in the tech industry when I graduate next year, but after that I hope to teach some day whether in K-12 or at a university.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 7
     },
     {
       name: { first: "Andy", last: "Patterson" },
@@ -116,7 +126,8 @@ let teamMembers = {
       college: "Indiana University",
       description: "I am a professional software engineer specializing in web applications at Genesys. I was an undergraduate and graduate instructor at IU teaching an introduction to machine learning course and love to help design curriculum for introductory programming or introductory data science/machine learning.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 14
     },
     {
       name: { first: "Amy", last: "Baer" },
@@ -124,7 +135,8 @@ let teamMembers = {
       college: "UMich",
       description: "",
       blurb: "",
-      links: {}
+      links: {},
+      order: 13
     },
     {
       name: { first: "Alejandro", last: "Fischer" },
@@ -132,7 +144,8 @@ let teamMembers = {
       college: "UMich",
       description: "",
       blurb: "",
-      links: {}
+      links: {},
+      order: 11
     },
     {
       name:  { first: "Stacy", last: "Miller" },
@@ -140,7 +153,8 @@ let teamMembers = {
       college: "UCLA",
       description: "I am a 3rd year student at UCLA studying Computer Science. I teach with The Coding School because I want to help promote interest in Computer Science in the next generations! Last Summer, I was an Explorer Intern at Microsoft, and this upcoming Summer I will return as a SWE intern.",
       blurb: "",
-      links: {}
+      links: {},
+      order: 6
     },
     {
       name:  { first: "Uma", last: "Lakshminarayan" },
@@ -148,8 +162,18 @@ let teamMembers = {
       college: "UCLA",
       description: "I am a 2nd year computer science student at UCLA. I love the logic and practical use of coding, and I want to share that with others. Outside of the classroom, I am part of an acapella team. I am constantly singing or making music. I'm also a huge Game of Thrones fan! This summer I will be interning at Microsoft for their Explore program.",
       blurb: "",
-      links: {}
-    }
+      links: {},
+      order: 10
+    },
+    {
+      name:  { first: "Bill", last: "Derouin" },
+      position: "Advisor, Co-Head of Curriculum",
+      college: "USC",
+      description: "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
+      blurb: "",
+      links: {},
+      order: 9
+    },
   ],
   teachers: [
     {
@@ -281,9 +305,7 @@ let teamMembers = {
       description: "I worked at a department called Matador Emerging Technology Arts Lab (METALab) at CSUN, where I led the development of the first iOS mobile application utilizing the React Native library. I believe that one of the most valuable things programming teaches individuals to do is how to problem solve and think critically. By equipping students at a young age with this skillset, you're properly preparing them for their futures.",
       blurb: "",
       links: {}
-    }
-  ],
-  ccTeachers: [
+    },
     {
       name: { first: "Abhimanyu", last: "Muchhal" },
       position: "Teacher",
