@@ -9,7 +9,15 @@ let teamMembers = {
       links: {}
     }
   ],
-  faculty: [
+  advisors: [
+    {
+      name:  { first: "Bill", last: "Derouin" },
+      position: "Advisor, Co-Head of Curriculum",
+      college: "USC",
+      description: "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
+      blurb: "",
+      links: {},
+    },
     {
       name:  { first: "Mark", last: "Redekopp" },
       position: "Curriculum Supervisor",
@@ -164,15 +172,6 @@ let teamMembers = {
       blurb: "",
       links: {},
       order: 10
-    },
-    {
-      name:  { first: "Bill", last: "Derouin" },
-      position: "Advisor, Co-Head of Curriculum",
-      college: "USC",
-      description: "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
-      blurb: "",
-      links: {},
-      order: 9
     },
   ],
   teachers: [

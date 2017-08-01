@@ -38,6 +38,13 @@ export default class TeamPage extends React.Component {
             </div>
 
             <TeamSection
+              teamType='team_advisors'
+              title='Advisors'
+              members={team.advisors.sort(sortMembersAlphabetically)}
+              showFullName={true}
+            />
+
+            <TeamSection
               teamType='team_heads'
               title='Team Heads'
               members={team.teamLeads.sort(sortMembersByDefinedOrder)}
@@ -51,13 +58,6 @@ export default class TeamPage extends React.Component {
               showFullName={false}
             />
             <SectionHeader subtitle={'...and many more!'} />
-
-            <TeamSection
-              teamType='team_faculty'
-              title='Faculty'
-              members={team.faculty.sort(sortMembersAlphabetically)}
-              showFullName={true}
-            />
 
           </div>
         </div>
