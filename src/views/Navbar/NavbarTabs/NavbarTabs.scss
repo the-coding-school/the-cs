@@ -1,0 +1,44 @@
+@import "~scss/Variables";
+
+.navbar_tabs_wrapper {
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: $z_navbar_tabs_wrapper;
+}
+
+.navbar_tabs {
+
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  max-width: 900px;
+
+
+  &::-webkit-scrollbar-track {
+    visibility: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar_tab_items {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+
+    &.hovered {
+      .nav_item a {
+        color: rgba($blue, 0.3);
+      }
+    }
+
+  }
+}

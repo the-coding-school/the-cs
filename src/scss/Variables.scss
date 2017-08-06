@@ -4,6 +4,7 @@
 $blue: #00c7d2;
 $yellow: #ffcc00;
 $black: #333333;
+$light_gray: #c3c3c3;
 $white: #ffffff;
 $red: #e10000;
 
@@ -26,7 +27,7 @@ $bpoint_sm: 800px;
 $bpoint_md: 1000px;
 
 // Component Sizes
-$navbar_height: 50px;
+$navbar_height: 80px;
 $header_height: 400px;
 $video_height: 800px;
 $container_max_width: 1200px;
@@ -52,3 +53,7 @@ $z_page: 100;
 $z_navbar: 200;
 $z_hamburger: 400;
 $z_modal_container: 300;
+
+// z:.navbar
+$z_navbar_tabs_wrapper: 2;
+$z_navbar_dropdown_group: 1;

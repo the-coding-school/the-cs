@@ -16,6 +16,7 @@ export default class TitledParagraphs extends React.Component {
 
     const paragraphsDOM = <TextBlock paragraphs={paragraphs} />;
     let tpDOM = null;
+    const paragraphsId = title.split(' ').join('').toLowerCase();
 
     if ("subtitle" in this.props) {
       tpDOM = <TitledContent title={title} subtitle={subtitle} content={paragraphsDOM} />
@@ -23,7 +24,10 @@ export default class TitledParagraphs extends React.Component {
       tpDOM = <TitledContent title={title} content={paragraphsDOM} />
     }
     return (
-      <div className="titled_paragraphs"> {tpDOM} </div>
+      <div
+        id={paragraphsId}
+        className="titled_paragraphs"
+      > {tpDOM} </div>
     );
   }
 }

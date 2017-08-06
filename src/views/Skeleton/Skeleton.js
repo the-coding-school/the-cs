@@ -11,7 +11,7 @@ export default class Skeleton extends Component {
       return (
          <div>
             <Navbar items={pages}/>
-              {this.props.children}
+            {this.props.children}
             <Footer internalLinks={pages}/>
          </div>
       );

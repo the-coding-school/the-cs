@@ -10,8 +10,10 @@ export default class SectionHeader extends React.Component {
       subtitle
     } = this.props;
 
+    const sectionId = title && title.split(' ').join('').toLowerCase();
+
     return (
-      <div className="section_header">
+      <div id={sectionId} className="section_header">
         <div className="title">
           {title}
         </div>

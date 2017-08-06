@@ -1,0 +1,22 @@
+@import '~scss/Variables';
+
+.split_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .side_wrapper {
+    width: 50%;
+  }
+
+  .side {
+    padding: 50px;
+  }
+}
+
+@media (max-width: $bpoint_md - 1) {
+  .split_row {
+    flex-wrap: wrap;
+  }
+}

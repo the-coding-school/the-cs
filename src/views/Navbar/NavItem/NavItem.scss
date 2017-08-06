@@ -1,0 +1,36 @@
+@import '~scss/Variables';
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  border-top: 5px solid $white;
+  border-bottom: 5px solid $white;
+  position: relative;
+
+  &.hovered {
+    border-top: 5px solid $yellow;
+    a {
+      // makes the tab hovered on brighter than others
+      color: $blue !important;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $blue;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: $text_sm;
+    transition: color 0.15s ease;
+  }
+}
