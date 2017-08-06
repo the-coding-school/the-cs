@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 import Skeleton from './views/Skeleton';
 import routes from './routes';
-import { smoothlyScrollToElement } from 'utilities/dom';
+import {
+  smoothlyScrollToElement,
+  smoothlyScrollToPageOffset
+} from 'utilities/dom';
+
 function hashLinkScroll() {
   const { hash } = window.location;
   if (hash !== '') {
@@ -21,16 +25,13 @@ function hashLinkScroll() {
       if (element) {
         smoothlyScrollToElement(element, 300);
       } else {
-        window.scrollTo(0, 0);
+        smoothlyScrollToPageOffset(0);
       }
     }, 0);
   }
 }
 
 ReactDOM.render((
-  // TODO: Set up server to allow for back/refresh using browserHistory
-  // hashHistory inserts an ugly '#' after 'the-cs.org/'
-
   <Router onUpdate={hashLinkScroll} history={hashHistory}>
     <Route component={Skeleton}>
       {routes}

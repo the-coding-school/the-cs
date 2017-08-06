@@ -7,7 +7,7 @@ import NavPanel from './NavPanel';
 
 import './Navbar.scss';
 
-import { pages } from 'routes';
+import pages from 'pages';
 
 export default class Navbar extends React.Component {
   constructor(props) {

@@ -1,6 +1,7 @@
+import './SectionHeader.scss';
 import React from 'react';
 
-import './SectionHeader.scss';
+import { generateIdFromString } from 'utilities/dom';
 
 export default class SectionHeader extends React.Component {
   render() {
@@ -10,10 +11,8 @@ export default class SectionHeader extends React.Component {
       subtitle
     } = this.props;
 
-    const sectionId = title && title.split(' ').join('').toLowerCase();
-
     return (
-      <div id={sectionId} className="section_header">
+      <div id={title && generateIdFromString(title)} className="section_header">
         <div className="title">
           {title}
         </div>

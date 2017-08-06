@@ -4,13 +4,14 @@ import { Link } from 'react-router'
 import './Footer.scss';
 import 'scss/Animations.scss';
 import footerImage from './footer.png';
+import pages from 'pages';
 
 export default class Footer extends Component {
   render() {
     return (
         <footer>
           <div className='footer_top'>
-            <InternalLinks links={this.props.internalLinks}/>
+            <InternalLinks links={pages}/>
             <ExternalLinks />
             <ContactInfo />
           </div>

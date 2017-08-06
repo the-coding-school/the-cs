@@ -1,9 +1,10 @@
+import './TitledParagraphs.scss';
 import React from 'react';
 
 import TitledContent from '../TitledContent';
 import TextBlock from '../TextBlock';
 
-import './TitledParagraphs.scss';
+import { generateIdFromString } from 'utilities/dom';
 
 export default class TitledParagraphs extends React.Component {
   render() {
@@ -16,7 +17,6 @@ export default class TitledParagraphs extends React.Component {
 
     const paragraphsDOM = <TextBlock paragraphs={paragraphs} />;
     let tpDOM = null;
-    const paragraphsId = title.split(' ').join('').toLowerCase();
 
     if ("subtitle" in this.props) {
       tpDOM = <TitledContent title={title} subtitle={subtitle} content={paragraphsDOM} />
@@ -25,7 +25,7 @@ export default class TitledParagraphs extends React.Component {
     }
     return (
       <div
-        id={paragraphsId}
+        id={generateIdFromString(title)}
         className="titled_paragraphs"
       > {tpDOM} </div>
     );

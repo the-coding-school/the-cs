@@ -28,6 +28,9 @@ export function smoothlyScrollToPageOffset(offset, duration) {
 }
 
 export function smoothlyScrollToElement(element, duration) {
-  debugger
   smoothlyScrollToPageOffset(getElementPageY(element) , duration)
+}
+
+export function generateIdFromString(string) {
+  return string.split(' ').join('').toLowerCase();
 }
