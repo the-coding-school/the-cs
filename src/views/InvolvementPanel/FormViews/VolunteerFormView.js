@@ -5,7 +5,7 @@ import FormView from './FormView';
 export default class VolunteerFormView extends React.Component {
  render() {
 
-  const formMessage = `Join our teaching team and change a child's life. Our teaching team is comprised of over 500 professional software engineers and CS university student passionate about empowering the next generation through code. We have teaching opportunities at schools across the country or available for you to teach from your home through our platform, codeConnects. In addition to teaching there are many other ways to get involved with The Coding School. We welcome your time and skills in helping to make an impact in children's lives.`;
+  const formMessage = "Our organization is run completely by volunteers. From our recruitment team to our grants & partnership team, your time and skills are invaluable to maximize our impact. While we have volunteer opportunities for all interested, at present, we would greatly benefit from law and accounting expertise.";
   const inputFields = [
    {
     elementType: 'input',

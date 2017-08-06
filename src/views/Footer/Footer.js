@@ -14,7 +14,7 @@ export default class Footer extends Component {
             <ExternalLinks />
             <ContactInfo />
           </div>
-          <FooterBottom />
+          
         </footer>
     );
   }

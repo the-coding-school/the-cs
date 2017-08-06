@@ -5,7 +5,7 @@ import FormView from './FormView';
 export default class BringToSchoolFormView extends React.Component {
   render() {
 
-    const formMessage = `Ideally coding classes will be implemented into the school day, as this is the best way to ensure all students are exposed to coding regardless of whether they or their parents understand the importance of it. We can bring coding education to your students regardless of where your school is located.  Please complete the form below, and we'll be in touch to work together to begin empowering your students through code.`;
+    const formMessage = "We would love to bring coding to your students, whether it be through in-school, afterschool, or virtual classes. Ideally, we will be able to work together to implement coding classes into the regular school day as this is the best way to ensure all students are exposed to coding, regardless of whether they or their parents recognize the importance of it.";
     const inputFields = [
       {
         elementType: 'input',
