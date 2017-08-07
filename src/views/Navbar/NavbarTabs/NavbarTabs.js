@@ -2,6 +2,7 @@ import './NavbarTabs.scss';
 import React from 'react';
 
 import NavItem from '../NavItem';
+import NavbarHamburger from '../NavbarHamburger';
 
 export default class NavbarTabs extends React.Component {
   render() {
@@ -20,13 +21,25 @@ export default class NavbarTabs extends React.Component {
 
     return (
       <div className='navbar_tabs_wrapper'>
-        <div className='navbar_tabs'>
+        <div className='navbar_tabs_large'>
           <div
             className={`navbar_tab_items ${someTabHovered ? 'hovered' : ''}`}
           >
             {navItems}
           </div>
         </div>
+
+        <div className='navbar_tabs_small'>
+          <div className='logo'>
+            THE CODING SCHOOL
+          </div>
+
+          <NavbarHamburger
+            onClick={this.props.onHamburgerClick}
+          />
+
+        </div>
+
       </div>
     );
   }

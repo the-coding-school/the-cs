@@ -22,14 +22,18 @@ export default class Navbar extends React.Component {
 
   openPanel() {
     this.setState({ panelOpen: true });
+    document.body.style.overflow = 'hidden';
   }
 
   closePanel() {
     this.setState({ panelOpen: false });
+    document.body.style.overflow = 'visible';
   }
 
   togglePanel() {
-    this.setState({ panelOpen: !this.state.panelOpen });
+    this.state.panelOpen ?
+      this.closePanel() :
+      this.openPanel();
   }
 
   setHoveredTab(index) {
@@ -62,6 +66,7 @@ export default class Navbar extends React.Component {
           tabItems={pagesOnNavTabs}
           hoveredTab={showDropdown && this.state.displayedTab}
           setHoveredTab={this.setHoveredTab.bind(this)}
+          onHamburgerClick={this.togglePanel.bind(this)}
         />
 
         <NavbarDropdown
@@ -76,16 +81,12 @@ export default class Navbar extends React.Component {
           setHoverState={this.setDropdownHoverState.bind(this)}
         />
 
-        <div
-          className='navbar_hamburger'
-          onClick={this.togglePanel.bind(this)}
-        >
-          <div/><div/><div/>
-        </div>
-
-        { this.state.panelOpen &&
-          <NavPanel onItemClick={this.closePanel.bind(this)} />
-        }
+        <NavPanel
+          showPanel={this.state.panelOpen}
+          items={pages}
+          onItemClick={this.closePanel.bind(this)}
+          onHamburgerClick={this.togglePanel.bind(this)}
+        />
 
       </div>
     );

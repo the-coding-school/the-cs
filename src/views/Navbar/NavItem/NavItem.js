@@ -9,6 +9,7 @@ export default function NavItem(props) {
     item,
     onMouseEnter,
     onMouseLeave,
+    onClick,
     hovered
   } = props;
 
@@ -23,6 +24,7 @@ export default function NavItem(props) {
       key={path}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      onClick={onClick}
     >
       <Link to={path}>
         {name.toUpperCase()}

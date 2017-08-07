@@ -2,9 +2,9 @@
 
 .nav_panel {
   z-index: $z_navbar;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  position: absolute;
   transition: all 0.5s;
   background-color: $black;
   display: flex;
@@ -13,23 +13,42 @@
   align-items: center;
   top: 0;
   left: 100%;
-  &.panel_open { left: 0; }
+  &.panel_open {
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+  }
 
-  li {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    list-style: none;
-    transition: 0.5s all;
+  .panel_items {
+    max-height: 95vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 
-    &:hover {
-      a { color: $yellow; }
-      transform: scale(1.2);
+    .nav_item {
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.2);
+        a { color: $yellow; }
+      }
+
+      a {
+        color: $white;
+        font-size: $text_md;
+        text-decoration: none;
+      }
     }
+  }
 
-    a {
-      color: $white;
-      font-size: $text_md;
-      text-decoration: none;
+  .navbar_hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.2);
+      & > div { background-color: $yellow; }
     }
   }
 }
