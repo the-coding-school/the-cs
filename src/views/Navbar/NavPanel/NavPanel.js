@@ -1,6 +1,5 @@
 import './NavPanel.scss';
 import React from 'react';
-import { TweenMax } from 'gsap';
 import NavItem from '../NavItem';
 import NavbarHamburger from '../NavbarHamburger';
 
