@@ -1,57 +1,94 @@
 import React from 'react';
-import NavItem from './NavItem';
-import NavLogo from './NavLogo';
+
+import NavbarHeader from './NavbarHeader';
+import NavbarTabs from './NavbarTabs';
+import NavbarDropdown from './NavbarDropdown';
+import NavPanel from './NavPanel';
 
 import './Navbar.scss';
+
+import pages from 'pages';
 
 export default class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      panelOpen: false
+      panelOpen: false,
+      hoveredTab: null,
+      displayedTab: null,
+      dropdownHovered: false
     };
-    this.openPanel = this.openPanel.bind(this);
-    this.closePanel = this.closePanel.bind(this);
-    this.togglePanel = this.togglePanel.bind(this);
   }
 
   openPanel() {
-    document.getElementById('navbar_panel').classList.add('panel_open');
-    this.setState(() => ({ panelOpen: true }));
+    this.setState({ panelOpen: true });
+    document.body.style.overflow = 'hidden';
   }
 
   closePanel() {
-    document.getElementById('navbar_panel').classList.remove('panel_open');
-    this.setState(() => ({panelOpen: false}));
+    this.setState({ panelOpen: false });
+    document.body.style.overflow = 'visible';
   }
 
   togglePanel() {
-    if (this.state.panelOpen) { this.closePanel(); }
-    else { this.openPanel(); }
+    this.state.panelOpen ?
+      this.closePanel() :
+      this.openPanel();
   }
 
-  componentDidMount() {
-    // Enable click-toggle for slide-out navbar items panel
-    const that = this;
-    document.getElementById('navbar_hamburger').onclick = this.togglePanel;
-    const navItems = document.getElementsByClassName('nav_item');
-    Array.from(navItems).forEach(function(element) {
-      element.addEventListener('click', that.closePanel);
-    });
+  setHoveredTab(index) {
+    let nextState = {};
+    nextState.hoveredTab = index;
+    if (typeof index === 'number') {
+      nextState.displayedTab = index;
+    }
+    this.setState(nextState);
+  }
+
+  setDropdownHoverState(newState) {
+    this.setState({ dropdownHovered: newState });
   }
 
   render() {
 
-    var allItems = this.props.items.map((i) => <NavItem key={i.path} item={i} />);
-    var navItems = this.props.items.slice(1).map((i) => <NavItem key={i.path} item={i} />);
+    const pagesOnNavTabs = pages.slice(1);
+
+    const showDropdown = (
+      this.state.dropdownHovered ||
+      typeof this.state.hoveredTab === 'number'
+    );
 
     return (
-      <nav id='navbar'>
-        <NavLogo />
-        <ul className='navbar_tabs'>{navItems}</ul>
-        <div id='navbar_hamburger'><div/><div/><div/></div>
-        <div id='navbar_panel'>{allItems}</div>
-      </nav>
+      <div className='navbar'>
+        <NavbarHeader />
+
+        <NavbarTabs
+          tabItems={pagesOnNavTabs}
+          hoveredTab={showDropdown && this.state.displayedTab}
+          setHoveredTab={this.setHoveredTab.bind(this)}
+          onHamburgerClick={this.togglePanel.bind(this)}
+        />
+
+        <NavbarDropdown
+          dropdownData={
+            showDropdown &&
+            pagesOnNavTabs[this.state.displayedTab] !== undefined &&
+            {
+              pagePath: pagesOnNavTabs[this.state.displayedTab].path,
+              sections: pagesOnNavTabs[this.state.displayedTab].sections
+            }
+          }
+          setHoverState={this.setDropdownHoverState.bind(this)}
+        />
+
+        <NavPanel
+          showPanel={this.state.panelOpen}
+          items={pages}
+          onItemClick={this.closePanel.bind(this)}
+          onHamburgerClick={this.togglePanel.bind(this)}
+        />
+
+      </div>
     );
   }
 }

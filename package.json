@@ -53,11 +53,16 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "gsap": "^1.20.2",
     "hover.css": "^2.2.0",
     "jquery": "^3.2.1",
     "react": "^15.4.2",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.2",
+    "react-scroll": "^1.5.4",
+    "react-transition-group": "1.x",
     "slick-carousel": "^1.6.0",
     "typed-js": "^0.2.3"
   },

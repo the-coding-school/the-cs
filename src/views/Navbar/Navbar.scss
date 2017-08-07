@@ -1,156 +1,35 @@
+
 @import "../../scss/Variables";
 
-nav {
+.navbar {
   width: 100%;
-  height: $navbar_height;
   font-family: $font_primary;
 
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: $z_navbar;
-  background-color: $black;
+  background-color: $white;
   box-shadow: $box_shadow;
 }
 
-@media (max-width: $bpoint_md) {
-  #navbar_hamburger {
-    display: flex !important;
-  }
-  .navbar_tabs {
-    display: none !important;
-  }
-}
-
-@media (min-width: $bpoint_md - 1) {
-  #navbar_hamburger {
-    display: none !important;
-  }
-  .navbar_tabs {
-    display: flex !important;
-  }
-}
-
-.navbar_logo {
-  padding-left: 20px;
-  padding-right: 20px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-
-  a {
-    text-decoration: none;
-    color: $white;
-    font-weight: bold;
-    font-size: $text_md;
-  }
-
-  img {
-    height: 60px;
-    width: auto;
-    border-radius: 4px;
-  }
-
-  li {
-    list-style: none;
-  }
-}
-
-.logo_box {
-  align-items: center;
-}
-
-.navbar_tabs {
-  display: flex;
-  flex-shrink: 1;
-  justify-content: space-between;
-  overflow-x: auto;
-
-  &::-webkit-scrollbar-track {
-    visibility: hidden;
-  }
-
-  &::-webkit-scrollbar {
+// Small screens
+@media (max-width: $bpoint_md - 1) {
+  .navbar_header {
     display: none;
   }
-  li {
-    list-style: none;
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    height: 100%;
-  }
-
-  a {
-    text-decoration: none;
-    color: $white;
-    width: 100%;
-    height: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: $text_min;
+  .navbar_tabs_large {
+    display: none !important;
   }
 }
 
-#navbar_hamburger {
-  padding: 5px;
-  padding-right: 20px;
-  cursor: pointer;
-  z-index: $z_hamburger;
-  display: flex;
-  flex-direction: column;
-  & > div {
-    width: 20px;
-    height: 4px;
-    background-color: $white;
-    &:not(:last-child) {
-      margin-bottom: 3px;
-    }
+// Large screens
+@media (min-width: $bpoint_md) {
+  .navbar_tabs_small {
+    display: none !important;
   }
 }
 
-#navbar_panel {
-  z-index: $z_navbar;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  transition: all 0.5s;
-  background-color: $black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 100%;
-  &.panel_open { left: 0; }
-
-  li {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    list-style: none;
-    transition: 0.5s all;
-
-    &:hover {
-      a { color: $yellow; }
-      transform: scale(1.2);
-    }
-
-    a {
-      color: $white;
-      font-size: $text_md;
-      text-decoration: none;
-    }
-  }
-}
+.navbar_tabs_wrapper { z-index: 2; }

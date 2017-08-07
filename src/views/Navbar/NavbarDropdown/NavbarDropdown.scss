@@ -1,0 +1,32 @@
+@import '~scss/Variables';
+
+.navbar_dropdown_group {
+  background: transparent;
+  width: 100%;
+  height: 0;
+  position: relative;
+  z-index: $z_navbar_dropdown_group;
+}
+
+.navbar_dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  color: $black;
+  font-size: $text_sm;
+  background-color: $white;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .dropdown_option {
+    a {
+      text-decoration: none;
+    }
+    border-bottom: 2px solid $yellow;
+  }
+}

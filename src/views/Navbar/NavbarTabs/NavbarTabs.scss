@@ -1,0 +1,84 @@
+ @import "~scss/Variables";
+
+.navbar_tabs_wrapper {
+  width: 100%;
+  z-index: $z_navbar_tabs_wrapper;
+}
+
+// Small screens
+@media (max-width: $bpoint_md - 1) {
+  .navbar_tabs_wrapper {
+    background-color: $blue;
+  }
+}
+
+// Large screens
+@media (min-width: $bpoint_md) {
+  .navbar_tabs_wrapper {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.navbar_tabs_large {
+  flex-flow: column nowrap;
+  width: 100%;
+  max-width: 900px;
+
+
+  &::-webkit-scrollbar-track {
+    visibility: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar_tab_items {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+
+    .nav_item {
+      border-top: 5px solid $white;
+      border-bottom: 5px solid $white;
+
+      &.hovered {
+        border-top: 5px solid $yellow;
+        a {
+          // makes the tab hovered on brighter than others
+          color: $blue !important;
+        }
+      }
+
+    }
+
+    &.hovered {
+      .nav_item a {
+        color: rgba($blue, 0.3);
+      }
+    }
+
+  }
+}
+
+
+.navbar_tabs_small {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $blue;
+  color: $white;
+
+  .logo {
+    color: $white;
+    font-weight: bold;
+    font-size: $text_md;
+  }
+}

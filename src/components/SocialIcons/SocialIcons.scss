@@ -1,0 +1,11 @@
+.social_links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  .social_link {
+    padding: 5px;
+  }
+}

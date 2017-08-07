@@ -1,9 +1,10 @@
+import './TitledParagraphs.scss';
 import React from 'react';
 
 import TitledContent from '../TitledContent';
 import TextBlock from '../TextBlock';
 
-import './TitledParagraphs.scss';
+import { generateIdFromString } from 'utilities/dom';
 
 export default class TitledParagraphs extends React.Component {
   render() {
@@ -23,7 +24,10 @@ export default class TitledParagraphs extends React.Component {
       tpDOM = <TitledContent title={title} content={paragraphsDOM} />
     }
     return (
-      <div className="titled_paragraphs"> {tpDOM} </div>
+      <div
+        id={generateIdFromString(title)}
+        className="titled_paragraphs"
+      > {tpDOM} </div>
     );
   }
 }

@@ -13,6 +13,9 @@ build
 .DS_Store
 .env
 npm-debug.log
+yarn.lock
+package-lock.json
+
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
