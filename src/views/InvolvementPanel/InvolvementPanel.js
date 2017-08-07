@@ -3,6 +3,7 @@ import React from 'react';
 import OptionBar from './OptionBar';
 import {
   VolunteerFormView,
+  TeacherFormView,
   BringToSchoolFormView,
   PartnerFormView
 } from './FormViews'
@@ -17,6 +18,10 @@ export default class InvolvementPanel extends React.Component {
       VOLUNTEER: {
         text: 'Volunteer',
         view: <VolunteerFormView />
+      },
+      TEACHER: {
+        text: 'Become a Teacher',
+        view: <TeacherFormView />
       },
       BRING_TO_SCHOOL: {
         text: 'Bring coding to your school',
