@@ -20,7 +20,6 @@ function hashLinkScroll() {
       // !! BEWARE !!
       const keys = hash.split('#');
       const id = `${keys[keys.length - 1]}`;
-
       const element = document.getElementById(id);
       if (element) {
         smoothlyScrollToElement(element, 300);

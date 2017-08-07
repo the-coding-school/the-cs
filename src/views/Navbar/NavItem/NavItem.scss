@@ -8,14 +8,6 @@
   height: 100%;
   position: relative;
 
-  &.hovered {
-    border-top: 5px solid $yellow;
-    a {
-      // makes the tab hovered on brighter than others
-      color: $blue !important;
-    }
-  }
-
   a {
     text-decoration: none;
     color: $blue;
