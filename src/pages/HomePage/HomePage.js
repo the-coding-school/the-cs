@@ -19,8 +19,9 @@ class HomePage extends Component {
 
           <div className='video_and_updates'>
             <PromoVideo />
-            <UpdatesFeed />
           </div>
+
+          <UpdatesFeed />
 
           <Testimonials />
           <PartnersPanel />
