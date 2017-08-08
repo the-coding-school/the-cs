@@ -1,13 +1,13 @@
 export default {
   header: {
     image: require('./header.jpg'),
-    title: "Our Footprint",
+    title: "Our Impact",
     description: ""
   },
   paragraphs: {
     ourImpact: [
       {
-        title: "Our Footprint",
+        title: "Our Impact",
         paragraphs: [
           "By offering ongoing coding education, students develop the computational and critical thinking skills necessary to succeed in an increasingly tech-driven world. They become creators, innovators, and problem solvers, which translates to improvements in academic performance and postsecondary readiness. Moreover, these readily transferrable and highly sought after skills increase the opportunities for social mobility by expanding students’ employment options and prepare them for the 21st century workplace.",
           "In the long term, our dynamic coding initiatives will help address two of the main problems in the field of computer science: a shortage of coders and a lack of diversity.",
