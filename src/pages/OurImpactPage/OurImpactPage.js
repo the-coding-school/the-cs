@@ -4,9 +4,9 @@ import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import StatisticsPanel from 'views/StatisticsPanel';
 
-import pageData from './OurFootprintPageData';
+import pageData from './OurImpactPageData';
 
-export default class OurFootprintPage extends React.Component {
+export default class OurImpactPage extends React.Component {
   render() {
     const header = pageData.header;
 
@@ -15,13 +15,13 @@ export default class OurFootprintPage extends React.Component {
     });
 
     return (
-      <div className='our_footprint_page page'>
+      <div className='our_impact_page page'>
         <PageHeader image={header.image} title={header.title} description={header.description}/>
         <div className='page_contents'>
           <StatisticsPanel />
           <hr/>
 
-          <div className='our_footprint'>
+          <div className='our_impact'>
             {
               pageData.paragraphs.ourImpact.map(function(i) {
                 return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />

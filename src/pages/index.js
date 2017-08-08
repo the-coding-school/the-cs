@@ -1,6 +1,6 @@
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
-import OurFootprintPage from './OurFootprintPage';
+import OurImpactPage from './OurImpactPage';
 import OurProgramsPage from './OurProgramsPage';
 import TeamPage from './TeamPage';
 import GetInvolvedPage from './GetInvolvedPage';
@@ -50,19 +50,19 @@ const pages = [
     component: AboutPage
   },
   {
-    path: '/footprint',
-    name: 'Our Footprint',
+    path: '/impact',
+    name: 'Our Impact',
     sections: [
       {
-        name: 'Our Footprint',
-        link: '#ourfootprint'
+        name: 'Our Impact',
+        link: '#ourimpact'
       },
       {
         name: 'Our Unique Approach',
         link: '#ouruniqueapproach'
       }
     ],
-    component: OurFootprintPage
+    component: OurImpactPage
   },
   {
     path: '/programs',
