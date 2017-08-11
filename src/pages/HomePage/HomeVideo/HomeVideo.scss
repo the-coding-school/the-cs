@@ -50,8 +50,8 @@
 
     .video_overlay {
       height: 100%;
-      .title { font-size: $text_md; }
-      .subtitle { font-size: $text_tn; }
+      .title { font-size: $text_medium; }
+      .subtitle { font-size: $text_tiny; }
     }
   }
 }
@@ -69,8 +69,8 @@
 
     .video_overlay {
       height: $video_height;
-      .title { font-size: $text_hg; }
-      .subtitle { font-size: $text_sm; }
+      .title { font-size: $text_huge; }
+      .subtitle { font-size: $text_small; }
     }
   }
 }

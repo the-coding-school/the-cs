@@ -9,8 +9,8 @@
     justify-content: space-between;
 
     .hover_card_title {
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_norm;
+      font-size: $text_medium;
+      line-height: $text_medium * $line_height_scale_norm;
       font-family: $font_primary;
       color: $white;
       font-weight: bold;
@@ -25,8 +25,8 @@
     }
 
     .hover_card_description {
-      font-size: $text_sm;
-      line-height: $text_sm * $line_height_scale_high;
+      font-size: $text_small;
+      line-height: $text_small * $line_height_scale_high;
       font-family: $font_secondary;
       color: darken($white, 3)
     }

@@ -44,11 +44,11 @@
     color: $white;
 
     h1 {
-      font-size: $text_hg;
+      font-size: $text_huge;
     }
     p {
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_high;
+      font-size: $text_medium;
+      line-height: $text_medium * $line_height_scale_high;
     }
 
     // Large screens

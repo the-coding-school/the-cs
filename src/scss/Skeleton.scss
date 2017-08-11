@@ -18,29 +18,29 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
   @media (min-width: $bpoint_sm) {
-    font-size: $text_md;
-    line-height: $text_md * $line_height_scale_norm;
+    font-size: $text_medium;
+    line-height: $text_medium * $line_height_scale_norm;
   }
   @media (max-width: $bpoint_sm - 1) {
-    font-size: $text_sm;
-    line-height: $text_sm * $line_height_scale_norm;
+    font-size: $text_small;
+    line-height: $text_small * $line_height_scale_norm;
   }
 }
 
 h4 {
   @media (min-width: $bpoint_sm) {
-    font-size: $text_sm;
-    line-height: $text_sm * $line_height_scale_norm;
+    font-size: $text_small;
+    line-height: $text_small * $line_height_scale_norm;
   }
   @media (max-width: $bpoint_sm - 1) {
-    font-size: $text_tn;
-    line-height: $text_tn * $line_height_scale_norm;
+    font-size: $text_tiny;
+    line-height: $text_tiny * $line_height_scale_norm;
   }
 }
 
 p {
   font-family: 'Domine', serif;
-  line-height: $text_sm * $line_height_scale_norm;
+  line-height: $text_small * $line_height_scale_norm;
 }
 
 hr {

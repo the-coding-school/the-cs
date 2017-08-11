@@ -30,9 +30,12 @@ export default class FeaturedUpdate extends React.Component {
           <div className='title'>
             {title}
           </div>
-          <a className='link_button' href={link.url}>
-            {link.text}
-          </a>
+          <div className='button'>
+            <a href={link.url}>
+              {link.text}
+            </a>
+          </div>
+
         </div>
       </div>
     );

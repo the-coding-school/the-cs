@@ -2,21 +2,25 @@
 
 // Colors
 $blue: #00c7d2;
+$secondary_blue: #9ad3de;
 $yellow: #ffcc00;
 $black: #333333;
 $light_gray: #c3c3c3;
+$very_light_gray: #e3e3e3;
 $white: #ffffff;
 $red: #e10000;
 
 // Typography
 $font_primary: 'Montserrat', sans-serif;
 $font_secondary: 'Domine', serif;
-$text_min: 12px;
-$text_tn: 14px;
-$text_sm: 16px;
-$text_md: 20px;
-$text_lg: 28px;
-$text_hg: 48px;
+
+$text_miniscule: 9px;
+$text_tiny: 12px;
+$text_small: 16px;
+$text_medium: 21px;
+$text_large: 37px;
+$text_huge: 50px;
+
 $line_height_scale_low: 1.20;
 $line_height_scale_norm: 1.37;
 $line_height_scale_high: 1.75;

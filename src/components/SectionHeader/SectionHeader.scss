@@ -2,10 +2,10 @@
 
 .section_header {
   @media (max-width: $bpoint_sm - 1) {
-    font-size: $text_md;
+    font-size: $text_medium;
   }
   @media (min-width: $bpoint_sm) {
-    font-size: $text_lg;
+    font-size: $text_large;
   }
   color: $blue;
   text-align: center;

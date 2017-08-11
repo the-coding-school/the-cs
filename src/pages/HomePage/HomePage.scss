@@ -6,38 +6,16 @@
 
 .home_page {
 
-  .video_and_updates {
+  .home_page_promo_video {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 50px;
-    .promo_video_wrapper {
-      padding: 30px;
-      flex-grow: 1;
-    }
-    .updates_feed_wrapper {
-      padding: 30px;
-      max-width: 600px;
-    }
-    .promo_video {
-      video {
-        width: 100%;
-      }
-    }
-
-    // Small screens
-    @media (max-width: $bpoint_md - 1) {
-      justify-content: center;
-    }
-
-    // Large screens
-    @media (min-width: $bpoint_md) {
-      justify-content: space-between;
-    }
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
   }
 
-  @media (max-width: $bpoint_md - 1) {
-    .video_and_updates {
-      flex-wrap: wrap;
-    }
+  .home_page_updates_feed {
+    box-sizing: border-box;
+    padding: 50px 0px;
   }
+
 }

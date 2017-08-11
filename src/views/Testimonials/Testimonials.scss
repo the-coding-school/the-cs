@@ -47,7 +47,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-family: $font_secondary;
-    font-size: $text_md;
+    font-size: $text_medium;
 
     .testimonial_quote {
       font-family: $font_secondary;
@@ -66,14 +66,14 @@
 
     // Small screens
     @media (max-width: $bpoint_sm - 1) {
-      font-size: $text_sm;
-      line-height: $text_sm * $line_height_scale_norm;
+      font-size: $text_small;
+      line-height: $text_small * $line_height_scale_norm;
     }
 
     // Large screens
     @media (min-width: $bpoint_sm) {
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_norm;
+      font-size: $text_medium;
+      line-height: $text_medium * $line_height_scale_norm;
     }
   }
 }

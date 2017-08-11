@@ -34,17 +34,17 @@
     }
 
     .member_name {
-      font-size: $text_sm;
+      font-size: $text_small;
     }
     .member_position {
-      font-size: $text_min;
+      font-size: $text_miniscule;
       color: $white;
     }
 
     .member_description {
       color: $white;
       font-size: 10px;
-      line-height: $text_tn * $line_height_scale_low;
+      line-height: $text_tiny * $line_height_scale_low;
       font-family: $font_primary;
       padding-bottom: 8px;
     }

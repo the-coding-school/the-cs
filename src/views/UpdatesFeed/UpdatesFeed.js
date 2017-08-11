@@ -33,7 +33,7 @@ export default class UpdatesFeed extends React.Component {
   showScrollLeft() {
     if (!this.updatesFeedDiv) return false;
     const currentScroll = this.updatesFeedDiv.scrollLeft;
-    return (currentScroll >= CONSTANTS.SCROLL_BUTTON_BUFFER);
+    return (currentScroll > CONSTANTS.SCROLL_BUTTON_BUFFER);
   }
 
   showScrollRight() {
@@ -42,7 +42,7 @@ export default class UpdatesFeed extends React.Component {
       this.updatesFeedDiv.scrollWidth - this.updatesFeedDiv.offsetWidth;
     const currentScroll = this.updatesFeedDiv.scrollLeft;
     return (
-      hiddenScrollWidth - currentScroll >= CONSTANTS.SCROLL_BUTTON_BUFFER
+      hiddenScrollWidth > currentScroll + CONSTANTS.SCROLL_BUTTON_BUFFER
       && this.updatesFeedDiv.scrollWidth > window.innerWidth
     );
   }
@@ -87,8 +87,8 @@ export default class UpdatesFeed extends React.Component {
             className='remaining_updates'
             cells={
               updates
-                .slice(1, CONSTANTS.NUM_UPDATES_SHOWN).map(update => (
-                  <Update update={update} key={update.title} />
+                .slice(1, CONSTANTS.NUM_UPDATES_SHOWN).map((update, i) => (
+                  <Update update={update} key={i} />
                 ))
             }
           />

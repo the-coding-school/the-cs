@@ -18,12 +18,13 @@
   .update_text {
     box-sizing: border-box;
     padding: 10px;
-    height: 50%;
+    height: 100%;
+    background-color: $white;
   }
 
   .title {
-    font-size: $text_tn;
-    line-height: $text_tn * $line_height_scale_low;
+    font-size: $text_tiny;
+    line-height: $text_tiny * $line_height_scale_low;
     font-family: $font_primary;
     color: $black;
 
@@ -35,8 +36,8 @@
   }
 
   .date {
-    font-size: $text_tn;
-    line-height: $text_tn * $line_height_scale_low;
+    font-size: $text_tiny;
+    line-height: $text_tiny * $line_height_scale_low;
     font-family: $font_primary;
     color: lighten($black, 50);
     font-weight: bold;
@@ -46,6 +47,6 @@
   .link_button {
     display: inline-block;
     color: $blue;
-    font-size: $text_tn;
+    font-size: $text_tiny;
   }
 }
