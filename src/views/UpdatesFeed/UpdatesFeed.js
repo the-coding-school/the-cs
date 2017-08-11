@@ -1,36 +1,81 @@
 import React from 'react';
+import { TweenMax } from 'gsap';
+
+import ColumnWrapGrid from 'components/ColumnWrapGrid';
+import RightArrowIcon from 'components/icons/RightArrowIcon';
+
 import FeaturedUpdate from './FeaturedUpdate';
 import Update from './Update';
-import SectionHeader from 'components/SectionHeader';
-
 import updates from './UpdatesFeedData';
 import './UpdatesFeed.scss';
+import CONSTANTS from './constants';
+import { recencySort } from 'utilities/sort';
 
 export default class UpdatesFeed extends React.Component {
 
-  handleScrollButtonClick() {
+  constructor(props) {
+    super(props);
+    updates.sort(recencySort);
+  }
+
+  componentDidMount() {
+    // Now that we have the updatesFeedDiv ref available, re-determine
+    // whether to show the scroll arrows
+    this.rerender();
+
+    window.addEventListener('resize', this.rerender.bind(this));
+  }
+
+  componentWillUnMount() {
+    window.removeEventListener('resize', this.rerender.bind(this));
+  }
+
+  showScrollLeft() {
+    if (!this.updatesFeedDiv) return false;
+    const currentScroll = this.updatesFeedDiv.scrollLeft;
+    return (currentScroll >= CONSTANTS.SCROLL_BUTTON_BUFFER);
+  }
+
+  showScrollRight() {
+    if (!this.updatesFeedDiv) return false;
+    const hiddenScrollWidth =
+      this.updatesFeedDiv.scrollWidth - this.updatesFeedDiv.offsetWidth;
+    const currentScroll = this.updatesFeedDiv.scrollLeft;
+    return (
+      hiddenScrollWidth - currentScroll >= CONSTANTS.SCROLL_BUTTON_BUFFER
+      && this.updatesFeedDiv.scrollWidth > window.innerWidth
+    );
+  }
+
+  rerender() {
+    this.forceUpdate();
+  }
+
+  handleScrollButtonClick(direction) {
     if (this.updatesFeedDiv) {
-      this.updatesFeedDiv.scrollLeft = this.updatesFeedDiv.scrollLeft + 200;
+
+      const scrollAmount = (direction === 'right') ?
+        (window.innerWidth * 0.9) :
+        -(window.innerWidth * 0.9);
+
+      TweenMax.fromTo(
+        this.updatesFeedDiv,
+        0.3,
+        { scrollLeft: this.updatesFeedDiv.scrollLeft },
+        { scrollLeft: this.updatesFeedDiv.scrollLeft + scrollAmount }
+      );
     }
   }
 
   render() {
-
-    // Slicing updates array to only show most recent updates
-    const NUM_UPDATES_SHOWN = 20;
-
-    const recencySort = (a, b) => {
-      if (new Date(a.date) > new Date(b.date)) return -1;
-      if (new Date(a.date) < new Date(b.date)) return 1;
-      return 0;
-    }
-
     return (
       <div className='updates_feed_wrapper'>
         <div
           className='updates_feed'
           ref={div => this.updatesFeedDiv = div}
+          onScroll={this.rerender.bind(this)}
         >
+
           <div className='first_update'>
             <FeaturedUpdate
               key={updates[0].title}
@@ -38,20 +83,38 @@ export default class UpdatesFeed extends React.Component {
             />
           </div>
 
-          <div className='remaining_updates'>
-            { updates.slice(1, NUM_UPDATES_SHOWN).sort(recencySort).map(u => (
-              <div className='update_grid_cell'>
-                <Update key={u.title} update={u} />
-              </div>
-            )) }
-          </div>
+          <ColumnWrapGrid
+            className='remaining_updates'
+            cells={
+              updates
+                .slice(1, CONSTANTS.NUM_UPDATES_SHOWN).map(update => (
+                  <Update update={update} key={update.title} />
+                ))
+            }
+          />
         </div>
-        <div
-          className='scroll_button'
-          onClick={this.handleScrollButtonClick.bind(this)}
+
+        { this.showScrollRight() && <div
+          className='scroll_button right'
+          onClick={this.handleScrollButtonClick.bind(this, 'right')}
         >
-          {'>'}
-        </div>
+          <RightArrowIcon
+            height={24}
+            fill={'black'}
+          />
+        </div> }
+
+        { this.showScrollLeft() && <div
+          className='scroll_button left'
+          onClick={this.handleScrollButtonClick.bind(this, 'left')}
+        >
+          <RightArrowIcon
+            height={24}
+            fill='black'
+            transform='rotate(180,0,0)'
+          />
+        </div>}
+
       </div>
     );
   }

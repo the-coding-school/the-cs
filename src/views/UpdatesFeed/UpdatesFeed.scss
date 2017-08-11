@@ -1,6 +1,7 @@
 @import '~scss/Variables';
+@import '~scss/Mixins';
 
-$featured_update_cell_height: 500px;
+$update_feed_height: 400px;
 
 .updates_feed_wrapper {
   width: 100%;
@@ -22,11 +23,25 @@ $featured_update_cell_height: 500px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 15px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.right {
+      right: 15px;
+    }
+
+    &.left {
+      left: 15px;
+    }
+
+    transition: all 0.3s ease;
+    transform-origin: center;
+    &:hover {
+      background-color: $black;
+      svg { fill: $white; }
+    }
   }
 }
 
@@ -37,34 +52,34 @@ $featured_update_cell_height: 500px;
   box-sizing: border-box;
   position: relative;
   padding: 15px;
+
   overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+  }
 
   .first_update {
-    height: $featured_update_cell_height;
-    width: $featured_update_cell_height;
+    flex-shrink: 0;
+    height: $update_feed_height;
+    width: $update_feed_height;
     margin-right: 10px;
     padding: 10px;
     box-sizing: border-box;
   }
 
   .remaining_updates {
-    display: flex;
-    flex-grow: 1;
-    flex-flow: column wrap;
-    align-content: flex-start;
-    height: $featured_update_cell_height;
-
-    &::-webkit-scrollbar {
-      display: none;
-      width: 0 !important;
-    }
+    // flex-grow: 1;
+    height: $update_feed_height;
 
     & > * {
-      height: $featured_update_cell_height / 2;
+      height: $update_feed_height / 2;
       width: 400px;
 
       box-sizing: border-box;
       padding: 10px;
     }
   }
+
+
 }
