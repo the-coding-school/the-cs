@@ -47,6 +47,32 @@ export default {
             "Our partnerships with USC’s STEM Consortium and Viterbi School of Engineering, as well as UCLA’s School of Engineering and Applied Science, provides the unique opportunity to collaborate with leading schools in the fields of computer science, engineering, and education to ensure the highest quality of our programs, from teaching presentation to curriculum design to initiative strategy and development."
           ]
         }
+    ],
+    testimonials: [
+        {
+          title: "In the words of school faculty...",
+          paragraphs: [
+            "*Insert faculty testimonials*"
+          ]
+        },
+        {
+          title: "In the words of the students...",
+          paragraphs: [
+            "*Insert student testimonials*"
+          ]
+        },
+        {
+          title: "In the words of the parents...",
+          paragraphs: [
+            "*Insert parent testimonials*"
+          ]
+        },
+        {
+          title: "In the words of our instructors...",
+          paragraphs: [
+            "*Insert instructor testimonials*"
+          ]
+        }
     ]
   }
 }

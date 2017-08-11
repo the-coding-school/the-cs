@@ -60,6 +60,10 @@ const pages = [
       {
         name: 'Our Unique Approach',
         link: '#ouruniqueapproach'
+      },
+      {
+        name: 'Testimonials',
+        link: '#testimonials'
       }
     ],
     component: OurImpactPage
