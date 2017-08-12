@@ -1,5 +1,6 @@
 import React from 'react';
 import TitledParagraphs from 'components/TitledParagraphs';
+import Testimonials from 'components/Testimonials';
 import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import StatisticsPanel from 'views/StatisticsPanel';
@@ -40,7 +41,7 @@ export default class OurImpactPage extends React.Component {
           <div classname='testimonials'>
             {
               pageData.paragraphs.testimonials.map(function(i) {
-                return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
+                return <Testimonials key={i.title} title={i.title} paragraphs={i.paragraphs} />
               })
             }
           </div>
