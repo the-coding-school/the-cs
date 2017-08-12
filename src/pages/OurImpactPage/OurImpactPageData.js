@@ -52,7 +52,10 @@ export default {
         {
           title: "In the words of school faculty...",
           paragraphs: [
-            "*Insert faculty testimonials*"
+            "\"I want to thank The Coding School for the opportunity for my 4th, 5th, & 6th grade students to learn computer coding from your fantastic college student instructors. School attendance on days with coding was improved, students loved being involved and growing new skills as well as the role modeling to my students from the college instructors... What The Coding School does is affirm that learning is ongoing and has real life value. Thank you for providing this affordable coding service as you are changing lives!\"",
+            "Dr. Martin Powers, Principal, Castori Elementary School, Sacramento, California",
+            "\"I want the best for my/our students and that's what The Coding School provides. Most impressive, The Coding School leveled the playing field and gave these skills and opportunities to all students - regardless of economic ability. The Coding School provides outstanding instruction with an equal opportunity to all students who wouldn't have these opportunities otherwise.\"",
+            "Dr. Yusuf Allahjah, Assistant Principal, John Adams Middle School, Santa Monica, California"
           ]
         },
         {
