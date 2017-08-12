@@ -17,9 +17,7 @@ export default class Update extends React.Component {
     return (
       <div className='update'>
 
-        <div className='update_image'>
-          <img src={image} alt='update' />
-        </div>
+        <img className='update_image' src={image} alt='title' />
 
         <div className='update_text'>
           <div className='date'>

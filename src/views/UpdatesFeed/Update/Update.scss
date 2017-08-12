@@ -6,15 +6,10 @@
   box-shadow: $box_shadow;
   display: flex;
 
-  .update_image {
-    // Fixes IE bug causing div.update_text leaving div.update
+  img.update_image {
     display: flex;
     height: 100%;
-    img {
-      display: flex;
-      height: 100%;
-      object-fit: cover;
-    }
+    object-fit: cover;
   }
 
   .update_text {
