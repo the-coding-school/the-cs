@@ -32,16 +32,13 @@
 
     background: rgba(black, 0.3);
 
-    & > * {
-      width: 100%;
-    }
-
     .title {
       font-size: $text_md;
       line-height: $text_md * $line_height_scale_low;
       font-weight: bold;
       font-family: $font_primary;
       color: $blue;
+      width: 100%;
 
       margin-bottom: 10px;
 
@@ -57,6 +54,7 @@
       font-weight: bold;
       min-width: 100px;
       margin-bottom: 10px;
+      width: 100%;
     }
 
     .link_button {
