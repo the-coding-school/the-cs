@@ -8,7 +8,7 @@
 
   .update_image {
     // Fixes IE bug causing div.update_text leaving div.update
-    display: inline-flex;
+    display: flex;
     height: 100%;
     img {
       display: flex;
