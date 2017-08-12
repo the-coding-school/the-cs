@@ -1,8 +1,8 @@
 @import '~scss/Variables';
 
 .text_block {
-  font-size: $text_medium;
-  line-height: $text_medium * $line_height_scale_high;
+  font-size: $text_md;
+  line-height: $text_md * $line_height_scale_high;
   font-family: $font_secondary;
   color: lighten($black, 10);
 }

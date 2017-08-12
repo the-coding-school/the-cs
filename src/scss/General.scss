@@ -47,7 +47,7 @@ a {
   color: $white;
   border: none;
   font-family: $font_primary;
-  font-size: $text_medium;
+  font-size: $text_md;
   padding: 15px 25px;
   cursor: pointer;
   outline: none;
@@ -94,7 +94,7 @@ a {
   background: $white;
   color: $black;
   font-family: $font_primary;
-  font-size: $text_medium;
+  font-size: $text_md;
   border: 4px solid lighten($black, 75);
   border-radius: 5px;
   padding: 10px;

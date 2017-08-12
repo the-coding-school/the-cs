@@ -33,8 +33,8 @@
     background: rgba(black, 0.3);
 
     .title {
-      font-size: $text_medium;
-      line-height: $text_medium * $line_height_scale_low;
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_low;
       font-weight: bold;
       font-family: $font_primary;
       color: $blue;
@@ -47,7 +47,7 @@
     }
 
     .date {
-      font-size: $text_medium;
+      font-size: $text_md;
       font-family: $font_primary;
       color: $white;
       font-weight: bold;
@@ -64,7 +64,7 @@
       padding: 10px;
       color: $blue;
       text-decoration: none;
-      font-size: $text_medium;
+      font-size: $text_md;
     }
   }
 }

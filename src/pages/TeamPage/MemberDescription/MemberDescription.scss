@@ -2,7 +2,7 @@
 
 .member_description {
   color: lighten($black, 20%);
-  font-size: $text_small;
-  line-height: $text_small * $line_height_scale_high;
+  font-size: $text_sm;
+  line-height: $text_sm * $line_height_scale_high;
   font-family: $font_secondary;
 }

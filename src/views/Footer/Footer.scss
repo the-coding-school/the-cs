@@ -9,12 +9,12 @@ footer {
   h2 {
     font-weight: normal;
     font-family: $font_primary;
-    font-size: $text_large;
-    line-height: $text_large * $line_height_scale_norm;
+    font-size: $text_lg;
+    line-height: $text_lg * $line_height_scale_norm;
   }
   a, p {
-    font-size: $text_medium;
-    line-height: $text_medium * $line_height_scale_norm;
+    font-size: $text_md;
+    line-height: $text_md * $line_height_scale_norm;
     font-family: $font_secondary;
   }
 
