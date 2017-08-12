@@ -32,6 +32,10 @@
 
     background: rgba(black, 0.3);
 
+    & > * {
+      width: 100%;
+    }
+
     .title {
       font-size: $text_md;
       line-height: $text_md * $line_height_scale_low;

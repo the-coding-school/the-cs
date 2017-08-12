@@ -7,6 +7,8 @@
   display: flex;
 
   .update_image {
+    // Fixes IE bug causing div.update_text leaving div.update
+    display: inline-flex;
     height: 100%;
     img {
       display: flex;
@@ -20,33 +22,38 @@
     padding: 10px;
     height: 100%;
     background-color: $white;
-  }
 
-  .title {
-    font-size: $text_tn;
-    line-height: $text_tn * $line_height_scale_low;
-    font-family: $font_primary;
-    color: $black;
-
-    margin-bottom: 10px;
-
-    a {
-      text-decoration: none;
+    & > * {
+      width: 100%;
     }
-  }
 
-  .date {
-    font-size: $text_tn;
-    line-height: $text_tn * $line_height_scale_low;
-    font-family: $font_primary;
-    color: lighten($black, 50);
-    font-weight: bold;
-    min-width: 100px;
-  }
+    .title {
+      font-size: $text_tn;
+      line-height: $text_tn * $line_height_scale_low;
+      font-family: $font_primary;
+      color: $black;
 
-  .link_button {
-    display: inline-block;
-    color: $blue;
-    font-size: $text_tn;
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .date {
+      font-size: $text_tn;
+      line-height: $text_tn * $line_height_scale_low;
+      font-family: $font_primary;
+      color: lighten($black, 50);
+      font-weight: bold;
+      min-width: 100px;
+    }
+
+    .link_button {
+      display: inline-block;
+      color: $blue;
+      font-size: $text_tn;
+    }
+
   }
 }
