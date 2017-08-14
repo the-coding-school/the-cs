@@ -1,23 +1,15 @@
 @import '~scss/Variables';
 
-.donations_panel_wrapper {
-  width: 100%;
-  background-color: $blue;
-  display: flex;
-  justify-content: center;
-}
-
 .donations_panel {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $blue;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  max-width: $container_max_width;
-  width: 80%;
-  padding-bottom: 30px;
+  background-color: $light_blue;
+  box-sizing: border-box;
+  padding: 80px 5%;
+  width: 100%;
   text-align: center;
+
   .title {
     color: $white;
     font-size: $text_hg;

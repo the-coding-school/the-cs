@@ -15,11 +15,11 @@
   @media (max-width: $bpoint_sm - 1) {
     flex-direction: column;
     .option_bar_option {
-      border-left: 2px solid $blue;
-      border-right: 2px solid $blue;
-      border-bottom: 2px solid $blue;
+      border-left: 2px solid $light_blue;
+      border-right: 2px solid $light_blue;
+      border-bottom: 2px solid $light_blue;
       &:first-child {
-        border-top: 2px solid $blue;
+        border-top: 2px solid $light_blue;
       }
     }
   }
@@ -30,11 +30,11 @@
     flex-direction: row;
 
     .option_bar_option {
-      border-top: 2px solid $blue;
-      border-bottom: 2px solid $blue;
-      border-right: 2px solid $blue;
+      border-top: 2px solid $light_blue;
+      border-bottom: 2px solid $light_blue;
+      border-right: 2px solid $light_blue;
       &:first-child {
-        border-left: 2px solid $blue;
+        border-left: 2px solid $light_blue;
       }
     }
   }
@@ -50,11 +50,11 @@
     cursor: pointer;
 
     background-color: $white;
-    color: $blue;
+    color: $light_blue;
     font-size: $text_md;
 
     &.selected {
-      background-color: $blue;
+      background-color: $light_blue;
       color: $white;
     }
   }
