@@ -1,0 +1,12 @@
+[version]
+
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^\(components\|js\|pages\|utilities\|views\)\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1/\2'
