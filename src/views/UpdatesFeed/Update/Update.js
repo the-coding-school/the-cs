@@ -14,10 +14,14 @@ export default class Update extends React.Component {
       image
     } = this.props.update;
 
+    const imageStyle = {
+      backgroundImage: `url(${image})`,
+    };
+
     return (
       <div className='update'>
 
-        <img className='update_image' src={image} alt='title' />
+        <div className='update_image' style={imageStyle} />
 
         <div className='update_text'>
           <div className='date'>

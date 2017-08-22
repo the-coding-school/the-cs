@@ -16,5 +16,23 @@ export default [
       },
       date: '2017-06-30',
       image: require('./images/la18_interview.png'),
+  },
+  {
+      title: 'In tdhe News: The Coding School Makes An Appearance on TV channel LA18',
+      link: {
+        url: 'https://www.facebook.com/La18KoreanTV/videos/1339373276170398/',
+        text: 'Watch the video'
+      },
+      date: '2017-06-30',
+      image: require('./images/la18_interview.png'),
+  },
+  {
+      title: 'In thdse News: The Coding School Makes An Appearance on TV channel LA18',
+      link: {
+        url: 'https://www.facebook.com/La18KoreanTV/videos/1339373276170398/',
+        text: 'Watch the video'
+      },
+      date: '2017-06-30',
+      image: require('./images/la18_interview.png'),
   }
 ]
