@@ -35,9 +35,6 @@
       color: $light_blue;
       font-weight: bold;
     }
-    .secondary {
-
-    }
   }
 
   // Small screens
@@ -56,6 +53,9 @@
       }
     }
     .calls_to_action {
+      .button {
+        font-size: $text_tn;
+      }
       justify-content: center;
     }
   }

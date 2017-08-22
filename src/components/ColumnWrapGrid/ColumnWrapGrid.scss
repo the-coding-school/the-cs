@@ -1,0 +1,7 @@
+@import '~scss/Variables';
+
+.column_wrap_grid {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}

@@ -1,19 +1,84 @@
 @import '~scss/Variables';
+@import '~scss/Mixins';
+
+$update_feed_height: 350px;
 
 .updates_feed_wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+
+  .scroll_button {
+    background-color: $white;
+    box-shadow: $box_shadow;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: $text_md;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.right {
+      right: 15px;
+    }
+
+    &.left {
+      left: 15px;
+    }
+
+    transition: all 0.3s ease;
+    transform-origin: center;
+    &:hover {
+      background-color: $black;
+      svg { fill: $white; }
+    }
+  }
 }
 
 .updates_feed {
-  max-width: 1200px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  .update_wrapper:not(:last-child) {
-    // margin-bottom: 50px;
-    border-bottom: 2px solid lighten($black, 75);
+  flex-flow: row nowrap;
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px;
+
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
   }
+
+  .first_update {
+    flex-shrink: 0;
+    height: $update_feed_height;
+    width: $update_feed_height;
+    margin-right: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .remaining_updates {
+    height: $update_feed_height;
+
+    & > * {
+
+      width: 400px;
+      height: $update_feed_height;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+  }
+
+
 }
