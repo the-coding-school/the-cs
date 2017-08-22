@@ -20,6 +20,9 @@ class HomePage extends Component {
 
           <div className='home_page_promo_video'>
             <PromoVideo />
+            <div className='video_text'>
+              We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students develop the skills necessary to thrive and tackle the most pressing issues facing our world.
+            </div>
           </div>
 
           <div className='home_page_updates_feed'>
