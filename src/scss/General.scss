@@ -2,6 +2,8 @@
 
 html, body {
   max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -41,6 +43,7 @@ a {
   border-radius: 5px;
   transition: all 0.1s;
 
+  box-sizing: border-box;
   text-align: center;
   color: $white;
   border: none;
@@ -52,6 +55,7 @@ a {
   & > * { outline: none; }
 
   a {
+    font-weight: bold;
     text-decoration: none;
     color: $white;
   }
