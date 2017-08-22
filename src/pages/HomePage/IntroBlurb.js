@@ -12,10 +12,10 @@ export default function() {
 
   return (
     <div className='intro_blurb'>
-      <div className='intro_blurb_image wow fadeInLeft'>
+      <div className='intro_blurb_image'>
         <img src={introBlurbImage} alt='girl using iPad'/>
       </div>
-      <div className='intro_blurb_text wow fadeInRight'>
+      <div className='intro_blurb_text'>
         <div className='primary'>{homeIntroBlurb.primary}</div>
         <div className='secondary'>{homeIntroBlurb.secondary}</div>
         <div className='calls_to_action'>

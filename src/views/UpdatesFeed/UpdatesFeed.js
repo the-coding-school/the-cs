@@ -16,6 +16,8 @@ export default class UpdatesFeed extends React.Component {
   constructor(props) {
     super(props);
     updates.sort(recencySort);
+
+    this.rerender = this.rerender.bind(this);
   }
 
   componentDidMount() {
@@ -23,11 +25,11 @@ export default class UpdatesFeed extends React.Component {
     // whether to show the scroll arrows
     this.rerender();
 
-    window.addEventListener('resize', this.rerender.bind(this));
+    window.addEventListener('resize', this.rerender);
   }
 
   componentWillUnMount() {
-    window.removeEventListener('resize', this.rerender.bind(this));
+    window.removeEventListener('resize', this.rerender);
   }
 
   showScrollLeft() {
@@ -73,7 +75,7 @@ export default class UpdatesFeed extends React.Component {
         <div
           className='updates_feed'
           ref={div => this.updatesFeedDiv = div}
-          onScroll={this.rerender.bind(this)}
+          onScroll={this.rerender}
         >
 
           <div className='first_update'>
