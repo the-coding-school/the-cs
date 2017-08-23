@@ -1,14 +1,5 @@
 @import "~scss/Variables";
 
-.navbar_header_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid $light_gray;
-  background-color: $blue;
-  width: 100%;
-}
-
 .navbar_header {
   display: flex;
   flex-direction: row;
@@ -16,11 +7,9 @@
   justify-content: center;
   height: 60px;
   width: 100%;
-  max-width: 900px;
+  background-color: $blue;
 
   .navbar_logo {
-    // padding-left: 20px;
-    padding-right: 20px;
     flex-shrink: 0;
     display: flex;
     align-items: center;

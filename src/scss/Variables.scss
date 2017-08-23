@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Domine|Montserrat:400,700');
 
 // Colors
-$blue: #00c7d2;
+$light_blue: #4F94D2;
+$blue: #2A7DC8;
+$light_green: #7BB590;
+$green: #017129;
 $yellow: #ffcc00;
 $black: #333333;
 $light_gray: #c3c3c3;
+$very_light_gray: #e3e3e3;
 $white: #ffffff;
 $red: #e10000;
 
 // Typography
 $font_primary: 'Montserrat', sans-serif;
 $font_secondary: 'Domine', serif;
-$text_min: 12px;
-$text_tn: 14px;
+
+$text_min: 9px;
+$text_tn: 12px;
 $text_sm: 16px;
-$text_md: 20px;
-$text_lg: 28px;
-$text_hg: 48px;
+$text_md: 21px;
+$text_lg: 37px;
+$text_hg: 50px;
+
 $line_height_scale_low: 1.20;
 $line_height_scale_norm: 1.37;
 $line_height_scale_high: 1.75;

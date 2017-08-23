@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import SectionHeader from 'components/SectionHeader';
 import Testimonials from 'views/Testimonials';
 import PartnersPanel from 'views/PartnersPanel';
 import SchoolsPanel from 'views/SchoolsPanel';
@@ -17,8 +18,12 @@ class HomePage extends Component {
         <HomeVideo />
         <div className='page_contents'>
 
-          <div className='video_and_updates'>
+          <div className='home_page_promo_video'>
             <PromoVideo />
+          </div>
+
+          <div className='home_page_updates_feed'>
+            <SectionHeader title='Updates' />
             <UpdatesFeed />
           </div>
 

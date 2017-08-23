@@ -1,0 +1,69 @@
+@import '~scss/Variables';
+
+.featured_update {
+  box-shadow: $box_shadow;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: auto;
+    filter: brightness(0.4);
+  }
+
+  .update_text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    .title {
+      font-size: $text_md;
+      line-height: $text_md * $line_height_scale_low;
+      font-weight: bold;
+      font-family: $font_primary;
+      color: $blue;
+      width: 100%;
+
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .date {
+      font-size: $text_md;
+      font-family: $font_primary;
+      color: $white;
+      font-weight: bold;
+      min-width: 100px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .link_button {
+      display: inline-block;
+      background-color: $white;
+      border: 3px solid $blue;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 10px;
+      color: $blue;
+      text-decoration: none;
+      font-size: $text_md;
+    }
+  }
+}

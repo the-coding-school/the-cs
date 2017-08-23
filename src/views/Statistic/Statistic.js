@@ -11,7 +11,7 @@ export default class Statistic extends React.Component {
     } = this.props;
 
     return (
-      <div className='statistic wow zoomIn'>
+      <div className='statistic'>
         <img alt='statistic' src={imageSrc} width='80' height='80' />
         <h2>{number}</h2>
         <p>{description}</p>
