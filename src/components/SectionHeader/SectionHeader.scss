@@ -3,14 +3,15 @@
 .section_header {
   @media (max-width: $bpoint_sm - 1) {
     font-size: $text_md;
+    margin: 25px auto;
   }
   @media (min-width: $bpoint_sm) {
     font-size: $text_lg;
+    margin: 50px auto;
   }
   color: $blue;
   text-align: center;
   width: 100%;
-  margin: 50px auto;
   .title {
     font-weight: bold;
   }
