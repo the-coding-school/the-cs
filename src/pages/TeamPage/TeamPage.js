@@ -38,6 +38,13 @@ export default class TeamPage extends React.Component {
             </div>
 
             <TeamSection
+              teamType='team_board'
+              title='Board Members'
+              members={team.boardMembers.sort(sortMembersAlphabetically)}
+              showFullName={true}
+            /> 
+
+            <TeamSection
               teamType='team_advisors'
               title='Advisors'
               members={team.advisors.sort(sortMembersAlphabetically)}

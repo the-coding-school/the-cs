@@ -39,6 +39,32 @@ let teamMembers = {
       }
     }
   ],
+  boardMembers: [
+    {
+      name: { first: "Eva", last: "Manolis" },
+      position: "Board Member",
+      college: "",
+      description: "Eva Manolis is Co-Founder of Shutterfly and a former VP at Amazon.",
+      blurb: "",
+      links: {},
+    },
+    {
+      name: { first: "Pamit", last: "Surana" },
+      position: "Board Member",
+      college: "",
+      description: "Pamit Surana is Managing Director at Alvarez & Marsal and a former Managing Director at Accenture.",
+      blurb: "",
+      links: {},
+    },
+    {
+      name: { first: "Ravi", last: "Pendse" },
+      position: "Board Member",
+      college: "",
+      description: "Ravi Pendse is VP Chief Information Officer at Brown University.",
+      blurb: "",
+      links: {},
+    }
+  ],
   teamLeads: [
     {
       name:  { first: "Laura", last: "Felenstein" },
