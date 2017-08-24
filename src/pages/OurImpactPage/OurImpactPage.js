@@ -1,9 +1,10 @@
 import React from 'react';
 import TitledParagraphs from 'components/TitledParagraphs';
-import Testimonials from 'components/Testimonials';
+import TitledContent from 'components/TitledContent';
 import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import StatisticsPanel from 'views/StatisticsPanel';
+import { generateIdFromString } from 'utilities/dom';
 
 import pageData from './OurImpactPageData';
 
@@ -41,7 +42,24 @@ export default class OurImpactPage extends React.Component {
           <div classname='testimonials'>
             {
               pageData.paragraphs.testimonials.map(function(i) {
-                return <Testimonials key={i.title} title={i.title} paragraphs={i.paragraphs} />
+                const {
+                  title,
+                  subtitle,
+                  paragraphs
+                } = i;
+                const paragraphsDOM = <div className='text_block' dangerouslySetInnerHTML={{__html: i.paragraphs}} />
+                let tpDOM = null;
+                if ("subtitle" in i) {
+                  tpDOM = <TitledContent title={title} subtitle={subtitle} content={paragraphsDOM} />
+                } else {
+                  tpDOM = <TitledContent title={title} content={paragraphsDOM} />
+                }
+                return (
+                  <div
+                    id={generateIdFromString(title)}
+                    className="titled_paragraphs"
+                  > {tpDOM} </div>
+                );
               })
             }
           </div>
