@@ -47,6 +47,9 @@ $calvinRed: #97252B;
 $calvinYellow: #F3CD00;
 $cincinnatiRed: #E00122;
 $pugetRed: #660000;
+$shutterflyOrange: #F05423;
+$amLightBlue: #3a84b6;
+$amDarkBlue: #00254a;
 
 
 .member_college_bar {
@@ -201,6 +204,14 @@ $pugetRed: #660000;
   &.puget_sound {
     background-color: $pugetRed;
     color: $white;
+  }
+  &.shutterfly {
+    background-color: $shutterflyOrange;
+    color: $white;
+  }
+  &.alvarez_and_marsal {
+    background-color: $amLightBlue;
+    color: $amDarkBlue;
   }
 
 }
