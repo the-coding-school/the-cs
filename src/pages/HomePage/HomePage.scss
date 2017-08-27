@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
   }
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .home_page {
@@ -18,10 +20,15 @@
     background-color: $light_blue;
     color: $white;
     box-sizing: border-box;
-    padding: 100px 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+
 
     .section_header {
-      color: $white;
+      .title,
+      .subtitle {
+        color: $white;
+      }
     }
 
     .page_row {
@@ -66,11 +73,13 @@
 
   .home_page_updates_feed {
     box-sizing: border-box;
-    padding: 50px 0px;
     background-color: $blue;
 
     .section_header {
-      color: $white;
+      .title,
+      .subtitle {
+        color: $white;
+      }
     }
   }
 
