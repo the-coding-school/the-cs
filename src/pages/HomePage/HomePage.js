@@ -39,7 +39,10 @@ class HomePage extends Component {
             </div>
           </TitledPageRow>
 
-          <PartnersPanel />
+          <div className='home_page_partners_panel'>
+            <SectionHeader title='Our Partners' />
+            <PartnersPanel />
+          </div>
 
           <TitledPageRow
             title='Updates'
@@ -48,9 +51,16 @@ class HomePage extends Component {
             <UpdatesFeed/>
           </TitledPageRow>
 
-          <SchoolsPanel />
+          <div className='home_page_partners_panel'>
+            <SectionHeader
+              title='School Districts We Have Coding Programs In'
+            />
+            <SchoolsPanel />
+          </div>
 
-          <Testimonials />
+          <div className='home_page_testimonials'>
+            <Testimonials />
+          </div>
 
         </div>
       </div>

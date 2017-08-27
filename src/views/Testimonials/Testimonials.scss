@@ -1,15 +1,23 @@
 @import '~scss/Variables';
 
-.testimonials_wrapper {
+.testimonials {
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 50px;
+
   display: flex;
   justify-content: center;
-  background-color: $light_green;
+  align-items: center;
+
+  & > * {
+    max-width: $container_max_width;
+    width: 100%;
+  }
 }
 
-.testimonials {
-  width: 80%;
-  max-width: $container_max_width;
-  margin: 50px auto;
+.slick_panel_wrapper {
+
 }
 
 .testimonial_wrapper {

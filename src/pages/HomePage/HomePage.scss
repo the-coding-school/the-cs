@@ -74,4 +74,20 @@
     }
   }
 
+  .home_page_partners_panel,
+  .home_page_schools_panel {
+    h1 {
+      color: $blue;
+      font-size: $text_lg;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    margin: 25px auto;
+  }
+
+  .home_page_testimonials {
+    background-color: $light_blue;
+  }
+
 }
