@@ -49,11 +49,7 @@ export default class OurImpactPage extends React.Component {
                 } = i;
                 const paragraphsDOM = <div className='text_block' dangerouslySetInnerHTML={{__html: i.paragraphs}} />
                 let tpDOM = null;
-                if ("subtitle" in i) {
-                  tpDOM = <TitledContent title={title} subtitle={subtitle} content={paragraphsDOM} />
-                } else {
-                  tpDOM = <TitledContent title={title} content={paragraphsDOM} />
-                }
+                tpDOM = <TitledContent title={title} content={paragraphsDOM} />
                 return (
                   <div
                     id={generateIdFromString(title)}
