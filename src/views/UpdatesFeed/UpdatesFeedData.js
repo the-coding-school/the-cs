@@ -16,5 +16,14 @@ export default [
       },
       date: '2017-06-30',
       image: require('./images/la18_interview.png'),
+  },
+  {
+      title: 'The Coding School board has new members!',
+      link: {
+        url: '../../#/team#board',
+        text: 'Meet them'
+      },
+      date: '2017-08-23',
+      image: require('./images/new_board_aug_17.png'),
   }
 ]
