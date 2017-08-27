@@ -4,18 +4,99 @@
   position: relative;
 }
 
-.home_page {
-
-  .home_page_promo_video {
+.titled_page_row {
+  .page_row {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+  }
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.home_page {
+
+  .home_page_promo_video {
+    background-color: $light_blue;
+    color: $white;
+    box-sizing: border-box;
+    padding-right: 50px;
+    padding-left: 50px;
+
+
+    .section_header {
+      .title,
+      .subtitle {
+        color: $white;
+      }
+    }
+
+    .page_row {
+      // Small
+      @media (max-width: $bpoint_md - 1) {
+        flex-direction: column;
+        .video_text {
+          margin-bottom: 25px;
+          padding: 0px 5%;
+          text-align: center;
+          order: 1;
+          font-size: $text_sm;
+          line-height: $text_sm * $line_height_scale_norm;
+        }
+        .promo_video_wrapper {
+          order: 2;
+        }
+      }
+
+      // Large
+      @media (min-width: $bpoint_md) {
+        flex-direction: row;
+        & > * {
+          width: 50%;
+        }
+        .video_text {
+          text-align: center;
+          font-size: $text_md;
+          line-height: $text_md * $line_height_scale_norm;
+          padding: 0px 80px;
+        }
+      }
+    }
+
+    .video_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
   }
 
   .home_page_updates_feed {
     box-sizing: border-box;
-    padding: 50px 0px;
+    background-color: $blue;
+
+    .section_header {
+      .title,
+      .subtitle {
+        color: $white;
+      }
+    }
+  }
+
+  .home_page_partners_panel,
+  .home_page_schools_panel {
+    h1 {
+      color: $blue;
+      font-size: $text_lg;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    margin: 25px auto;
+  }
+
+  .home_page_testimonials {
+    background-color: $light_blue;
   }
 
 }

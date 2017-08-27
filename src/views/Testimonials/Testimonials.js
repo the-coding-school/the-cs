@@ -11,7 +11,7 @@ export default class Testimonials extends React.Component {
       autoplaySpeed: 8000,
       dots: true,
       pauseOnHover: true,
-      adaptiveHeight: true
+      adaptiveHeight: false
     }
     const testimonialsDOM = testimonials.map(function(t, i) {
 
@@ -29,10 +29,8 @@ export default class Testimonials extends React.Component {
     })
 
     return (
-      <div className='testimonials_wrapper'>
-        <div className='testimonials'>
-          <SlickPanel children={testimonialsDOM} options={slickOpt}/>
-        </div>
+      <div className='testimonials'>
+        <SlickPanel children={testimonialsDOM} options={slickOpt}/>
       </div>
     );
   }
