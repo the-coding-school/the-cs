@@ -34,7 +34,7 @@
       line-height: $text_md * $line_height_scale_low;
       font-weight: bold;
       font-family: $font_primary;
-      color: $blue;
+      color: $light_blue;
       width: 100%;
 
       margin-bottom: 10px;
@@ -52,18 +52,6 @@
       min-width: 100px;
       margin-bottom: 10px;
       width: 100%;
-    }
-
-    .link_button {
-      display: inline-block;
-      background-color: $white;
-      border: 3px solid $blue;
-      border-radius: 4px;
-      box-sizing: border-box;
-      padding: 10px;
-      color: $blue;
-      text-decoration: none;
-      font-size: $text_md;
     }
   }
 }

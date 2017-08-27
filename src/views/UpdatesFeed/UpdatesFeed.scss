@@ -73,7 +73,7 @@ $update_feed_height: 350px;
 
     & > * {
 
-      width: 400px;
+      width: $update_feed_height;
       height: $update_feed_height;
       box-sizing: border-box;
       padding: 10px;

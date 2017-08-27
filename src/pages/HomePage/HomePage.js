@@ -10,6 +10,17 @@ import PromoVideo from 'views/PromoVideo';
 
 import './HomePage.scss';
 
+const TitledPageRow = (props) => (
+  <div className={`titled_page_row ${props.className}`}>
+    <div className='title'>
+      <SectionHeader title={props.title} subtitle={props.subtitle} />
+    </div>
+    <div className='page_row'>
+      {props.children}
+    </div>
+  </div>
+);
+
 class HomePage extends Component {
   render() {
 
@@ -18,18 +29,38 @@ class HomePage extends Component {
         <HomeVideo />
         <div className='page_contents'>
 
-          <div className='home_page_promo_video'>
+          <TitledPageRow
+            title='A Look Into the Classroom'
+            className='home_page_promo_video'
+          >
             <PromoVideo />
+            <div className='video_text'>
+              We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students develop the skills necessary to thrive and tackle the most pressing issues facing our world.
+            </div>
+          </TitledPageRow>
+
+          <div className='home_page_partners_panel'>
+            <SectionHeader subtitle='Our Partners' />
+            <PartnersPanel />
           </div>
 
-          <div className='home_page_updates_feed'>
-            <SectionHeader title='Updates' />
-            <UpdatesFeed />
+          <TitledPageRow
+            title='Updates'
+            className='home_page_updates_feed'
+          >
+            <UpdatesFeed/>
+          </TitledPageRow>
+
+          <div className='home_page_partners_panel'>
+            <SectionHeader
+              subtitle='School Districts We Have Coding Programs In'
+            />
+            <SchoolsPanel />
           </div>
 
-          <Testimonials />
-          <PartnersPanel />
-          <SchoolsPanel />
+          <div className='home_page_testimonials'>
+            <Testimonials />
+          </div>
 
         </div>
       </div>

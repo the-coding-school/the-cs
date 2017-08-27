@@ -83,6 +83,10 @@ const pages = [
       {
         name: 'Learning Disabilities and Coding',
         link: '#learningdisabilitiesandcoding'
+      },
+      {
+        name: 'Virtual Classroom Instruction',
+        link: '#virtualclassroominstruction'
       }
     ],
     component: OurProgramsPage
