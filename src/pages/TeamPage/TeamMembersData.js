@@ -13,7 +13,7 @@ let teamMembers = {
     {
       name:  { first: "Bill", last: "Derouin" },
       position: "Advisor, Co-Head of Curriculum",
-      college: "USC",
+      college: "SpaceX",
       description: "Employed at SpaceX, I am passionate about coding.  I first started programming in middle school and because I realize how important it is for kids to learn coding at a young age, I have been involved with TCS since I was a freshman at USC.  First serving as an instructor to developing TCS curricula, I am proud to continue serving as an advisor to TCS by overseeing their curricula strategy and development.",
       blurb: "",
       links: {},
@@ -37,6 +37,12 @@ let teamMembers = {
       links: {
         personal: "https://viterbi.usc.edu/directory/faculty/Ragusa/Gisele"
       }
+    },
+    {
+      name: { first: "Matt", last: "Dababneh" },
+      position: "",
+      college: "CA State Assembly",
+      description: "Matt Dababneh is a California State Assembly Member and Former Chief of Staff to U.S. Congressman Brad Sherman"
     }
   ],
   boardMembers: [

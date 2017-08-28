@@ -17,7 +17,6 @@ export default function() {
       </div>
       <div className='intro_blurb_text'>
         <div className='primary'>{homeIntroBlurb.primary}</div>
-        <div className='secondary'>{homeIntroBlurb.secondary}</div>
         <div className='calls_to_action'>
           <div className='button yellow'>
             <Link to='/about'>Learn More</Link>

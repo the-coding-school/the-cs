@@ -50,6 +50,8 @@ $pugetRed: #660000;
 $shutterflyOrange: #F05423;
 $amLightBlue: #3a84b6;
 $amDarkBlue: #00254a;
+$spacexBlack: #000000;
+$caAssemblyGreen: #447426;
 
 
 .member_college_bar {
@@ -212,6 +214,14 @@ $amDarkBlue: #00254a;
   &.alvarez_and_marsal {
     background-color: $amLightBlue;
     color: $amDarkBlue;
+  &.spacex {
+    background-color: $spacexBlack;
+    color: $white;
+  }
+  &.ca_state_assembly {
+    background-color: $caAssemblyGreen;
+    color: $white;
+
   }
 
 }

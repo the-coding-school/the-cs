@@ -28,6 +28,13 @@ export default {
           "This program was inspired by two brothers with learning disabilities who took our class and fell in love with coding. While they typically faced difficulties concentrating and lack of enthusiasm, the brothers displayed passion and focus in coding class, which also had a butterfly effect into their other academic subjects. The assistant principal, witnessing the boys’ academic improvements and newfound desire to become engineers, asked us to create a program to ensure students with learning disabilities can be empowered through coding.",
           "As a response, we partnered with the Santa Monica-Malibu Unified School District to offer a pilot coding program for students with learning disabilities. Our overall goal in creating this initiative is to change the conversation surrounding learning disabilities through awareness and accessibility. We aspire to empower these students through coding, and moreover, help them see they can make meaningful contributions to the field of computer science."
         ]
+    },
+    {
+      title: "Virtual Classroom Instruction",
+      subtitle: "Bringing coding to schools never before reached.",
+      paragraphs: [
+        "With our video chat and collaborative editing platform, we can bring our instructors and year-long courses into entire classrooms. This is especially beneficial for schools located in rural communities."
+      ]
     }
   ]
 }
