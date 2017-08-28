@@ -45,6 +45,32 @@ let teamMembers = {
       description: "Matt Dababneh is a California State Assembly Member and Former Chief of Staff to U.S. Congressman Brad Sherman"
     }
   ],
+  boardMembers: [
+    {
+      name: { first: "Eva", last: "Manolis" },
+      position: "Board Member",
+      college: "Shutterfly",
+      description: "Eva Manolis is Co-Founder of Shutterfly and a former VP at Amazon.",
+      blurb: "",
+      links: {},
+    },
+    {
+      name: { first: "Pamit", last: "Surana" },
+      position: "Board Member",
+      college: "Alvarez and Marsal",
+      description: "Pamit Surana is Managing Director at Alvarez & Marsal and a former Managing Director at Accenture.",
+      blurb: "",
+      links: {},
+    },
+    {
+      name: { first: "Ravi", last: "Pendse" },
+      position: "Board Member",
+      college: "Brown University",
+      description: "Ravi Pendse is VP Chief Information Officer at Brown University.",
+      blurb: "",
+      links: {},
+    }
+  ],
   teamLeads: [
     {
       name:  { first: "Laura", last: "Felenstein" },

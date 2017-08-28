@@ -47,6 +47,9 @@ $calvinRed: #97252B;
 $calvinYellow: #F3CD00;
 $cincinnatiRed: #E00122;
 $pugetRed: #660000;
+$shutterflyOrange: #F05423;
+$amLightBlue: #3a84b6;
+$amDarkBlue: #00254a;
 $spacexBlack: #000000;
 $caAssemblyGreen: #447426;
 
@@ -204,6 +207,13 @@ $caAssemblyGreen: #447426;
     background-color: $pugetRed;
     color: $white;
   }
+  &.shutterfly {
+    background-color: $shutterflyOrange;
+    color: $white;
+  }
+  &.alvarez_and_marsal {
+    background-color: $amLightBlue;
+    color: $amDarkBlue;
   &.spacex {
     background-color: $spacexBlack;
     color: $white;
@@ -211,6 +221,7 @@ $caAssemblyGreen: #447426;
   &.ca_state_assembly {
     background-color: $caAssemblyGreen;
     color: $white;
+
   }
 
 }

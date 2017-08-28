@@ -96,6 +96,10 @@ const pages = [
         link: '#founder'
       },
       {
+        name: 'Board Members',
+        link: '#boardmembers'
+      },
+      {
         name: 'Advisors',
         link: '#advisors'
       },
