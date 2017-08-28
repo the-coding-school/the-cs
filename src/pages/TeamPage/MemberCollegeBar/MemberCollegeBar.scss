@@ -47,6 +47,8 @@ $calvinRed: #97252B;
 $calvinYellow: #F3CD00;
 $cincinnatiRed: #E00122;
 $pugetRed: #660000;
+$spacexBlack: #000000;
+$caAssemblyGreen: #447426;
 
 
 .member_college_bar {
@@ -200,6 +202,14 @@ $pugetRed: #660000;
   }
   &.puget_sound {
     background-color: $pugetRed;
+    color: $white;
+  }
+  &.spacex {
+    background-color: $spacexBlack;
+    color: $white;
+  }
+  &.ca_state_assembly {
+    background-color: $caAssemblyGreen;
     color: $white;
   }
 
