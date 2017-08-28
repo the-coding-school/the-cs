@@ -900,7 +900,7 @@ const addImagesForUser = (user) => {
 
   // Load regular image
   try {
-    user.images.regular = require(`./images/${imageId}.jpg`);
+    user.images.regular = require(`../images/team/${imageId}.jpg`);
   }
   catch (e) {
     console.log(`Uh oh! No valid regular image for ${first} ${last}.`);
@@ -908,7 +908,7 @@ const addImagesForUser = (user) => {
 
   // Load fun image
   try {
-    user.images.fun = require(`./images/${imageId}_fun.jpg`);
+    user.images.fun = require(`../images/team/${imageId}_fun.jpg`);
   }
   catch (e) {
     user.images.fun = user.images.regular;
