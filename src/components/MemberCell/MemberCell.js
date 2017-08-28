@@ -2,7 +2,7 @@ import React from 'react';
 
 import MemberImage from '../MemberImage';
 import MemberInfoOverlay from '../MemberInfoOverlay';
-import MemberCollegeBar from '../MemberCollegeBar';
+import MemberOrganizationBar from '../MemberOrganizationBar';
 
 import "./MemberCell.scss";
 
@@ -13,7 +13,7 @@ export default class MemberCell extends React.Component {
       name,
       position,
       description,
-      college,
+      organization,
       images
     } = this.props;
 
@@ -30,7 +30,7 @@ export default class MemberCell extends React.Component {
             description={description}
             />
         </div>
-        <MemberCollegeBar college={college} />
+        <MemberOrganizationBar organization={organization} />
       </div>
     )
   }

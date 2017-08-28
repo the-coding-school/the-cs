@@ -31,7 +31,7 @@ export default class TeamPage extends React.Component {
                 position={founder.position}
                 description={founder.description}
                 blurb={founder.blurb}
-                college={founder.college}
+                organization={founder.organization}
                 links={founder.links}
                 images={founder.images}
               />

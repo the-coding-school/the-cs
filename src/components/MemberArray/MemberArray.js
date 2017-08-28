@@ -27,7 +27,7 @@ export default class MemberArray extends React.Component {
             position={m.position}
             description={m.description}
             blurb={m.blurb}
-            college={m.college}
+            organization={m.organization}
             images={m.images}
             links={m.links}
           />

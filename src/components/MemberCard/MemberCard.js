@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MemberImage from '../MemberImage';
-import MemberCollegeBar from '../MemberCollegeBar';
+import MemberOrganizationBar from '../MemberOrganizationBar';
 import MemberName from '../MemberName';
 import MemberPosition from '../MemberPosition';
 import MemberDescription from '../MemberDescription';
@@ -21,7 +21,7 @@ export default class MemberCard extends React.Component {
       position,
       description,
       blurb,
-      college,
+      organization,
       links,
       images
     } = this.props;
@@ -43,7 +43,7 @@ export default class MemberCard extends React.Component {
           <div className='member_card_row'>
             <div className='member_card_column'>
               <MemberImage background={true} images={images} />
-              <MemberCollegeBar college={college} />
+              <MemberOrganizationBar organization={organization} />
               {blurb && <MemberBlurb blurb={blurb}/> }
             </div>
             <div className='member_card_column'>
