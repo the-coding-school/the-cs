@@ -1,4 +1,4 @@
-@import "../../../scss/Variables";
+@import "~scss/Variables";
 
 $uclaBlue: #1E5EA0;
 $uclaYellow: #FBB727;
@@ -53,8 +53,7 @@ $amDarkBlue: #00254a;
 $spacexBlack: #000000;
 $caAssemblyGreen: #447426;
 
-
-.member_college_bar {
+.member_organization_bar {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;

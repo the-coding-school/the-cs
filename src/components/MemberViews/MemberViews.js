@@ -28,7 +28,7 @@ export default class MemberViews extends React.Component {
       name,
       position,
       description,
-      college,
+      organization,
       blurb,
       images,
       links
@@ -62,7 +62,7 @@ export default class MemberViews extends React.Component {
           name={name}
           position={position}
           description={description}
-          college={college}
+          organization={organization}
           images={images}
         />
 
@@ -77,7 +77,7 @@ export default class MemberViews extends React.Component {
                 position={position}
                 description={description}
                 blurb={blurb}
-                college={college}
+                organization={organization}
                 links={links}
                 images={images}
               />

@@ -1,10 +1,10 @@
 import React from 'react';
 import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
-import MemberCard from './MemberCard';
-import TeamSection from './TeamSection';
+import MemberCard from 'components/MemberCard';
+import TeamSection from 'components/TeamSection';
 
-import team from './TeamMembersData';
+import team from 'data/TeamMembers';
 import pageData from './TeamPageData';
 
 export default class TeamPage extends React.Component {
@@ -31,7 +31,7 @@ export default class TeamPage extends React.Component {
                 position={founder.position}
                 description={founder.description}
                 blurb={founder.blurb}
-                college={founder.college}
+                organization={founder.organization}
                 links={founder.links}
                 images={founder.images}
               />
@@ -42,7 +42,7 @@ export default class TeamPage extends React.Component {
               title='Board Members'
               members={team.boardMembers.sort(sortMembersAlphabetically)}
               showFullName={true}
-            /> 
+            />
 
             <TeamSection
               teamType='team_advisors'
