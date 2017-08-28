@@ -21,14 +21,14 @@ export default class MemberCell extends React.Component {
       <div className='member_cell_wrapper' onClick={onClick}>
         <div className='member_cell'>
           <MemberImage
-            background={false}
+            isSquare={true}
             images={images}
           />
           <MemberInfoOverlay
             name={name}
             position={position}
             description={description}
-            />
+          />
         </div>
         <MemberOrganizationBar organization={organization} />
       </div>

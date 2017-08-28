@@ -7,7 +7,7 @@ export default class MemberImage extends React.Component {
   render() {
 
     const {
-      background,
+      isSquare,
       images
     } = this.props;
 
@@ -19,7 +19,7 @@ export default class MemberImage extends React.Component {
 
     return (
       <div className="member_image">
-        {background && (<div className="member_image_background">
+        {!isSquare && (<div className="member_image_background">
           {imageComponent}
         </div>
         )}

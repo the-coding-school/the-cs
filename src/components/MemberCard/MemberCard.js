@@ -42,7 +42,7 @@ export default class MemberCard extends React.Component {
 
           <div className='member_card_row'>
             <div className='member_card_column'>
-              <MemberImage background={true} images={images} />
+              <MemberImage isSquare={false} images={images} />
               <MemberOrganizationBar organization={organization} />
               {blurb && <MemberBlurb blurb={blurb}/> }
             </div>
