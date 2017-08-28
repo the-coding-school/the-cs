@@ -89,7 +89,7 @@ $caAssemblyGreen: #447426;
   }
   &.indiana_university {
     background-color: $indianaCrimson;
-    color: $indianaCream;  
+    color: $indianaCream;
   }
   &.umich {
     background-color: $umichBlue;
@@ -214,6 +214,7 @@ $caAssemblyGreen: #447426;
   &.alvarez_and_marsal {
     background-color: $amLightBlue;
     color: $amDarkBlue;
+  }
   &.spacex {
     background-color: $spacexBlack;
     color: $white;
@@ -221,7 +222,5 @@ $caAssemblyGreen: #447426;
   &.ca_state_assembly {
     background-color: $caAssemblyGreen;
     color: $white;
-
   }
-
 }
