@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Route, Redirect } from 'react-router-dom';
 import OptionBar from './OptionBar';
 import {
   VolunteerFormView,
@@ -14,31 +14,31 @@ export default class InvolvementPanel extends React.Component {
 
   constructor(props) {
     super(props);
-    this.options = {
+    this.forms = {
       VOLUNTEER: {
+        path: 'volunteer',
         text: 'Volunteer',
-        view: <VolunteerFormView />
+        view: VolunteerFormView
       },
       TEACHER: {
+        path: 'become-a-teacher',
         text: 'Become a Teacher',
-        view: <TeacherFormView />
+        view: TeacherFormView
       },
       BRING_TO_SCHOOL: {
+        path: 'bring-coding',
         text: 'Bring coding to your school',
-        view: <BringToSchoolFormView />
+        view: BringToSchoolFormView
       },
       PARTNER: {
+        path: 'partner',
         text: 'Partner with us',
-        view: <PartnerFormView />
+        view: PartnerFormView
       }
-    }
-
-    this.state = {
-      selectedOption: this.options.VOLUNTEER
     }
   }
 
-  changeSelectedOption(event) {
+  changeSelectedForm(event) {
     const clickedOption = event.target.id.substr(7);
     this.setState({
       selectedOption: this.options[clickedOption]
@@ -50,16 +50,31 @@ export default class InvolvementPanel extends React.Component {
   }
 
   render() {
-
     return (
       <div className='involvement_panel'>
         <OptionBar
-          options={this.options}
-          selectedOption={this.state.selectedOption}
-          onClick={this.changeSelectedOption.bind(this)}
+          options={this.forms}
+          selectedOption={this.props.selectedForm}
+          onClick={this.changeSelectedForm.bind(this)}
         />
 
-        { this.state.selectedOption.view }
+        <Route
+          exact path='/get-involved'
+          render={() => (<Redirect to='/get-involved/volunteer' />)}
+        />
+
+        {
+          Object.keys(this.forms).map(formKey => {
+            return (
+              <Route
+                key={formKey}
+                exact
+                path={`/get-involved/${this.forms[formKey].path}`}
+                component={this.forms[formKey].view}
+              />
+            );
+          })
+        }
 
       </div>
     );

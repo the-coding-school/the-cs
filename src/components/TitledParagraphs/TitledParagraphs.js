@@ -1,7 +1,6 @@
 // @flow
 
 import * as React from 'react';
-import { generateIdFromString } from 'utilities/dom';
 import TitledContent from '../TitledContent';
 import TextBlock from '../TextBlock';
 import './TitledParagraphs.scss';
@@ -13,10 +12,7 @@ type PropsType = {
 };
 
 export default (props: PropsType) => (
-  <div
-    id={generateIdFromString(props.title)}
-    className="titled_paragraphs"
-  >
+  <div className="titled_paragraphs">
     <TitledContent title={props.title} subtitle={props.subtitle}>
       <TextBlock paragraphs={props.paragraphs} />
     </TitledContent>

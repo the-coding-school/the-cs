@@ -27,6 +27,7 @@ const pages = [
   {
     path: '/',
     name: 'Home',
+    exactPath: true,
     sections: [],
     component: HomePage
   },
@@ -97,7 +98,7 @@ const pages = [
       },
       {
         name: 'Board Members',
-        link: '#boardmembers'
+        link: '#board'
       },
       {
         name: 'Advisors',
@@ -105,7 +106,7 @@ const pages = [
       },
       {
         name: 'Team Heads',
-        link: '#teamheads'
+        link: '#heads'
       },
       {
         name: 'Teachers',
@@ -117,7 +118,25 @@ const pages = [
   {
     path: '/get-involved',
     name: 'Get Involved',
-    component: GetInvolvedPage
+    component: GetInvolvedPage,
+    sections: [
+      {
+        name: 'Volunteer',
+        link: 'volunteer'
+      },
+      {
+        name: 'Become a Teacher',
+        link: 'become-a-teacher'
+      },
+      {
+        name: 'Bring coding to your school',
+        link: 'bring-coding'
+      },
+      {
+        name: 'Partner with us',
+        link: 'partner'
+      }
+    ]
   },
   {
     path: '/donate',

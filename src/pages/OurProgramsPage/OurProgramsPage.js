@@ -1,29 +1,35 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { LinkScrollPage, Anchor, createAnchorId } from 'components/LinkScrollPage';
 import TitledParagraphs from 'components/TitledParagraphs';
 import PageHeader from 'components/PageHeader';
-
 import pageData from './OurProgramsPageData';
 
-class OurProgramsPage extends Component {
+export default class OurProgramsPage extends LinkScrollPage {
   render() {
-
-    const programsDOM = pageData.ourPrograms.map(function(p) {
-      return (
-          <TitledParagraphs key={p.title} title={p.title} subtitle={p.subtitle} paragraphs={p.paragraphs} />
-      );
-    });
-
-    const header = pageData.header;
+    const { header } = pageData;
 
     return (
       <div className='our_programs_page page'>
         <PageHeader image={header.image} title={header.title} description={header.description}/>
         <div className='page_contents'>
-          {programsDOM}
+          {
+            pageData.ourPrograms.map(paragraph => (
+              <div key={paragraph.title}>
+                <Anchor
+                  pageMap={this.pageMap}
+                  id={createAnchorId(paragraph.title)}
+                />
+                <TitledParagraphs
+                  title={paragraph.title}
+                  subtitle={paragraph.subtitle}
+                  paragraphs={paragraph.paragraphs}
+                />
+
+              </div>
+            ))
+          }
         </div>
       </div>
     );
   }
 }
-
-export default OurProgramsPage;

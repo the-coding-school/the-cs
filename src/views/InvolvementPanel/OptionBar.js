@@ -1,12 +1,13 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import './OptionBar.scss';
 
 export default class OptionBar extends React.Component {
 
   renderOptions() {
     return Object.keys(this.props.options).map((o) => {
-      let isSelected = (this.props.options[o] === this.props.selectedOption);
+      const option = this.props.options[o];
+      let isSelected = (option === this.props.selectedOption);
 
       return (
         <div
@@ -15,7 +16,9 @@ export default class OptionBar extends React.Component {
           key={`option-${o}`}
           onClick={this.props.onClick}
         >
-          {this.props.options[o].text}
+          <Link to={`/get-involved/${option.path}`}>
+            {option.text}
+          </Link>
         </div>
       );
     });

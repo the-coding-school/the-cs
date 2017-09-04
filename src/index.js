@@ -1,41 +1,30 @@
+// @flow
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
-import Skeleton from './views/Skeleton';
-import routes from './routes';
-import {
-  smoothlyScrollToElement,
-  smoothlyScrollToPageOffset
-} from 'utilities/dom';
-
-function hashLinkScroll() {
-  const { hash } = window.location;
-  if (hash !== '') {
-    // Push onto callback queue so it runs after the DOM is updated,
-    // this is required when navigating from a different page so that
-    // the element is rendered on the page before trying to getElementById.
-    setTimeout(() => {
-
-      // This part is VERY hacky/finnicky, so it could break quite easily
-      // !! BEWARE !!
-      const keys = hash.split('#');
-      const id = `${keys[keys.length - 1]}`;
-      const element = document.getElementById(id);
-      if (element) {
-        smoothlyScrollToElement(element, 300);
-      } else {
-        smoothlyScrollToPageOffset(0);
-      }
-    }, 0);
-  }
-}
+import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from 'views/Navbar';
+import Footer from 'views/Footer';
+import pages from 'pages';
 
 ReactDOM.render(
-  <Router onUpdate={hashLinkScroll} history={hashHistory}>
-    <Route component={Skeleton}>
-      {routes}
-    </Route>
-  </Router>,
+  <BrowserRouter>
+    <div>
+      <Navbar />
+      {
+        pages.map(p => {
+          const routeProps = {
+            key: p.path,
+            path: p.path,
+            component: p.component,
+            exact: Boolean(p.exactPath)
+          };
+
+          return <Route {...routeProps} />
+        })
+      }
+      <Footer />
+    </div>
+  </BrowserRouter>,
   document.getElementById('root')
 );

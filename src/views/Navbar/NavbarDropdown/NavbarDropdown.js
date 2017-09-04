@@ -1,6 +1,6 @@
 import React from 'react';
 import { TweenMax } from 'gsap';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import './NavbarDropdown.scss';
 
 import ReactTransitionGroup from 'react-addons-transition-group';
@@ -65,7 +65,9 @@ export default function NavbarDropdown(props) {
         <Dropdown>
           { dropdownData.sections.map(section => (
             <div key={section.name} className='dropdown_option'>
-              <Link to={dropdownData.pagePath + section.link}>
+              <Link to={{
+                pathname: `${dropdownData.pagePath}/${section.link}`
+              }}>
                 {section.name}
               </Link>
             </div>

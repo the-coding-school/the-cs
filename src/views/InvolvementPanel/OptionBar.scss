@@ -53,6 +53,10 @@
     color: $light_blue;
     font-size: $text_md;
 
+    a {
+      text-decoration: none;
+    }
+
     &.selected {
       background-color: $light_blue;
       color: $white;

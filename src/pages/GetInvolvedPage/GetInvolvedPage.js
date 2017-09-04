@@ -7,6 +7,27 @@ import './GetInvolvedPage.scss';
 import pageData from './GetInvolvedPageData';
 
 export default class GetInvolvedPage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedForm: 'VOLUNTEER'
+    }
+  }
+
+
+  componentDidMount() {
+
+  }
+
+  componentDidUpdate() {
+
+  }
+
+  goToHashRequestedForm() {
+    const requestedForm = window.location.hash.substr(1);
+  }
+
   render() {
     const {
       header
@@ -18,7 +39,9 @@ export default class GetInvolvedPage extends React.Component {
         <div className='page_contents'>
 
           <div className='involvement_panel_wrapper'>
-            <InvolvementPanel />
+            <InvolvementPanel
+              selectedForm={this.state.selectedForm}
+            />
           </div>
 
         </div>
