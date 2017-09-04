@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
@@ -30,11 +31,11 @@ function hashLinkScroll() {
   }
 }
 
-ReactDOM.render((
+ReactDOM.render(
   <Router onUpdate={hashLinkScroll} history={hashHistory}>
     <Route component={Skeleton}>
       {routes}
     </Route>
-  </Router>
-
-), document.getElementById('root'));
+  </Router>,
+  document.getElementById('root')
+);
