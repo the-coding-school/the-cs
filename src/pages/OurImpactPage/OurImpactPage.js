@@ -1,18 +1,16 @@
 import React from 'react';
 import TitledParagraphs from 'components/TitledParagraphs';
+import TitledContent from 'components/TitledContent';
 import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import StatisticsPanel from 'views/StatisticsPanel';
+import { generateIdFromString } from 'utilities/dom';
 
 import pageData from './OurImpactPageData';
 
 export default class OurImpactPage extends React.Component {
   render() {
     const header = pageData.header;
-
-    const uniqueDOM = pageData.paragraphs.ourUniqueApproach.map(function(p) {
-      return <TitledParagraphs key={p.title} title={p.title} paragraphs={p.paragraphs} />
-    });
 
     return (
       <div className='our_impact_page page'>
@@ -32,8 +30,34 @@ export default class OurImpactPage extends React.Component {
           <SectionHeader title={'Our Unique Approach'} />
 
           <div className='our_unique_approach'>
+            {
+              pageData.paragraphs.ourUniqueApproach.map(function(i) {
+                return <TitledParagraphs key={i.title} title={i.title} paragraphs={i.paragraphs} />
+              })
+            }
+          </div>
 
-            {uniqueDOM}
+          <SectionHeader title={'Testimonials'} />
+
+          <div classname='testimonials'>
+            {
+              pageData.paragraphs.testimonials.map(function(i) {
+                const {
+                  title,
+                  subtitle,
+                  paragraphs
+                } = i;
+                const paragraphsDOM = <div className='text_block' dangerouslySetInnerHTML={{__html: i.paragraphs}} />
+                let tpDOM = null;
+                tpDOM = <TitledContent title={title} content={paragraphsDOM} />
+                return (
+                  <div
+                    id={generateIdFromString(title)}
+                    className="titled_paragraphs"
+                  > {tpDOM} </div>
+                );
+              })
+            }
           </div>
 
         </div>
