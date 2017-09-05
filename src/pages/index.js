@@ -1,3 +1,5 @@
+// @flow
+
 import HomePage from './HomePage';
 import AboutPage from './AboutPage';
 import OurImpactPage from './OurImpactPage';
@@ -6,137 +8,42 @@ import TeamPage from './TeamPage';
 import GetInvolvedPage from './GetInvolvedPage';
 import DonatePage from './DonatePage';
 
-/*
-* The way the navbar dropdown links are set up is quite finnicky. The 'sections'
-* value of each page object has a link that represents the DOM id attribute of
-* the element to which clicking on said dropdown links scrolls to.
-* Other pieces that make this work together include:
-*   - /src/index.js:hashLinkScroll
-*   - /src/views/Navbar/NavbarDropdown
-*   - the DOM id's that need to be set explicitly for elements we specify in the
-*     nav dropdown
-*
-* IMPORTANT NOTE ABOUT WHERE SOME OF THE ANCHOR TAGS COME FROM:
-*   - Both the SectionHeader and TitledContent components give their main
-*     rendered element anchor tags with a naming convention of
-*     title.split(' ').join('').toLowerCase()
-*     e.g. 'Our Mission' ==> 'ourmission'
-*/
-
 const pages = [
   {
     path: '/',
     name: 'Home',
     exactPath: true,
-    sections: [],
     component: HomePage
   },
   {
     path: '/about',
     name: 'About Us',
-    sections: [
-      {
-        name: 'Our Mission',
-        link: '#ourmission'
-      },
-      {
-        name: 'Who We Are',
-        link: '#whoweare'
-      },
-      {
-        name: 'Our Philosophy',
-        link: '#ourphilosophy'
-      }
-    ],
-    component: AboutPage
+    component: AboutPage.component,
+    sections: AboutPage.sections
   },
   {
     path: '/impact',
     name: 'Our Impact',
-    sections: [
-      {
-        name: 'Our Impact',
-        link: '#ourimpact'
-      },
-      {
-        name: 'Our Unique Approach',
-        link: '#ouruniqueapproach'
-      }
-    ],
-    component: OurImpactPage
+    component: OurImpactPage.component,
+    sections: OurImpactPage.sections
   },
   {
     path: '/programs',
     name: 'Our Programs',
-    sections: [
-      {
-        name: 'Classroom Programs',
-        link: '#classroomprograms'
-      },
-      {
-        name: 'codeConnects',
-        link: '#codeconnects'
-      },
-      {
-        name: 'Learning Disabilities and Coding',
-        link: '#learningdisabilitiesandcoding'
-      },
-      {
-        name: 'Virtual Classroom Instruction',
-        link: '#virtualclassroominstruction'
-      }
-    ],
-    component: OurProgramsPage
+    component: OurProgramsPage.component,
+    sections: OurProgramsPage.sections
   },
   {
     path: '/team',
     name: 'Our Team',
-    sections: [
-      {
-        name: 'Founder',
-        link: '#founder'
-      },
-      {
-        name: 'Board Members',
-        link: '#board'
-      },
-      {
-        name: 'Advisors',
-        link: '#advisors'
-      },
-      {
-        name: 'Team Heads',
-        link: '#heads'
-      },
-      {
-        name: 'Teachers',
-        link: '#teachers'
-      }
-    ],
-    component: TeamPage
+    component: TeamPage.component,
+    sections: TeamPage.sections
   },
   {
     path: '/get-involved',
     name: 'Get Involved',
-    component: GetInvolvedPage,
-    sections: [
-      {
-        name: 'Volunteer',
-        link: 'volunteer'
-      },
-      {
-        name: 'Become a Teacher',
-        link: 'become-a-teacher'
-      },
-      {
-        name: 'Bring coding to your school',
-        link: 'bring-coding'
-      },
-      {
-        name: 'Partner with us',
-        link: 'partner'
-      }
-    ]
+    component: GetInvolvedPage.component,
+    sections: GetInvolvedPage.sections
   },
   {
     path: '/donate',

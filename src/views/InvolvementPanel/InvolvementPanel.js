@@ -1,4 +1,6 @@
-import React from 'react';
+// @flow
+
+import * as React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import OptionBar from './OptionBar';
 import {
@@ -10,73 +12,54 @@ import {
 
 import './InvolvementPanel.scss';
 
-export default class InvolvementPanel extends React.Component {
+export default () => {
 
-  constructor(props) {
-    super(props);
-    this.forms = {
-      VOLUNTEER: {
-        path: 'volunteer',
-        text: 'Volunteer',
-        view: VolunteerFormView
-      },
-      TEACHER: {
-        path: 'become-a-teacher',
-        text: 'Become a Teacher',
-        view: TeacherFormView
-      },
-      BRING_TO_SCHOOL: {
-        path: 'bring-coding',
-        text: 'Bring coding to your school',
-        view: BringToSchoolFormView
-      },
-      PARTNER: {
-        path: 'partner',
-        text: 'Partner with us',
-        view: PartnerFormView
-      }
+  const forms = {
+    VOLUNTEER: {
+      path: 'volunteer',
+      text: 'Volunteer',
+      view: VolunteerFormView
+    },
+    TEACHER: {
+      path: 'become-a-teacher',
+      text: 'Become a Teacher',
+      view: TeacherFormView
+    },
+    BRING_TO_SCHOOL: {
+      path: 'bring-coding',
+      text: 'Bring coding to your school',
+      view: BringToSchoolFormView
+    },
+    PARTNER: {
+      path: 'partner',
+      text: 'Partner with us',
+      view: PartnerFormView
     }
   }
 
-  changeSelectedForm(event) {
-    const clickedOption = event.target.id.substr(7);
-    this.setState({
-      selectedOption: this.options[clickedOption]
-    })
-  }
+  // Redirects queries to '/get-involved' to '/get-involved/volunteer' to
+  // guarantee that a form is rendered via the React-Router model
+  return (
+    <div className='involvement_panel'>
+      <OptionBar options={forms}/>
 
-  getOptionTextArray() {
-    return Object.keys(this.options).map((o) => (this.options[o].text));
-  }
+      <Route
+        exact path='/get-involved'
+        render={() => (<Redirect to='/get-involved/volunteer' />)}
+      />
 
-  render() {
-    return (
-      <div className='involvement_panel'>
-        <OptionBar
-          options={this.forms}
-          selectedOption={this.props.selectedForm}
-          onClick={this.changeSelectedForm.bind(this)}
-        />
-
-        <Route
-          exact path='/get-involved'
-          render={() => (<Redirect to='/get-involved/volunteer' />)}
-        />
-
-        {
-          Object.keys(this.forms).map(formKey => {
-            return (
-              <Route
-                key={formKey}
-                exact
-                path={`/get-involved/${this.forms[formKey].path}`}
-                component={this.forms[formKey].view}
-              />
-            );
-          })
-        }
-
-      </div>
-    );
-  }
+      {
+        Object.keys(forms).map(formKey => {
+          return (
+            <Route
+              key={formKey}
+              exact
+              path={`/get-involved/${forms[formKey].path}`}
+              component={forms[formKey].view}
+            />
+          );
+        })
+      }
+    </div>
+  );
 }

@@ -4,7 +4,7 @@ import * as React from 'react';
 
 type PropsType = {
   id: string,
-  pageMap: {[string]: HTMLElement}
+  pageMap: {[string]: ?HTMLElement}
 };
 
 export default (props: PropsType) => (

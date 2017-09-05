@@ -1,9 +1,9 @@
-import React from 'react';
 import { TweenMax } from 'gsap';
-import { Link } from 'react-router-dom';
-import './NavbarDropdown.scss';
-
+import React from 'react';
 import ReactTransitionGroup from 'react-addons-transition-group';
+import { Link } from 'react-router-dom';
+import pages from 'pages';
+import './NavbarDropdown.scss';
 
 class Dropdown extends React.Component {
 
@@ -55,19 +55,22 @@ export default function NavbarDropdown(props) {
     setHoverState
   } = props;
 
+  // Looks into the 'sections' property exported by each page component to see
+  // what anchor-links that page makes available
+  const relevantPage = pages.find(page => page.path === dropdownData.pagePath);
+  const sections = relevantPage && relevantPage.sections;
+
   return (
     <ReactTransitionGroup
       className='navbar_dropdown_group'
       onMouseEnter={() => setHoverState(true)}
       onMouseLeave={() => setHoverState(false)}
     >
-      { dropdownData && dropdownData.sections && (
+      { sections && (
         <Dropdown>
-          { dropdownData.sections.map(section => (
+          { sections.map(section => (
             <div key={section.name} className='dropdown_option'>
-              <Link to={{
-                pathname: `${dropdownData.pagePath}/${section.link}`
-              }}>
+              <Link to={`${dropdownData.pagePath}/${section.link}`} >
                 {section.name}
               </Link>
             </div>
