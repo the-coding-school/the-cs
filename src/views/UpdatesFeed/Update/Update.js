@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import AlwaysSquareImage from 'components/AlwaysSquareImage';
 
 import './Update.scss';
 import CONSTANTS from '../constants';
@@ -21,8 +22,9 @@ export default class Update extends React.Component {
     return (
       <div className='update'>
 
-        <div className='update_image' style={imageStyle} />
-
+        <div className='update_image'>
+          <AlwaysSquareImage image={image} />
+        </div>
         <div className='update_text'>
           <div className='date'>
             {moment(date).format(CONSTANTS.DATE_FORMAT)}

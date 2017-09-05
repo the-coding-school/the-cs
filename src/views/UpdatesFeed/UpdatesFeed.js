@@ -90,7 +90,7 @@ export default class UpdatesFeed extends React.Component {
             cells={
               updates
                 .slice(1, CONSTANTS.NUM_UPDATES_SHOWN).map((update, i) => (
-                  <FeaturedUpdate
+                  <Update
                     key={i}
                     update={update}
                   />
