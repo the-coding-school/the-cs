@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import PageHeader from 'components/PageHeader';
 import InvolvementPanel from 'views/InvolvementPanel';
@@ -7,15 +9,10 @@ import { smoothlyScrollToElement } from 'utilities/dom';
 
 const SCROLL_DURATION = 500;
 
-export default class GetInvolvedPage extends React.Component {
+type PropsType = {};
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedForm: 'VOLUNTEER'
-    }
-  }
-
+export default class GetInvolvedPage extends React.Component<PropsType> {
+  formsWrapperDiv: ?HTMLDivElement;
 
   componentDidMount() {
     this.scrollToForms();
@@ -43,11 +40,9 @@ export default class GetInvolvedPage extends React.Component {
 
           <div
             className='involvement_panel_wrapper'
-            ref={div => this.formsWrapperDiv = div}
+            ref={(div: ?HTMLDivElement) => this.formsWrapperDiv = div}
           >
-            <InvolvementPanel
-              selectedForm={this.state.selectedForm}
-            />
+            <InvolvementPanel />
           </div>
 
         </div>

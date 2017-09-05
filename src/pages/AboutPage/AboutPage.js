@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { LinkScrollPage, Anchor, createAnchorId } from 'components/LinkScrollPage';
 import PageHeader from 'components/PageHeader';

@@ -8,7 +8,12 @@ import TeamPage from './TeamPage';
 import GetInvolvedPage from './GetInvolvedPage';
 import DonatePage from './DonatePage';
 
-const pages = [
+const pages: Array<{
+  path: string,
+  name: string,
+  exactPath?: boolean,
+  component: React.Element<*>
+}> = [
   {
     path: '/',
     name: 'Home',

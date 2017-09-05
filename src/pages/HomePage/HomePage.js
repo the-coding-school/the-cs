@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+// @flow
+
+import * as React from 'react';
 
 import SectionHeader from 'components/SectionHeader';
 import Testimonials from 'views/Testimonials';
@@ -10,7 +12,14 @@ import PromoVideo from 'views/PromoVideo';
 
 import './HomePage.scss';
 
-const TitledPageRow = (props) => (
+type TitledPageRowPropsType = {
+  className: string,
+  title: string,
+  subtitle?: string,
+  children: any
+};
+
+const TitledPageRow = (props: TitledPageRowPropsType) => (
   <div className={`titled_page_row ${props.className}`}>
     <div className='title'>
       <SectionHeader title={props.title} subtitle={props.subtitle} />
@@ -21,53 +30,44 @@ const TitledPageRow = (props) => (
   </div>
 );
 
-class HomePage extends Component {
-  render() {
+export default () => (
+  <div className='home_page page'>
+    <HomeVideo />
+    <div className='page_contents'>
 
-    return (
-      <div className='home_page page'>
-        <HomeVideo />
-        <div className='page_contents'>
-
-          <TitledPageRow
-            title='A Look Into the Classroom'
-            className='home_page_promo_video'
-          >
-            <PromoVideo />
-            <div className='video_text'>
-              We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students develop the skills necessary to thrive and tackle the most pressing issues facing our world.
-            </div>
-          </TitledPageRow>
-
-          <div className='home_page_partners_panel'>
-            <SectionHeader subtitle='Our Partners' />
-            <PartnersPanel />
-          </div>
-
-          <TitledPageRow
-            title='Updates'
-            className='home_page_updates_feed'
-          >
-            <UpdatesFeed/>
-          </TitledPageRow>
-
-          <div className='home_page_partners_panel'>
-            <SectionHeader
-              subtitle='School Districts We Have Coding Programs In'
-            />
-            <SchoolsPanel />
-          </div>
-
-          <div className='home_page_testimonials'>
-            <Testimonials />
-          </div>
-
+      <TitledPageRow
+        title='A Look Into the Classroom'
+        className='home_page_promo_video'
+      >
+        <PromoVideo />
+        <div className='video_text'>
+          We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students develop the skills necessary to thrive and tackle the most pressing issues facing our world.
         </div>
+      </TitledPageRow>
+
+      <div className='home_page_partners_panel'>
+        <SectionHeader subtitle='Our Partners' />
+        <PartnersPanel />
       </div>
-    );
-  }
-}
 
+      <TitledPageRow
+        title='Updates'
+        className='home_page_updates_feed'
+      >
+        <UpdatesFeed/>
+      </TitledPageRow>
 
+      <div className='home_page_partners_panel'>
+        <SectionHeader
+          subtitle='School Districts We Have Coding Programs In'
+        />
+        <SchoolsPanel />
+      </div>
 
-export default HomePage;
+      <div className='home_page_testimonials'>
+        <Testimonials />
+      </div>
+
+    </div>
+  </div>
+);

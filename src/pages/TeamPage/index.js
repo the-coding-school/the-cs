@@ -1,3 +1,5 @@
+// @flow
+
 import TeamPage from './TeamPage';
 
 export default {

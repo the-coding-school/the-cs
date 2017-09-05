@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import { LinkScrollPage, Anchor } from 'components/LinkScrollPage';
 import TitledParagraphs from 'components/TitledParagraphs';

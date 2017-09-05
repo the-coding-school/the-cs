@@ -1,3 +1,5 @@
+// @flow
+
 import GetInvolvedPage from './GetInvolvedPage';
 
 export default {
