@@ -15,7 +15,7 @@ export default (props: PropsType) => (
       <div className='title_side'>
         <h1 className='title'>{props.title}</h1>
         {
-          Object.hasOwnProperty('subtitle') &&
+          props.hasOwnProperty('subtitle') &&
             <h2 className='subtitle'>{props.subtitle}</h2>
         }
       </div>
