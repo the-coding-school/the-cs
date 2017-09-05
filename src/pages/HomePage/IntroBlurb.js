@@ -1,8 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router';
+// @flow
 
+import React from 'react';
+import { Link } from 'react-router-dom';
 import introBlurbImage from './introblurb.png';
 import './IntroBlurb.scss';
+
 export default function() {
 
   const homeIntroBlurb = {

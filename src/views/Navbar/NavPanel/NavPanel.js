@@ -1,6 +1,6 @@
 import './NavPanel.scss';
 import React from 'react';
-import NavItem from '../NavItem';
+import { Link } from 'react-router-dom';
 import NavbarHamburger from '../NavbarHamburger';
 
 export default function NavPanel(props) {
@@ -13,11 +13,14 @@ export default function NavPanel(props) {
   } = props;
 
   const panelItems = items.map(item => (
-    <NavItem
+    <Link
+      className='nav_item'
       key={item.path}
-      item={item}
+      to={item.path}
       onClick={onItemClick}
-    />
+    >
+      {item.name.toUpperCase()}
+    </Link>
   ));
 
   return (

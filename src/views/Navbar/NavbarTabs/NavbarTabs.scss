@@ -44,22 +44,37 @@
     align-items: center;
     background-color: $white;
 
-    .nav_item {
+    a.nav_item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      color: $blue;
+      padding: 15px 0px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: $text_sm;
+      transition: color 0.15s ease;
       border-top: 5px solid $white;
       border-bottom: 5px solid $white;
 
-      &.hovered {
-        border-top: 5px solid $light_green;
-        a {
-          // makes the tab hovered on brighter than others
-          color: $blue !important;
-        }
+      &.selected {
+        color: $green;
       }
 
+      &.hovered {
+        border-top: 5px solid $light_green;
+        color: $blue !important;
+      }
     }
 
     &.hovered {
-      .nav_item a {
+      a.nav_item {
         color: rgba($blue, 0.3);
       }
     }

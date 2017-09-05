@@ -1,10 +1,21 @@
+// @flow
+
+import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 import './NavItem.scss';
 
-import React from 'react';
-import { Link } from 'react-router';
+type PropsType = {
+  item: {
+    path: string,
+    name: string
+  },
+  onMouseEnter: () => void,
+  onMouseLeave: () => void,
+  onClick: () => void,
+  hovered: boolean
+}
 
-export default function NavItem(props) {
-
+export default (props: PropsType) => {
   const {
     item,
     onMouseEnter,
@@ -19,16 +30,16 @@ export default function NavItem(props) {
   } = item;
 
   return (
-    <div
-      className={`nav_item ${hovered ? 'hovered' : ''}`}
-      key={path}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      onClick={onClick}
-    >
-      <Link to={path}>
+      <NavLink
+        className={`nav_item ${hovered ? 'hovered' : ''}`}
+        key={path}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        onClick={onClick}
+        to={path}
+        activeClassName='selected'
+      >
         {name.toUpperCase()}
-      </Link>
-    </div>
+      </NavLink>
   );
 }

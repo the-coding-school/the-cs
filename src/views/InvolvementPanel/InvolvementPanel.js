@@ -1,5 +1,7 @@
-import React from 'react';
+// @flow
 
+import * as React from 'react';
+import { Route, Redirect } from 'react-router-dom';
 import OptionBar from './OptionBar';
 import {
   VolunteerFormView,
@@ -10,58 +12,54 @@ import {
 
 import './InvolvementPanel.scss';
 
-export default class InvolvementPanel extends React.Component {
+export default () => {
 
-  constructor(props) {
-    super(props);
-    this.options = {
-      VOLUNTEER: {
-        text: 'Volunteer',
-        view: <VolunteerFormView />
-      },
-      TEACHER: {
-        text: 'Become a Teacher',
-        view: <TeacherFormView />
-      },
-      BRING_TO_SCHOOL: {
-        text: 'Bring coding to your school',
-        view: <BringToSchoolFormView />
-      },
-      PARTNER: {
-        text: 'Partner with us',
-        view: <PartnerFormView />
+  const forms = {
+    VOLUNTEER: {
+      path: 'volunteer',
+      text: 'Volunteer',
+      view: VolunteerFormView
+    },
+    TEACHER: {
+      path: 'become-a-teacher',
+      text: 'Become a Teacher',
+      view: TeacherFormView
+    },
+    BRING_TO_SCHOOL: {
+      path: 'bring-coding',
+      text: 'Bring coding to your school',
+      view: BringToSchoolFormView
+    },
+    PARTNER: {
+      path: 'partner',
+      text: 'Partner with us',
+      view: PartnerFormView
+    }
+  }
+
+  // Redirects queries to '/get-involved' to '/get-involved/volunteer' to
+  // guarantee that a form is rendered via the React-Router model
+  return (
+    <div className='involvement_panel'>
+      <OptionBar options={forms}/>
+
+      <Route
+        exact path='/get-involved'
+        render={() => (<Redirect to='/get-involved/volunteer' />)}
+      />
+
+      {
+        Object.keys(forms).map(formKey => {
+          return (
+            <Route
+              key={formKey}
+              exact
+              path={`/get-involved/${forms[formKey].path}`}
+              component={forms[formKey].view}
+            />
+          );
+        })
       }
-    }
-
-    this.state = {
-      selectedOption: this.options.VOLUNTEER
-    }
-  }
-
-  changeSelectedOption(event) {
-    const clickedOption = event.target.id.substr(7);
-    this.setState({
-      selectedOption: this.options[clickedOption]
-    })
-  }
-
-  getOptionTextArray() {
-    return Object.keys(this.options).map((o) => (this.options[o].text));
-  }
-
-  render() {
-
-    return (
-      <div className='involvement_panel'>
-        <OptionBar
-          options={this.options}
-          selectedOption={this.state.selectedOption}
-          onClick={this.changeSelectedOption.bind(this)}
-        />
-
-        { this.state.selectedOption.view }
-
-      </div>
-    );
-  }
+    </div>
+  );
 }

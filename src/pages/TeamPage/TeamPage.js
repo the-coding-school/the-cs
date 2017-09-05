@@ -1,13 +1,15 @@
+// @flow
+
 import React from 'react';
+import { LinkScrollPage, Anchor } from 'components/LinkScrollPage';
 import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import MemberCard from 'components/MemberCard';
 import TeamSection from 'components/TeamSection';
-
 import team from 'data/TeamMembers';
 import pageData from './TeamPageData';
 
-export default class TeamPage extends React.Component {
+export default class TeamPage extends LinkScrollPage {
   render() {
 
     const memID = m => (m.name.first + '_' + m.name.last);
@@ -22,6 +24,8 @@ export default class TeamPage extends React.Component {
         <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className='page_contents'>
           <div className='container'>
+
+            <Anchor pageMap={this.pageMap} id='founder' />
             <div className='team_founder team_section'>
               <SectionHeader title='Founder'/>
               <MemberCard
@@ -37,6 +41,7 @@ export default class TeamPage extends React.Component {
               />
             </div>
 
+            <Anchor pageMap={this.pageMap} id='board' />
             <TeamSection
               teamType='team_board'
               title='Board Members'
@@ -44,6 +49,7 @@ export default class TeamPage extends React.Component {
               showFullName={true}
             />
 
+            <Anchor pageMap={this.pageMap} id='advisors' />
             <TeamSection
               teamType='team_advisors'
               title='Advisors'
@@ -51,6 +57,7 @@ export default class TeamPage extends React.Component {
               showFullName={true}
             />
 
+            <Anchor pageMap={this.pageMap} id='heads' />
             <TeamSection
               teamType='team_heads'
               title='Team Heads'
@@ -58,6 +65,7 @@ export default class TeamPage extends React.Component {
               showFullName={false}
             />
 
+            <Anchor pageMap={this.pageMap} id='teachers' />
             <TeamSection
               teamType='team_teachers'
               title='Teachers'

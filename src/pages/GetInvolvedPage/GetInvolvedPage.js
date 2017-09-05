@@ -1,12 +1,33 @@
+// @flow
+
 import React from 'react';
 import PageHeader from 'components/PageHeader';
 import InvolvementPanel from 'views/InvolvementPanel';
-
 import './GetInvolvedPage.scss';
-
 import pageData from './GetInvolvedPageData';
+import { smoothlyScrollToElement } from 'utilities/dom';
 
-export default class GetInvolvedPage extends React.Component {
+const SCROLL_DURATION = 500;
+
+type PropsType = {};
+
+export default class GetInvolvedPage extends React.Component<PropsType> {
+  formsWrapperDiv: ?HTMLDivElement;
+
+  componentDidMount() {
+    this.scrollToForms();
+  }
+
+  componentDidUpdate() {
+    this.scrollToForms();
+  }
+
+  scrollToForms() {
+    if (this.formsWrapperDiv) {
+      smoothlyScrollToElement(this.formsWrapperDiv, SCROLL_DURATION);
+    }
+  }
+
   render() {
     const {
       header
@@ -17,7 +38,10 @@ export default class GetInvolvedPage extends React.Component {
         <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className='page_contents'>
 
-          <div className='involvement_panel_wrapper'>
+          <div
+            className='involvement_panel_wrapper'
+            ref={(div: ?HTMLDivElement) => this.formsWrapperDiv = div}
+          >
             <InvolvementPanel />
           </div>
 
