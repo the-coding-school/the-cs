@@ -1,7 +1,6 @@
 import './NavbarTabs.scss';
 import React from 'react';
-
-import NavItem from '../NavItem';
+import { NavLink } from 'react-router-dom';
 import NavbarHamburger from '../NavbarHamburger';
 
 export default class NavbarTabs extends React.Component {
@@ -10,13 +9,16 @@ export default class NavbarTabs extends React.Component {
     const someTabHovered = (typeof this.props.hoveredTab === 'number');
 
     const navItems = this.props.tabItems.map((item, index) => (
-      <NavItem
+      <NavLink
+        className={`nav_item ${index === this.props.hoveredTab ? 'hovered' : ''}`}
         key={item.path}
-        item={item}
-        hovered={index === this.props.hoveredTab}
         onMouseEnter={() => this.props.setHoveredTab(index)}
         onMouseLeave={() => this.props.setHoveredTab(null)}
-      />
+        to={item.path}
+        activeClassName='selected'
+      >
+        {item.name.toUpperCase()}
+      </NavLink>
     ));
 
     return (

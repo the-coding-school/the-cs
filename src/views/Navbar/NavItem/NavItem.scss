@@ -1,26 +1,23 @@
 @import '~scss/Variables';
 
-.nav_item {
+a.nav_item {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   height: 100%;
+  width: 100%;
   position: relative;
+  text-align: center;
+  text-decoration: none;
+  color: $blue;
+  padding: 15px 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: $text_sm;
+  transition: color 0.15s ease;
 
-  a {
-    text-decoration: none;
-    color: $blue;
-    width: 100%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: flex;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: $text_sm;
-    transition: color 0.15s ease;
+  &.selected {
+    color: $green;
   }
 }
