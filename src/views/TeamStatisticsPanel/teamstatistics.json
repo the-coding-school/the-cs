@@ -1,0 +1,22 @@
+[
+  {
+    "description": "first generation college students",
+    "number": "18%",
+    "imageName": "first_gen_icon.png"
+  },
+  {
+    "description": "minorities",
+    "number": "40%",
+    "imageName": "minorities_icon.png"
+  },
+  {
+    "description": "individuals with low socioeconomic status",
+    "number": "16%",
+    "imageName": "low_socioeconomic_icon.png"
+  },
+  {
+    "description": "women",
+    "number": "46%",
+    "imageName": "femalestudents_icon.png"
+  }
+]

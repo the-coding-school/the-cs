@@ -3,9 +3,9 @@ import Statistic from '../Statistic';
 
 import './StatisticsPanel.scss';
 
-import statistics from './statistics.json';
+import statistics from './teamstatistics.json';
 
-export default class StatisticsPanel extends React.Component {
+export default class TeamStatisticsPanel extends React.Component {
   render() {
     const statsIconRoot = process.env.PUBLIC_URL + '/images/statistics/';
     return (
@@ -19,4 +19,3 @@ export default class StatisticsPanel extends React.Component {
     )
   }
 }
-
