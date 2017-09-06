@@ -23,10 +23,5 @@
     "description": "female students",
     "number": "32%",
     "imageName": "femalestudents_icon.png"
-  },
-  {
-    "description": "first generation college students",
-    "number": "18%",
-    "imageName": "first_gen_icon.png"
   }
 ]
