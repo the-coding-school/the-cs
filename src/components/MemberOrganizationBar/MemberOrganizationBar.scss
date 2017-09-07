@@ -52,6 +52,7 @@ $amLightBlue: #3a84b6;
 $amDarkBlue: #00254a;
 $spacexBlack: #000000;
 $caAssemblyGreen: #447426;
+$dropboxBlue: #007EE5;
 
 .member_organization_bar {
   text-align: center;
@@ -220,6 +221,10 @@ $caAssemblyGreen: #447426;
   }
   &.ca_state_assembly {
     background-color: $caAssemblyGreen;
+    color: $white;
+  }
+  &.dropbox {
+    background-color: $dropboxBlue;
     color: $white;
   }
 }
