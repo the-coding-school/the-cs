@@ -66,6 +66,17 @@ export default class TeamPage extends LinkScrollPage {
       'Laura Felenstein'
     ];
 
+    const advisorsHardCodedList = [
+      'Eva Manolis',
+      'Pamit Surana',
+      'Jessica McKellar',
+      'Ravi Pendse',
+      'Matt Dababneh',
+      'Gisele Ragusa',
+      'Bill Derouin',
+      'Mark Redekopp'
+    ]
+
     const sortedTeachers = sortListFirstThenByFunc(
       team.teachers,
       teachersHardCodedList,
@@ -75,6 +86,12 @@ export default class TeamPage extends LinkScrollPage {
     const sortedTeamLeads = sortListFirstThenByFunc(
       team.teamLeads,
       teamLeadsHardCodedList,
+      sortMembersAlphabetically
+    );
+
+    const sortedAdvisors = sortListFirstThenByFunc(
+      team.advisors,
+      advisorsHardCodedList,
       sortMembersAlphabetically
     );
 
@@ -103,19 +120,11 @@ export default class TeamPage extends LinkScrollPage {
               />
             </div>
 
-            <Anchor pageMap={this.pageMap} id='board' />
-            <TeamSection
-              teamType='team_board'
-              title='Board Members'
-              members={team.boardMembers.sort(sortMembersAlphabetically)}
-              showFullName={true}
-            />
-
             <Anchor pageMap={this.pageMap} id='advisors' />
             <TeamSection
               teamType='team_advisors'
-              title='Advisors'
-              members={team.advisors.sort(sortMembersAlphabetically)}
+              title='Our Advising Team'
+              members={sortedAdvisors}
               showFullName={true}
             />
 

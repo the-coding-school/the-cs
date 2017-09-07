@@ -35,8 +35,8 @@ export default class MemberCard extends React.Component {
         <div className='member_info_bar'>
           <MemberName name={name} />
           <div className='member_card_row'>
-            <MemberPosition position={position} />
-            <MemberLinks links={links} />
+            { position && <MemberPosition position={position} /> }
+            { links && <MemberLinks links={links} /> }
           </div>
         </div>
 
