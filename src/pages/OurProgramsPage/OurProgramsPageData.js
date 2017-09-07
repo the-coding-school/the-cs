@@ -6,8 +6,8 @@ export default {
   },
   ourPrograms: [
     {
-        title: "Classroom Programs",
-        subtitle: "The Key to Social Mobility",
+        title: "In-School Programs",
+        subtitle: "A 3 year-long coding course for K-12 students during and after the school day",
         paragraphs: [
           "Beginning in January 2014, we offer three-year long coding classes for K-12 students during the school day and after-school. With a minimum of two teachers per class, we make sure students get individualized support to fully understand the material. Throughout the courses, students learn the fundamental basics of computer programming by developing websites using HTML and CSS, animations using JavaScript, and game development using C#.",
           "Ultimately, our goal is to have our classes during the school day, as well as to increase the number of low socioeconomic communities we serve, to ensure that every student, regardless of whether they or their parents recognize the importance of coding, is exposed to computer programming."
@@ -30,8 +30,8 @@ export default {
         ]
     },
     {
-      title: "Virtual Classroom Instruction",
-      subtitle: "Bringing coding to schools never before reached.",
+      title: "Virtual Classrooms",
+      subtitle: "Bringing Coding to Schools Never Before Reached",
       paragraphs: [
         "With our video chat and collaborative editing platform, we can bring our instructors and year-long courses into entire classrooms. This is especially beneficial for schools located in rural communities."
       ]

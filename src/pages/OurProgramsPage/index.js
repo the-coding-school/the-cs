@@ -6,8 +6,8 @@ export default {
   component: OurProgramsPage,
   sections: [
     {
-      name: 'Classroom Programs',
-      link: '#classroomprograms'
+      name: 'In-School Programs',
+      link: '#in-schoolprograms'
     },
     {
       name: 'codeConnects',
@@ -18,8 +18,8 @@ export default {
       link: '#learningdisabilitiesandcoding'
     },
     {
-      name: 'Virtual Classroom Instruction',
-      link: '#virtualclassroominstruction'
+      name: 'Virtual Classrooms',
+      link: '#virtualclassrooms'
     }
   ]
 }
