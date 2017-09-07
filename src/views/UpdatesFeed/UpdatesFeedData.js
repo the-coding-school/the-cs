@@ -21,7 +21,7 @@ export default [
       title: 'Meet our newest board members, Eva and Pamit!',
       link: {
         url: '../../team#advisors',
-        text: 'View team page'
+        text: 'Meet the team'
       },
       date: '2017-08-23',
       image: require('./images/new_board_aug_17.png'),
