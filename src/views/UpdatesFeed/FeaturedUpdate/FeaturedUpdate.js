@@ -22,7 +22,11 @@ export default class FeaturedUpdate extends React.Component {
 
     return (
       <div className='featured_update'>
-        <div className='background' style={bgStyles}></div>
+        <div className='background'>
+          <div className='background_image' style={bgStyles} />
+          <div className='background_image_mask' />
+        </div>
+
         <div className='update_text'>
           <div className='date'>
             {moment(date).format(CONSTANTS.DATE_FORMAT)}
