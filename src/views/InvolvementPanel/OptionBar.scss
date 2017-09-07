@@ -39,7 +39,7 @@
     }
   }
 
-  .option_bar_option {
+  a.option_bar_option {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,7 @@
     background-color: $white;
     color: $light_blue;
     font-size: $text_md;
+    text-decoration: none;
 
     &.selected {
       background-color: $light_blue;

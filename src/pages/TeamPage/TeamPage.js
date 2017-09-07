@@ -1,19 +1,83 @@
+// @flow
+
 import React from 'react';
+import { LinkScrollPage, Anchor } from 'components/LinkScrollPage';
 import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import MemberCard from 'components/MemberCard';
 import TeamSection from 'components/TeamSection';
 import TeamStatisticsPanel from 'views/TeamStatisticsPanel';
-
-import team from 'data/TeamMembers';
+import team, {
+  sortListFirstThenByFunc,
+  sortMembersAlphabetically
+} from 'data/TeamMembers';
 import pageData from './TeamPageData';
 
-export default class TeamPage extends React.Component {
+export default class TeamPage extends LinkScrollPage {
   render() {
 
-    const memID = m => (m.name.first + '_' + m.name.last);
-    const sortMembersAlphabetically = (a, b) => (memID(a) < memID(b)) ? -1 : 1;
-    const sortMembersByDefinedOrder = (a, b) => (a.order < b.order) ? -1 : 1;
+    const teachersHardCodedList = [
+      'KJ Famulegun',
+      'Jennifer Lauriello',
+      'John Fletcher',
+      'Leya Breanna-Baltaxe',
+      'Lisa Truong',
+      'Matthew Chen',
+      'Maheen Khan',
+      'Matthew Moreno',
+      'Micah Benn',
+      'Megan Shea',
+      'Michael Eberle',
+      'Nicole Seo',
+      'Nikita WCSU',
+      'Ochaun Marshall',
+      'Priyanka Lamichhane',
+      'Robert Garrett',
+      'Shane Johnson',
+      'Sapharah Prescod',
+      'Tessa Weidmann',
+      'Zachary Peters',
+      'Harish Shankar',
+      'Emma Huang',
+      'Ezequil Morales',
+      'Eva Lomazov',
+      'Eloisa Esparza',
+      'Diego Valdez',
+      'Chris Salem',
+      'Brian Greenberg',
+      'Bo Curry',
+      'Alison Chao',
+      'Alexander Arnold'
+    ];
+
+    const teamLeadsHardCodedList = [
+      'Akila Rajesh',
+      'Bibek Ghimire',
+      'Mindi Cao',
+      'Anthony Mirand',
+      'Jason Lin',
+      'Stacy Miller',
+      'Christie Matthews',
+      'Crystal Hsieh',
+      'Uma Lakshminarayan',
+      'Alejandro Fischer',
+      'Natalie Ethell',
+      'Amy Baer',
+      'Andy Patterson',
+      'Laura Felenstein'
+    ];
+
+    const sortedTeachers = sortListFirstThenByFunc(
+      team.teachers,
+      teachersHardCodedList,
+      sortMembersAlphabetically
+    );
+
+    const sortedTeamLeads = sortListFirstThenByFunc(
+      team.teamLeads,
+      teamLeadsHardCodedList,
+      sortMembersAlphabetically
+    );
 
     const header = pageData.header;
     const founder = team.founders[0];
@@ -23,7 +87,10 @@ export default class TeamPage extends React.Component {
         <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className='page_contents'>
           <div className='container'>
+
             <TeamStatisticsPanel />
+
+            <Anchor pageMap={this.pageMap} id='founder' />
             <div className='team_founder team_section'>
               <SectionHeader title='Founder'/>
               <MemberCard
@@ -39,6 +106,7 @@ export default class TeamPage extends React.Component {
               />
             </div>
 
+            <Anchor pageMap={this.pageMap} id='board' />
             <TeamSection
               teamType='team_board'
               title='Board Members'
@@ -46,6 +114,7 @@ export default class TeamPage extends React.Component {
               showFullName={true}
             />
 
+            <Anchor pageMap={this.pageMap} id='advisors' />
             <TeamSection
               teamType='team_advisors'
               title='Advisors'
@@ -53,17 +122,19 @@ export default class TeamPage extends React.Component {
               showFullName={true}
             />
 
+            <Anchor pageMap={this.pageMap} id='heads' />
             <TeamSection
               teamType='team_heads'
               title='Team Heads'
-              members={team.teamLeads.sort(sortMembersByDefinedOrder)}
+              members={sortedTeamLeads}
               showFullName={false}
             />
 
+            <Anchor pageMap={this.pageMap} id='teachers' />
             <TeamSection
               teamType='team_teachers'
               title='Teachers'
-              members={team.teachers.sort(sortMembersAlphabetically)}
+              members={sortedTeachers}
               showFullName={false}
             />
             <SectionHeader subtitle={'...and many more!'} />

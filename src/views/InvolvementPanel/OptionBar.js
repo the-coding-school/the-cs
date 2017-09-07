@@ -1,32 +1,29 @@
-import React from 'react';
+// @flow
 
+import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 import './OptionBar.scss';
 
-export default class OptionBar extends React.Component {
+type PropsType = {
+  options: { [string]: {
+    path: string,
+    text: string
+  }}
+};
 
-  renderOptions() {
-    return Object.keys(this.props.options).map((o) => {
-      let isSelected = (this.props.options[o] === this.props.selectedOption);
-
-      return (
-        <div
-          className={`option_bar_option ${(isSelected) ? 'selected' : '' }`}
-          id={`option-${o}`}
-          key={`option-${o}`}
-          onClick={this.props.onClick}
+export default (props: PropsType) => (
+  <div className='option_bar'>
+    {
+      Object.keys(props.options).map((o) => (
+        <NavLink
+          key={props.options[o].path}
+          to={`/get-involved/${props.options[o].path}`}
+          activeClassName='selected'
+          className='option_bar_option'
         >
-          {this.props.options[o].text}
-        </div>
-      );
-    });
-  }
-
-  render() {
-
-    return (
-      <div className='option_bar'>
-        { this.renderOptions() }
-      </div>
-    );
-  }
-}
+          {props.options[o].text}
+        </NavLink>
+      ))
+    }
+  </div>
+);

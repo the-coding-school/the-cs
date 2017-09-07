@@ -1,2 +1,3 @@
-import HomeVideo from './HomeVideo';
-export default HomeVideo;
+// @flow
+
+export { default } from './HomeVideo';

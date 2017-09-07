@@ -1,33 +1,20 @@
-import './TitledParagraphs.scss';
-import React from 'react';
+// @flow
 
+import * as React from 'react';
 import TitledContent from '../TitledContent';
 import TextBlock from '../TextBlock';
+import './TitledParagraphs.scss';
 
-import { generateIdFromString } from 'utilities/dom';
+type PropsType = {
+  title?: string,
+  subtitle?: string,
+  paragraphs: Array<string>
+};
 
-export default class TitledParagraphs extends React.Component {
-  render() {
-
-    const {
-      title,
-      subtitle,
-      paragraphs
-    } = this.props;
-
-    const paragraphsDOM = <TextBlock paragraphs={paragraphs} />;
-    let tpDOM = null;
-
-    if ("subtitle" in this.props) {
-      tpDOM = <TitledContent title={title} subtitle={subtitle} content={paragraphsDOM} />
-    } else {
-      tpDOM = <TitledContent title={title} content={paragraphsDOM} />
-    }
-    return (
-      <div
-        id={generateIdFromString(title)}
-        className="titled_paragraphs"
-      > {tpDOM} </div>
-    );
-  }
-}
+export default (props: PropsType) => (
+  <div className="titled_paragraphs">
+    <TitledContent title={props.title} subtitle={props.subtitle}>
+      <TextBlock paragraphs={props.paragraphs} />
+    </TitledContent>
+  </div>
+);

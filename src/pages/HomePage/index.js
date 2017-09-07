@@ -1,2 +1,3 @@
-import HomePage from './HomePage';
-export default HomePage;
+// @flow
+
+export { default } from './HomePage';
