@@ -8,7 +8,7 @@ import './IntroBlurb.scss';
 export default function() {
 
   const homeIntroBlurb = {
-    primary: "We are empowering the next generation of leaders and problem solvers through computer science education.",
+    primary: "Empowering the next generation of leaders and problem solvers through code",
     secondary: 'We believe coding is the key to social mobility, and that’s why we are pushing the boundaries of traditional coding education by developing a diverse set of approaches and programs to ensure all students develop the skills necessary to thrive and tackle the most pressing issues facing our world.'
   }
 
