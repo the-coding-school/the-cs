@@ -16,5 +16,14 @@ export default [
       },
       date: '2017-06-30',
       image: require('./images/la18_interview.png'),
+  },
+  {
+      title: 'Meet our newest board members, Eva and Pamit!',
+      link: {
+        url: '../../team#advisors',
+        text: 'Meet the team'
+      },
+      date: '2017-08-23',
+      image: require('./images/new_board_aug_17.png'),
   }
 ]
