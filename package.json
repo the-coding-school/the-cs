@@ -38,6 +38,7 @@
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.2",
+    "imageoptim-cli": "^1.15.1",
     "jest": "17.0.2",
     "json-loader": "0.5.4",
     "node-sass": "^4.5.3",
@@ -78,7 +79,8 @@
     "flow": "flow",
     "test": "node scripts/test.js --env=jsdom",
     "deploy": "npm run build&&gh-pages -d build",
-    "clean": "rm -rf node_modules/gh-pages/.cache"
+    "clean": "rm -rf node_modules/gh-pages/.cache",
+    "image-optim": "imageOptim -d ./src/images"
   },
   "jest": {
     "collectCoverageFrom": [
