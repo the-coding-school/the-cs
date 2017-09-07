@@ -20,7 +20,7 @@ export default [
   {
       title: 'Meet our newest board members, Eva and Pamit!',
       link: {
-        url: '../../team#board',
+        url: '../../team#advisors',
         text: 'View team page'
       },
       date: '2017-08-23',
