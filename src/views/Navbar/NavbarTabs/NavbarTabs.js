@@ -10,7 +10,11 @@ export default class NavbarTabs extends React.Component {
 
     const navItems = this.props.tabItems.map((item, index) => (
       <NavLink
-        className={`nav_item ${index === this.props.hoveredTab ? 'hovered' : ''}`}
+        className={`
+          nav_item
+          nav_item_${item.name.toLowerCase().split(' ').join('_')}
+          ${index === this.props.hoveredTab ? 'hovered' : ''}
+        `}
         key={item.path}
         onMouseEnter={() => this.props.setHoveredTab(index)}
         onMouseLeave={() => this.props.setHoveredTab(null)}
