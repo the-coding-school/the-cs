@@ -7,19 +7,19 @@ export default {
   sections: [
     {
       name: 'In-School Programs',
-      link: '#in-schoolprograms'
+      link: 'in-school-programs'
     },
     {
       name: 'codeConnects',
-      link: '#codeconnects'
+      link: 'codeconnects'
     },
     {
       name: 'Learning Disabilities and Coding',
-      link: '#learningdisabilitiesandcoding'
+      link: 'learning-disabilities-and-coding'
     },
     {
       name: 'Virtual Classrooms',
-      link: '#virtualclassrooms'
+      link: 'virtual-classrooms'
     }
   ]
 }
