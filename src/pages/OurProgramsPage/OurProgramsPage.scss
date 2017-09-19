@@ -1,0 +1,9 @@
+@import '~scss/Variables';
+
+.our_programs_page {
+  .program_options {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}

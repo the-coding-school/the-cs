@@ -1,35 +1,51 @@
 // @flow
 
 import React from 'react';
-import { LinkScrollPage, Anchor, createAnchorId } from 'components/LinkScrollPage';
-import TitledParagraphs from 'components/TitledParagraphs';
+import { Route } from 'react-router-dom';
+import ProgramOption from './ProgramOption';
 import PageHeader from 'components/PageHeader';
 import pageData from './OurProgramsPageData';
+import './OurProgramsPage.scss';
 
-export default class OurProgramsPage extends LinkScrollPage {
+type PropsType = {};
+
+export default class OurProgramsPage extends React.Component<PropsType> {
   render() {
-    const { header } = pageData;
+    const { header, ourPrograms } = pageData;
+
+    const getProgramRoute = program => (
+      `/programs/${program.title.toLowerCase().split(' ').join('-')}`
+    );
 
     return (
       <div className='our_programs_page page'>
-        <PageHeader image={header.image} title={header.title} description={header.description}/>
+        <PageHeader image={header.image} title={header.title} callToAction={header.callToAction}/>
         <div className='page_contents'>
-          {
-            pageData.ourPrograms.map(paragraph => (
-              <div key={paragraph.title}>
-                <Anchor
-                  pageMap={this.pageMap}
-                  id={createAnchorId(paragraph.title)}
+          <div className='program_options'>
+            {
+              ourPrograms.map(program => (
+                <ProgramOption
+                  key={program.title}
+                  icon={<program.icon fill='white'/>}
+                  image={program.image}
+                  title={program.title}
+                  caption={program.subtitle}
+                  link={getProgramRoute(program)}
                 />
-                <TitledParagraphs
-                  title={paragraph.title}
-                  subtitle={paragraph.subtitle}
-                  paragraphs={paragraph.paragraphs}
+              ))
+            }
+          </div>
+          <div className='selected_program_option'>
+            {
+              ourPrograms.map(program => (
+                <Route
+                  key={program.title}
+                  exact path={getProgramRoute(program)}
+                  component={program.view}
                 />
-
-              </div>
-            ))
-          }
+              ))
+            }
+          </div>
         </div>
       </div>
     );

@@ -1,4 +1,5 @@
 @import '~scss/Variables';
+@import '~scss/Mixins';
 
 .page_header {
   height: $header_height;
@@ -38,17 +39,27 @@
 
   .header_text {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: $white;
 
-    h1 {
+    .title {
       font-size: $text_hg;
+      font-weight: 600;
+      text-transform: uppercase;
     }
-    p {
-      font-size: $text_md;
-      line-height: $text_md * $line_height_scale_high;
+
+    .call_to_action {
+      @include text-size($text_sm, $line_height_scale_norm);
+      padding: 10px 25px;
+      border: 4px solid $white;
+      margin-top: 15px;
+    }
+
+    .description {
+      @include text-size($text_sm, $line_height_scale_high);
     }
 
     // Large screens
