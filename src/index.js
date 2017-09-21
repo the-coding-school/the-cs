@@ -14,16 +14,14 @@ ReactDOM.render(
       <Navbar />
       <Switch>
         {
-          pages.map(p => {
-            const routeProps = {
-              key: p.path,
-              path: p.path,
-              component: p.component,
-              exact: Boolean(p.exactPath)
-            };
-
-            return <Route {...routeProps} />
-          })
+          pages.map(page => (
+            <Route
+              key={page.path}
+              path={page.path}
+              component={page.component}
+              exact={Boolean(page.exactPath)}
+            />
+          ))
         }
         <Route component={NoMatch} status={400} />
       </Switch>
