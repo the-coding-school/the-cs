@@ -1,3 +1,5 @@
+// @flow
+
 export default {
   header:{
     image: require('./header.jpg'),

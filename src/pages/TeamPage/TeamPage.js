@@ -49,7 +49,7 @@ export default class TeamPage extends LinkScrollPage {
       'Alexander Arnold'
     ];
 
-    const teamLeadsHardCodedList = [
+    const teamHeadsHardCodedList = [
       'Akila Rajesh',
       'Bibek Ghimire',
       'Mindi Cao',
@@ -83,9 +83,9 @@ export default class TeamPage extends LinkScrollPage {
       sortMembersAlphabetically
     );
 
-    const sortedTeamLeads = sortListFirstThenByFunc(
-      team.teamLeads,
-      teamLeadsHardCodedList,
+    const sortedTeamHeads = sortListFirstThenByFunc(
+      team.teamHeads,
+      teamHeadsHardCodedList,
       sortMembersAlphabetically
     );
 
@@ -132,7 +132,7 @@ export default class TeamPage extends LinkScrollPage {
             <TeamSection
               teamType='team_heads'
               title='Team Heads'
-              members={sortedTeamLeads}
+              members={sortedTeamHeads}
               showFullName={false}
             />
 
