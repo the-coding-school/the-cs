@@ -78,7 +78,7 @@
     "build": "node scripts/build.js",
     "flow": "flow",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build&&gh-pages -d build",
+    "deploy": "npm run build && s3cmd sync build/* s3://the-cs.org && echo '🚀 Deployed!'",
     "clean": "rm -rf node_modules/gh-pages/.cache",
     "image-optim": "imageOptim -d ./src/images"
   },
