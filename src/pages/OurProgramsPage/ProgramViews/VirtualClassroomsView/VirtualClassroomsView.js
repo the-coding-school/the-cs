@@ -2,11 +2,12 @@
 
 import React from 'react';
 import './VirtualClassroomsView.scss';
+import VirtualClassroomsPanel from 'views/VirtualClassroomsPanel';
 
 export default function VirtualClassroomsView() {
   return (
     <div className='virtual_classrooms_view'>
-      This is the virtual classrooms view.
+      <VirtualClassroomsPanel />
     </div>
   );
 }
