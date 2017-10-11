@@ -11,7 +11,7 @@ export default class VirtualClassroom extends React.Component {
 
     return (
       <div className='virtualClassroom'>
-        <img alt='virtualClassroom' src={imageSrc} width='80' height='80' />
+        <img alt='virtualClassroom' src={imageSrc} width='100' height='100' />
         <p>{description}</p>
       </div>
     );
