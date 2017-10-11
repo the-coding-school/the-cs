@@ -2,26 +2,21 @@
   {
     "description": "schools",
     "number": "16",
-    "imageName": "school_icon.png"
+    "imageName": "applebooks_icon.svg"
   },
   {
     "description": "students",
     "number": "2,500",
-    "imageName": "students_icon.png"
+    "imageName": "calendar_icon.svg"
   },
   {
     "description": "minority students",
     "number": "55%",
-    "imageName": "minorities_icon.png"
+    "imageName": "instruction_icon.svg"
   },
   {
     "description": "students with low socioeconomic status",
     "number": "44%",
-    "imageName": "low_socioeconomic_icon.png"
-  },
-  {
-    "description": "female students",
-    "number": "32%",
-    "imageName": "femalestudents_icon.png"
+    "imageName": "personcomputer_icon.svg"
   }
 ]

@@ -7,7 +7,7 @@ import virtualClassrooms from './virtualClassrooms.json';
 
 export default class VirtualClassroomsPanel extends React.Component {
   render() {
-    const statsIconRoot = process.env.PUBLIC_URL + '/images/statistics/';
+    const statsIconRoot = process.env.PUBLIC_URL + '/images/virtualClassrooms/';
     return (
       <div className='virtual_classrooms_panel'>
         {
