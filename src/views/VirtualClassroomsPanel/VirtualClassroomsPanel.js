@@ -12,7 +12,7 @@ export default class VirtualClassroomsPanel extends React.Component {
       <div className='virtual_classrooms_panel'>
         {
           virtualClassrooms.map(function(s) {
-            return <VirtualClassroom key={s.description} imageSrc={statsIconRoot + s.imageName} number={s.number} description={s.description} />
+            return <VirtualClassroom key={s.description} imageSrc={statsIconRoot + s.imageName} description={s.description} />
           })
         }
       </div>

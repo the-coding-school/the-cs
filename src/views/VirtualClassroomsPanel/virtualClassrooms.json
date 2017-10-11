@@ -1,22 +1,18 @@
 [
   {
-    "description": "schools",
-    "number": "16",
+    "description": "250+ INSTRUCTORS",
     "imageName": "applebooks_icon.svg"
   },
   {
-    "description": "students",
-    "number": "2,500",
+    "description": "YEAR-LONG COURSES",
     "imageName": "calendar_icon.svg"
   },
   {
-    "description": "minority students",
-    "number": "55%",
+    "description": "ONE-ON-ONE INSTRUCTION",
     "imageName": "instruction_icon.svg"
   },
   {
-    "description": "students with low socioeconomic status",
-    "number": "44%",
+    "description": "EDITING & VIDEO CHAT FEATURES",
     "imageName": "personcomputer_icon.svg"
   }
 ]
