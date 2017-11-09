@@ -3,6 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
+import './utilities/polyfill'
 import Navbar from 'views/Navbar';
 import Footer from 'views/Footer';
 import pages from 'pages';
