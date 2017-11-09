@@ -2,7 +2,7 @@
 
 import React from 'react';
 import VirtualClassroomsPanel from 'views/VirtualClassroomsPanel';
-import ProgramFooter from 'components/ProgramFooter';
+import ProgramFooter from '../ProgramFooter';
 import viewData from './VirtualClassroomsViewData';
 import './VirtualClassroomsView.scss';
 
