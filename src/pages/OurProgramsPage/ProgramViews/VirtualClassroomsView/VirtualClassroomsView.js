@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import VirtualClassroomsPanel from 'views/VirtualClassroomsPanel';
+import VirtualClassroomsPanel from './VirtualClassroomsPanel';
 import ProgramFooter from '../ProgramFooter';
 import viewData from './VirtualClassroomsViewData';
 import './VirtualClassroomsView.scss';
