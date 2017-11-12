@@ -1,12 +1,18 @@
 // @flow
 
 import React from 'react';
+import VirtualClassroomsPanel from './VirtualClassroomsPanel';
+import ProgramFooter from '../ProgramFooter';
+import viewData from './VirtualClassroomsViewData';
 import './VirtualClassroomsView.scss';
 
 export default function VirtualClassroomsView() {
+  const { footer } = viewData;
+
   return (
     <div className='virtual_classrooms_view'>
-      This is the virtual classrooms view.
+      <VirtualClassroomsPanel />
+      <ProgramFooter image={footer.image} title={footer.title}/>
     </div>
   );
 }
