@@ -1,0 +1,42 @@
+@import '~scss/Variables';
+
+.program_view_heading {
+
+    padding: 1rem;
+    background-color: $black;
+    text-align: center;
+    color: white;
+    font-size: $text_lg;
+    font-weight: 800;
+
+}
+
+.program_view_tagline {
+
+    padding: 1.5rem;
+    text-align: center;
+    background-color: $very_light_gray;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tagline_text {
+
+    padding: 0.7rem 2rem;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+
+}
+
+.codeConnects_elements {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: $blue;
+    color: white;
+    font-size: $text_md;
+    padding: 2rem;
+
+}
+

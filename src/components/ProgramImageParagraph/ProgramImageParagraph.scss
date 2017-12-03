@@ -1,0 +1,31 @@
+@import '~scss/Variables';
+
+.program_image_paragraph {
+
+    position: relative;
+    width: 80rem;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: $black;
+
+}
+
+.image {
+
+    position: absolute;
+    height: 100%;
+    filter: brightness(50%);
+
+}
+
+.text {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: $text_sm;
+    font-weight: 800;
+
+}

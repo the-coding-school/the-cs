@@ -1,0 +1,15 @@
+@import '~scss/Variables';
+
+.program_element_icon {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.element_icon {
+    width: 4rem;
+    height: 4rem;
+    margin: 1rem;
+}
