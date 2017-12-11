@@ -4,16 +4,18 @@ import React from 'react';
 export default class ProgramApproachPiece extends React.Component {
     render () {
         const {
-            iconSrc,
-            title,
-            desc
+		icon,
+            	title,
+            	desc
         } = this.props;
 
         return (
 
             <div className='program_approach_piece'>
                 <div className='section A'>
-                    <img className='icon' src={iconSrc}/>
+                    <div className='icon'>
+			{icon}
+		    </div>
                     <div className='title'>
                         {title}
                     </div>

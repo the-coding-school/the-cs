@@ -8,17 +8,17 @@
 
 }
 
-.program_approach_piece:nth-child(odd) {
+.program_approach_piece:nth-child(even) {
 
     background-color: $light_blue;
     color: $white;
 
-    flex-direction: row;
+    flex-direction: row-reverse;
 
 }
 
-.program_approach_piece:nth-child(even) {
-    flex-direction: row-reverse;
+.program_approach_piece:nth-child(odd) {
+    flex-direction: row;
 
     background-color: $very_light_gray;
     color: black;
@@ -39,18 +39,24 @@
 .section.A {
 
     flex-direction: column;
+    font-family: $font_secondary;
+}
+
+.section.B {
+
+    font-weight: $weight_thick;
 
 }
 
 .program_approach_piece:nth-child(odd) > .section.A {
 
-    border-right: 1px solid $white;
+    border-right: 1px solid $black;
 
 }
 
 .program_approach_piece:nth-child(even) > .section.A {
     
-        border-left: 1px solid $black;
+        border-left: 1px solid $white;
     
 }
 
