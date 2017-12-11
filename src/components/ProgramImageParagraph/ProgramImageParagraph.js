@@ -11,10 +11,12 @@ export default class ProgramImageParagraph extends React.Component {
         return (
 
             <div className='program_image_paragraph'>
-                <img className='image' src={imgSrc} alt='program element'/>
-                <div className='text'>
-                    {text}
-                </div>
+		<div className='wrapper'>
+                     <img className='image' src={imgSrc} alt='program element'/>
+                     <div className='text'>
+                        {text}
+                     </div>
+		</div>
             </div>
 
         );
