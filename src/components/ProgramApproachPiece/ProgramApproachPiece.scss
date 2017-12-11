@@ -8,20 +8,74 @@
 
 }
 
-.program_approach_piece:nth-child(even) {
+.program_approach_piece:nth-child(odd) {
 
-    background-color: $light_blue;
-    color: $white;
-
-    flex-direction: row-reverse;
+	background-color: $very_light_gray;
+	color: $black;
 
 }
 
-.program_approach_piece:nth-child(odd) {
-    flex-direction: row;
+.program_approach_piece:nth-child(even) {
 
-    background-color: $very_light_gray;
-    color: black;
+	background-color: $light_blue;
+	color: $white;
+
+}
+
+.section.A {
+
+	flex-direction: column;
+	font: $font_tertiary;
+
+}
+
+.section.B {
+
+	font-weight: $weight_thick;
+
+}
+
+@media screen and (orientation:landscape) {
+ .program_approach_piece:nth-child(odd) {
+
+    	flex-direction: row;
+
+ } 
+
+ .program_approach_piece:nth-child(even) {
+
+	flex-direction: row-reverse;
+
+ }
+
+ .program_approach_piece:nth-child(odd) > .section.A {
+ 
+	 border-right: 1pt solid black;
+
+ }
+
+ .program_approach_piece:nth-child(even) > .section.A {
+ 
+	 border-left: 1pt solid black;
+
+ }
+
+}
+
+@media screen and (orientation: portrait) {
+
+	.program_approach_piece {
+	
+		flex-direction: column;
+
+	}
+
+	.section.A {
+	
+		flex-direction: column-reverse;
+	
+	}
+
 }
 
 /* Styling for both sections within the panel */
@@ -36,31 +90,11 @@
 
 }
 
-.section.A {
-
-    flex-direction: column;
-    font-family: $font_secondary;
-}
-
 .section.B {
 
     font-weight: $weight_thick;
 
 }
-
-.program_approach_piece:nth-child(odd) > .section.A {
-
-    border-right: 1px solid $black;
-
-}
-
-.program_approach_piece:nth-child(even) > .section.A {
-    
-        border-left: 1px solid $white;
-    
-}
-
-
 
 .icon {
 
