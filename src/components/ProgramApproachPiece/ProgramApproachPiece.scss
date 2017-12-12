@@ -10,7 +10,7 @@
 
 .program_approach_piece:nth-child(odd) {
 
-	background-color: $very_light_gray;
+	background-color: white;
 	color: $black;
 
 }
@@ -56,7 +56,7 @@
 
  .program_approach_piece:nth-child(even) > .section.A {
  
-	 border-left: 1pt solid black;
+	 border-left: 1pt solid white;
 
  }
 
@@ -68,6 +68,16 @@
 	
 		flex-direction: column;
 
+	}
+
+	.program_approach_piece:nth-child(odd) > .section.A {
+	
+		border-bottom: 1pt solid black;
+	
+	}
+
+	.program_approach_piece:nth-child(even) > .section.A {
+		border-bottom: 1pt solid white;
 	}
 
 	.section.A {
@@ -98,8 +108,7 @@
 
 .icon {
 
-    width: 5rem;
-    height: 5rem;
+    width: 15rem;
     margin: 0.5rem;
 
 }
