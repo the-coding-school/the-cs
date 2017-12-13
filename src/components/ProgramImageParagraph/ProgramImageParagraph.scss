@@ -7,11 +7,13 @@
     justify-content: space-around;
     align-items: center;
     background-color: $black;
-
+    width: 100vw;
+    overflow: hidden;
 }
 
 .wrapper {
     display: flex;
+    text-align: center;
     justify-content: space-around;
     position: relative;
     height: 100%;
@@ -19,15 +21,14 @@
 
 .image {
     filter: brightness(0.3);
-    width: 100%;
     height: 100%;
 }
 
 .text {
-    top: 40%;
     position: absolute;
     color: $white; 
     font-weight: $weight_thick;
     font-size: $text_md;
     width: 80%;
+    top: 30%;
 }

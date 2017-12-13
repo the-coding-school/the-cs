@@ -2,11 +2,11 @@
 
 .program_view_heading {
 
-    padding: 1rem;
+    padding: 3rem;
     background-color: $black;
     text-align: center;
     color: white;
-    font-size: $text_lg;
+    font-size: $text_hg;
     font-weight: 800;
 
 }
@@ -15,6 +15,7 @@
 
     padding: 1.5rem;
     text-align: center;
+    font-family: $font_tertiary;
     background-color: $very_light_gray;
     display: flex;
     justify-content: space-around;
@@ -26,6 +27,32 @@
     padding: 0.7rem 2rem;
     border-top: 1px solid $black;
     border-bottom: 1px solid $black;
+    font-size: $text_md;
+}
+
+.subheading > * {
+	font-size: $text_md;
+	font-weight: $weight_thick;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.subheading .supersubheading {
+
+	background-color: $blue;
+	color: white;
+	padding: 2rem;
+
+}
+
+.subheading .subsubheading {
+
+	background-color: $light_blue;
+	color: white;
+	padding: 1rem;
+	font-family: $font_tertiary;
+
 
 }
 
