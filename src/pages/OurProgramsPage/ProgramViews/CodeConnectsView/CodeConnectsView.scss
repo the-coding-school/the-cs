@@ -1,15 +1,6 @@
 @import '~scss/Variables';
 
-.program_view_heading {
 
-    padding: 3rem;
-    background-color: $black;
-    text-align: center;
-    color: white;
-    font-size: $text_hg;
-    font-weight: 800;
-
-}
 
 .program_view_tagline {
 
@@ -59,6 +50,7 @@
 .codeConnects_elements {
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: $blue;
     color: white;

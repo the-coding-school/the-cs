@@ -1,5 +1,6 @@
 import React from 'react';
 
+// import icons
 import PeopleGroup from 'components/icons/PeopleGroup';
 import UnderRepresentedGroups from 'components/icons/UnderRepresentedGroups';
 import PersonalInstruction from 'components/icons/PersonalInstruction';

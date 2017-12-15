@@ -17,11 +17,13 @@
     justify-content: space-around;
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 .image {
     filter: brightness(0.3);
-    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .text {
@@ -29,6 +31,14 @@
     color: $white; 
     font-weight: $weight_thick;
     font-size: $text_md;
+    overflow-y: auto;
+    
+    height: 80%;
     width: 80%;
-    top: 30%;
+    top: 10%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    
 }

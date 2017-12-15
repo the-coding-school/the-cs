@@ -9,22 +9,10 @@ import ProgramElementIcon from 'components/ProgramElementIcon';
 import ProgramImageParagraph from 'components/ProgramImageParagraph';
 import ProgramApproachPiece from 'components/ProgramApproachPiece';
 
-// import icons
-import PeopleGroup from 'components/icons/PeopleGroup';
-import UnderRepresentedGroups from 'components/icons/UnderRepresentedGroups';
-import PersonalInstruction from 'components/icons/PersonalInstruction';
-
-import ArtificialIntelligence from 'components/icons/ArtificialIntelligence';
-import MobileAppBuilding from 'components/icons/MobileAppBuilding';
-import VirtualReality from 'components/icons/VirtualReality';
-
 export default function CodeConnectsView() {
 
   return (
     <div className='code_connects_view'>
-      <div className='program_view_heading'>
-        codeConnects
-      </div>
       <div className='program_view_tagline'>
         <div className='tagline_text'>
           {pageData.tagline}
