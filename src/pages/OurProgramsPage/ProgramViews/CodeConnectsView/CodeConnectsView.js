@@ -25,8 +25,10 @@ export default function CodeConnectsView() {
       <div className='program_view_issues'>
         {
             pageData.approaches.map(
-                function (approach) {
-                    return <ProgramApproachPiece 
+                function (approach, idx) {
+                    return <ProgramApproachPiece
+                                key={idx+1}
+                                n={idx+1}
                                 title={approach.title} 
                                 desc={approach.description} 
                                 icon={approach.icon}
@@ -44,7 +46,8 @@ export default function CodeConnectsView() {
             pageData.programElements.map(
                 function (el) {
                     return <ProgramElementIcon
-                            desc={el.title}
+                            key={el.title}
+                            title={el.title}
                             icon={el.icon}
                             />
                 }

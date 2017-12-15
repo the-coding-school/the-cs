@@ -1,12 +1,14 @@
+/*eslint-disable no-extra-semi */
 import './ProgramApproachPiece.scss';
 import React from 'react';
 
 export default class ProgramApproachPiece extends React.Component {
     render () {
         const {
-		icon,
+		        icon,
             	title,
-            	desc
+            	desc,
+            	n
         } = this.props;
 
         return (
@@ -17,7 +19,7 @@ export default class ProgramApproachPiece extends React.Component {
 			{icon}
 		    </div>
                     <div className='title'>
-                        {title}
+                        {n}) {title}
                     </div>
                 </div>
                 <div className='section B'>
