@@ -14,8 +14,8 @@ export default function CodeConnectsView() {
   return (
     <div className='code_connects_view'>
       <div className='subheading'>
-      	<div className='supersubheading'>Problems</div>
-	    <div className='subsubheading'>How We Approach Them</div>
+      	<div className='supersubheading'>Our Approach</div>
+	    <div className='subsubheading'>The traditional educational model has three key issues that we strive to fix.</div>
       </div>
       <div className='program_view_issues'>
         {
