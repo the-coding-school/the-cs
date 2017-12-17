@@ -1,26 +1,5 @@
 @import '~scss/Variables';
 
-
-
-.program_view_tagline {
-
-    padding: 1.5rem;
-    text-align: center;
-    font-family: $font_tertiary;
-    background-color: $very_light_gray;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.tagline_text {
-
-    padding: 0.7rem 2rem;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
-    font-size: $text_md;
-}
-
 .subheading > * {
 	font-size: $text_md;
 	font-weight: $weight_thick;

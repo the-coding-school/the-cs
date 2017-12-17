@@ -9,7 +9,6 @@ import VirtualReality from 'components/icons/VirtualReality';
 import MobileAppBuilding from 'components/icons/MobileAppBuilding';
 
 export default {
-    tagline: 'A diverse approach to achieving diversity',
     approaches: [
         {
             title: 'Lack of Differentiated Instruction',

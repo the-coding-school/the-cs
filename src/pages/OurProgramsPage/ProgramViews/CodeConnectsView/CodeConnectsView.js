@@ -13,11 +13,6 @@ export default function CodeConnectsView() {
 
   return (
     <div className='code_connects_view'>
-      <div className='program_view_tagline'>
-        <div className='tagline_text'>
-          {pageData.tagline}
-        </div>
-      </div>
       <div className='subheading'>
       	<div className='supersubheading'>Problems</div>
 	    <div className='subsubheading'>How We Approach Them</div>
