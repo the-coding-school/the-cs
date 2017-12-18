@@ -9,6 +9,7 @@ import SchoolsPanel from 'views/SchoolsPanel';
 import HomeVideo from './HomeVideo';
 import UpdatesFeed from 'views/UpdatesFeed';
 import PromoVideo from 'views/PromoVideo';
+import FeaturedTeamPanel from 'views/FeaturedTeamPanel';
 
 import './HomePage.scss';
 
@@ -55,6 +56,13 @@ export default () => (
         className='home_page_updates_feed'
       >
         <UpdatesFeed/>
+      </TitledPageRow>
+      
+      <TitledPageRow
+        title='Our Team'
+        className='featured_team_members'
+      >
+       <FeaturedTeamPanel/>
       </TitledPageRow>
 
       <div className='home_page_partners_panel'>
