@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Domine|Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Domine|Montserrat:400,700');
 
 // Colors
 $light_blue: #4F94D2;
@@ -15,6 +15,7 @@ $red: #e10000;
 // Typography
 $font_primary: 'Montserrat', sans-serif;
 $font_secondary: 'Domine', serif;
+$font_tertiary: 'Lato', sans-serif;
 
 $text_min: 9px;
 $text_tn: 12px;
@@ -22,6 +23,10 @@ $text_sm: 16px;
 $text_md: 21px;
 $text_lg: 37px;
 $text_hg: 50px;
+
+$weight_thin: 300;
+$weight_normal: 600;
+$weight_thick: 900;
 
 $line_height_scale_low: 1.20;
 $line_height_scale_norm: 1.37;

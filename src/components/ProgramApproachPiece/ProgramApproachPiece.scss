@@ -1,0 +1,114 @@
+@import '~scss/Variables';
+
+/* Styling for each approach piece panel */
+.program_approach_piece {
+
+    display: flex;
+    padding: 2rem;
+
+}
+
+.program_approach_piece:nth-child(odd) {
+
+	background-color: white;
+	color: $black;
+
+}
+
+.program_approach_piece:nth-child(even) {
+
+	background-color: $light_blue;
+	color: $white;
+
+}
+
+.section.A {
+
+	flex-direction: column;
+	font: $font_tertiary;
+
+}
+
+.section.B {
+
+	font-weight: $weight_thick;
+
+}
+
+@media screen and (orientation:landscape) {
+ .program_approach_piece:nth-child(odd) {
+
+    	flex-direction: row;
+
+ } 
+
+ .program_approach_piece:nth-child(even) {
+
+	flex-direction: row-reverse;
+
+ }
+
+ .program_approach_piece:nth-child(odd) > .section.A {
+ 
+	 border-right: 1pt solid black;
+
+ }
+
+ .program_approach_piece:nth-child(even) > .section.A {
+ 
+	 border-left: 1pt solid white;
+
+ }
+
+}
+
+@media screen and (orientation: portrait) {
+
+	.program_approach_piece {
+	
+		flex-direction: column;
+
+	}
+
+	.program_approach_piece:nth-child(odd) > .section.A {
+	
+		border-bottom: 1pt solid black;
+	
+	}
+
+	.program_approach_piece:nth-child(even) > .section.A {
+		border-bottom: 1pt solid white;
+	}
+
+	.section.A {
+	
+		flex-direction: column-reverse;
+	
+	}
+
+}
+
+/* Styling for both sections within the panel */
+.section {
+
+    padding: 2rem;
+    font-size: $text_md;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.section.B {
+
+    font-weight: $weight_thick;
+
+}
+
+.icon {
+
+    width: 15rem;
+    margin: 0.5rem;
+
+}
