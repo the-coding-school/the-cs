@@ -26,7 +26,7 @@
 4. Go to [the repo](https://www.github.com/the-codinig-school/the-cs) and make a pull request for your branch, notifying the appropriate person for a review.
 6. If PR is approved, **squash merge** to master. If changes are requested, fix the issue and notify the reviewer.
   - It's really important that you perform a **squash merge** (which combines all your branch's commits into a single commit) and not a regular merge (which doesn't).
-
+7. Once you merge your PR, **delete your branch** so it doesn't take up unnecessary space in the repository.
 ### Deploying
 1. *Thoroughly* test the `master` branch by making sure all pages load and render correctly.
 2. `git checkout production`
