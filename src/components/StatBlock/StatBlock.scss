@@ -1,14 +1,14 @@
 @import '~scss/Variables';
 
 .stat-block {
-    margin: 2rem;
-}
+  margin: 2rem;
+  text-align: center;
 
-.figure {
+  .figure {
     font-size: $text_xhg;
-}
+  }
 
-.title {
+  .title {
     font-size: $text_sm;
-    text-align: center;
+  }
 }

@@ -7,4 +7,9 @@
     text-align: center;
     color: $blue;
   }
+
+  .member_cell {
+    width: $member_image_size;
+    height: $member_image_size;
+  }
 }

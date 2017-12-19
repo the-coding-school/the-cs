@@ -57,13 +57,8 @@ export default () => (
       >
         <UpdatesFeed/>
       </TitledPageRow>
-      
-      <TitledPageRow
-        title='Our Team'
-        className='featured_team_members'
-      >
-       <FeaturedTeamPanel/>
-      </TitledPageRow>
+
+      <FeaturedTeamPanel/>
 
       <div className='home_page_partners_panel'>
         <SectionHeader

@@ -12,34 +12,31 @@ export default class FeaturedTeamPanel extends React.Component {
       <div className='featured-team-panel'>
         <div className='image-grid'>
             {
-                panelData.teamMembers.map( (member)=>{
-                    return (
-                        <div key={member.name} className='member-image'>
-                            <MemberImage isSquare={true} images={member.images}/>
-                        </div>
-                    );
-                } )
-                
+              panelData.teamMembers.map((member)=>{
+                return (
+                  <MemberImage key={member.name} isSquare={true} images={member.images}/>
+                );
+              })
             }
         </div>
         <div className='info'>
-            <div className='spiel'>
-                {panelData.spiel}
-            </div>
-            <div className='stats-grid'>
-                {panelData.stats.map( (stat)=> {
-                    return (
-                        
-                        <StatBlock key={stat.title} title={stat.title} figure={stat.figure}/>
-                        
-                    );
-
-                
-                })}
-            </div>
-            <a className='meet-the-team button' href='/team'>
-                Meet our incredible team
-            </a>
+          <div className='spiel'>
+            {panelData.spiel}
+          </div>
+          <div className='stats-grid'>
+            {
+              panelData.stats.map(stat => (
+                <StatBlock
+                  key={stat.title}
+                  title={stat.title}
+                  figure={stat.figure}
+                />
+              ))
+            }
+          </div>
+          <a className='meet-the-team button' href='/team'>
+            Meet our incredible team
+          </a>
         </div>
       </div>
     );
