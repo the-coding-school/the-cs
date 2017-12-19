@@ -11,7 +11,7 @@ export default class StatBlock extends React.Component {
         
         return (
         
-            <div className='statBlock'>
+            <div className='stat-block'>
                 <div className='figure'>
                     {figure}
                 </div>
