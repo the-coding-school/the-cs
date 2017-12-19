@@ -2,18 +2,29 @@
   "name": "TheCodingSchool",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://the-cs.org",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "flow": "flow",
+    "test": "node scripts/test.js --env=jsdom",
+    "lint": "eslint src",
+    "deploy": "npm run build && s3cmd sync build/* s3://the-cs.org && echo '🚀 Deployed!'",
+    "clean": "rm -rf node_modules/gh-pages/.cache",
+    "image-optim": "imageOptim -d ./src/images"
+  },
   "devDependencies": {
     "autoprefixer": "6.5.1",
     "babel-cli": "^6.26.0",
     "babel-core": "6.17.0",
-    "babel-eslint": "7.1.1",
+    "babel-eslint": "^8.0.3",
     "babel-jest": "17.0.2",
     "babel-loader": "6.2.7",
+    "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
-    "babel-preset-react-app": "^2.0.1",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
     "connect-history-api-fallback": "1.3.0",
@@ -21,13 +32,15 @@
     "css-loader": "^0.26.0",
     "detect-port": "1.0.1",
     "dotenv": "2.0.0",
-    "eslint": "3.8.1",
-    "eslint-config-react-app": "^0.5.0",
-    "eslint-loader": "1.6.0",
-    "eslint-plugin-flowtype": "2.21.0",
-    "eslint-plugin-import": "2.0.1",
-    "eslint-plugin-jsx-a11y": "2.2.3",
-    "eslint-plugin-react": "6.4.1",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
+    "eslint-import-resolver-node": "^0.3.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "^2.40.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
     "extract-loader": "^0.1.0",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.9.0",
@@ -59,28 +72,18 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "eslint-import-resolver-webpack": "^0.8.3",
     "gsap": "^1.20.2",
     "hover.css": "^2.2.0",
     "jquery": "^3.2.1",
     "moment": "^2.18.1",
     "react": "^15.4.2",
-    "react-addons-css-transition-group": "^15.6.0",
     "react-addons-transition-group": "^15.6.0",
     "react-dom": "^15.4.2",
     "react-router-dom": "^4.2.2",
     "react-scroll": "^1.5.4",
-    "react-transition-group": "1.x",
     "slick-carousel": "^1.6.0",
     "typed-js": "^0.2.3"
-  },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "flow": "flow",
-    "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build && s3cmd sync build/* s3://the-cs.org && echo '🚀 Deployed!'",
-    "clean": "rm -rf node_modules/gh-pages/.cache",
-    "image-optim": "imageOptim -d ./src/images"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -105,14 +108,5 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     }
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "homepage": "http://the-cs.org"
+  }
 }
