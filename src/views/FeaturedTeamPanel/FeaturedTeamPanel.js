@@ -9,12 +9,12 @@ import panelData from './FeaturedTeamData';
 export default class FeaturedTeamPanel extends React.Component {
   render() {
     return (
-      <div className='featuredTeamPanel'>
-        <div className='imageGrid'>
+      <div className='featured-team-panel'>
+        <div className='image-grid'>
             {
                 panelData.teamMembers.map( (member)=>{
                     return (
-                        <div key={member.name} className='memberImage'>
+                        <div key={member.name} className='member-image'>
                             <MemberImage isSquare={true} images={member.images}/>
                         </div>
                     );
@@ -26,7 +26,7 @@ export default class FeaturedTeamPanel extends React.Component {
             <div className='spiel'>
                 {panelData.spiel}
             </div>
-            <div className='statsGrid'>
+            <div className='stats-grid'>
                 {panelData.stats.map( (stat)=> {
                     return (
                         
@@ -37,7 +37,7 @@ export default class FeaturedTeamPanel extends React.Component {
                 
                 })}
             </div>
-            <a className='button meet-the-team' href='/team'>
+            <a className='meet-the-team button' href='/team'>
                 Meet our incredible team
             </a>
         </div>

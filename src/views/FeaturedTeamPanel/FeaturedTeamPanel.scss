@@ -1,11 +1,11 @@
 @import '~scss/Variables';
 
-.featuredTeamPanel {
+.featured-team-panel {
     display: flex;
     
 }
 
-.imageGrid {
+.image-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -31,7 +31,7 @@
     
 }
 
-.statsGrid {
+.stats-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -40,11 +40,11 @@
 
 .meet-the-team {
     display: flex;   
-    margin: 2rem;
+    margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 768px) {
-    .memberImage, .memberImage * {
+    .member-image, .member-image * {
         height: 15rem;
         width: 15rem;
         overflow: hidden;
@@ -54,7 +54,7 @@
         width: 40vw;
     }
     
-    .imageGrid {
+    .image-grid {
         width: 60vw;
     }
     
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 768px) {
     
-    .imageGrid, .imageGrid *{
+    .image-grid, .image-grid *{
         display: none;
     }
     
