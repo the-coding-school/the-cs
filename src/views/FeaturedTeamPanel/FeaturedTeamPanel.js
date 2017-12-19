@@ -37,7 +37,7 @@ export default class FeaturedTeamPanel extends React.Component {
                 
                 })}
             </div>
-            <a className='button' href='/team'>
+            <a className='button meet-the-team' href='/team'>
                 Meet our incredible team
             </a>
         </div>
