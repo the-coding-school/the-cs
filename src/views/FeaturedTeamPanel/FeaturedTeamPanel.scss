@@ -3,10 +3,12 @@
 .featured-team-panel {
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
-  height: 600px;
 
   @media (min-width: $bpoint_md) {
+      
+    height: 600px;
     .image-grid { display: flex; }
     .info { width: 40%; }
   }
@@ -38,6 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 
     .spiel {
       text-align: right;
@@ -49,15 +52,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
-      margin: 0 5% 10% 5%;
-      & > * {
-        width: 25%;
-      }
     }
 
     .meet-the-team {
       display: flex;
-      margin-bottom: 64px;
+      margin: 32px 0;
+      position: relative;
     }
   }
 }
