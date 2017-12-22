@@ -1,7 +1,7 @@
 @import '~scss/Variables';
 
 .learningDisabilities {
-  min-width: 200px;
+  width: 50%;
   text-align: center;
   img {
     opacity: 0.75;
@@ -18,5 +18,7 @@
     color: $white;
     margin-top: 0px;
     margin-bottom: 3px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
