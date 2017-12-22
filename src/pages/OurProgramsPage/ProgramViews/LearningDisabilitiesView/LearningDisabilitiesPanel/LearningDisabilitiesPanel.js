@@ -7,7 +7,7 @@ import learningDisabilities from './learningDisabilities.json';
 
 export default class LearningDisabilitiesPanel extends React.Component {
   render() {
-    const statsIconRoot = process.env.PUBLIC_URL + '/images/virtualClassrooms/';
+    const statsIconRoot = process.env.PUBLIC_URL + '/images/learningDisabilities/';
     return (
       <div className='learning_disabilities_panel'>
         {

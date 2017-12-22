@@ -11,7 +11,7 @@ export default class LearningDisabilities extends React.Component {
 
     return (
       <div className='learningDisabilities'>
-        <img alt='learningDisabilities' src={imageSrc} width='100' height='100' />
+        <img alt='learningDisabilities' src={imageSrc} width='250' height='250' />
         <p>{description}</p>
       </div>
     );

@@ -1,18 +1,10 @@
 [
   {
-    "description": "250+ INSTRUCTORS",
-    "imageName": "applebooks_icon.svg"
+    "description": "This program was inspired by two brothers with learning disabilities who took our class and fell in love with coding.",
+    "imageName": "twopeople_icon.svg"
   },
   {
-    "description": "YEAR-LONG COURSES",
-    "imageName": "calendar_icon.svg"
-  },
-  {
-    "description": "ONE-ON-ONE INSTRUCTION",
-    "imageName": "instruction_icon.svg"
-  },
-  {
-    "description": "EDITING & VIDEO CHAT FEATURES",
-    "imageName": "personcomputer_icon.svg"
+    "description": "While they typically faced difficulties concentrating and lack of enthusiasm, the brothers displayed passion and focus in coding class, which also had a butterfly effect into their other academic subjects.",
+    "imageName": "personarrowlight_icon.svg"
   }
 ]
