@@ -6,14 +6,39 @@ export default class LearningDisabilities extends React.Component {
   render() {
     const {
       imageSrc,
-      description
+      description,
+      display
     } = this.props;
 
-    return (
+    if(display == "image on top") {
+      return (
       <div className='learningDisabilities'>
-        <img alt='learningDisabilities' src={imageSrc} width='250' height='250' />
+        <img alt='learningDisabilities' src={imageSrc} height='250' />
         <p>{description}</p>
       </div>
-    );
+      );
+    }
+    else if(display == "text on top") {
+      return (
+        <div className='learningDisabilities'>
+          <p>{description}</p>
+          <img alt='learningDisabilities' src={imageSrc} height='250' />
+        </div>
+      );
+    }
+    else if(display == "image only") {
+      return (
+        <div className='learningDisabilities'>
+          <img alt='learningDisabilities' src={imageSrc} height='350' />
+        </div>
+      ); 
+    }
+    else {
+      return (
+        <div className='learningDisabilities'>
+          <p>{description}</p>
+        </div>
+      ); 
+    }
   }
 }

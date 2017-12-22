@@ -12,7 +12,7 @@ export default class LearningDisabilitiesPanel extends React.Component {
       <div className='learning_disabilities_panel'>
         {
           learningDisabilities.map(function(s) {
-            return <LearningDisabilities key={s.description} imageSrc={statsIconRoot + s.imageName} description={s.description} />
+            return <LearningDisabilities key={s.description} imageSrc={statsIconRoot + s.imageName} description={s.description} display={s.display} />
           })
         }
       </div>
