@@ -27,15 +27,39 @@
 6. If PR is approved, **squash merge** to master. If changes are requested, fix the issue and notify the reviewer.
   - It's really important that you perform a **squash merge** (which combines all your branch's commits into a single commit) and not a regular merge (which doesn't).
 7. Once you merge your PR, **delete your branch** so it doesn't take up unnecessary space in the repository.
-### Deploying
-1. *Thoroughly* test the `master` branch by making sure all pages load and render correctly.
+
+## Deployment
+
+* There is also a `deploy` script in the project `package.json` that automatically deploys the contents of `/build` to the S3 bucket `s3://the-cs.org`
+* Deploying with this method requires the following:
+ * [s3cmd](http://s3tools.org/) must be installed on your machine
+ * You must have configured s3cmd to your machine by running `s3cmd --configure` and adding the AWS access key & token
+  * The access key and token can be found on the AWS console.
+
+### Depolyment Procedure
+1. **Thoroughly** test the `master` branch by making sure all pages load and render correctly.
 2. `git checkout production`
 3. `git merge master`
 4. `yarn deploy`
-  * Deploys to S3, only works if you have the appropriate credentials saved to your environment.
 5. `git checkout master`
 
 *We do this so that we have one branch, `production`, which represents a clear timeline of the published site's contents*
+
+---
+
+## External Services Used
+
+### Amazon Web Services (AWS)
+* AWS is used to host the domain `the-cs.org` as well as the static webpage served from S3. Lisa has access to the AWS account and can grant access permissions to others at her discretion.
+
+### Google Analytics
+* Google Analytics is used to track website usage statistics. Lisa has access to the Analytics account and can grant access permissions to others at her discretion.
+
+### Formspree
+* Formspree is used as the form submission platform (mainly on the Get Involved page). This has no account information to worry about. When a form is submitted, it is sent directly to the email specified in the `<form>` element declaration.
+
+### Paypal
+* Paypal is used as the donation payment service. It is referenced in `src/views/DonationsPanel/DonationButton.js` in which the `value` property of the `<input name='hosted_button_id'>` refers to which donation endpoint to redirect to. Lisa has access to the TCS Paypal account and can grant access permissions to others at her discretion.
 
 ---
 
@@ -53,13 +77,6 @@ src/
   fonts/
   js/
   pages/
-    AboutPage/
-    DonatePage/
-    GetInvolvedPage/
-    HomePage/
-    OurFootprintPage/
-    OurProgramsPage/
-    TeamPage/
   scss/
   views/
   index.js
@@ -92,6 +109,7 @@ We don't have an actual style guide since we just use ESLint and extend `eslint-
 ---
 
 ## Miscellaneous Notes
+
 webpack's root-resolver allows us to set `/src/` as the root, so in order to `import` JS modules, we simply need to define the path relative to `src`.
 
 For example, we can replace ugly imports like:
