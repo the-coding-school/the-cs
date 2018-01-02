@@ -8,61 +8,60 @@ export default {
     ],
     teamMembers: [
         {
-            name: 'kiera',
+            name: 'Lauren Becker',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/lauren_becker.jpg'),
+                fun: require('images/team/lauren_becker.jpg')
             }
         },
         {
-            name: 'kiera1',
+            name: 'Zachary Sang',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/zachary_sang.jpg'),
+                fun: require('images/team/zachary_sang.jpg')
             }
         },{
-            name: 'kiera2',
+            name: 'Kathy Nguyen',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/kathy_nguyen.jpg'),
+                fun: require('images/team/kathy_nguyen.jpg')
             }
         },{
-            name: 'kiera3',
+            name: 'Ati Ok',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/ati_ok.jpg'),
+                fun: require('images/team/ati_ok.jpg')
             }
         },{
-            name: 'kiera4',
+            name: 'Anna Cosentino',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/anna_cosentino.jpg'),
+                fun: require('images/team/anna_cosentino.jpg')
             }
         },{
-            name: 'kiera5',
+            name: 'James Szabo',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/james_szabo.jpg'),
+                fun: require('images/team/james_szabo.jpg')
             }
         },{
-            name: 'kiera6',
+            name: 'Lian Showl',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/lian_showl.jpg'),
+                fun: require('images/team/lian_showl.jpg')
             }
         },{
-            name: 'kiera7',
+            name: 'KJ Famulegun',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/kj_famulegun.jpg'),
+                fun: require('images/team/kj_famulegun.jpg')
             }
         },{
-            name: 'kiera8',
+            name: 'Junius Murphy',
             images: {
-                regular: require('images/team/kiera_peltz.jpg'),
-                fun: require('images/team/kiera_peltz_fun.jpg')
+                regular: require('images/team/junius_murphy.jpg'),
+                fun: require('images/team/junius_murphy.jpg')
             }
         }
-        
     ]
 }
