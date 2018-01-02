@@ -61,6 +61,9 @@
 ### Paypal
 * Paypal is used as the donation payment service. It is referenced in `src/views/DonationsPanel/DonationButton.js` in which the `value` property of the `<input name='hosted_button_id'>` refers to which donation endpoint to redirect to. Lisa has access to the TCS Paypal account and can grant access permissions to others at her discretion.
 
+### MailChimp
+* MailChimp will be used as the mailing list service. Once it's set up, there will be a form that allows users to enter their emails in order to subscribe to The Coding School mailing list. Lisa has access to the TCS MailChimp account and can grant access permissions to others at her discretion.
+
 ---
 
 ## Project Details
