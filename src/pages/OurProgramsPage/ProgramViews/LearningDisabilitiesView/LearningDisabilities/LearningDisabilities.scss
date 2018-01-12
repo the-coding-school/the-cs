@@ -1,7 +1,7 @@
 @import '~scss/Variables';
 
 .learningDisabilities {
-  width: 50%;
+  width: 45%;
   text-align: center;
   img {
     opacity: 0.75;
@@ -22,8 +22,10 @@
 }
 
 .divider {
+  width: 10%;
   text-align: center;
   img {
-    margin-bottom: -160px;
+    vertical-align: bottom;
+    margin-bottom: -80px;
   }
 }
