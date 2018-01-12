@@ -33,6 +33,13 @@ export default class LearningDisabilities extends React.Component {
         </div>
       ); 
     }
+    else if(display == "divider") {
+      return (
+        <div className='divider'>
+          <img alt='learningDisabilities' src={imageSrc} height='500' />
+        </div>
+      ); 
+    }
     else {
       return (
         <div className='learningDisabilities'>
