@@ -15,6 +15,10 @@
     margin-bottom: 0;
   }
   
+  .indicates-required {
+    font-size: $text_sm;
+  }
+  
   .mc-field-group {
     display: flex;
     flex-direction: column;
