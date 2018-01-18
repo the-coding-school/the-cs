@@ -19,9 +19,12 @@
     font-size: $text_sm;
   }
   
-  .mc-field-group {
-    display: flex;
-    flex-direction: column;
+  .asterisk {
+    color: $red;
+  }
+  
+  .form_input {
+
     margin: 25px auto;
     
     label {
