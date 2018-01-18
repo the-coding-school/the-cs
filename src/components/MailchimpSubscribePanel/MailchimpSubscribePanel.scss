@@ -1,0 +1,56 @@
+@import '~scss/Variables';
+
+/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+.mailchimp_subscribe_panel {
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  font-size: $text_md;
+  
+  h2 {
+    margin-bottom: 0;
+  }
+  
+  .indicates-required {
+    font-size: $text_sm;
+  }
+  
+  .asterisk {
+    color: $red;
+  }
+  
+  .form_input {
+
+    margin: 25px auto;
+    
+    label {
+      margin: 5px;
+    }
+    
+    input {
+      height: $text_md;
+    }
+    
+  }
+  
+  
+
+  #mc_embed_signup .asterisk {
+    color:#e85c41; font-size:150%;
+    font-weight:normal;
+    position:relative;
+    top:5px;
+  }
+  
+  // container for submit button
+  .clear {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+ 
+}
