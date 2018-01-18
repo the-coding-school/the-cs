@@ -1,0 +1,14 @@
+@import '~scss/Variables';
+
+.stat-block {
+  margin: 5%;
+  text-align: center;
+
+  .figure {
+    font-size: $text_xhg;
+  }
+
+  .title {
+    font-size: $text_sm;
+  }
+}

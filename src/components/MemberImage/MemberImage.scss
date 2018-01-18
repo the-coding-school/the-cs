@@ -4,9 +4,14 @@
 
   position: relative;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  * { height: $member_image_size; }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
   &:hover {
     .regular {
@@ -27,11 +32,13 @@
       filter: blur(5px) brightness(50%);
       object-fit: cover;
       width: 100%;
+      height: 100%;
     }
   }
   .member_image_main {
-    width: $member_image_size;
     position: relative;
+    width: 100%;
+    height: 100%;
   }
 
 
