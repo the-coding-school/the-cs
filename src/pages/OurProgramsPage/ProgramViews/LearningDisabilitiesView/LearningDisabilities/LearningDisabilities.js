@@ -10,7 +10,7 @@ export default class LearningDisabilities extends React.Component {
       display
     } = this.props;
 
-    if(display == "image on top") {
+    if(display === "image on top") {
       return (
       <div className='learningDisabilities'>
         <img alt='learningDisabilities' src={imageSrc} height='250' />
@@ -18,7 +18,7 @@ export default class LearningDisabilities extends React.Component {
       </div>
       );
     }
-    else if(display == "text on top") {
+    else if(display === "text on top") {
       return (
         <div className='learningDisabilities'>
           <p>{description}</p>
@@ -26,14 +26,14 @@ export default class LearningDisabilities extends React.Component {
         </div>
       );
     }
-    else if(display == "image only") {
+    else if(display === "image only") {
       return (
         <div className='learningDisabilities'>
           <img alt='learningDisabilities' src={imageSrc} height='350' />
         </div>
       ); 
     }
-    else if(display == "divider") {
+    else if(display === "divider") {
       return (
         <div className='divider'>
           <img alt='learningDisabilities' src={imageSrc} height='500' />
