@@ -1,0 +1,52 @@
+{
+"row1": [
+  {
+    "description": "This program was inspired by two brothers with learning disabilities who took our class and fell in love with coding.",
+    "imageName": "twopeople_icon.svg",
+    "display": "image on top"
+  },
+  {
+  	"imageName": "divider.svg",
+  	"display": "divider"
+  },
+  {
+    "description": "While they typically faced difficulties concentrating and lack of enthusiasm, the brothers displayed passion and focus in coding class, which also had a butterfly effect into their other academic subjects.",
+    "imageName": "personarrowlight_icon.svg",
+    "display": "text on top"
+  }
+],
+
+"row2": [
+  {
+    "description": "Assistant principal image",
+    "imageName": "assistantprincipal_icon.svg",
+    "display": "image only"
+  },
+  {
+  	"imageName": "divider.svg",
+  	"display": "divider"
+  },
+  {
+    "description": "The assistant principal, witnessing the boys’ academic improvements and newfound desire to become engineers, asked us to create a program to ensure students with learning disabilities can be empowered through coding.",
+    "imageName": "",
+    "display": "text only"
+  }
+],
+
+"row3": [
+  {
+    "description": "As a response, we partnered with the Santa Monica-Malibu Unified School District to offer a pilot coding program for students with learning disabilities.",
+    "imageName": "",
+    "display": "text only"
+  },
+  {
+  	"imageName": "divider.svg",
+  	"display": "divider"
+  },
+  {
+    "description": "Gear on screen icon",
+    "imageName": "gearonscreen_icon.svg",
+    "display": "image only"
+  }
+]
+}

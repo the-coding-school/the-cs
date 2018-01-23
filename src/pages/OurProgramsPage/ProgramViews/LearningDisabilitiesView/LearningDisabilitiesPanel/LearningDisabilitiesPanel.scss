@@ -1,0 +1,31 @@
+@import '~scss/Variables';
+
+.learning_disabilities_panel {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.row_1 {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #0071bc;
+}
+
+.row_2 {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #66A9D6;
+}
+
+.row_3 {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #4D4D4D;
+}

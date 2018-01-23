@@ -1,3 +1,5 @@
+/* eslint-disable no-extend-native */
+
 //Polyfill for Array.prototype.find (method is not compatible with Internet Explorer)
 if (!Array.prototype.find) {
   Object.defineProperty(Array.prototype, 'find', {
