@@ -1,0 +1,40 @@
+@import '~scss/Variables';
+
+.subheading > * {
+	font-size: $text_md;
+	font-weight: $weight_thick;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.subheading .supersubheading {
+
+	background-color: $blue;
+	color: white;
+	padding: 2rem;
+
+}
+
+.subheading .subsubheading {
+
+	background-color: $light_blue;
+	color: white;
+	padding: 1rem;
+	font-family: $font_tertiary;
+
+
+}
+
+.codeConnects_elements {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $blue;
+    color: white;
+    font-size: $text_md;
+    padding: 2rem;
+
+}
+

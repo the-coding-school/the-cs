@@ -1,0 +1,44 @@
+@import '~scss/Variables';
+
+.program_image_paragraph {
+
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $black;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    filter: brightness(0.3);
+    object-fit: cover;
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    color: $white; 
+    font-weight: $weight_thick;
+    font-size: $text_md;
+    overflow-y: auto;
+    
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    
+}

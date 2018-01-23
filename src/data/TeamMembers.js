@@ -2,7 +2,7 @@
 let teamMembers: {
   founders: Array<MemberDataType>,
   advisors: Array<MemberDataType>,
-  teamLeads: Array<MemberDataType>,
+  teamHeads: Array<MemberDataType>,
   teachers: Array<MemberDataType>,
 } = {
   founders: [
@@ -70,7 +70,7 @@ let teamMembers: {
       description: "Ravi Pendse is VP Chief Information Officer at Brown University.",
     }
   ],
-  teamLeads: [
+  teamHeads: [
     {
       name:  { first: "Laura", last: "Felenstein" },
       position: "Graphic Designer",
@@ -163,6 +163,12 @@ let teamMembers: {
       organization: "UCLA",
       description: "I am a 2nd year computer science student at UCLA. I love the logic and practical use of coding, and I want to share that with others. Outside of the classroom, I am part of an acapella team. I am constantly singing or making music. I'm also a huge Game of Thrones fan! This summer I will be interning at Microsoft for their Explore program.",
     },
+    {
+      name: { first: "Gavin", last: "Mack" },
+      position: "Head of codeConnects Curriculum",
+      organization: "UCSC",
+      description: "",
+    }
   ],
   teachers: [
     {
@@ -412,12 +418,6 @@ let teamMembers: {
       name: { first: "Fatema", last: "Fakhruddin" },
       position: "Teacher",
       organization: "NEIU",
-      description: "",
-    },
-    {
-      name: { first: "Gavin", last: "Mack" },
-      position: "Teacher",
-      organization: "UCSC",
       description: "",
     },
     {
