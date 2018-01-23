@@ -1,0 +1,33 @@
+@import '~scss/Variables';
+
+.program_heading {
+
+  .program_title {
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    font-size: $text_hg;
+    font-weight: 800;
+    padding: 25px;
+  
+  }
+
+  .program_subtitle {
+    background-color: $very_light_gray;
+    color: $black;
+    text-align: center;
+    font-size: $text_md;
+    padding: 16px;
+    
+    .program_subtitle_text {
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+      margin: 0 auto;
+      padding: 8px;
+      text-align: center;
+      width: 70%;
+    }
+    
+  }
+  
+}

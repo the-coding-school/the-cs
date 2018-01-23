@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import ProgramOption from './ProgramOption';
 import PageHeader from 'components/PageHeader';
 import pageData from './OurProgramsPageData';
+import ProgramHeading from 'components/ProgramHeading';
 import './OurProgramsPage.scss';
 
 type PropsType = {};
@@ -31,6 +32,19 @@ export default class OurProgramsPage extends React.Component<PropsType> {
                   title={program.title}
                   caption={program.subtitle}
                   link={getProgramRoute(program)}
+                />
+              ))
+            }
+          </div>
+          <div className='selected_program_heading'>
+            {
+              ourPrograms.map(program => (
+                <Route
+                  key={program.title}
+                  exact path={getProgramRoute(program)}
+                  render={ (routerProps) => (
+                    <ProgramHeading {...routerProps} title={program.title} subtitle={program.subtitle}/>
+                  )}
                 />
               ))
             }
