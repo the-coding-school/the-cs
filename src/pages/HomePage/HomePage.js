@@ -9,6 +9,8 @@ import SchoolsPanel from 'views/SchoolsPanel';
 import HomeVideo from './HomeVideo';
 import UpdatesFeed from 'views/UpdatesFeed';
 import PromoVideo from 'views/PromoVideo';
+import FeaturedTeamPanel from 'views/FeaturedTeamPanel';
+import MailchimpSubscribePanel from 'components/MailchimpSubscribePanel';
 
 import './HomePage.scss';
 
@@ -57,6 +59,8 @@ export default () => (
         <UpdatesFeed/>
       </TitledPageRow>
 
+      <FeaturedTeamPanel/>
+
       <div className='home_page_partners_panel'>
         <SectionHeader
           subtitle='School Districts We Have Coding Programs In'
@@ -67,6 +71,10 @@ export default () => (
       <div className='home_page_testimonials'>
         <Testimonials />
       </div>
+      <div className='home_page_subscribe'>
+        <MailchimpSubscribePanel/>
+      </div>
+
 
     </div>
   </div>

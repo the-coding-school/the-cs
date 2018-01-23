@@ -1,36 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) but has been ejected, which means there is full access to the project configuration (such as Webpack, Babel, etc.)
-
-This was done primarily in order to implement SCSS and React Router but confers various other customizability benefits as well.
-
 ## Getting Set Up
+
+## Installing the project
 1. If you don't have `yarn` installed yet, install it from [here](https://yarnpkg.com/en/).
-2. Navigate to the project folder and run `yarn` to install all project dependencies.
+2. `git clone https://github.com/the-coding-school/the-cs.git`
+3. `cd the-cs`
+4. `yarn` -- Installs all project dependencies
+5. `yarn start` -- Starts development server
 
-**To run locally for development**:
-`yarn start`
+## Configuring your development environment
+1. Set up [ESLint](https://eslint.org/) in your text editor to show linting errors
+  * Atom: `apm install atom-ide-diagnostics linter-eslint`
+  * Sublime: Not sure but shouldn't be too hard to figure out via Google. :)
+2. Set up [Flow](https://flow.org/en/) in your text editor to show static typechecking errors
+  * Atom: `apm install ide-flowtype`
+  * Sublime: Same as above.
 
-**To run tests**
-`yarn flow` will run [Flow](https://flow.org/), an awesome static type checker that makes team-scale JavaScript development much easier. Note that static typechecking requires that you annotate types for your variables, components, etc. Learn more about how to do this in the [docs](https://flow.org/en/docs) for Flow.
+---
 
-**To complete issues assigned to you**
+## Development
+
+### Completing tasks
 1. `git checkout master && git pull`
 2. From the assigned issue, create a branch with the naming convention of: `IS-<ISSUE_NUMBER>`. E.g. for Issue #2, you will create a branch called `IS-2`. If an issue does not exist for the change you're about to make, create the issue first.
 3. Make your local changes and push: `git push origin IS-<ISSUE_NUMBER>`.
-4. Go to [the repo](https://www.github.com/the-codinig-school/the-cs) and make a pull request for your branch.
-5. Wait for approval on your pull request.
-6. If it's approved, merge to master. If changes are requested, fix the issue and notify the reviewer.
+4. Go to [the repo](https://www.github.com/the-codinig-school/the-cs) and make a pull request for your branch, notifying the appropriate person for a review.
+6. If PR is approved, **squash merge** to master. If changes are requested, fix the issue and notify the reviewer.
+  - It's really important that you perform a **squash merge** (which combines all your branch's commits into a single commit) and not a regular merge (which doesn't).
+7. Once you merge your PR, **delete your branch** so it doesn't take up unnecessary space in the repository.
 
-**To deploy to the published site**:
-1. *Thoroughly* test the `master` branch
-2. `git checkout production && git merge master`
-3. `yarn deploy`
-4. `git checkout master`
+## Deployment
+
+* There is also a `deploy` script in the project `package.json` that automatically deploys the contents of `/build` to the S3 bucket `s3://the-cs.org`
+* Deploying with this method requires the following:
+ * [s3cmd](http://s3tools.org/) must be installed on your machine
+ * You must have configured s3cmd to your machine by running `s3cmd --configure` and adding the AWS access key & token
+  * The access key and token can be found on the AWS console.
+
+### Depolyment Procedure
+1. **Thoroughly** test the `master` branch by making sure all pages load and render correctly.
+2. `git checkout production`
+3. `git merge master`
+4. `yarn deploy`
+5. `git checkout master`
 
 *We do this so that we have one branch, `production`, which represents a clear timeline of the published site's contents*
 
 ---
 
-## Project Hierarchy
+## External Services Used
+
+### Amazon Web Services (AWS)
+* AWS is used to host the domain `the-cs.org` as well as the static webpage served from S3. Lisa has access to the AWS account and can grant access permissions to others at her discretion.
+
+### Google Analytics
+* Google Analytics is used to track website usage statistics. Lisa has access to the Analytics account and can grant access permissions to others at her discretion.
+
+### Formspree
+* Formspree is used as the form submission platform (mainly on the Get Involved page). This has no account information to worry about. When a form is submitted, it is sent directly to the email specified in the `<form>` element declaration.
+
+### Paypal
+* Paypal is used as the donation payment service. It is referenced in `src/views/DonationsPanel/DonationButton.js` in which the `value` property of the `<input name='hosted_button_id'>` refers to which donation endpoint to redirect to. Lisa has access to the TCS Paypal account and can grant access permissions to others at her discretion.
+
+### MailChimp
+* MailChimp will be used as the mailing list service. Once it's set up, there will be a form that allows users to enter their emails in order to subscribe to The Coding School mailing list. Lisa has access to the TCS MailChimp account and can grant access permissions to others at her discretion.
+
+---
+
+## Project Details
+
+### Hierarchy
 
 ```
 config/
@@ -42,13 +80,6 @@ src/
   fonts/
   js/
   pages/
-    AboutPage/
-    DonatePage/
-    GetInvolvedPage/
-    HomePage/
-    OurFootprintPage/
-    OurProgramsPage/
-    TeamPage/
   scss/
   views/
   index.js
@@ -59,19 +90,29 @@ src/
 The main React Component that gets rendered into the DOM, `<Router>` is in `src/index.js`. This conditionally renders the appropriate Page component depending on whether the client is viewing the homepage or one of the tabs.
 
 The project consists of ReactJS components separated into three levels:
-#### 1. Components
+#### Components
 Generic, reusable React components.
 
-#### 2. Views
+#### Views
 Use the smaller components to create specific views that appear on pages. Unlike components, views are generally not used in more than one place.
 
-#### 3. Pages
+#### Pages
 The actual pages that are shown on the website; each of these is passed into its own `Router` component in `src/routes.js`
 
-### Styles
-The stylesheets for this project are in SCSS and are all located alongside the respective React components.
+---
 
-## Notes
+## Styles & Style Guide
+The stylesheets for this project are in SCSS and are all located alongside the respective React components. SCSS is a powerful CSS pre-compiler that allows you to write CSS with nesting, variables, mixins, and more. Learn more about it [here](http://sass-lang.com/).
+
+We don't have an actual style guide since we just use ESLint and extend `eslint-config-airbnb` and let the inline linting errors guide our style. However, here are a few guidelines that aren't included in the linting.
+* Use hyphen-case for classnames, e.g. `my-styled-component`
+* Prefer `%` and `px` units over `rem`, `em`, `vw`, and `vh`. The latter 4 are almost never what you really want.
+* Nest your SCSS so namespacing isn't an issue. For an elaborate example of what this looks like, take a look at `views/Testimonials/Testimonials.scss`.
+
+---
+
+## Miscellaneous Notes
+
 webpack's root-resolver allows us to set `/src/` as the root, so in order to `import` JS modules, we simply need to define the path relative to `src`.
 
 For example, we can replace ugly imports like:

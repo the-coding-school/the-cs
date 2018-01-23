@@ -14,20 +14,6 @@ type PropsType = {};
 export default class GetInvolvedPage extends React.Component<PropsType> {
   formsWrapperDiv: ?HTMLDivElement;
 
-  componentDidMount() {
-    this.scrollToForms();
-  }
-
-  componentDidUpdate() {
-    this.scrollToForms();
-  }
-
-  scrollToForms() {
-    if (this.formsWrapperDiv) {
-      smoothlyScrollToElement(this.formsWrapperDiv, SCROLL_DURATION);
-    }
-  }
-
   render() {
     const {
       header
