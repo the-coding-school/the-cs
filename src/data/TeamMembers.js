@@ -48,8 +48,9 @@ let teamMembers: {
     },
     {
       name: { first: "Jessica", last: "McKellar" },
-      position: "Advisor, Director of Engineering",
-      organization: "Dropbox"
+      position: "Advisor",
+      organization: "Pilot/ Dropbox",
+      description: "Jessica McKellar is the the founder of Pilot and the former Director of Engineering at Dropbox."
     },
     {
       name: { first: "Eva", last: "Manolis" },
