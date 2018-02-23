@@ -1,12 +1,12 @@
 [
   {
     "description": "schools",
-    "number": "16",
+    "number": "25",
     "imageName": "school_icon.png"
   },
   {
     "description": "students",
-    "number": "2,500",
+    "number": "3,500",
     "imageName": "students_icon.png"
   },
   {
