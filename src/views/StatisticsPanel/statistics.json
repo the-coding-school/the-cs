@@ -1,12 +1,7 @@
 [
   {
-    "description": "schools",
-    "number": "25",
-    "imageName": "school_icon.png"
-  },
-  {
-    "description": "students",
-    "number": "3,500",
+    "description": "hours of coding taught to K-12 students",
+    "number": "35,000+",
     "imageName": "students_icon.png"
   },
   {
