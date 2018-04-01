@@ -308,7 +308,31 @@ let teamMembers: {
       description: "",
     },
     {
-      name: { first: "Alexandre", last: "Rochaix" },
+      name: {first: "Alex", last: "Anderson" },
+      position: "Teacher",
+      organization: "Colorado School of Mines",
+      description: "",
+    },
+    {
+      name: {first: "Alex", last: "Mayle"},
+      position: "Teacher",
+      organization: "Ohio University",
+      description: "",
+    },
+    {
+      name: {first: "Alexandra", last: "Schein"},
+      position: "Teacher",
+      organization: "Wesleyan University",
+      description: "",
+    },
+    {
+      name: {first: "Alexandro", last: "Forte"},
+      position: "Teacher",
+      organization: "Boston UNiversity",
+      description: "",
+    },
+    {
+      name: { first: "Andre", last: "Rochaix" },
       position: "Teacher",
       organization: "UMich",
       description: "",
@@ -338,15 +362,51 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Anna", last: "Cosentino"},
+      position: "Teacher",
+      organization: "Indiana University",
+      description: "",
+    },
+    {
+      name: {first: "Annie", last: "Luc"},
+      position: "Teacher",
+      organization: "University of Florida",
+      description: "",
+    },
+    {
       name: { first: "Ariadna", last: "Gonzalez" },
       position: "Teacher",
       organization: "UNC Greensboro",
       description: "",
     },
     {
+      name: {first: "Amul", last: "Kumaravel"},
+      position: "Teacher",
+      organization: "Grab",
+      description: "",
+    },
+    {
+      name: {first: "Ati", last: "Ok"},
+      position: "Teacher",
+      organization: "University of Maryland",
+      description: "",
+    },
+    {
+      name: {first: "Audrey", last: "Der"},
+      position: "Teacher",
+      organization: "University of California, Riverside",
+      description: "",
+    },
+    {
       name: { first: "Benjamin", last: "Garlington" },
       position: "Teacher",
       organization: "Jackson State",
+      description: "",
+    },
+    {
+      name: {first: "Bill", last: "Barthel"},
+      position: "Teacher",
+      organization: "University of Wisconsin - Oshkosh",
       description: "",
     },
     {
@@ -359,6 +419,12 @@ let teamMembers: {
       name: { first: "Brian", last: "Greenberg" },
       position: "Teacher",
       organization: "Bowdoin College",
+      description: "",
+    },
+    {
+      name: {first: "Brianna", last: "Sheagley"},
+      position: "Teacher",
+      organization: "University of North Carolina at Greensboro",
       description: "",
     },
     {
@@ -404,9 +470,33 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Donna", last: "Gavin"},
+      position: "Teacher",
+      organization: "University of Wisconsin",
+      description: "",
+    },
+    {
+      name: {first: "Elliot", last: "Carter"},
+      position: "Teacher",
+      organization: "University of Wisconsin - Oshkosh",
+      description: "",
+    },
+    {
       name: { first: "Emma", last: "Huang" },
       position: "Teacher",
       organization: "Boston College",
+      description: "",
+    },
+    {
+      name: {first: "Enoch", last: "Change"},
+      position: "Teacher",
+      organization: "University of California - Riverside",
+      description: "",
+    },
+    {
+      name: {first: "Enrique", last: "Paredes"},
+      position: "Teacher",
+      organization: "Northeastern Illinois University",
       description: "",
     },
     {
@@ -416,9 +506,27 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Ezekiel Elijah", last: "Reyna"},
+      position: "Teacher",
+      organization: "Columbia",
+      description: "",
+    },
+    {
+      name: {first: "Falla", last: "Coulibaly"},
+      position: "Teacher",
+      organization: "University of Central Arkansas",
+      description: "",
+    },
+    {
       name: { first: "Fatema", last: "Fakhruddin" },
       position: "Teacher",
       organization: "NEIU",
+      description: "",
+    },
+    {
+      name: {first: "Gleb", last: "Alexeev"},
+      postition: "Teacher",
+      organization: "Indiana University",
       description: "",
     },
     {
@@ -458,9 +566,39 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "James", last: "Szabo"},
+      position: "Teacher",
+      organization: "Innovative Defense Technologies",
+      description: "",
+    },
+    {
       name: { first: "Jennifer", last: "Lauriello" },
       position: "Teacher",
       organization: "OLE Miss",
+      description: "",
+    },
+    {
+      name: {first: "Jenny", last: "Nguyen"},
+      position: "Teacher",
+      organization: "University of California - Riverside",
+      description: "",
+    },
+    {
+      name: {first: "Jerry", last: "Jiang"},
+      position: "Teacher",
+      organization: "University of California - Riverside",
+      description: "",
+    },
+    {
+      name: {first: "Jerry", last: "Tan"},
+      position: "Teacher",
+      organization: "University of California - Riverside",
+      description: "",
+    },
+    {
+      name: {first: "Jinal", last: "Jain"},
+      position: "Teacher",
+      organization: "Zycus",
       description: "",
     },
     {
@@ -482,9 +620,33 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Juan", last: "Gonzalez"},
+      position: "Teacher",
+      organization: "UCSC",
+      description: "",
+    },
+    {
       name: { first: "Junius", last: "Murphy" },
       position: "Teacher",
       organization: "UMich",
+      description: "",
+    },
+    {
+      name: {first: "Karen", last: "Davis"},
+      position: "Teacher",
+      organization: "UC Davis",
+      description: "",
+    },
+    {
+      name: {first: "Kate", last: "Miller"},
+      position: "Teacher",
+      organization: "UC Davis",
+      description: "",
+    },
+    {
+      name: {first: "Kathy", last: "Nguyen"},
+      position: "Teacher",
+      organization: "George Washington University",
       description: "",
     },
     {
@@ -494,15 +656,39 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Kim", last: "Pham"},
+      position: "Teacher",
+      organization: "Wesleyan University",
+      description: "",
+    },
+    {
       name: { first: "KJ", last: "Famulegun" },
       position: "Teacher",
       organization: "Howard University",
       description: "",
     },
     {
+      name: {first: "Kristen", last: "Sanchez"},
+      position: "Teacher",
+      organization: "University of Central Arkansas",
+      description: "",
+    },
+    {
       name: { first: "Kristina", last: "Gauthier" },
       position: "Teacher",
       organization: "Ford Motors",
+      description: "",
+    },
+    {
+      name: {first: "Kylie", last: "Pfaff"},
+      position: "Teacher",
+      organization: "Drury University",
+      description: "",
+    },
+    {
+      name: {first: "Lauren", last: "Becker"},
+      position: "Teacher",
+      organization: "Boston College",
       description: "",
     },
     {
@@ -515,6 +701,18 @@ let teamMembers: {
       name: { first: "Leya", last: "Breanna-Baltaxe" },
       position: "Teacher",
       organization: "UCSC",
+      description: "",
+    },
+    {
+      name: {first: "Liam", last: "McKay"},
+      position: "Teacher",
+      organization: "UCSC",
+      description: "",
+    },
+    {
+      name: {first: "Lian", last: "Showl"},
+      position: "Teacher",
+      organization: "George Washington University",
       description: "",
     },
     {
@@ -533,6 +731,12 @@ let teamMembers: {
       name: { first: "Maheen", last: "Khan" },
       position: "Teacher",
       organization: "UMich",
+      description: "",
+    },
+    {
+      name: {first: "Mark", last: "Ma"},
+      position: "Teacher",
+      organization: "Drury University",
       description: "",
     },
     {
@@ -572,6 +776,24 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Nhan", last: "Tran"},
+      position: "Teacher",
+      organization: "Colorado School of Mines",
+      description: "",
+    },
+    {
+      name: {first: "Niall", last: "Smith"},
+      position: "Teacher",
+      organization: "UC Davis",
+      description: "",
+    },
+    {
+      name: {first: "Nick", last: "Mandel"},
+      position: "Teacher",
+      organization: "UCSC",
+      description: "",
+    },
+    {
       name: { first: "Nicole", last: "Seo" },
       position: "Teacher",
       organization: "IBM Watson",
@@ -584,6 +806,12 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Noah", last: "Drove"},
+      position: "Teacher",
+      organization: "UC Santa Cruz",
+      description: "",
+    },
+    {
       name: { first: "Ochaun", last: "Marshall" },
       position: "Teacher",
       organization: "UNC Greensboro",
@@ -593,6 +821,12 @@ let teamMembers: {
       name: { first: "Omnia", last: "Elemary" },
       position: "Teacher",
       organization: "George Mason",
+      description: "",
+    },
+    {
+      name: {first: "Pankti", last: "Kansara"},
+      position: "Teacher",
+      organization: "San Jose State University",
       description: "",
     },
     {
@@ -626,15 +860,57 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Rui", last: "Tang"},
+      position: "Teacher",
+      organization: "George Washington University",
+      description: "",
+    },
+    {
+      name: {first: "Ruifeng", last: "Zhang"},
+      position: "Teacher",
+      organization: "University of California - Riverside",
+      description: "",
+    },
+    {
+      name: {first: "Sam", last: "Sheppe"},
+      position: "Teacher",
+      organization: "Wesleyan University",
+      description: "",
+    },
+    {
       name: { first: "Shane", last: "Johnson" },
       position: "Teacher",
       organization: "Enterprise",
       description: "",
     },
     {
+      name: {first: "Skyler", last: "Kim"},
+      position: "Teacher",
+      organization: "Worcester Polytechnic Institute",
+      description: "",
+    },
+    {
+      name: {first: "Stephanie", last: "Chen"},
+      position: "Teacher",
+      organization: "Columbia",
+      description: "",
+    },
+    {
       name: { first: "Sunil", last: "Dokuru" },
       position: "Teacher",
       organization: "Quorum",
+      description: "",
+    },
+    {
+      name: {first: "Tanvir", last: "Talukder"},
+      position: "Teacher",
+      organization: "Amazon",
+      description: "",
+    },
+    {
+      name: {first: "Tarek", last: "Aldroubi"},
+      position: "Teacher",
+      organization: "University of Michigan",
       description: "",
     },
     {
@@ -656,9 +932,21 @@ let teamMembers: {
       description: "",
     },
     {
+      name: {first: "Xinran", last: "Dai"},
+      position: "Teacher",
+      organization: "Indiana University",
+      description: "",
+    },
+    {
       name: { first: "Ye-Joo", last: "Oh" },
       position: "Teacher",
       organization: "Calvin College",
+      description: "",
+    },
+    {
+      name: {first: "Yujun", last: "Tian"},
+      position: "Teacher",
+      organization: "Worcester Polytechnic Institute",
       description: "",
     },
     {
