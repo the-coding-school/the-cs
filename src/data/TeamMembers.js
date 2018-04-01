@@ -332,7 +332,7 @@ let teamMembers: {
       description: "",
     },
     {
-      name: { first: "Andre", last: "Rochaix" },
+      name: { first: "Alexandre", last: "Rochaix" },
       position: "Teacher",
       organization: "UMich",
       description: "",
@@ -380,7 +380,7 @@ let teamMembers: {
       description: "",
     },
     {
-      name: {first: "Amul", last: "Kumaravel"},
+      name: {first: "Arul", last: "Kumaravel"},
       position: "Teacher",
       organization: "Grab",
       description: "",
@@ -488,7 +488,7 @@ let teamMembers: {
       description: "",
     },
     {
-      name: {first: "Enoch", last: "Change"},
+      name: {first: "Enoch", last: "Chang"},
       position: "Teacher",
       organization: "University of California - Riverside",
       description: "",
@@ -506,7 +506,7 @@ let teamMembers: {
       description: "",
     },
     {
-      name: {first: "Ezekiel Elijah", last: "Reyna"},
+      name: {first: "Ezekiel", last: "Elijah_Reyna"},
       position: "Teacher",
       organization: "Columbia",
       description: "",
@@ -680,7 +680,7 @@ let teamMembers: {
       description: "",
     },
     {
-      name: {first: "Kylie", last: "Pfaff"},
+      name: {first: "Kylie", last: "Pfaf"},
       position: "Teacher",
       organization: "Drury University",
       description: "",
@@ -806,7 +806,7 @@ let teamMembers: {
       description: "",
     },
     {
-      name: {first: "Noah", last: "Drove"},
+      name: {first: "Noah", last: "Dove"},
       position: "Teacher",
       organization: "UC Santa Cruz",
       description: "",
