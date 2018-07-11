@@ -6,6 +6,7 @@ import PageHeader from 'components/PageHeader';
 import SectionHeader from 'components/SectionHeader';
 import MemberCard from 'components/MemberCard';
 import TeamSection from 'components/TeamSection';
+import TeamStatisticsPanel from 'views/TeamStatisticsPanel';
 import team, {
   sortListFirstThenByFunc,
   sortMembersAlphabetically
@@ -103,6 +104,8 @@ export default class TeamPage extends LinkScrollPage {
         <PageHeader image={header.image} title={header.title} description={header.description} />
         <div className='page_contents'>
           <div className='container'>
+
+            <TeamStatisticsPanel />
 
             <Anchor pageMap={this.pageMap} id='founder' />
             <div className='team_founder team_section'>
